@@ -106,7 +106,7 @@ if __name__ == "__main__":
     output_dir = "result"
     calc_negative = False
     print_scores = False
-    use_activation4emb = True
+    use_activation4emb = False
 
     # Load tokenizer and model
     tokenizer = AutoTokenizer.from_pretrained(model_name)
