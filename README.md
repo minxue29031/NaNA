@@ -19,10 +19,7 @@ By inspecting top tokens aligned with each singular direction, we can identify *
 ```
 ├── MLP_svd_detector.py        # Analyze SVD input directions of MLP weight (detector)
 ├── MLP_svd_effector.py        # Analyze SVD output directions of MLP weight (effector)
-├── result_svd_detector/       # Example results for detector directions
-│   └── MLP_Wout/
-├── result_svd_effector/       # Example results for effector directions
-│   └── MLP_Wout/
+├── result/       # Example results for detector/effector directions
 ├── requirements.txt
 ```
  
