@@ -6,7 +6,6 @@ import torch
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
- 
 
 def collect_layer_input_output(model, tokenizer, layer_idx, text):
     layer_inputs, layer_outputs = [], []
