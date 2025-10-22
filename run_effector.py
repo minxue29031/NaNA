@@ -1,7 +1,7 @@
 import os
 from circuit.effector import MLPDirectionEffector   
 
-
+ 
 model_name = "gpt2-medium"
 layers_to_use = [16]
 out_dir = "result"
