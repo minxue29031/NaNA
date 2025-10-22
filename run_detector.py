@@ -1,6 +1,6 @@
 from circuit.detector import MLPDirectionDetector
 
-
+ 
 model_name = "gpt2-medium"
 layers = [16]
 output_dir = "result"
