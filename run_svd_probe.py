@@ -124,8 +124,11 @@ def main():
     topk_tokens = 15
     output_dir = "result_probe"
     svd_ana_mode="detector_effector"  
+    
     interv_mode = "enhance"  
-
+    interv_dir_indices = [0]           
+    interv_scale = 0.8   
+    
     os.makedirs(output_dir, exist_ok=True)
     model, tokenizer = load_model(model_name, device)
     
@@ -146,7 +149,7 @@ def main():
         layer_idx, 
         layer_io, 
         target_word, 
-        topk_subspaces, 
+        topk_subspaces = topk_subspaces, 
         svd_ana_mode=svd_ana_mode
     )
 
@@ -157,8 +160,8 @@ def main():
         U, S, Vh, 
         layer_io, 
         layer_idx,
-        topk_subspaces=2, 
-        topk_tokens=10, 
+        topk_subspaces=topk_subspaces, 
+        topk_tokens=topk_tokens, 
         output_dir=output_dir
     )
 
@@ -170,9 +173,9 @@ def main():
         layer_io, 
         layer_idx, 
         interv_mode=interv_mode, 
-        interv_dir_indices=[0], 
-        interv_scale=0.8, 
-        return_toptoks=20
+        interv_dir_indices=interv_dir_indices, 
+        interv_scale=interv_scale, 
+        return_toptoks=topk_tokens
     )
     
     print("======== All Executions Completed Successfully =========")
