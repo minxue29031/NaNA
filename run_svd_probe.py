@@ -131,21 +131,51 @@ def main():
     
     # MLP SVD decomposition and collection of layer activations
     U, S, Vh, layer_io = prepare_model_analysis(
-        model, tokenizer, text, layer_idx, device
+        model, 
+        tokenizer, 
+        text, 
+        layer_idx, 
+        device
+    )
+    
+    # Detector/Effector/Circuit analysis
+    analyze_detectors_and_effectors(
+        model, 
+        tokenizer, 
+        U, S, Vh, 
+        layer_idx, 
+        layer_io, 
+        target_word, 
+        topk_subspaces, 
+        svd_ana_mode=svd_ana_mode
     )
 
-    # Detector/Effector/Circuit analysis
-    analyze_detectors_and_effectors(model, tokenizer, U, S, Vh, layer_idx, layer_io, target_word, topk_subspaces, svd_ana_mode=svd_ana_mode)
-    
     # Compute top tokens for each subspace
     layer_svd_activations, top_tokens_per_subspace = compute_subspace_top_tokens(
-        model, tokenizer, U, S, Vh, layer_io, layer_idx,
-        topk_subspaces=2, topk_tokens=10, output_dir=output_dir
+        model, 
+        tokenizer, 
+        U, S, Vh, 
+        layer_io, 
+        layer_idx,
+        topk_subspaces=2, 
+        topk_tokens=10, 
+        output_dir=output_dir
+    )
+
+    # Subspace intervention
+    subspace_interv(
+        model, 
+        tokenizer, 
+        U, S, Vh, 
+        layer_io, 
+        layer_idx, 
+        interv_mode=interv_mode, 
+        interv_dir_indices=[0], 
+        interv_scale=0.8, 
+        return_toptoks=20
     )
     
-    # Subspace intervention 
-    subspace_interv(model, tokenizer, U, S, Vh, layer_io, layer_idx, interv_mode=interv_mode, interv_dir_indices=[0], interv_scale=0.8, return_toptoks=20)
- 
-
+    print("======== All Executions Completed Successfully =========")
+    
 if __name__ == "__main__":
     main()
