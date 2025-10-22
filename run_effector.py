@@ -1,7 +1,6 @@
 import os
 from circuit.effector import MLPDirectionEffector   
 
-os.makedirs(out_dir, exist_ok=True)
 
 model_name = "gpt2-medium"
 layers_to_use = [16]
@@ -14,6 +13,7 @@ run_mlp_Win  = False
 run_OV       = False
 with_negative= True
 
+os.makedirs(out_dir, exist_ok=True)
 effector = MLPDirectionEffector(model_name=model_name)
 
 for layer_idx in layers_to_use:
