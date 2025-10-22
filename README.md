@@ -20,7 +20,7 @@ By inspecting top tokens aligned with each singular direction, we can identify *
 MLP_SVD_Project/
 ├── MLP_svd_detector.py          # Analyze SVD input directions of MLP weight (detector)
 ├── MLP_svd_effector.py          # Analyze SVD output directions of MLP weight (effector)
-├── mlp_svd_probe.py             # Perform subspace-level interventions within the model
+├── run_svd_probe.py             # Perform subspace-level interventions within the model
 ├── circuit/                     # Circuit-level analysis modules
 │   ├── __init__.py
 │   ├── detector.py
