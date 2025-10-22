@@ -17,11 +17,23 @@ By inspecting top tokens aligned with each singular direction, we can identify *
 ## 📂 Repository Structure
 
 ```
-├── MLP_svd_detector.py        # Analyze SVD input directions of MLP weight (detector)
-├── MLP_svd_effector.py        # Analyze SVD output directions of MLP weight (effector)
-├── mlp_svd_probe.py        # Perform subspace-level interventions within the model
-├── result/       # Example results for detector/effector directions
-├── requirements.txt
+MLP_SVD_Project/
+├── MLP_svd_detector.py          # Analyze SVD input directions of MLP weight (detector)
+├── MLP_svd_effector.py          # Analyze SVD output directions of MLP weight (effector)
+├── mlp_svd_probe.py             # Perform subspace-level interventions within the model
+├── circuit/                     # Circuit-level analysis modules
+│   ├── __init__.py
+│   ├── detector.py
+│   └── effector.py
+├── svd_probe/                   # Core SVD analysis and intervention utilities
+│   ├── __init__.py
+│   ├── svd_ops.py               # SVD computation and subspace projections
+│   ├── model_interface.py       # Model loading, token generation, layer IO collection
+│   ├── subspace_intervention.py # Functions to enhance or remove subspace directions
+│   └── circuit_analysis.py      # Detector, effector, and DeEf circuit analysis
+├── result/                      # Example outputs and top tokens per subspace
+├── requirements.txt             # Python dependencies
+
 ```
  
 
