@@ -2,7 +2,6 @@ import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 
-
 def load_model(model_name, device):
     print(f"======= Loading Model {model_name} ===========")
     tokenizer = AutoTokenizer.from_pretrained(model_name)
@@ -10,6 +9,7 @@ def load_model(model_name, device):
     tokenizer.pad_token = tokenizer.eos_token
     model.eval()
     return model, tokenizer
+
 
 def generate_next_token(model, tokenizer, text, device, max_new_tokens=1):
     model.eval()
@@ -26,7 +26,6 @@ def generate_next_token(model, tokenizer, text, device, max_new_tokens=1):
     print(f"\n >> Next token: {next_token} (ID: {next_token_id.item()})")
     
     return next_token, next_token_id.item()
-
 
 
 def collect_layer_input_output(model, tokenizer, layer_idx, text, device):
@@ -54,7 +53,6 @@ def collect_layer_input_output(model, tokenizer, layer_idx, text, device):
     return {"input": layer_input, "output": layer_output}, inputs["input_ids"]
 
  
-
 def project_mlp_acv_to_vocab(model, tokenizer, layer_output, topk=20):
     W_E = model.get_input_embeddings().weight.detach().cpu() 
     logits_proj = layer_output @ W_E.T  
@@ -71,3 +69,4 @@ def project_mlp_acv_to_vocab(model, tokenizer, layer_output, topk=20):
         print(f"  {token}: {score:.6f}")
 
     return top_tokens_list
+
