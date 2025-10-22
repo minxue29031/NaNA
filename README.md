@@ -50,26 +50,38 @@ pip install -r requirements.txt
 
 ## 🧩 Example Usage
 
+### 🔹 Detector & Effector Analysis
+
 ```bash
 # Analyze detector (input) side
-python MLP_svd_detector.py
+python run_detector.py
 
 # Analyze effector (output) side
-python MLP_svd_effector.py
+python run_effector.py
 ```
 
-Results will be saved under:
+These scripts analyze **SVD directions** in the MLP layers of a transformer model.
+Each produces a ranked list of **top tokens** most associated with each singular direction, making it easier to interpret **semantic axes** within the model.
 
+
+### 🔹 Subspace Intervention
+
+```bash
+python run_svd_probe.py
 ```
-result_svd_detector/
-result_svd_effector/
-```
 
-Each file lists the top tokens associated with each SVD direction, making it easy to interpret semantic axes.
+Performs **causal interventions** on specific MLP subspace directions — either **enhancing** or **removing** them — to study how these directions
+affect the model’s predictions and output semantics.
 
+### 📊 Output
 
+Each script saves its results under the `result/` directory, including:
 
-### Configuration Parameters
+* **Top tokens** associated with each SVD direction
+* **Activation strengths** for selected subspaces
+* **Modified generations** after subspace intervention
+ 
+### ⚙️ Configuration Parameters
 
 Both scripts share similar configurable options:
 
