@@ -68,11 +68,6 @@ def subspace_acv_to_vocab(model, tokenizer, layer_svd_activations, topk_tokens, 
 
     return top_tokens_per_subspace
 
-def compute_subspace_top_tokens(model, tokenizer, U, S, Vh, layer_io, layer_idx, topk_subspaces=2, topk_tokens=10, output_dir="result_probe"):
-    layer_svd_activations = compute_subspace_out_acv(layer_io, layer_idx, U, S, Vh, topk_subspaces)
-    top_tokens_per_subspace = subspace_acv_to_vocab(model, tokenizer, layer_svd_activations, topk_tokens, output_dir)
-    return layer_svd_activations, top_tokens_per_subspace
-
 
 def compute_subspace_top_tokens(model, tokenizer, U, S, Vh, layer_io, layer_idx, topk_subspaces=2, topk_tokens=10, output_dir="result_probe"):
 
@@ -90,4 +85,5 @@ def compute_subspace_top_tokens(model, tokenizer, U, S, Vh, layer_io, layer_idx,
     )
 
     return layer_svd_activations, top_tokens_per_subspace
+
 
