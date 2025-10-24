@@ -1,7 +1,7 @@
 import torch
 
 
-def compute_svd(weight_type: str, c_fc=None, c_proj=None):
+def compute_svd(weight_type: str, c_fc=None, c_proj=None, ln_2=None):
     """
     Compute the Singular Value Decomposition (SVD) of an MLP weight matrix.
     """
@@ -14,13 +14,17 @@ def compute_svd(weight_type: str, c_fc=None, c_proj=None):
     elif weight_type == "c_fc":
         if c_fc is None:
             raise ValueError("`c_fc` must be provided when weight_type='c_fc'")
-        w = c_fc.weight.T
+ 
+        w = c_fc.weight.T.detach()  
+        ln_2_weight = ln_2.weight.detach() 
+        w = w * ln_2_weight 
 
     else:
         raise ValueError(f"Unknown weight_type: {weight_type}")
-
+ 
     U, S, V = torch.linalg.svd(w, full_matrices=False)
     return U, S, V
+ 
 
 
 def reshape_emb_matrix(W_emb: torch.Tensor, c_fc, act, use_activation: bool = False):
