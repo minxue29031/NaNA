@@ -18,13 +18,14 @@ By inspecting top tokens aligned with each singular direction, we can identify *
 
 ```
 MLP_SVD_Project/
-├── MLP_svd_detector.py          # Analyze SVD input directions of MLP weight (detector)
-├── MLP_svd_effector.py          # Analyze SVD output directions of MLP weight (effector)
+├── run_interp.py                # Analyze SVD directions of MLP weight 
 ├── run_svd_probe.py             # Perform subspace-level interventions within the model
-├── circuit/                     # Circuit-level analysis modules
-│   ├── __init__.py
-│   ├── detector.py
-│   └── effector.py
+├─ block_interp/
+│   ├─ top_tok.py         # Token processing and top-k extraction
+│   ├─ interp_mlp.py      # Core class for MLP subspace analysis (MLP_DEEF_INTERP)
+│   ├─ mlp_svd_utils.py   # SVD computation and embedding matrix reshaping utilities
+│   ├─ model_load.py      # Model loading and MLP weight extraction
+│   └─ __init__.py
 ├── svd_probe/                   # Core SVD analysis and intervention utilities
 │   ├── __init__.py
 │   ├── svd_ops.py               # SVD computation and subspace projections
@@ -47,17 +48,22 @@ To install:
 pip install -r requirements.txt
 ```
 
-
 ## 🧩 Example Usage
 
 ### 🔹 Detector & Effector Analysis
 
 ```bash
-# Analyze detector (input) side
-python run_detector.py
-
-# Analyze effector (output) side
-python run_effector.py
+python run_interp.py \
+    --model_name gpt2-medium \
+    --layers 16 17 \
+    --out_dir result \
+    --topk_tokens 10 \
+    --topk_subspaces 50 \
+    --weight_type c_proj \
+    --interp_type detector \
+    --with_negative \
+    --use_activation \
+    --with_values
 ```
 
 These scripts analyze **SVD directions** in the MLP layers of a transformer model.
@@ -85,14 +91,18 @@ Each script saves its results under the `result/` directory, including:
 
 Both scripts share similar configurable options:
 
-| Argument         | Description                         | Default         |
-| ---------------- | ----------------------------------- | --------------- |
-| `model_name`     | Hugging Face model name             | `"gpt2-medium"` |
-| `layers_to_use`  | List of layers to analyze           | `[16]`          |
-| `topk_tokens`    | Top-k tokens per direction          | `35`            |
-| `topk_subspaces` | Number of singular directions       | `500`           |
-| `with_negative`  | Whether to show negative directions | `False`         |
-
+| Parameter          | Type     | Default         | Description                                                              |
+| ------------------ | -------- | --------------- | ------------------------------------------------------------------------ |
+| `--model_name`     | str      | `"gpt2-medium"` | Hugging Face model name. Options: `"gpt2"`, `"gpt2-medium"`, `"gpt2-xl"` |
+| `--layers`         | int list | `[16]`          | Layer indices to analyze (space-separated)                               |
+| `--out_dir`        | str      | `"result"`      | Directory to save results                                                |
+| `--topk_tokens`    | int      | `10`            | Top-K tokens per direction                                               |
+| `--topk_subspaces` | int      | `50`            | Number of top singular directions to analyze                             |
+| `--weight_type`    | str      | `"c_proj"`      | MLP weight type: `c_proj`, `c_fc`, or `ov`                               |
+| `--interp_type`    | str      | `"detector"`    | Interpretation type: `detector` or `effector`                            |
+| `--with_negative`  | bool     | `False`         | Save negative directions as well                                         |
+| `--use_activation` | bool     | `False`         | Apply activation function in projection                                  |
+| `--with_values`    | bool     | `False`         | Include token scores in output                                           |
 
 
  ## 🔍 Quick Semantic/Syntactic Analysis with ChatGPT
