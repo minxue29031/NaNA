@@ -146,8 +146,8 @@ class MLP_DEEF_INTERP:
         """
         
         # Load weights and perform SVD  
-        c_fc, c_proj, act = get_mlp_matrices(self.model, layer_idx)
-        U, S, V = compute_svd(weight_type, c_fc=c_fc, c_proj=c_proj)
+        c_fc, c_proj, ln_2, act = get_mlp_matrices(self.model, layer_idx)
+        U, S, V = compute_svd(weight_type, c_fc=c_fc, c_proj=c_proj, ln_2=ln_2)
 
         # output path 
         output_file = os.path.join(
@@ -186,11 +186,7 @@ class MLP_DEEF_INTERP:
                 for i in range(min(topk_subspaces, S.shape[0]))
             ]
 
-        else:
-            raise ValueError(
-                f"Unknown combination: weight_type={weight_type}, interp_type={interp_type}"
-            )
-
+ 
         self._save_singular_vectors_to_file(
             "positive",
             pos_score,
