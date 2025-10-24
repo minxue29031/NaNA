@@ -27,13 +27,14 @@ def compute_svd(weight_type: str, c_fc=None, c_proj=None, ln_2=None):
  
 
 
-def reshape_emb_matrix(W_emb: torch.Tensor, c_fc, act, use_activation: bool = False):
+def reshape_emb_matrix(W_emb: torch.Tensor, c_fc, ln_2, act, use_activation: bool = False):
     """
     Project the embedding matrix through the MLP input weights (`c_fc`)
     and optionally apply the MLP activation function.
     """
     
     # Linear transform 
+    W_emb = W_emb * ln_2.weight.detach()  
     reshape_matrix = W_emb @ c_fc.weight + c_fc.bias
 
     # Optional nonlinearity

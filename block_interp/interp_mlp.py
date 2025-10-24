@@ -125,7 +125,6 @@ class MLP_DEEF_INTERP:
         weight_type: str = "c_proj",
         interp_type: str = "effector",
         with_negative: bool = False,
-        use_activation: bool = False,
         with_values: bool = True,
         only_english: bool = False,
         only_ascii: bool = True
@@ -159,32 +158,56 @@ class MLP_DEEF_INTERP:
         if os.path.exists(output_file):
             os.remove(output_file)
 
-        # Compute projections  
-        if (
-            (weight_type == "c_proj" and interp_type == "effector")
-            or (weight_type == "c_fc" and interp_type == "detector")
-        ):
-            # Project V into embedding space
-            pos_score = [
-                V[i, :].float() @ self.W_emb.T
-                for i in range(min(topk_subspaces, S.shape[0]))
-            ]
 
-        elif (
-            (weight_type == "c_proj" and interp_type == "detector")
-            or (weight_type == "c_fc" and interp_type == "effector")
-        ):
-            # Use reshaped embedding via activation
-            reshape_matrix = reshape_emb_matrix(
-                self.W_emb,
-                c_fc,
-                act,
-                use_activation
-            )
-            pos_score = [
-                reshape_matrix @ (S[i] * U[:, i])
-                for i in range(min(topk_subspaces, S.shape[0]))
-            ]
+        if interp_type == "effector":
+            if weight_type == "c_proj":
+                pos_score = [
+                    V[i, :].float() @ self.W_emb.T
+                    for i in range(min(topk_subspaces, S.shape[0]))
+                ]
+            elif weight_type == "c_fc":
+                reshape_matrix = reshape_emb_matrix(
+                    self.W_emb,
+                    c_fc,
+                    ln_2,
+                    act,
+                    use_activation=True
+                )
+                
+                pos_score = [
+                    reshape_matrix @ (S[i] * U[:, i])
+                    for i in range(min(topk_subspaces, S.shape[0]))
+                ]
+                
+            else:
+                raise ValueError(f"Unknown weight_type: {weight_type}")
+
+        elif interp_type == "detector":
+            if weight_type == "c_fc":
+                pos_score = [
+                    V[i, :].float() @ self.W_emb.T
+                    for i in range(min(topk_subspaces, S.shape[0]))
+                ]
+                
+            elif weight_type == "c_proj":
+                reshape_matrix = reshape_emb_matrix(
+                    self.W_emb,
+                    c_fc,
+                    ln_2,
+                    act,
+                    use_activation=False
+                )
+                
+                pos_score = [
+                    reshape_matrix @ (S[i] * U[:, i])
+                    for i in range(min(topk_subspaces, S.shape[0]))
+                ]
+                
+            else:
+                raise ValueError(f"Unknown weight_type: {weight_type}")
+
+        else:
+            raise ValueError(f"Unknown interp_type: {interp_type}")
 
  
         self._save_singular_vectors_to_file(
