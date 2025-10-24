@@ -98,7 +98,7 @@ Both scripts share similar configurable options:
 | `--out_dir`        | str      | `"result"`      | Directory to save results                                                |
 | `--topk_tokens`    | int      | `10`            | Top-K tokens per direction                                               |
 | `--topk_subspaces` | int      | `50`            | Number of top singular directions to analyze                             |
-| `--weight_type`    | str      | `"c_proj"`      | MLP weight type: `c_proj`, `c_fc`, or `ov`                               |
+| `--weight_type`    | str      | `"c_proj"`      | MLP weight type: `c_proj`, `c_fc`, or `ov(TODO)`                               |
 | `--interp_type`    | str      | `"detector"`    | Interpretation type: `detector` or `effector`                            |
 | `--with_negative`  | bool     | `False`         | Save negative directions as well                                         |
 | `--use_activation` | bool     | `False`         | Apply activation function in projection                                  |
