@@ -1,0 +1,604 @@
+=== POSITIVE SINGULAR VECTORS ===
+
+Direction 1:
+#soDeliveryDate, #isSpecialOrderable, #catentry, #BuyableInstoreAndOnline, #inventoryQuantity, #quickShipAvailable, #taboola, #lihood, #ItemTracker, #Interstitial, #iannopoulos, #channelAvailability, #externalActionCode, #ertodd, #TPPStreamerBot, #Buyable, #soType, #EngineDebug, Cosponsors, #umbn, #rontal, #bryce, #uliffe, #;;;;;;;;;;;;, #assetsadobe, #BILITIES, #wcsstore, #ploma, #ufact, #BIP, #maxwell, #rentices, #Magikarp, #staking, #MpServer, #illac, #paio, #auga, #ullivan, #PsyNetMessage, #actionDate, #ModLoader, #anyahu, #tarians, Archdemon, guiActiveUnfocused, sqor, #Prosecut, #uberty, #ileaks
+
+Direction 2:
+final, future, Holy, #res, best, vast, beauty, great, most, #od, trial, #otted, safety, complete, new, det, grand, majority, #rew, original, specific, #catch, cross, #ro, heart, same, lowest, continuous, Great, weekly, least, Build, Deal, #ively, M, #ve, #osure, exact, few, holy, worst, #unt, #ih, days, pure, #asp, second, regular, immediate, #rating
+
+Direction 3:
+#eyes, #udi, #akening, Appears, #Theme, #oddy, #ribly, #rend, #pire, Incarnation, alright, #wei, trave, Qiao, loses, #laden, #iminary, #ointed, #jri, #urden, #---------, dearly, #olester, #Swe, #eus, (%, drawn, unable, #dominated, #bed, #orthy, #ceive, #flower, #gd, #utter, advoc, #ffee, Establishment, #ech, occupies, #thal, #edded, #Crash, #ocus, #uffy, #ilt, #deen, #kson, #trap, #ileged
+
+Direction 4:
+#cffffcc, respawn, #CVE, voic, #catentry, #natureconservancy, reminis, dehuman, emot, #obook, motto, #Season, #ndra, #Shares, Niet, jerseys, recol, gunned, antagon, #orem, #Bot, Volunte, badges, #kid, #wo, pestic, REPL, inconven, #Pokemon, Schedule, inciner, #GMT, distrust, #folios, Firearms, Parenthood, Nemesis, Guidelines, overest, #Sov, Badge, massac, #senal, imperson, #BuyableInstoreAndOnline, KILL, #Spawn, #die, #alist, expire
+
+Direction 5:
+#iversal, #atural, #orthy, #Apps, horm, Torah, #Ult, caut, #Reason, #uci, #Spread, #Recomm, #Scotland, succeed, #surv, Reincarn, #Prosecut, #Atl, #Magikarp, #osure, unbeaten, #aimon, #hower, #accompan, #saf, #bians, #Solid, Bei, toget, #ufact, recol, #alogue, unden, Accessed, #Redditor, Athena, #unction, Degree, Doodle, patriot, tunes, Sioux, #apon, #healthy, #solid, #senal, #irlf, #repair, immortality, satisfies
+
+Direction 6:
+Cutter, #emouth, Hos, Hilton, Pav, #forth, Cord, #Requires, Dame, unexpectedly, #mia, Pon, fetus, define, Laur, went, Dominic, drew, #igh, #heter, Stewart, unlawfully, #oward, grabbed, #ute, Barker, obliged, charged, #haven, converge, #wrote, Dear, Fallon, #Reviewer, Saber, #omers, #ynski, slipped, #ew, Ath, instinctively, #ucked, #Hay, argue, Grimes, #isse, #ishly, Dip, Bou, #'d
+
+Direction 7:
+#flix, #aires, #pict, #erers, regress, Goff, #Dial, #tons, #earch, #EMS, #insula, #humans, #imens, #arser, #vae, Tsuk, #wagen, #idae, #arios, #erent, #ector, Solitaire, Confeder, #icer, #case, Roads, #ilater, #OY, #nces, #wives, Corrections, #seq, #itars, #erer, #iaries, #DCS, #pps, tert, #GS, #antes, #Gameplay, #fell, Models, #hw, #gap, captives, #IRD, #Ws, #users, #xes
+
+Direction 8:
+#xual, #Frameworks, #accompan, #faces, #ocene, Leilan, #oft, #nets, #ynthesis, #mobi, #ModLoader, #Magikarp, #Fail, #htaking, #pires, #iaries, Jagu, #skirts, #VPN, #conservancy, #doms, horizont, #packs, squats, #ifles, Dise, #places, sacrific, #suits, #krit, #Mods, #models, #theless, vampires, #xtap, #enegger, #ebted, #mods, #reddits, #Learning, #iotics, #classes, tremend, #Pros, cig, #ologies, #WAYS, Archdemon, valves, starve
+
+Direction 9:
+disembark, #skirts, #Pi, starving, Renault, #bral, Clicker, #chwitz, #enegger, Quit, #ufact, FedEx, quitting, #atari, #antha, #rarily, #reverse, grap, #tumblr, #bart, #Seg, #xit, #reddits, #wcsstore, Scouting, starve, ejac, #OPA, #xual, #ghai, #Gameplay, redundancy, #obin, #opian, Ferr, lawy, srfAttach, #raltar, #joining, #adian, #pees, #Sales, #bage, #cientious, #Games, #Age, Airways, Atari, #Engineers, libertarians
+
+Direction 10:
+was, had, did, extended, saw, now, #C, #3, #G, #K, #+, #7, #O, #A, #1, #E, #), #I, #5, #M, #%, #Q, #9, #R, #:, #&, #-, #;, #@, #0, #B, #(, #D, #2, #F, #$, #H, #4, #J, #*, #L, #6, #N, #", #P, #8, #,, #<, #., #=
+
+Direction 11:
+kick, #eree, #osal, fireball, #igor, #gie, Feb, #usher, #ika, #aban, #icker, #ossus, spat, #address, #uma, #yre, recess, Vampire, #pull, #ello, spectacular, #odge, #eral, halluc, #udge, #onda, slug, shove, #iard, #inar, #utch, decision, #ausible, #esty, grill, #Feb, #lav, #abba, Werewolf, #imaru, #oster, #asket, #iggurat, #kick, #encer, #ee, Leviathan, confrontation, #idable, climax
+
+Direction 12:
+Int, #iken, index, #ination, Palm, #illa, couple, #ion, #ros, 2010, four, top, #A, #1, #C, #E, #), #3, #G, #I, #5, #K, #M, #%, #+, #7, #O, #@, #0, #B, #(, #D, #2, #F, #$, #H, #4, #J, #*, #L, #6, #N, #", #P, #8, #Q, #,, #9, #R, #:
+
+Direction 13:
+#ragon, expire, #osal, #battle, Salv, #oak, refresh, #olt, #stic, Uran, #ruce, fight, trainer, legitimately, successfully, #umn, #bor, #otal, #ear, proc, legend, refreshed, sublime, #chal, #idian, #inho, reclaimed, sacrament, labour, aster, #Ore, element, omit, remake, lawfully, constellation, act, preseason, smugg, Pv, resil, transcend, nurt, onstage, rede, Mushroom, arise, promoter, bear, hunt
+
+Direction 14:
+#aez, #SSL, #perse, #staking, #thood, #Magikarp, #xit, Inquis, #VPN, #ngth, #quartered, Oliv, #retty, Strongh, isEnabled, #FontSize, graphene, #iasm, #argon, #irin, #Thumbnail, #athered, #tons, #Layer, Archdemon, #RESULTS, #TABLE, #EFF, hardness, parchment, antennas, tigers, oranges, #oneliness, Chomsky, #isoft, Tyrann, #Initialized, #GGGGGGGG, VPN, #asio, #UNCH, #estones, #Quantity, optimizations, cynicism, diligence, intercepted, #Charges, #apixel
+
+Direction 15:
+prefers, Enhancement, persists, engages, behaves, expires, exceeds, #/., #keeper, behaving, initiate, promotes, reacts, #ocks, #!., responds, awaits, retains, Overs, #pires, whenever, participates, #taker, bodies, initi, recovers, receives, #uces, ($, activates, #keepers, #keyes, enhances, #!,, #$., behave, #/$, enters, #+., subscrib, #Squ, #*., #Keep, bounces, prefer, Allies, utilizes, #inator, Controller, interacts
+
+Direction 16:
+starters, introdu, envelop, #WARE, Kr, #autions, calendars, #rollers, Kra, #Alert, killers, Kru, #killers, #lasses, #irez, pods, #angled, Register, #idable, #LET, boxes, synd, cameras, Regist, #umerable, letters, #ities, #ubb, #BOX, icons, monitors, #anship, tracks, #ITIES, #itals, controllers, #ded, sockets, lug, principals, #sic, #FINEST, #_-_, bosses, #eries, Ore, #uments, chests, #lished, clocks
+
+Direction 17:
+deposits, #lements, flats, #of, ones, #ieth, #woods, #east, quarters, mo, strands, #/$, cl, Bonds, choking, #overs, Ways, Hills, mills, #tre, weekday, Labor, ($, Nor, Highlands, Share, #ulations, plus, #., East, estate, tracts, #reys, pre, #uta, Waters, Eastern, #lost, digs, tre, elsewhere, #uk, West, #dom, aforementioned, last, Kingdom, #isations, Den, #ovies
+
+Direction 18:
+#\\\\\\\\\\\\\\\\, ILCS, simultane, #enegger, srfAttach, Canaver, #idth, simul, mortg, #omics, #bryce, #iversal, Cosponsors, answ, Frie, #itely, UNHCR, scen, #Quantity, IPM, delim, differe, Volunte, #iatus, #antis, Mahjong, #GBT, #\/\/, #Econom, #antha, #agascar, #ertodd, #eli, #antine, #////////////////, Bulg, Gundam, #VALUE, #antically, maneu, #opausal, #anca, #BTC, #iculture, Deadline, #\\\\, #sonian, #ventures, #catentry, destro
+
+Direction 19:
+#ou, with, #oz, Slug, after, Row, drag, #ide, in, #oss, #ract, #illo, reflected, A, matched, #og, when, at, on, #idal, #rol, #av, #oy, #ell, #'d, #vel, #ow, #erry, #any, including, HP, #in, inside, #ust, pitching, ent, speech, #erson, whose, #,, #and, sp, #ody, beyond, #with, #vious, #ik, along, #ired, #att
+
+Direction 20:
+#GGGGGGGG, #catentry, #milo, #ndra, #ccording, sacrific, #SourceFile, #GGGG, awa, #ometimes, notor, #CLASSIFIED, #appropriately, #reditary, undermin, #pecially, brill, #ngth, miscon, #entious, amen, Ezek, #pez, #ription, #Benz, #regor, #escription, disg, #kef, inadvert, Palest, blat, Jagu, defe, #OOOOOOOO, Haku, #avez, inconsist, acknow, #anwhile, #ecause, #ocobo, #UTC, #":""},{", thous, #gdala, unemploy, #minent, #ilitary, intimid
+
+Direction 21:
+custod, pilot, projector, dealer, centrif, permit, gift, DA, Badge, replica, #ulet, experimental, #cific, #lete, 747, field, repl, ESP, badge, #abilia, generator, resource, fal, souven, incentive, credential, holog, corrupt, lease, hang, bonus, #uctions, DU, voucher, contro, reservation, percentage, compens, hung, needle, suite, malfunction, #duc, #arching, OFFIC, #rium, finite, Pilot, permitting, helmet
+
+Direction 22:
+#furt, #regor, Dise, Palest, nostalg, disadvant, contrace, municip, blat, destro, #OHN, #milo, Ples, defic, #Charges, #DERR, psychiat, horm, #enegger, Frie, conduc, #theless, #umbn, #noxious, #soType, accomp, surpr, #hops, reluct, arrang, #anchester, condem, #htaking, #BuyableInstoreAndOnline, lawy, dissatisf, #CLASSIFIED, tiss, #Engineers, Ukrain, simultane, #merce, #Sov, #Deal, Canaver, #verages, challeng, intimid, #PDATE, #intendent
+
+Direction 23:
+=== No valid tokens ===
+
+Direction 24:
+Adin, #Sov, Vaugh, pestic, #regor, mathemat, advoc, horizont, #ADRA, caut, #isSpecialOrderable, obser, #aeda, #paralle, #GGGGGGGG, #theless, nostalg, ingred, seiz, conduc, destro, detrim, #76561, Strongh, Palest, defic, #accompan, unden, #Recomm, perpend, facult, #bryce, #enegger, #Magikarp, encour, #PsyNetMessage, surv, #DragonMagazine, corrid, sacrific, welf, anecd, #CLASSIFIED, convol, answ, contrace, disadvant, #catentry, #enhagen, Debor
+
+Direction 25:
+destro, sacrific, Dise, contrace, #regor, Adin, #Magikarp, #accompan, #ADRA, #CLASSIFIED, disadvant, #FontSize, conduc, Vaugh, #CVE, #Sov, #abwe, #Recomm, horizont, challeng, #merce, #Ire, mathemat, Jagu, nostalg, defic, blat, #Reloaded, #ngth, caut, #enegger, tremend, #kef, seiz, facult, #GGGGGGGG, #BuyableInstoreAndOnline, indo, #aukee, misunder, helicop, #poons, Volunte, corrid, #krit, ensu, #retty, lawy, #OHN, Gleaming
+
+Direction 26:
+nep, challeng, #theless, #avorite, Frie, #abwe, #illac, #aceae, #;;;;;;;;;;;;, #hower, #enegger, #zona, #CVE, #retty, #merce, #anchester, Seym, #sonian, #bryce, Wem, #hedral, #emale, #pta, #GGGGGGGG, #romeda, #kef, #ngth, #assic, Skydragon, #OHN, #reditary, #mosp, #ullivan, #mbuds, tremend, #ornia, #ocene, #CLASSIFIED, #ashtra, nostalg, #luaj, destro, #swer, #anship, #acca, #FontSize, #alore, #htaking, #furt, acknow
+
+Direction 27:
+assuming, reaching, detecting, #area, excluding, degrading, suspending, #uren, whichever, shaping, #Sty, #called, #estine, #azar, #unc, #starting, their, #currently, Said, #said, #sub, #facing, #80, #into, Ben, inserting, Assuming, the, #has, #east, #articles, reach, #adle, #thens, violating, #iss, #aria, stopping, reaches, ---------, #izu, determining, #ounces, #makes, #fur, #must, delivering, entering, stripping, ca
+
+Direction 28:
+=== No valid tokens ===
+
+Direction 29:
+to, media, May, #/, #es, #,, #C, #3, #G, #K, #+, #7, #O, #A, #1, #E, #), #I, #5, #M, #%, #Q, #9, #R, #:, #&, #-, #;, #@, #0, #B, #(, #D, #2, #F, #$, #H, #4, #J, #*, #L, #6, #N, #", #P, #8, #<, #., #=, #!
+
+Direction 30:
+destro, Canaver, #CVE, contrace, #accompan, mathemat, Dise, #Magikarp, caut, #ngth, #catentry, #FontSize, #theless, #Sov, helicop, #ADRA, Wem, corrid, tremend, #kef, #avorite, streng, #EVA, Azerb, nostalg, Adin, #regor, Vaugh, #xtap, seiz, toget, #Redditor, #emort, Niet, disadvant, #bryce, #cffff, #ItemTracker, Antar, blat, #Recomm, #EStreamFrame, sacrific, #CLASSIFIED, #assetsadobe, #Ire, horizont, #estern, #MpServer, #senal
+
+Direction 31:
+breeding, leaflets, Advertisement, meat, #au, mel, Ba, army, tourism, #ae, manned, Army, cats, photoc, flying, studies, armies, machines, niche, crews, #oes, NHS, flights, advertising, fleet, smoking, species, #os, breed, vehicles, papers, Customers, paperback, Web, marketing, films, eggs, web, mac, research, business, #ern, innings, #ons, offshore, #atio, forces, robots, bon, subjects
+
+Direction 32:
+#yip, #BTC, contrace, disadvant, #lua, #Iv, #xit, #odo, Loans, #Alert, #Ire, #oldown, wearer, #regor, mortg, facult, Loot, funer, Volunte, #Magikarp, inconven, #vironment, #eret, #Ore, #PsyNetMessage, #raltar, #geries, #emetery, #aceae, #orget, #daq, #estate, Ital, necess, #lycer, #Tickets, #Population, #soDeliveryDate, #Lot, #elist, #rongh, #Leaks, foss, #Tact, reven, #esm, Osc, opin, #ombat, perpend
+
+Direction 33:
+#eca, #aby, electroly, #ACA, revolving, #motion, grap, conceal, Oo, Mathemat, #, mirrored, #oman, tied, Pictures, #iferation, mice, Simulation, shatter, Adventure, #ilation, leagues, ty, #ictions, emulation, #Lab, Consulting, #Hi, bould, measurement, centered, ens, measuring, #Reference, overl, #riad, #Motion, mir, #arre, #Running, #mia, #ADD, #ola, #ahi, spec, #Action, arbitration, #opot, Alchemist, Personality
+
+Direction 34:
+Ch, #,, are, opposition, N, #*, in, O, Ag, #C, #3, #G, #A, #1, #E, #), #I, #5, #K, #M, #%, #+, #7, #O, #Q, #9, #R, #@, #0, #B, #(, #D, #2, #F, #$, #H, #4, #J, #L, #6, #N, #", #P, #8, #:, #&, #-, #;, #<, #.
+
+Direction 35:
+=== No valid tokens ===
+
+Direction 36:
+Canaver, #CVE, Dise, #76561, #ADRA, #\\\\\\\\\\\\\\\\, #enegger, Niet, welf, #PsyNetMessage, #regor, #loo, #Sov, #Magikarp, corrid, #uku, #udicrous, #RFC, #DERR, encour, #kef, #escal, #BuyableInstoreAndOnline, destro, #avery, #akeru, #esm, #Recomm, #bernatorial, Orche, sshd, #DragonMagazine, #\/\/, #OPA, #EStreamFrame, #pection, Frie, #ModLoader, COUR, #ashtra, #duc, #sonian, interoper, nostalg, #eday, #baugh, #acus, #oux, #utm, #ertodd
+
+Direction 37:
+#gers, #ge, Trans, #ges, #gments, #asts, #anged, dealt, #ging, Flavoring, Activ, #content, #ms, #ually, plate, short, #osa, #onic, the, content, #A, #1, #C, #E, #), #3, #G, #@, #0, #B, #(, #D, #2, #F, #$, #H, #4, #I, #J, #*, #5, #K, #L, #6, #M, #N, #", #%, #+, #7
+
+Direction 38:
+#oley, #(),, ???, #urities, whichever, Elements, #()., #ngth, retain, fingerprints, #eyes, whoever, ()., Nightmares, #uj, imagin, #ombies, creation, Dimensions, Sunrise, #ensen, #addons, #venants, #amines, #wr, #==, #++;, liner, retains, #snap, Might, Faces, joins, #oine, Dism, #ifiers, #sembly, #finger, implements, #()), #edded, #enh, #*., #vati, #itiz, #ockets, (),, warmth, Trou, transitions
+
+Direction 39:
+streng, #bryce, #DonaldTrump, livest, unden, Roose, therap, mathemat, #76561, #kef, Centauri, #ufact, tiss, #lihood, #artifacts, #Redditor, #Magikarp, Dise, #66666666, facult, #living, hairc, sacrific, #yip, #accompan, horizont, lawy, #married, #SPONSORED, contrace, #catentry, redund, #emale, ingred, comprom, #forts, #BIP, #cycles, econom, distingu, inval, #swer, #Dialogue, #ploma, #thouse, #mercial, #Living, answ, #fal, #senal
+
+Direction 40:
+myster, promot, #adh, mathemat, Kard, #ngth, #etheus, #ihilation, #pherd, #Sov, perspect, #axter, #seek, #dinand, unlaw, suscept, #isconsin, misunder, #bilt, Presbyter, colleg, Croat, #invoke, #ahu, #regor, Myster, #phans, compe, #adle, #pta, ank, #cknow, #berus, #ibal, revived, #ullivan, #uploads, communicated, #keepers, #hend, invitations, #heres, incent, #REL, #nesday, collide, #hid, Jagu, escalate, pestic
+
+Direction 41:
+#ALT, #tor, GAM, #rend, #ASE, #AA, #HL, #soft, #abbit, defic, #SS, Presbyter, #RET, #ADE, #elaide, #olution, #immer, #edge, #ortium, #ENSE, #HK, #Thunder, #A, #--------, #RL, #RT, #eks, #ritz, #wow, #ionage, LINE, masse, #keyes, #usion, #HP, Conference, #MK, hypers, #izards, #ECA, #ABLE, GENERAL, #cember, #urnal, #0, Lumin, #SP, #ENGTH, #ERAL, #isSpecialOrderable
+
+Direction 42:
+=== No valid tokens ===
+
+Direction 43:
+#RAW, #selves, #theless, #minster, #itiz, #heit, #pload, chall, #anship, #vice, #venture, #alg, #Balance, #gat, #CRE, #RAFT, #yip, #atellite, #perm, #enture, #ventures, #bal, #1977, #split, #ngth, #itional, #byn, Spac, #scape, #unal, #eday, #itionally, #lements, #OHN, #tal, #balance, #iances, #Enlarge, Gunn, #pex, #sembly, #TRY, BASE, #aeda, #atown, #aline, #GROUP, #ihilation, #RET, #UAL
+
+Direction 44:
+#theless, #getting, #agnar, #lene, #fab, #launch, #bing, #asons, Reboot, #stood, experien, #Bed, #agher, experimentation, #Rocket, Peer, recip, #ailing, unity, #paralle, #lehem, #Initialized, #Reply, #Cop, #jee, #ourning, #edd, #love, obser, #odder, #Availability, #WORK, #pects, #hemy, #1967, #restling, #jet, #1975, #Reb, #ebted, collaborators, communion, #eva, #irmed, #ilet, #Jo, vib, #hof, #andem, Trials
+
+Direction 45:
+#rawler, #iary, #izzard, #abase, #ulatory, #lisher, prosec, diner, #essen, #lished, sack, #otine, #ramid, #ipop, #lishes, #istle, #onial, #aceous, thinker, #igree, #ulum, #ategory, Tracker, #roller, #risome, #pak, flyer, #izzy, #ammy, #ansom, #ivid, #yden, #ocado, metab, #ittee, #emale, #rontal, #gie, #agonist, #bledon, #ogram, #mma, #opian, #veyard, #orney, #illian, #ufact, #enhagen, #idal, #racted
+
+Direction 46:
+alike, differentiation, #apter, #ISA, positives, #Mis, #FACE, culminating, #Overview, #must, #Standard, #$., #icho, directions, #Rated, POV, #inea, detriment, divergence, #aples, Standard, Banana, concentrate, #pta, STAND, supra, #abo, precedence, bis, #CHAPTER, #emate, antit, Definitions, combinations, #Disney, #ovie, imitation, #contained, EVERY, Discrimination, Introduction, stereotype, #Conclusion, ster, Contin, Directions, reflection, Heads, humiliation, #HC
+
+Direction 47:
+pattern, nor, #ite, brief, #/, makeup, Jackie, used, season, Jet, hold, co, multi, patterns, #Code, originally, code, Nor, #/", held, stand, dry, Structure, SO, Season, took, holds, #Season, Sho, stuff, lighter, cold, regular, #Mo, grad, Kan, period, rough, Flu, constructed, #reve, block, told, awhile, #@, #0, #A, #B, #(, #1
+
+Direction 48:
+=== No valid tokens ===
+
+Direction 49:
+=== No valid tokens ===
+
+Direction 50:
+destro, defic, Jagu, #HEAD, detrim, #avorite, shenan, advoc, #abwe, targ, #Chel, Dise, sugg, #aeda, myster, suspic, #paralle, Strongh, unden, cryst, ingred, #bilt, distingu, mathemat, #artifacts, nostalg, conduc, #milo, #yip, #OHN, assum, #worms, confir, fundament, juven, #omething, conclud, discrep, sacrific, #Recomm, #ullivan, promot, #Magikarp, mosqu, resil, #aturdays, #theless, #hower, #gdala, municip
+
+Direction 51:
+#buster, #onica, Registration, #Reference, #gaard, XVI, organs, #onian, #ify, #idates, #inia, BS, #strom, #rants, #Edit, #issance, #ide, #list, ages, #riott, #riot, #please, Strauss, Categories, #oids, Associates, #Sc, #Management, Arc, #ien, #ectomy, #Entry, #ios, #ienne, #sen, 201, #itus, Arch, #ior, #sense, quarters, Mead, #maid, #rock, Bernstein, Sax, #oid, #ivia, #RAFT, Ogre
+
+Direction 52:
+Reincarn, reconc, #Reloaded, #cffff, Adin, #Decre, Volunte, Unemployment, #natureconservancy, #Args, #Wr, redress, #Lua, Surviv, #accompan, #OX, Wiki, #FLAG, #chu, miscon, Fiscal, Removal, Corpus, #GBT, #ARE, destro, #RG, #Crew, condol, #Database, #ahime, #Magikarp, Cheong, Kardash, #iquette, #Relations, #Contents, #ldom, #Returns, #olulu, #oops, #involved, Wikimedia, #allery, Causes, Transparency, Discrimination, #Repl, #Il, #Tracker
+
+Direction 53:
+#"},", #){, #=\", #Dex, Foo, Baker, unde, </, #)</, yawn, sighed, Osama, Osborne, Zac, #)\, pound, bearded, tooth, #Fed, (%), #")), Kanye, slew, [-, carrier, bite, sne, teasp, #NYSE, rumor, "@, briefly, shortages, +#, Fed, aspiration, #initial, #ylan, <-, #ococ, Libyan, #)=, #aryn, ))), #.</, Retrieved, contaminated, greeting, FedEx, #Reply
+
+Direction 54:
+#aches, ast, #orge, Ann, AM, Canada, Brand, #rem, atmospheric, AK, Av, #ron, #ast, SK, #att, #ach, #obe, Ast, publish, Am, Ak, #reg, #A, #1, #C, #E, #@, #0, #B, #(, #D, #2, #$, #F, #), #3, #G, #H, #4, #I, #J, #*, #5, #K, #L, #6, #M, #N, #", #%
+
+Direction 55:
+=== No valid tokens ===
+
+Direction 56:
+=== No valid tokens ===
+
+Direction 57:
+books, readers, #, quotes, resc, honors, citations, benchmarks, resources, literature, #C, #A, #1, #), #E, #3, #G, #I, #5, #K, #M, #%, #+, #7, #O, #Q, #@, #0, #B, #(, #D, #2, #F, #$, #H, #4, #J, #*, #L, #6, #N, #", #P, #8, #,, #9, #R, #:, #&, #-
+
+Direction 58:
+od, bio, Tex, manner, #aint, dra, sou, disputed, apparent, #ner, #ier, church, #eness, #ologist, #ain, #age, #os, ultimate, #ator, last, Cabin, #ocr, offensive, #aya, #iry, removal, #ack, #iery, #og, Maryland, #icle, ph, #ahan, hygiene, penalty, #img, vice, fur, soup, identification, Missouri, anim, pub, #od, quest, ad, razor, #ology, priest, meat
+
+Direction 59:
+#kef, #ADRA, #Bey, Kazakh, Adin, #Magikarp, #GBT, #ndra, destro, hurd, Nobel, #HCR, horm, #Romney, #imens, Gingrich, #GROUP, #erto, #gyn, #CVE, #HAHA, #Cub, contrace, Rove, #ktop, #emet, #Tes, caut, #entanyl, PACs, #TeX, #VICE, blat, fortun, lawy, interns, #maxwell, #dump, #Glass, dele, #Buzz, #wx, Boehner, #Mex, #bryce, #estern, #SPONSORED, RNC, coh, #aston
+
+Direction 60:
+St, valid, sensitive, exact, #est, d, about, critical, John, Matthew, slightly, test, #A, #1, #C, #E, #), #3, #G, #I, #5, #K, #M, #%, #+, #7, #O, #@, #0, #B, #(, #D, #2, #F, #$, #H, #4, #J, #*, #L, #6, #N, #", #P, #8, #Q, #,, #9, #R, #:
+
+Direction 61:
+absolute, am, energy, next, instant, Qi, trib, #hest, ultra, speed, #quant, #est, Tao, unw, interstellar, #ilt, nothing, as, tips, impatient, over, grace, Aether, sector, incredibly, Origin, extremely, industry, dated, side, skin, tim, mass, Transport, super, time, this, potatoes, terms, eye, early, very, don, soul, a, culture, motion, phase, immediately, energies
+
+Direction 62:
+#ox, #od, #osed, #op, #arious, #anced, #odon, #amed, #q, #art, #eryl, #ar, Stub, #zed, #leted, #ova, #rett, #oss, #ack, #uments, #icrobial, #ody, #plus, #oxy, #oid, #ath, #edia, adjusted, #oped, #og, #ounded, #ella, #uted, #aith, #igm, #uss, #xy, #reed, #ol, #illa, Driver, #ahi, #lim, #oot, #oping, #ens, #quant, Referred, #ular, #ared
+
+Direction 63:
+#ominated, #ooters, #ona, #ai, #gon, THR, #ieu, #ief, Salman, casts, #ushi, #irs, #bits, #allah, #arius, #udeb, #ashi, Shu, #amaru, Haj, #udi, #jobs, #retch, #ulu, #SHA, #isks, #loads, #oun, #ummy, #OO, #zar, #OV, #rov, #ani, #na, #arten, #az, lakh, #oot, #oodoo, Movies, #BTC, #aged, #za, #load, #oku, #odi, #shared, #hid, #atu
+
+Direction 64:
+Supreme, sue, tragic, Live, ver, customers, customer, grieving, killer, mourn, sad, complaints, suicide, Legal, Pat, strict, Till, contractual, Update, concerns, witness, Europe, error, disputes, Jihad, Guant, legal, anecdotal, retail, troubled, Court, record, lament, Study, general, tort, football, test, Guard, store, lit, rumor, killed, beef, #OV, Cars, assurances, strictly, killing, selling
+
+Direction 65:
+Canaver, Dise, Vie, #cule, Valhalla, #hedon, Reincarn, #ipolar, #avorite, #yss, #selves, #DAQ, #JM, #\\\\\\\\, #enegger, #aeus, #itia, #hester, #ruciating, #abwe, VIDE, #terday, #anasia, #MpServer, Zucker, #anke, dece, Enh, Pike, Paste, Proceed, #obyl, #algia, spont, Gerr, #assetsadobe, #orsche, Utility, van, #emort, mirac, #regor, #sle, #anchester, Bei, #llan, #theless, Jehovah, #accompan, #ffield
+
+Direction 66:
+Select, Combined, #>,, #Select, combination, Sa, #ctions, rundown, #rely, #since, #ection, #ough, combined, Delta, #tap, favourite, combo, #olution, preview, #mega, #timer, Overview, closest, source, since, Sunshine, favorite, Summary, Fin, #ctuary, Wish, haven, #ashi, #summary, recipient, toughest, Hope, pickup, Preview, averaging, Needs, recent, untouched, #.;, tap, overall, specialist, signature, widest, unde
+
+Direction 67:
+dreadful, revelations, verdict, #cliffe, #bottom, #whose, yielding, penalty, Dante, whose, handled, fared, #=(, Mos, revelation, awful, suspension, appearing, blockbuster, powerhouse, guid, showdown, suspending, acted, tough, wra, responded, damaging, #gro, #device, poisonous, dropping, #atum, coming, #needed, #tel, bon, likened, Wy, questioned, Ake, Tart, #backed, reinstated, found, reaching, joining, disagreed, struggled, dismissed
+
+Direction 68:
+level, game, #cy, surf, election, creation, quality, #ural, #kind, Reform, #istance, establishment, ability, balance, device, rep, #ency, wave, kick, activity, right, #erer, map, tri, damage, anti, republic, #[/, kind, relationship, form, credibility, sub, political, sort, Unity, resur, #upid, Flood, disaster, trip, performance, #ican, unity, #ure, save, Portal, wrong, gaming, vessel
+
+Direction 69:
+backed, walk, consistent, preferred, #GT, #like, Techn, Min, #iku, typing, #iki, funky, #asia, found, #itation, #supported, Found, International, detected, respiratory, walks, series, min, Est, realized, #ite, recognized, calculated, Stella, based, alternative, arch, demonstrated, thermal, consistently, #ium, PC, Ed, Series, Pat, Prof, OC, #ash, expressed, walked, noted, Ph, DK, AM, fared
+
+Direction 70:
+including, #oring, #,, #ached, *, where, 2016, now, SP, An, 2017, O, #">, #%, non, if, #10, A, #/, the, to, and, protect, how, o, currently, current, &, without, The, 2018, exploration, 10, pre, |, open, #md, #., #;, defend, #@, #0, #A, #B, #(, #1, #C, #D, #2, #E
+
+Direction 71:
+line, invitation, subscription, side, #star, #uster, event, September, Ast, #ny, Nov, #hor, pret, role, past, #side, powered, Cap, country, #ory, selection, affected, whole, #out, roles, #eria, #board, com, #sky, jump, cancelled, Sep, Rev, #ust, coming, available, open, Book, next, interrupted, Side, #az, early, earlier, star, entire, book, leadership, surface, counter
+
+Direction 72:
+Berks, #oston, #isSpecialOrderable, #abama, #alez, Winc, #taboola, #ovie, redund, #ogene, #steen, #wi, unemploy, #EStreamFrame, #ensical, #buquerque, wre, #trak, #rists, #intosh, #ptin, #arios, #enhagen, #achu, #mercial, landfill, #WARE, #CAST, iP, disob, #esses, #ologne, #awatts, retri, #ozyg, #hovah, nep, whim, #racuse, ming, contrace, #iewicz, #PsyNetMessage, #sat, #hello, #Statistics, Salvation, #ergy, #RESULTS, #-|
+
+Direction 73:
+Krug, ante, #CONCLUS, fatally, #ERROR, #lay, #ouri, #anca, #uka, Graph, causation, #omore, #agi, #Mic, #osta, Nobel, contempor, #CVE, Vick, #dll, MEM, Derby, Coke, mortg, Millenn, Kot, #Hig, #cig, mayor, decre, newer, unmist, damned, brand, SIG, conclusion, logical, obedience, plainly, clear, #Advertisement, pci, exits, error, #udo, graph, #ouf, MMR, glim, proof
+
+Direction 74:
+=== No valid tokens ===
+
+Direction 75:
+Ragnarok, #ibilities, #oard, #GBT, #cised, #anium, #MAG, deregulation, #itized, defund, suits, #DEC, dism, confinement, #ARB, Funding, arsen, #Management, Agenda, reinvest, #glomer, Nightmares, #qv, #Cath, "$:/, #eneg, cath, #ocument, #cens, #Magazine, #oaded, repatri, Archdemon, #adium, capit, Leadership, Balloon, blackmail, Codex, #funded, circumcised, thro, skirts, dismant, #woods, Occupations, #)=(, lows, ART, horizont
+
+Direction 76:
+generation, #->, #., in, #":[", are, to, includes, relative, on, as, has, super, include, ones, for, No, and, if, or, surface, node, Rel, create, creation, require, 10, #,, move, run, is, result, of, feed, economic, stuff, roles, growth, including, requirements, will, 20, #@, #0, #A, #B, #(, #1, #C, #D
+
+Direction 77:
+#Reloaded, #Magikarp, nodd, #Redditor, tsun, destro, #hyde, #wcs, #artifacts, Seym, #swick, mathemat, #regor, blat, corrid, #isSpecialOrderable, sacrific, #quickShipAvailable, #lihood, #krit, fortun, #chev, #ulton, #hower, #OHN, #enhagen, #pas, #properties, fert, shenan, Jagu, conduc, nep, cryst, #teness, #aeda, unden, helicop, Leban, #theless, #bringer, Celt, #uese, Krug, gren, #osher, conclud, #doms, Cheong, brill
+
+Direction 78:
+destro, princ, obser, contrace, mathemat, caut, psychiat, ensu, Dise, differe, #theless, #baugh, #Recomm, advoc, #acebook, #abwe, #Magikarp, conduc, incorpor, unden, challeng, municip, disadvant, #ournal, #CLASSIFIED, #OHN, awa, Citiz, welf, horizont, conclud, #accompan, seiz, manufact, streng, #shed, desper, adolesc, Adin, sacrific, simultane, includ, helicop, pregn, Vaugh, subsequ, describ, #atever, #estyles, Yose
+
+Direction 79:
+individual, non, overall, successful, most, immediate, ones, Asian, Arab, time, Av, financial, investment, Tar, highest, human, #A, #1, #C, #E, #), #3, #G, #I, #5, #K, #@, #0, #B, #(, #D, #2, #F, #$, #H, #4, #J, #*, #6, #L, #M, #N, #", #%, #+, #7, #O, #P, #8, #Q
+
+Direction 80:
+populated, #imeters, #itsu, {:, marked, labeled, #itionally, routes, Transgender, logging, broadcasters, dissent, "{, Residents, Homes, populations, #arians, Gallup, deadlines, polls, broadcasts, Releases, #ogens, #EL, #errilla, residents, marginalized, Conflict, #alking, #ettings, #INC, #orian, {{, Santos, #Build, turnout, route, ESL, validated, deadline, Dialogue, fuelled, #onite, attendees, caucus, #oric, TL, campaigns, override, paints
+
+Direction 81:
+repeated, Pret, #aver, attempted, tried, again, #hots, had, continued, failed, hots, #Was, struggled, did, breakout, #was, face, jun, once, Intermediate, was, defences, clashed, strugg, repeatedly, overcame, Was, Express, succumbed, showed, first, looked, reapp, finally, dock, #again, began, appeared, twice, encounter, encounters, depth, senior, reiterated, #face, mini, #tsky, tries, remained, #until
+
+Direction 82:
+princ, Grimes, #LESS, #yout, horizont, challeng, #catentry, #ILY, Beir, Citiz, Casual, #typ, #estern, Aman, #reditary, CPR, Tanz, Dres, #rouse, Palestin, Franch, #agonist, #OHN, Mayer, msec, #GBT, Canaver, #nant, Brun, #quit, #asio, #uphem, Wem, #ately, horm, #ALD, #Lago, Krugman, charact, brill, Kissinger, tiss, Seym, acquaint, #mbuds, #CAR, Sov, #'';, #prone, #cas
+
+Direction 83:
+#undreds, #ggles, #CVE, #retty, Somers, #nces, {}, #blogspot, #bj, #poon, #haar, #emort, #aminer, #hra, #ataka, #angler, Transparency, #xtap, #ertodd, #ESCO, vou, #iversal, Wem, #OTAL, #Dex, withstand, #CRIP, #loo, #atever, glim, perpend, #htaking, #ription, rig, #-+-+, #utsu, #olphin, somew, #Austral, Cheap, suite, #missions, #Relations, impunity, reintrodu, Showdown, #emo, Rational, truck, WORK
+
+Direction 84:
+#Sov, #ibal, #efe, #CTV, RFC, #Bang, reacting, taxpayers, Mund, Bang, aggro, Policy, Revision, bureaucrats, #videos, #isol, #NB, #emort, EDIT, Corrections, #Brain, Edwin, #verbal, Scient, discretionary, adhesive, #immune, Lenovo, deteriorated, #archment, escalated, langu, #itech, #monary, monkeys, Officials, #mund, Dell, #lesh, tongues, escalate, bleeding, #dit, saliva, reacted, deterior, wrestle, #direction, #afety, Tiffany
+
+Direction 85:
+essentials, #ommod, #king, critical, Fl, #azed, relevant, free, keen, ALP, Fat, recognised, related, #ocial, SEE, fl, vital, their, important, your, #insured, elements, MC, #Menu, #yp, #Ins, #acist, seized, #uzz, #alo, parole, supposed, #Typ, #azz, #ells, Sk, required, excerpts, perceived, #ainted, selected, some, #atory, #essential, vehicles, essential, #ole, sure, Mot, compiler
+
+Direction 86:
+#views, #ification, sinking, Lod, sidel, #spl, #view, div, #killing, blockbuster, dat, #ysc, Clement, #nl, #Exit, HL, del, ax, #ements, Tigers, #ionage, outlook, suprem, #/$, stra, Coming, #omic, Widow, retirement, #killer, lod, #imation, manag, #monster, #pent, #ixel, #ments, #opolis, moreover, #/#, cellar, forecast, #ners, Towers, eventual, boast, imagin, es, dossier, ed
+
+Direction 87:
+indo, #Sov, #artifacts, juven, Osc, #chwitz, Beir, obser, #CLASSIFIED, #hooting, #jri, #furt, #iversal, destro, awa, #hops, #Ore, actionGroup, mathemat, wig, #peror, #cong, #anship, Dull, #ategory, #ngth, Scare, Overs, #anmar, disg, #urat, #Santa, #ashtra, convol, hon, #iculture, #abre, #bably, suspic, #ilaterally, #enegger, #amera, #RESULTS, #insula, #Newsletter, Afterwards, Satanic, #NSA, #secut, psi
+
+Direction 88:
+#qus, #CRIP, #umatic, Schwar, #lished, #catentry, #etheus, #ifference, #uffs, #llo, #heit, #luaj, caut, #jury, #aq, Haku, #ciating, #oku, #uden, #ojure, #ryu, #effic, Krugman, JPM, #resso, #uti, #uckland, Witt, Shib, menstru, #ffee, #uku, #clusions, #wered, #bj, #ynthesis, puzz, #arcity, adip, #efficients, #uary, #uffed, #romy, #upuncture, #udes, #ocker, dissatisf, #unia, #ancies, #Tweet
+
+Direction 89:
+Carbuncle, duty, Duty, chau, "%, #oco, actionGroup, #respective, #duty, oldest, #atre, en, duties, advoc, #ensen, #avorite, #oler, heaviest, honorary, #ansen, listed, #oret, #reon, #bourne, Cabin, #ffen, Percentage, #oft, inactive, favourites, surprised, #VEN, badges, #loo, invited, #OLOG, #oux, #entials, #FA, Rated, Required, favourite, invitation, unaff, honored, #belt, Supplementary, equival, Democr, enthusi
+
+Direction 90:
+#pod, #alore, #arger, #rez, #nings, #dem, Krishna, #eff, #crow, arrang, Piper, Shank, #folk, #Allah, #arf, #ipeg, #tor, thirst, #xon, Wan, #halla, #isode, preparations, #kens, #larg, #bach, #bel, Patreon, #thro, Brach, #forth, parting, nonetheless, #DEM, #Unity, #cape, #tis, #edin, #Fest, #bird, merging, PAX, #cum, #zee, #Mania, redes, #unity, #lr, #MK, #olini
+
+Direction 91:
+#bats, THANK, BACK, #HHHH, BOX, #helps, hugs, #panic, #Continue, sleeps, LAST, #UTF, #MY, mum, Illum, php, Afgh, #happy, Kush, Gujar, AUT, #Panel, #bat, TCU, #allery, #appiness, #BACK, GENERAL, #Happy, Cron, #php, #ierrez, HEL, knots, SUPPORT, PLEASE, smiles, #yright, #emi, #reddit, mysql, compliments, #MH, PERSON, #SHIP, Caucas, happiest, LOW, adv, #mys
+
+Direction 92:
+#sein, somew, #gewater, #atform, #\\\\\\\\, Teddy, #ullivan, helm, #ivably, playable, #qq, #DON, #clud, #STON, #ebin, #etts, #uable, Explain, val, Forbes, #ENG, #wered, #resents, disguise, #wards, #xes, #uably, #TAIN, #vi, Jew, Whale, #niper, #give, companions, Mortal, #val, #angible, #ptroller, #lled, #rie, #mens, Fran, #nels, #coll, #esides, Carly, #ttes, titan, #pen, #cture
+
+Direction 93:
+#areth, #alez, #KNOWN, sacrific, #acha, #ogether, #enhagen, #olicy, #eus, #heres, #Unity, chilled, #owship, #lees, #endor, Everywhere, #ledged, collaborator, #thens, #houn, #forth, #raint, #ortium, Pref, innocence, Prec, #ulic, #ocate, #cham, #psey, #ellen, XD, #gerald, Liberties, #HEAD, Annotations, unden, #itialized, Merge, #odox, #ammy, yea, #clud, #insula, Hemisphere, #chnology, #ername, Alchemy, #pec, Juno
+
+Direction 94:
+Activity, guest, Conference, #G, #C, #3, #+, #K, #7, #O, #R, #A, #1, #E, #), #I, #5, #M, #%, #Q, #9, #&, #:, #-, #;, #<, #@, #0, #B, #(, #D, #2, #F, #$, #H, #4, #J, #*, #L, #6, #N, #", #P, #8, #,, #., #=, #>, #!, ##
+
+Direction 95:
+destro, #insula, #terday, mathemat, helicop, #verages, #veyard, #ashtra, #tons, #merce, #earable, #bilt, #staking, nodd, adolesc, #ufact, #allery, toile, #zzle, tremend, #geries, #iversal, ingred, #catentry, #GGGGGGGG, #////////////////, #ursday, suspic, dexter, #haps, fundament, skelet, Frie, #++++++++, #////////////////////////////////, #apego, #ategory, #rift, #uesday, tiss, Strongh, #romeda, welf, #atform, #Border, scen, #lined, #milo, #++++, #htaking
+
+Direction 96:
+Turk, #aux, #ney, #agh, literature, #CON, #land, #rc, #more, Pit, assembly, #ness, #ush, clause, precon, #neys, shared, Iowa, Task, picture, custom, Sci, env, Node, call, Pub, cod, representation, #ai, #ander, #herry, MS, Minnesota, allocation, Pan, Network, Dev, Louisiana, Risk, #town, alloc, task, commentary, panel, Election, Bangladesh, #air, Anim, language, Call
+
+Direction 97:
+#cart, #ridges, NIC, NZ, Cruel, ICC, mould, #rid, #orrect, lungs, Nare, #agically, Palest, CF, #drawn, #hearted, #liest, nowhere, #Sky, #ubby, #usk, #duct, tooth, OCD, #Roaming, Crash, perish, #oster, colder, slic, cooler, worse, #unks, #ockey, #KER, GC, warmer, ridden, Boxing, assassinated, dri, Vim, AQ, #intent, #lier, #isations, cooker, #reek, nick, Kou
+
+Direction 98:
+Nanto, Luxem, Belg, #Sys, #collar, #println, #hiro, disg, #redits, Guerrero, destro, #enta, #imar, #=-=-=-=-=-=-=-=-, #pez, detrim, Miscellaneous, Lauder, #anol, #rentices, #bg, newsp, Luxembourg, Karin, #yssey, horm, #detail, describ, #)</, #autions, #sie, #Ing, #OHN, #Shares, #////////////////, #Legend, Bie, #ja, #Ingredients, toile, submar, Fenrir, Manz, #aura, #mbuds, #ean, #swick, tiss, Mono, #htm
+
+Direction 99:
+#ouri, #ean, Edwards, #oul, contrary, #ure, Non, #yl, aligned, ham, background, #ion, non, mer, Gary, opposite, #ld, #ally, er, IR, spot, #ola, #ampa, #ially, #yle, #yd, #iri, De, #um, #etic, No, #ird, #Ohio, related, Er, #ograph, suitable, #eng, #ila, #ette, #ana, #Jean, purposes, hell, #non, #aya, #oland, twin, relief, #ish
+
+Direction 100:
+#arians, #ktop, algae, #ORPG, #Redditor, #++), #worms, #CLASSIFIED, Adin, #igers, #assetsadobe, #MRI, #aghd, #inic, #abe, #staking, #Tile, hijab, #\/\/, Wilkinson, #riott, Cove, #Tes, #haul, Architects, #asio, Grimes, #ineries, #uve, Dise, selfies, Roose, #agnetic, Antar, #ulic, #rites, Trafford, #ommel, Wembley, #oresc, Rahman, mathematic, VICE, #adish, #acus, #ridges, #76561, #warts, acronym, surv
+
+=== NEGATIVE SINGULAR VECTORS ===
+
+Direction 1:
+#,, #-, the, and, #., in, a, to, (, first, at, time, ", new, of, two, on, all, or, so, as, #:, that, G, current, actual, real, H, this, other, for, public, with, one, F, S, by, long, end, most, L, #/, C, D, N, more, just, non, is, not
+
+Direction 2:
+horizont, conclud, ancest, Jagu, ank, helicop, submar, paran, horm, ensu, lawy, Mehran, fundament, #ngth, sacrific, surpr, coerc, newsp, Pengu, contrace, nostalg, ashore, #etheless, challeng, Citiz, Frie, therap, nodd, compe, ($), nutrit, opio, #cellence, insurg, pregn, municip, Adin, Enhancement, ********************************, obser, neighb, predec, cig, reperto, ingred, cryst, princ, defic, perpend, #.''.
+
+Direction 3:
+FDA, cement, recomb, decimal, goalt, #azeera, TEAM, EQ, Geoff, bilateral, #CHAT, #VALUE, \', #\/\/, initials, Rare, CW, Geographic, catalog, crit, partName, patented, repl, NCAA, interpersonal, #ilateral, Paste, Sims, Logged, #Commercial, carbs, innov, #isoft, #eln, storefront, Kraft, #assetsadobe, RPGs, #EngineDebug, #seys, Sport, QR, #ately, Photoshop, MLS, che, touring, #Nintendo, Smithsonian, blockchain
+
+Direction 4:
+#heny, whoever, #cong, #ender, #erning, #ful, Christ, #enson, #zed, Christine, #any, #ire, #uations, it, #unny, Claus, #Christ, #agle, #arkin, All, #arella, #olith, #arrell, #enable, the, Whoever, Can, Drag, when, Anyone, #licks, HRC, #iken, #usk, anyone, #enders, #.;, #ird, Drawn, acceleration, acceler, #redible, #ither, Ge, #can, #)=(, #irth, Pett, It, #rus
+
+Direction 5:
+dreaded, Schwar, deterioration, #hift, dull, deterior, chronically, Lack, deteriorating, incorrectly, poorly, ugly, slowdown, degradation, #mingham, lost, shaky, impair, Trou, volatility, brunt, #Short, dreadful, instability, sluggish, #UME, mis, horrendous, weak, imbalance, weaker, shortfall, brittle, backward, fading, deficits, dim, Graham, fragile, Bou, downward, disadvantage, 01, Lank, Mis, harb, terrible, str, awkward, negatively
+
+Direction 6:
+#Contents, #assis, xp, #taboola, #Init, restitution, #CHA, Votes, Rebirth, STATS, Characters, #paren, #ombs, achievements, VC, #terness, #COMPLE, #igor, #ventures, #YE, #elligence, #catentry, coffers, #STD, #Mission, capitals, venom, Roose, confidence, sarc, remed, occupancy, #CV, #redits, #isma, locom, blot, backgrounds, Annotations, intelligence, EVs, capacities, merit, chests, #lvl, #anium, #[_, #geries, #capacity, negatives
+
+Direction 7:
+#ded, constantly, full, superb, sheer, excellent, truly, speedy, #cellent, ready, heartbeat, commitment, tirelessly, maximum, courage, fully, bright, everlasting, responsibly, meticulously, alert, hereby, ability, vibrant, compliment, openly, terrific, literally, immense, quick, #roud, always, faithfully, boldly, #andan, tremendous, discreet, flexibility, hearty, renewed, broad, exceptionally, unparalleled, signature, explos, incredible, blazing, instant, permanently, outstanding
+
+Direction 8:
+national, #gu, interim, someone, deputy, ART, first, Asian, reserve, AP, Jen, reapp, #dis, #iew, newly, red, dis, reass, Just, Ben, ph, ABC, former, ear, an, att, rear, arrival, #vance, advance, Joshua, pie, safe, panel, GA, two, res, WA, Tim, no, prepared, Michael, Sab, Sharon, Sally, #@, #0, #A, #B, #(
+
+Direction 9:
+Laur, inside, special, trio, longest, shaped, supported, extract, sourced, #rik, covered, centered, sponsored, provided, source, kernel, main, Bowl, signature, till, center, located, outside, Center, portion, above, Pres, #formance, generated, present, DOC, protector, 45, #fore, influenced, supplied, ups, sources, centre, related, within, extracted, inspired, longer, known, L, contributed, #der, responsible, until
+
+Direction 10:
+#Recomm, Adin, #ADRA, #ilitary, #accompan, #kef, #Sov, #-+-+, Volunte, #\\\\\\\\\\\\\\\\, #OHN, Zup, contrace, #CLASSIFIED, pestic, destro, #GGGGGGGG, #eln, #APD, #ription, #CHAT, Canaver, #Mp, vou, #abwe, caut, #idth, #catentry, Celt, #ashtra, #esm, #VIDIA, #paren, #illac, Wem, #userc, #PsyNetMessage, #GBT, #acebook, #mares, rapp, #staking, #xtap, #////////////////, #wcs, #bernatorial, #iosyn, #ngth, #estyles, #DCS
+
+Direction 11:
+#abouts, Types, #cycles, Sections, algorithms, definitions, formulas, legions, breeds, #Types, #Studies, #worms, Flags, Classes, #forums, anecd, equivalents, treaties, knots, #tics, #storms, Articles, natives, detrim, Extensions, nests, registrations, bots, #Recently, Patterns, #forms, audits, suits, types, warranties, Definitions, #blocks, crossings, indices, Locations, programmes, #Blocks, creations, #suits, arrays, #bh, #wcs, warheads, NGOs, Components
+
+Direction 12:
+territ, #abwe, #staking, #Sov, contrace, Adin, #etheless, #afety, manufact, Dise, #sonian, #uscript, #aeda, #icter, #Magikarp, destro, #loo, Volunte, #artney, inconven, cumbers, #ufact, #trak, #owship, #Ire, #xual, #yip, unden, #thur, dilig, #paralle, #GGGGGGGG, #ometimes, #bish, #merce, #isconsin, #accompan, #verages, perpend, bottleneck, #emetery, #senal, #olicy, #tch, indo, #etheus, #Gameplay, #APD, #emonium, experien
+
+Direction 13:
+#peak, #ctors, #perature, #humans, #abouts, Nights, #CLASSIFIED, #maxwell, #tons, mamm, #anners, VIDEOS, DAY, #Americans, #ozo, #cms, #izons, Day, #Anyone, #ackets, #assadors, Acting, checkpoints, #cedented, #Subject, #herty, #raviolet, Berman, Subjects, quotas, Thousands, #locking, #BILL, #ateurs, Hour, #ishers, #Emily, timelines, #iency, Syndrome, #ippers, Kare, #VIEW, #assies, #asms, #MIC, #auna, #itizens, #hz, operators
+
+Direction 14:
+LI, mid, co, general, RE, #arre, drug, General, #kit, WA, Dek, U, hall, auto, Sed, North, #kie, Ame, Army, East, West, Mot, Capitol, Wake, US, Be, hom, corrections, Wal, Re, forced, #hom, Everett, #aine, #Miami, de, controlled, dep, Mid, Tra, AP, Cooper, Bed, closest, Toy, #oa, most, National, #stre, itself
+
+Direction 15:
+#chart, vowel, #orno, #feat, metric, BlackBerry, rhy, slang, ILCS, chron, #Ont, dexter, Canaver, #SHA, #ibaba, #Grade, #stem, #aucuses, #SIM, Gallup, fascinating, #itamin, #bernatorial, #VPN, #ignt, HDL, #EFF, #Episode, #uable, #rito, #ivil, #Thom, #entin, #irus, #trace, #sexual, hapl, #dylib, plagiar, #shed, Rational, debunk, damning, #CVE, #wx, anonym, Nielsen, #ayson, VMware, footnote
+
+Direction 16:
+#ommel, #IFA, #lex, #RET, Cheong, disagrees, #ibal, #HS, #anyahu, #hent, #ullah, freel, hemor, Simulation, #imei, #avor, #HM, Maher, PTS, #iang, POV, #anu, Gamer, Analyst, Seah, adherent, Submission, #Quote, #gamer, skept, #VPN, #fan, Writers, DPR, #dh, #HCR, McMaster, volunt, Maduro, #EMP, detachment, #puff, experien, Hume, #Gamer, IDF, MLA, #adobe, Quake, USL
+
+Direction 17:
+#CVE, Canaver, rhy, CVE, #TeX, #kef, respawn, #catentry, destro, #APD, #gently, #sonian, Meter, Greenpeace, #apter, #ratom, malfunction, #mA, #meier, #adiq, #afety, Volunte, Cue, #osponsors, #rity, #infeld, #ADRA, HDL, diagram, combust, #oln, #meter, #vier, #Sensor, CLI, interoper, Metatron, incentiv, #ospons, metric, #abiding, #blance, contestant, #cific, accompl, drummer, #chart, #hement, GPIO, deflect
+
+Direction 18:
+tail, Mag, Nor, #does, #has, #ock, Tor, Nat, Gr, rest, #to, warmth, Acc, #ver, salts, ears, inner, Mal, Hat, des, Kas, ar, tor, acc, either, #oka, Kur, #URE, Ok, #hab, Kor, EPS, Sh, certain, spring, Kenn, faith, Su, sp, Kaz, Mer, #har, #usk, Ak, legs, secrets, entire, various, sh, services
+
+Direction 19:
+#swick, #FontSize, #hedon, #itialized, #bryce, #xtap, #hovah, #Recomm, #ecd, #Reloaded, #aeper, #BIT, Strongh, #Thumbnail, #nces, #theless, #OLOG, defic, #ahime, #asus, disg, #ITIES, masc, #Sov, outper, #zee, #duino, #amins, #qs, #gif, Causes, #reditary, #PB, nostalg, #idth, condem, #GGGGGGGG, #zees, #OHN, anecd, #lasses, #ernels, obser, #aukee, #ividual, #OLOGY, Basics, #etheless, #izoph, #izont
+
+Direction 20:
+Premium, #aware, #ins, #ash, #az, #omi, sisters, Base, #esh, base, #acy, #rix, #ice, #ore, #camp, #ania, #ims, Scout, Lake, holiday, bloc, republic, #inder, #Base, stayed, #aky, Project, trial, #iles, #asons, collection, territory, tier, Collection, #TV, Scouts, Point, domain, #aper, spy, Exp, Choice, adjusted, models, #oo, siblings, moved, #ia, Stay, #ities
+
+Direction 21:
+Americ, antioxid, #_-, #bia, lang, #Tea, #}}}, #TextColor, toget, Hemp, #retty, #olon, #Flags, #AAA, #Americ, #sym, #Els, #guyen, #{", #ocr, #Js, #NSA, #iesel, #uve, Wax, #args, #abl, #arta, juven, toile, #Has, #clinton, laun, Afric, #oller, #JV, #[[, #Mah, #otonin, #iesta, Amend, #esson, #eyes, #Nap, #roots, ##$, #TRUMP, Tid, #<?, #fax
+
+Direction 22:
+the, #7, #G, #O, #C, #3, #K, #+, #-, #R, #;, #A, #1, #E, #), #I, #5, #M, #%, #Q, #9, #:, #&, #., #<, #=, #@, #0, #B, #(, #D, #2, #F, #$, #H, #4, #J, #*, #L, #6, #N, #", #P, #8, #,, #>, #!, ##, #', #/
+
+Direction 23:
+#CVE, #kef, #ADRA, #OHN, #TPPStreamerBot, Adin, #Sov, challeng, #ngth, #accompan, horizont, #abwe, destro, #CLASSIFIED, mathemat, #regor, #GGGGGGGG, caut, #FontSize, #anchester, #insula, #enhagen, #soDeliveryDate, #////////////////, #enegger, #aeda, #jri, Vaugh, #Recomm, municip, #anship, #GGGG, #aeper, #-+-+, #yip, corrid, #sbm, #isSpecialOrderable, Beir, #artney, #ModLoader, #Magikarp, #Ire, #rity, #lihood, seiz, #edIn, blat, #arnaev, #PsyNetMessage
+
+Direction 24:
+=== No valid tokens ===
+
+Direction 25:
+=== No valid tokens ===
+
+Direction 26:
+is, drawn, has, will, at, com, seeking, being, as, comes, in, are, en, there, going, per, un, giving, draws, drawing, moving, currently, according, instant, taking, on, not, #,, gets, he, #@, #0, #A, #B, #(, #1, #C, #D, #2, #E, #F, #$, #), #3, #G, #H, #4, #I, #J, #*
+
+Direction 27:
+#wcsstore, ransom, #BuyableInstoreAndOnline, #soDeliveryDate, #Works, imprint, #plet, #assetsadobe, Insurance, rhy, Ventures, #Aid, Vaults, #fty, vodka, prank, #rentices, Jehovah, #anship, #cffffcc, Jiu, emoji, mate, #icion, swast, #soType, respawn, Lisp, welf, organisation, restaur, LIMITED, altru, bitters, Trafford, Guild, #park, Conserv, #andom, paperback, motivational, #geist, Productions, #Cash, Lann, #iHUD, #LOCK, hatch, Crest, palate
+
+Direction 28:
+#Sov, conduc, #regor, #aeda, #FontSize, #enhagen, destro, nep, #jri, Adin, #retty, nodd, mathemat, advoc, agre, Surviv, unlaw, blat, horizont, sacrific, #cellence, #Reloaded, unbeliev, #berus, #paralle, #Initialized, defic, conclud, #accompan, #itialized, #cember, #alach, #luaj, Palestin, myster, Jagu, #teness, #accompanied, #GGGG, #GGGGGGGG, #OHN, submar, Strongh, #iqueness, #Redditor, #luster, #enegger, #kef, #Magikarp, extraord
+
+Direction 29:
+#ADRA, #Recomm, #soDeliveryDate, #Sov, destro, #theless, #Reloaded, #paralle, #abwe, defic, #OHN, #limits, #FontSize, #ngth, #Ire, #Magikarp, Gleaming, #luaj, #repre, Chaser, tremend, #gling, #accompan, #regor, #landish, #GGGGGGGG, #ruciating, #Interstitial, convol, #necess, #udicrous, artif, #milo, #RIPT, #gone, #047, #ignty, #ebted, #GBT, #furt, Bie, #CLUD, #Charges, Vaugh, #glers, #heres, disadvant, Constantin, #Connector, #HAHA
+
+Direction 30:
+=== No valid tokens ===
+
+Direction 31:
+#ngth, #etheless, Wander, #theless, surpr, #FTWARE, #Reloaded, includ, challeng, skelet, #includes, gist, unlaw, #ffield, #terday, targ, #itiz, coord, #aturday, #aminer, warr, confir, redes, #cknow, #amaz, #deen, #soever, #cknowled, #repre, #ukong, #joice, Bakr, #ridor, #CHO, #venants, #accompan, appre, #icipated, suspic, #fen, )], Ezek, traged, #vati, incompet, #paralle, #alde, seiz, #izont, destro
+
+Direction 32:
+#aciously, KB, recognized, am, #motion, Ibn, outright, elimination, international, imp, Stand, Sven, responsible, Annie, inclusion, #ierre, separately, #Sep, #othy, similarly, Arizona, Sep, #ized, Vladimir, #acious, Kl, independently, Karl, #hered, Muhammad, separate, without, innocence, themselves, m, beauty, rep, movement, inter, #(, Free, #VE, #ceived, own, either, Generic, #Recommended, WM, #ph, #der
+
+Direction 33:
+antioxid, #etheless, #agi, Cumm, Fallon, ROS, #=-=-=-=-, Pry, #sg, Vaj, #arb, Vern, #adelphia, #arch, #cv, #owder, #stice, #continue, desks, Mechdragon, #ioned, #marked, livest, #ften, VID, Learns, Sears, #handle, #external, newsp, #aturdays, darkest, #ngth, Spoon, #Bus, #BUS, #gd, #viks, #iris, #sb, Vil, Woodward, Daughter, #wl, #zed, timely, Strauss, #adle, #whatever, Sheila
+
+Direction 34:
+#ngth, Vaugh, #SourceFile, #abwe, Dise, #reditary, #OHN, #DERR, #Recomm, #emetery, #pta, #anchester, #hedon, #mbuds, #icter, destro, #CLASSIFIED, #ONSORED, #HAHA, #\\\\\\\\, #orescent, #blance, #umbn, #76561, #irez, #hower, #artney, #veyard, #kus, #iannopoulos, #CONCLUS, #romeda, #iffin, #STD, #landish, #FontSize, #dinand, nostalg, #iasis, #Untitled, #soDeliveryDate, Frie, Nanto, FANT, #bilt, #FORE, #PF, #ctuary, #GBT, #CVE
+
+Direction 35:
+#yip, Jagu, #ngth, mathemat, horizont, #Sov, destro, challeng, defic, caut, awa, #accompan, nomine, Dise, #avorite, #GGGG, myster, ingred, ensu, murd, livest, #enegger, nodd, simultane, #regor, conclud, #naissance, #bilt, #abwe, surv, fundament, tremend, #escription, Debor, #ullivan, contrace, #CLASSIFIED, #milo, #ortium, #iatus, #Reloaded, Palestin, #GGGGGGGG, perspect, convol, #quickShipAvailable, Centauri, #theless, seiz, #ciation
+
+Direction 36:
+#wick, reach, ones, Wake, Der, #ination, assignments, reaching, half, thirds, in, #., those, #aps, #ases, Ge, AM, sp, reaches, conferences, #ations, #,, Ant, #atches, #ained, fair, a, Aff, properties, Rev, #itions, against, Sub, select, #Ar, sources, cho, #ains, spots, drawn, Heat, losses, quarters, trips, outlets, counterparts, Round, corresponding, Rel, equivalents
+
+Direction 37:
+horizont, sacrific, destro, #isSpecialOrderable, newsp, perspect, nep, obser, welf, Jagu, #abwe, embr, #retty, defic, Adin, mathemat, nodd, cryst, incent, #76561, myster, #Magikarp, acknow, #CLASSIFIED, municip, #ngth, Seym, agre, ensu, warr, ank, vulner, unlaw, blat, brut, distingu, challeng, Vaugh, corrid, suscept, enthusi, #Bey, #EY, charism, arrang, Frie, surv, #aye, thw, #illac
+
+Direction 38:
+#unte, #rogen, Zerg, Mulcair, #ricular, merit, prob, #lear, Klopp, decentralized, #Marginal, #xual, #bernatorial, #bred, Sturgeon, Olson, freight, #ocrine, #itarian, metric, Gawker, dialect, #Ont, #oplan, #ocal, lear, Arpaio, #oustic, #Population, Terran, patronage, Limbaugh, gram, legally, DPS, #yg, #ORPG, Jenner, #agame, #lua, Deng, #ivist, #orative, #ocial, #icka, Hegel, clause, Nielsen, Kurd, #Research
+
+Direction 39:
+=== No valid tokens ===
+
+Direction 40:
+Operating, shell, filtering, #ipping, processing, #isp, Runtime, #rons, #CNN, purpose, RPG, overhead, JavaScript, Slate, procedure, #Function, #Warning, #izing, por, ribbon, Processing, Weiss, operating, sir, commercial, problem, sea, #izon, bargain, Ingredients, cell, glass, Straight, #ining, #stic, #ron, viewing, tuning, #ARB, PHP, ground, object, Passing, Specifications, breaking, #Premium, #mo, loading, solution, #ort
+
+Direction 41:
+motivating, Bald, Tactics, calcul, quests, #pants, #dyl, #loo, unsolved, #bryce, #Favorite, #ython, inspiring, verses, solo, Killing, #anship, compulsion, #onne, #igo, instinct, surn, Bastard, Ely, driving, stories, manuscript, Ys, Spawn, cartels, citations, Dying, #acus, #cription, Saga, Unlock, sentences, cour, myths, Politics, #combat, Eating, #axe, statutes, Droid, #uscript, imperson, scars, #++++, Entreprene
+
+Direction 42:
+destro, #theless, #accompan, #ngth, challeng, Jagu, paran, ensu, #FontSize, caut, nodd, conduc, nostalg, #Ire, indo, #terday, fundament, #etheless, #izont, contrace, sacrific, #yip, defic, #isSpecialOrderable, detrim, #enhagen, municip, inval, horizont, #wcs, #ournal, #repre, awa, #abwe, suscept, #OHN, #;;;;;;;;;;;;, #iannopoulos, obser, Vaugh, #milo, mathemat, #apego, #ecause, conclud, #CLASSIFIED, antioxid, myster, #Redditor, tremend
+
+Direction 43:
+Isaiah, Lucius, laud, audible, Cic, metrics, metric, #zel, trending, ancest, #axe, conspicuous, journalism, keywords, caus, pra, #zech, stigmat, Maggie, Canaan, #Cause, mile, Comfort, commend, Miss, Poverty, causal, conscious, Maced, #aim, comfort, propaganda, #anian, mourning, campaigning, graded, cheering, praise, Subscribe, #cong, happiest, ADA, #etus, famine, Ranked, #liest, worse, Fou, #aters, Persian
+
+Direction 44:
+#stem, #rav, #azy, caval, #ENE, #yg, filter, slider, #iago, Silva, #sav, nat, #cue, #auna, Greenwald, ENT, median, radius, #flag, lav, #OTT, #oid, #sk, goal, cis, #utt, sk, lax, cage, #urry, reflex, dent, smartest, boil, lapse, #owl, rash, #SI, pounds, exch, hemisphere, saliva, pound, ONLY, lang, #actic, sort, Blacks, infographic, #ETF
+
+Direction 45:
+patterns, Trends, gangs, rentals, stations, routers, variations, seats, #prime, #skirts, votes, lamps, Patterns, tanks, Rounds, corridors, occurrences, #projects, trends, polls, illusions, formations, residents, #styles, wavelengths, symbols, mosques, Reference, #casting, forecasts, conversions, assignments, #ppa, turbines, projections, plots, voters, tones, surfaces, precincts, floors, shells, analysts, shortages, occupations, markets, receivers, #casts, textbooks, #Reference
+
+Direction 46:
+McKenna, Sparkle, Nieto, Uriel, Souls, #lyak, #brew, #illery, Awoken, Giov, #edi, Logged, Parish, Nguyen, Seg, #wcsstore, #rence, Sakuya, #roit, Engine, Arcane, #font, Trent, Luk, #gian, #NetMessage, Wing, Xavier, #oken, #idine, Gork, Rez, #ility, "$:/, #itars, #Render, #orer, voc, js, #ricks, font, #vg, #ubuntu, Yen, #rish, #erie, #jad, #ttle, #istries, #gd
+
+Direction 47:
+#isSpecialOrderable, #olicy, #berus, #acebook, #ivably, anecd, #scl, orphans, #arget, #anchester, #inventoryQuantity, #thora, #ugu, #yip, #GGGGGGGG, Ezek, unemploy, #wang, #66666666, #Compan, #alog, #quickShipAvailable, elector, #kef, murd, #iov, Mub, #urtles, #mington, Prosecut, #apple, #bryce, #thur, #bishop, manufact, #aukee, newsp, scrut, #alogy, #tera, #umbn, glim, Dise, #illus, #ullivan, #emale, #ecd, #BLIC, #clerosis, #uria
+
+Direction 48:
+destro, nostalg, #accompan, #Recomm, Adin, #FontSize, #regor, #Sov, contrace, mathemat, #ADRA, Jagu, #theless, #Magikarp, challeng, #Ire, disadvant, #Redditor, horizont, juven, welf, #Reloaded, #krit, sacrific, blat, defic, advoc, #avorite, #emort, conduc, Inquis, nodd, Dise, livest, seiz, #schild, Ambro, Vaugh, helicop, corrid, nep, paran, horm, #GGGGGGGG, obser, #OHN, #\/\/, #CLASSIFIED, Canaver, shenan
+
+Direction 49:
+#theless, #Reloaded, destro, #abwe, #Sov, horizont, #ngth, defic, nostalg, blat, mathemat, #krit, detrim, #kef, caut, #GGGGGGGG, #regor, challeng, nep, #GGGG, #etheless, #yip, shenan, Jagu, sacrific, conclud, livest, #Magikarp, welf, unden, tiss, #ullivan, conduc, #enhagen, #avorite, #FontSize, contrace, ingred, #enegger, #OHN, advoc, Siber, #iannopoulos, suscept, #bilt, #isSpecialOrderable, #artney, Pengu, #jong, fundament
+
+Direction 50:
+=== No valid tokens ===
+
+Direction 51:
+unavoid, insepar, notoriously, #emed, #\\\\\\\\, tricky, Wem, #ebted, undeniably, #catentry, unpredictable, intrinsically, #atown, slippery, busiest, unavoidable, reimb, opio, assum, dreaded, occasional, notorious, pric, #":"/, Phill, addict, unex, #ldom, inherently, #atile, downturn, Mariners, repaid, unfor, hugely, #insured, cynical, predictable, glossy, boo, troubled, Guant, uncomp, Spending, #icipated, #prem, #ffield, suppose, recurring, intertwined
+
+Direction 52:
+dust, motion, again, combination, device, #ically, #itt, incub, ent, #inder, cold, #heimer, #ester, Av, #ter, #nington, str, #ally, electrical, #zeb, #acter, acid, to, #emaker, #oven, feet, Nat, beauty, speed, movement, habit, Harold, #als, #etime, gest, hard, con, HDD, fine, #iat, #ume, #enter, side, #aster, perf, lead, #icka, Iv, flesh, #osition
+
+Direction 53:
+Solitaire, #sburg, #selves, #hower, #esville, #agall, #icators, Gladiator, livest, #dri, #teenth, #AUT, #nt, #RANT, #imen, #emn, #race, #espie, #ners, #chnology, #above, Invaders, Hilbert, #anchester, #GPU, Casino, CONTROL, #yrinth, #omics, #rim, #1920, #iband, Celestial, #insula, #ients, #kson, #taboola, #lv, #henko, pathological, #hers, #essee, #ociation, #cade, #asket, #rama, #agnetic, Lakes, #ministic, precincts
+
+Direction 54:
+condem, seiz, conduc, detrim, nep, challeng, #PsyNetMessage, Jagu, Surviv, sacrific, #abal, distingu, #76561, #OHN, #emale, #GBT, #untled, Niet, #Redditor, ingred, #odan, #udicrous, #thora, arrang, #cffff, #abwe, #pora, symp, shenan, nostalg, #pai, #iseum, #ategory, Volunte, Debor, Disciple, #mbuds, #Closure, #kef, streng, #milo, #ecd, Adin, #="#, #swer, #committee, horizont, blat, surv, #ensional
+
+Direction 55:
+sacrific, #accompan, destro, mathemat, #ngth, #retty, #Sov, Dise, caut, coerc, #Magikarp, challeng, obser, unden, contrace, livest, agre, nodd, #reditary, blat, miscon, cryst, #\/\/, rul, neighb, #emetery, #argon, #repre, shenan, #terday, Pwr, princ, discrep, ende, Palestin, #abwe, Wem, #artifacts, warr, #paralle, #theless, #arnaev, #ItemTracker, #Mp, #guyen, welf, #aeda, #yip, #ILLE, #GGGGGGGG
+
+Direction 56:
+#Redditor, #Recomm, #chwitz, #ocobo, caut, #yip, #Magikarp, lapt, #enhagen, #SourceFile, #enegger, mathemat, Micha, suspic, #hower, #Roaming, #Ire, princ, #76561, Centauri, #REDACTED, #ongyang, #GGGGGGGG, #ipel, tyr, Chocobo, #accompan, nodd, #Prosecut, #estern, contrace, awa, ABE, dissatisf, trave, scrut, pregn, disapp, #escription, #LOD, shenan, #icka, #Constructed, #Sov, #anchester, #swick, millisec, #cknow, ank, #soDeliveryDate
+
+Direction 57:
+#yip, #Magikarp, #aneers, juven, opio, answ, #ournal, #isSpecialOrderable, #atorium, #heimer, warr, #OHN, awa, nostalg, nodd, dissatisf, Tanz, #achine, shenan, #insula, #fen, #verty, #ividual, #ween, #senal, #Nap, cig, #Anth, challeng, #Recomm, #erent, confir, #agall, #sonian, fert, #NSA, #ships, #idth, mortg, #irlf, #Lear, disg, #Crew, #cgi, #ufact, #iasco, Frie, convol, #ascript, arri
+
+Direction 58:
+#isSpecialOrderable, #stood, #ptin, Dise, #pins, hectares, Gly, Strongh, Gleaming, Ezek, #ritis, #tsky, Volunte, #lived, reckoned, #ocument, congratulate, #elsius, hect, Cities, #BuyableInstoreAndOnline, #regor, #utics, #hetti, #iots, #letcher, Zup, Shap, #luaj, #eva, subscript, #lets, #inventoryQuantity, contrace, #foreseen, envy, #FontSize, #pine, #stretched, nostalg, #////////////////, #vati, #iotics, #externalActionCode, #onential, #mone, #omething, vivo, #UGH, Tradable
+
+Direction 59:
+#plays, #venth, ending, appearing, #app, activation, #play, #application, #origin, resolution, endings, retaining, showing, origin, suggestion, lacks, #/-, (+, #teenth, alteration, disappears, ., Den, retains, Seed, Sat, adopting, unfocusedRange, #ship, #CL, April, Hide, slip, Char, resolving, #ocking, #character, Origin, play, #iminary, character, Tit, coming, retain, #":", Coming, Mystic, containing, outline, #rd
+
+Direction 60:
+horizont, caut, #inav, #Sov, #inelli, #pires, #Magikarp, #FontSize, #ymm, IPM, streng, #iqueness, #itures, #OHN, #wcs, disadvant, surv, membr, #ilater, #ESCO, #GGGGGGGG, #usra, comr, Vaugh, #Americ, hairc, #akery, #ERC, corrid, conduc, #accompan, destro, nostalg, #Eat, #galitarian, Strongh, Frie, #Interstitial, disg, neighb, #Gre, #NW, monop, #xtap, cig, #haar, #RIP, hybrids, ensu, #iculture
+
+Direction 61:
+#azo, #CVE, UCHIJ, murd, #Lago, #olson, #Redd, #conservancy, #GMT, #azeera, #DX, #waukee, #arnaev, #yip, Dise, #BIL, #CHA, #PIN, #ahon, #merce, destro, #Alert, #soDeliveryDate, #PAC, #DH, Murd, #Mur, #tics, #kef, #\/\/, #Admin, #URA, #XXXX, #zona, #ancial, #Redditor, #oston, #anship, #$$$$, #Lyn, #greSQL, #HAHA, #fal, #\-, #iannopoulos, POLIT, #mys, #Russell, #````, #silver
+
+Direction 62:
+#lihood, Situation, #merce, #\/\/, Canaver, Adin, Zamb, #surv, demoral, flank, #tch, #mercial, #inse, proble, #obo, Dunk, #arcity, conting, #ecast, #aye, Gors, #cffff, #kef, Siber, #anches, #FU, lull, Niet, #CHAT, #olesc, Municip, backlog, Greenpeace, Paraly, replen, Jehovah, #=~=~, #Toy, #glers, #ukemia, #abwe, #fu, #CTV, siph, Bale, cond, #zsche, souven, Africans, simmer
+
+Direction 63:
+#etheless, dere, #terday, horizont, #catentry, #talk, #mercial, staple, Topic, motto, Conversation, Straw, #Interstitial, #wx, #enhagen, drawback, unanim, revival, #Method, Carnival, continuum, acronym, Manufacturer, #bringing, grounding, #forth, proclamation, #HCR, glitch, manufact, #ourning, #isSpecialOrderable, Permanent, Burlington, Concord, runaway, princ, tack, #Ire, #uesday, Compact, #icut, #introdu, #ETHOD, municip, Pavilion, Morse, Polar, #terness, abbre
+
+Direction 64:
+#antha, #insula, mathemat, #theless, #chnology, #gdala, #hani, #dayName, #itud, #Thumbnail, #uctor, #retty, EPS, #yip, #abee, #etheless, #cients, #Redditor, #perty, #osuke, #Magikarp, perpend, #orthy, helicop, #apego, Jagu, #rencies, #aband, #ETHOD, #isphere, understatement, #issan, #adena, #cham, Centauri, #rency, #hester, #adra, #WARD, #unin, #deen, Fenrir, #keyes, #oru, #hran, Rober, horizont, #tops, DRAG, Volunte
+
+Direction 65:
+#aches, championships, #action, FN, drawn, #oms, DL, blow, quarters, #char, #iri, quotations, #entry, #cycle, SEC, #etti, #sec, sweep, #rider, rainfall, DUP, #Len, #ino, #ib, arg, len, typed, Maj, #aching, #ACTION, Miko, #ume, western, entries, double, #ier, settlers, tracts, #ired, #ons, #Fs, LP, #oids, quotes, associates, #list, #umption, #rain, #illard, Rug
+
+Direction 66:
+Rebell, Malf, #iots, Ghostbusters, #NetMessage, #duc, #raltar, Homeless, Osw, #estern, #ourning, #istrates, Chero, hanged, #sonian, tong, #erous, #mone, #sbm, newsp, inval, dexter, fortun, #HUD, #hospital, apprentices, Murd, #mys, #amily, embr, #ptin, Furious, Zombies, GPIO, Thrones, fatally, #phans, illiter, brim, Surviv, Hung, #inx, ensl, conduc, Cth, Newsp, #ople, #ortal, pestic, slaves
+
+Direction 67:
+#chool, #SourceFile, Dise, encour, Ital, #esm, Mig, #icka, Zamb, #oteric, #DCS, #iquid, #Spread, #sbm, #nah, Wrestling, #RFC, ply, #ilon, #igmat, OPEC, Chocobo, #uctions, #astern, #inery, #Quantity, SEO, bankrupt, bulls, #Surv, #patient, #ocial, #conom, #ffic, #ews, #psc, #bryce, drib, #surv, #otyp, Canaver, #paces, Krug, #chev, #othal, #Sham, #Frames, Bots, #adesh, #advertising
+
+Direction 68:
+seiz, Frie, #Demand, tiss, #iatus, #Mp, #ourgeois, Adin, foss, #banks, certific, diapers, #Condition, #poons, #nard, #inse, #bilt, coma, #jit, #vale, Bridgewater, #ohn, #Stud, #CLASSIFIED, #advert, Lauder, #pher, welf, #Els, Tsukuyomi, Dud, #visible, #icter, #obbies, #few, #agos, #Barn, Koen, #aspers, Rai, #vo, #meier, includ, lawy, Gleaming, #pires, Leilan, #objects, Canaver, Xiang
+
+Direction 69:
+Dise, caut, #OHN, #phans, #enegger, challeng, sacrific, #rha, #haar, destro, #ngth, targ, lawy, seiz, #jri, territ, #ntil, #ById, corrid, rul, #ouble, welf, #pard, Frie, #accompan, #aband, incarcer, #Els, tatt, #farious, #kef, impover, #ahon, Debor, #Quantity, pard, embr, #catentry, #unin, #eday, Chero, newsp, #eches, #ptin, Jagu, #ariat, #Untitled, orphans, awa, simultane
+
+Direction 70:
+contrace, #FontSize, #Redditor, Canaver, #enegger, streng, #ngth, #estyles, #sonian, #Sov, Adin, #stocks, #avorite, #staking, #ruciating, Rena, #DragonMagazine, dissatisf, #agonist, #wagon, accur, Seym, #HAHA, #htaking, discrep, #Ire, #Redd, #\\\\\\\\\\\\\\\\, #kef, #styles, #suits, #terness, #TextColor, #HAHAHAHA, #theless, obser, #isSpecialOrderable, #reddits, #hig, differe, #haar, agre, #retty, #hyde, #icter, #wcs, #hement, #endi, enthusi, #chini
+
+Direction 71:
+Riy, #glers, #aukee, #terness, #DragonMagazine, convol, #irlf, sovere, Yose, #Ire, Metatron, #ensional, #ecd, #etheless, #CTV, #staking, #UID, #urtles, contrace, #GGGG, #PLA, #ibaba, #glomer, #olicy, Takeru, Brach, #angler, reconc, #llah, #ESCO, welf, #CVE, #ertodd, lapt, #RFC, #enegger, Reincarn, #CRIP, #successfully, #krit, #avorite, tiss, Pengu, #theless, Okin, reperto, #vind, cryst, #TPP, Jagu
+
+Direction 72:
+#eller, Flat, isolation, #itor, #ylum, bilateral, Magn, interest, talks, negotiations, #airs, #most, #interest, pledge, Middle, #gard, #oka, drawing, Mil, #sofar, #Page, #raction, Equal, #action, Interest, Maximum, Organization, Arab, terms, Epic, ::, Community, Res, official, compulsory, #clusion, congressional, Ultimate, #hest, #pic, Wiki, #render, Due, #Lin, #inding, Official, unclear, addition, Album, #>,
+
+Direction 73:
+#plate, #plates, #ight, #veyard, #alph, #codes, #thening, #aucus, #scripts, #lights, #texture, #bones, #Hack, #scape, #bing, Painting, #haven, Regulatory, #ugh, #ighting, #xia, #icity, #riages, #instein, Invention, #ifax, Plate, #collection, #obbies, Genie, #ymes, #inators, #alach, #plus, delim, #cules, #ascript, DRAG, #tips, #inav, #iversity, #prov, Tasman, #laws, #nature, Shape, #brate, #ivities, Hunting, #box
+
+Direction 74:
+#ullivan, #ADRA, adolesc, mathemat, Dise, #AMY, #iannopoulos, #othal, #GGGGGGGG, streng, #PsyNetMessage, neighb, #accompan, corrid, #20439, conduc, discrep, livest, resil, defic, Zup, #atever, #orkshire, #regor, #skirts, reper, #ocument, somew, #olitan, reperto, skelet, #akeru, #owship, obser, #theless, #staking, #olkien, sacrific, #avorite, #osate, Adin, #zona, toget, #leon, #zag, juven, ingred, nep, nutrit, cryst
+
+Direction 75:
+#uchi, #wan, shout, #eter, #tsy, #shi, Prev, #allel, #oppers, #chu, #Pac, #orial, #007, knock, Spiel, #ifier, #vious, #baum, rivals, #oglu, Ye, Yue, alone, #asion, beside, #iyah, doorway, #Previous, against, smell, #illes, #uan, #htar, #heat, #eu, alongside, Ain, Achilles, #rival, #aila, #.*, #pc, #ulp, #Tree, parallel, ahead, #oor, knocks, #ome, #00007
+
+Direction 76:
+#ngth, #staking, #furt, #earch, #theless, #Fax, #emale, #rity, #zona, seiz, #bryce, #Iv, #yout, #ufact, #asus, #regor, obser, #tsky, looph, #GBT, blat, destro, #CVE, Wem, #skirts, awa, Dres, #heid, #yip, surpr, #uscript, #noticed, #illac, #FontSize, #Deal, #urat, #ruary, Micha, #hots, #ndra, #gow, #dash, #tch, #phia, #sonian, #aura, #estern, condem, #EVA, lawy
+
+Direction 77:
+=== No valid tokens ===
+
+Direction 78:
+=== No valid tokens ===
+
+Direction 79:
+#regor, #enhagen, Adin, #FontSize, surpr, #afety, Volunte, Fenrir, #ophob, Seym, misunder, #avorite, confir, #furt, #krit, #pez, #gob, helicop, Wem, #xtap, #leck, #terness, #bernatorial, #tten, occas, #yout, #Dex, #pai, contrace, #hedon, #aukee, #limits, Dise, #sonian, #VIDEO, enthusi, #emort, #Tonight, melanch, Reincarnated, Micha, destro, Canaver, #onz, #CLASSIFIED, Jagu, #iatus, #Ire, clich, #ridor
+
+Direction 80:
+parap, #ngth, #heimer, unconscious, #quartered, #ropy, #igne, #anke, Shak, #igi, #advertisement, #raine, #wig, #lda, #spr, #CHAPTER, #enne, #angles, #stal, #abba, #yne, ashes, pyramid, brittle, #Aff, #adobe, Brist, #wang, fra, #stairs, dise, #Know, #incarn, #APE, #swer, Flint, XI, interruption, Turing, #Rex, Dise, #ription, fung, #tie, emer, #peat, #know, #fen, Kard, Basics
+
+Direction 81:
+#estial, #reddits, #accompan, #Magikarp, #illion, Nanto, #osponsors, #osher, #alos, #Allah, #mental, #ilyn, #inav, #agy, Solitaire, #MRI, tremend, #osite, #insured, #awatts, #ormons, #spons, Donation, #enz, #galitarian, #acteria, #ozyg, #umerable, Zeus, #Catalog, #ADRA, #atism, #renheit, #rollment, #icultural, #Greek, #ERC, #bringing, #avorite, patrons, #ahs, #oros, Iranians, Chocobo, #iblical, mysql, Cthulhu, #ascript, donors, #ogenous
+
+Direction 82:
+deb, null, #hed, #ansk, #oug, cy, #ository, #oji, course, pick, domain, #rob, #posts, #Library, #odi, #hammer, #cast, Domain, #oku, #itory, #hoff, #rypt, Cy, sample, handle, bones, ro, test, #nikov, Joe, #ependence, #dogs, marking, sw, #rea, #vey, #itudes, artifacts, Array, #aws, tail, #nian, scoop, det, thumbs, access, #course, jaws, pre, artifact
+
+Direction 83:
+#bound, noisy, #ires, #ach, #ogram, Bott, #urg, #osen, embattled, injured, #dot, #aine, departing, Norton, Fall, #apped, #sensitive, #oz, #rider, #ickets, syndrome, #escent, #och, Powell, Fields, #ell, #typ, #roach, Phillips, McDonnell, Dull, #ain, #":{", Clouds, #idal, #occupied, #alion, sensitive, clouds, outsiders, #cent, #olith, Wood, #iev, #rose, #ailed, Trap, Fein, Wolf, Hop
+
+Direction 84:
+dat, #uesday, #itous, #acco, #ABLE, #iator, #astern, #hab, #tery, #historic, #urai, #pload, #perture, #cone, #irtual, #ps, #kaya, Load, #hattan, #rait, #izen, #guyen, #otom, #hift, #pron, #artz, #htaking, load, #cheon, #eps, #neath, #clave, #unin, #ched, #ammy, LIKE, unders, Californ, #hs, bundle, #uta, Sie, #nikov, #eq, #iple, passer, #pper, loneliness, #ento, #gomery
+
+Direction 85:
+#endo, #anmar, #Magikarp, redund, seiz, #Redditor, #ucha, #enhagen, Brach, #rue, Quadro, #igi, #zig, #aeda, #aturdays, Leilan, #onential, unlaw, Canaver, #uploads, #endi, #urrection, #rique, swoop, #zie, #reth, #udic, #issance, corrid, #termination, spiral, Niet, #oldown, #isu, curve, sacrific, #undo, curtain, #cean, Vaugh, #uph, #Ring, vend, #ibaba, #blow, ensu, #RIP, convol, #multiple, #aden
+
+Direction 86:
+bonded, PVC, #aukee, #Lear, #idas, #Lua, #vas, #emale, bearer, Ung, #auna, #ItemTracker, #aye, DHCP, #avery, #agos, Varg, TSA, organized, #RN, #Male, blacks, #Repeat, volunteers, #requently, palp, #uble, #staff, #inea, verbally, manifested, #Mp, vou, reversible, #ago, #vez, #perse, Shanahan, #aband, Kinnikuman, #accompanied, reusable, #cler, #acca, #regulated, #VO, Fee, medically, #Marie, porous
+
+Direction 87:
+offer, merit, alternative, has, bear, answer, deserves, #uck, meets, support, point, Bradley, reasonably, #usk, advocate, mark, foundations, committed, force, rock, Bas, #ridge, have, provides, reservation, requirement, deserve, alternatives, requirements, aspiration, char, endorsement, #oke, #ison, contributed, Stream, package, penalty, foundation, #mark, doubt, offers, blogs, conform, #reek, means, Chandler, is, reasonable, benefit
+
+Direction 88:
+Shade, #Initialized, backdrop, #forth, Chic, #icon, Contin, Preferred, #din, mosaic, faithful, #ipe, FML, picture, Talent, Sunshine, poles, #istas, #ista, #past, horizon, governor, Alliance, Monitor, Eco, Ink, Emerald, Format, Composite, arch, Continue, #ERA, #JUST, Termin, #Land, countryside, Coalition, qualifier, Legion, Xavier, Ready, overlay, peninsula, Timbers, Icon, stage, torch, kind, Tourism, MAR
+
+Direction 89:
+#ibal, graft, #Recipe, Assange, Moy, #BIP, McCabe, swoop, #hack, #RT, jurors, #atra, Gork, #rack, #ascade, #Torrent, #ilant, McCull, #ADVERTISEMENT, destroys, raids, #achment, raid, #stem, #Madison, #aign, #orph, Macro, #pid, #armac, #Sing, #ionage, topple, Madd, Judges, #Prosecut, FISA, Merkel, decrypt, #aceutical, #Pg, prob, #DNA, #Lot, Downing, Machina, #trial, #ousands, Hutchinson, Clapper
+
+Direction 90:
+Trace, exceptions, Railroad, Ore, #agles, #ocal, Tile, #Iv, guarant, #DERR, chemist, Axe, #igmatic, #icks, claimant, #ondon, #itutes, #asonable, #wu, Clin, Doctors, Ply, Bicycle, physi, Institution, abs, Exception, #ected, Courts, idiots, #isl, Gentle, places, Casual, Viol, extremes, inconsistent, Occ, ore, #ute, #oys, Played, #artist, #ensus, sciences, tile, Applic, #utes, BAS, chron
+
+Direction 91:
+Express, #arsity, Invaders, fragmentation, #onde, Prol, proliferation, Levy, Cooke, surveillance, Independent, Comprehensive, Horizons, specialized, Alley, pert, Compact, availability, enlarg, feasibility, #ption, ubiqu, #anding, Complex, #ological, forb, publishers, #oplan, #iHUD, Introduced, decre, disc, permitting, Telegraph, circulation, #adish, Stern, permit, Dispatch, subt, Monitoring, Spiegel, propos, publishing, #yers, charges, Zeit, #ingen, invasion, adaptations
+
+Direction 92:
+#asi, #osate, #fw, #olin, #acha, #Farm, #ash, #ody, USDA, #Bee, growers, #farm, Setup, #otor, #idation, #jit, #ictionary, #adian, generators, slapping, routines, stimulus, #abus, #abulary, farms, postings, #issan, #ablishment, spraying, farmers, #Sync, #oku, #bees, importing, #burst, #icro, #rity, stimulated, alarms, kits, Month, #Ec, #ouk, #arta, Brunswick, #odic, #Org, #elsh, #asta, sshd
+
+Direction 93:
+arson, #raz, Ratt, #asta, Fukushima, boats, Canucks, Bangladesh, sand, EMP, #iatric, #ARP, wolves, #inese, Samurai, bould, Bul, rehab, #uss, antidepressant, meth, #arium, aquarium, Arizona, Stone, #bath, #mg, #iw, #cemic, Cambod, tigers, #hp, bags, #occup, Manila, Bangkok, boat, #car, suicides, #mi, #ambo, river, loan, #ather, #ath, #Bul, Mech, prescribed, #ucha, #gress
+
+Direction 94:
+#RF, #ngth, #Engineers, #200000, #DonaldTrump, #oft, #Luck, #jriwal, #GBT, #xtap, #etooth, #taboola, #rf, #REDACTED, #vir, #{", #riott, #espie, #ription, #Kate, #":-, #ggles, #CVE, #Appearances, #wind, #thood, #kef, horr, glim, #oute, #foreseen, #phot, #wered, #merce, #rity, #Bell, #uilt, #Interstitial, #heimer, #ometimes, #Sham, #quez, #alam, Parables, Surviv, #ormons, #Americ, #Compat, #Sov, #catentry
+
+Direction 95:
+candid, (", results, es, Free, #C, #3, #G, #K, #+, #7, #O, #A, #1, #E, #), #I, #5, #M, #%, #Q, #9, #R, #:, #&, #-, #;, #@, #0, #B, #(, #D, #2, #F, #$, #H, #4, #J, #*, #L, #6, #N, #", #P, #8, #,, #<, #., #=, #>
+
+Direction 96:
+#escription, #ividual, #perse, enthusi, disapp, conclud, #ModLoader, #\\\\\\\\, #arnaev, #lasses, #ascus, #yip, compan, #olkien, #estern, unemploy, #ertodd, #cyclopedia, #YE, #GGGGGGGG, #anchester, recip, #umbledore, #onz, #regor, rul, #drops, #avorite, #Accessory, #ancial, coerc, #earchers, #iless, differe, #yright, distingu, Rowling, #reb, dismant, #hene, reluct, #geist, Buckingham, dilig, #otle, #GGGG, #claw, #Bank, contrace, destro
+
+Direction 97:
+#zees, #ophy, #PROV, #Psy, Technologies, #IFIED, #ify, #unte, Means, #mania, sampled, #pai, Hemp, revel, #Supp, #Poly, polymorph, #Balt, #ynthesis, #Techn, #uchs, #Boy, #ounces, #STAT, #Alpha, Barth, sampling, #bands, doub, #MIN, Tackle, Experience, Bellev, #gradation, Levi, #hoff, Matters, #ifies, Jury, Tickets, #Offic, #Santa, #arden, commemor, #Visit, juven, #ously, #Stretch, reintrodu, #pb
+
+Direction 98:
+ready, politic, dat, Ready, pro, nexus, mold, biased, responsive, among, fir, readiness, #weather, contingent, tim, governmental, ap, til, according, Ep, pur, favorable, sometime, unfavorable, bas, BAT, laps, Just, successful, adoption, solid, Wade, tem, prompt, ter, operative, membership, ag, agenda, wo, comprehensive, syn, slate, pre, organizers, #velt, immediately, executive, Planned, #ML
+
+Direction 99:
+#undown, Canaver, #regor, #iatus, #hots, #ongevity, #userc, #verages, #;;;;;;;;;;;;, Volunte, #-+, escal, seiz, #grim, Cust, #terday, unden, postp, #maxwell, Expend, Tanz, #idays, #bys, ##$, #querade, #theless, indisp, #wagon, Niet, #----------, #ursday, #staking, #raped, #xtap, Russo, PTS, #ffiti, Gleaming, #poons, #urtles, destro, Strongh, #emort, Photographer, #crow, Fantastic, #kef, #icter, awa, Drawn
+
+Direction 100:
+misc, mismatch, #vention, decreasing, #Category, hottest, compromised, #/(, #dest, stock, contributor, infring, #stat, Compare, hotter, tolerated, str, Doctrine, complaint, imaginable, #ailing, #akening, inf, ident, compromising, est, assertions, Contra, needle, (-, decreased, complaints, hist, [-, bulletin, log, hosts, Suggest, hot, #ceivable, occurrence, Event, #count, #need, dupl, incompatible, offending, subt, censored, recovery
+
