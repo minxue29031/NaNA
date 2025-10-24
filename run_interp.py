@@ -25,8 +25,6 @@ def parse_args():
                         default="detector", help="Interpretation type")
     parser.add_argument("--with_negative", action="store_true",
                         help="Save negative directions as well")
-    parser.add_argument("--use_activation", action="store_true",
-                        help="Apply activation function in projection")
     parser.add_argument("--with_values", action="store_true",
                         help="Include token scores in output")
     parser.add_argument("--device", type=str, default=None,
@@ -42,7 +40,6 @@ def run_mlp_analysis(
     weight_type: str = "c_proj",
     interp_type: str = "detector",
     with_negative: bool = True,
-    use_activation: bool = False,
     with_values: bool = False,
     device: str | None = None
 ):
@@ -70,11 +67,10 @@ def run_mlp_analysis(
             weight_type=weight_type,
             interp_type=interp_type,
             with_negative=with_negative,
-            use_activation=use_activation,
             with_values=with_values
         )
 
-    print("\n[INFO] ✅ All specified layers have been processed.")
+    print("\n[INFO] All specified layers have been processed.")
 
  
 
@@ -89,7 +85,6 @@ if __name__ == "__main__":
         weight_type=args.weight_type,
         interp_type=args.interp_type,
         with_negative=args.with_negative,
-        use_activation=args.use_activation,
         with_values=args.with_values,
         device=args.device
     )
