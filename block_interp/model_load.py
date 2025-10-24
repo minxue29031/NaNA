@@ -35,4 +35,5 @@ def get_mlp_matrices(model, layer_idx: int):
             "Model does not have `model.transformer.h` — "
         )
 
-    return block.mlp.c_fc, block.mlp.c_proj, block.mlp.act
+    return block.mlp.c_fc, block.mlp.c_proj, block.ln_2, block.mlp.act
+ 
