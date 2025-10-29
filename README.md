@@ -26,8 +26,8 @@ MLP_SVD_Project/
 │   ├─ mlp_svd_utils.py          # SVD computation and embedding matrix reshaping utilities
 │   ├─ model_load.py             # Model loading and MLP weight extraction
 │   └─ __init__.py
-├── circuit/                     # SVD analysis and intervention utilities
-│   ├─ svd_ops.py                # SVD computation and subspace projections
+├── circuit/                     # circuit analysis and intervention utilities
+│   ├─ svd_ops.py                # SVD subspace projections
 │   ├─ collect_circuit_info.py   # Gather info for circuit analysis
 │   ├─ model_interface.py        # Model loading, token generation, and layer IO collection
 │   ├─ subspace_intervention.py  # Functions to enhance or remove subspace directions
@@ -38,7 +38,7 @@ MLP_SVD_Project/
 │   ├─ plot_path.py              # Subspace contribution flow visualization
 │   └─ plot_subspace_contribute.py # Visualize subspace contributions per token
 ├── result/                      # Example outputs and top tokens per subspace
-├── requirements.txt             # todu
+├── requirements.txt             # not complete
 ```
  
 
