@@ -1,0 +1,1631 @@
+{
+    "model_name": "gpt2-medium",
+    "layer_idx": 16,
+    "sign": "positive",
+    "weight_type": "c_proj",
+    "interp_type": "effector",
+    "subspace_label": "top20",
+    "topk_tokens": 19,
+    "Interpretability": [
+        {
+            "direction": 1,
+            "top_tokens": [
+                {
+                    "token": "the",
+                    "value": 0.5433694124221802
+                },
+                {
+                    "token": "#,",
+                    "value": 0.5328065752983093
+                },
+                {
+                    "token": "and",
+                    "value": 0.4830275774002075
+                },
+                {
+                    "token": "a",
+                    "value": 0.47332489490509033
+                },
+                {
+                    "token": "in",
+                    "value": 0.4565102756023407
+                },
+                {
+                    "token": "#.",
+                    "value": 0.449631005525589
+                },
+                {
+                    "token": "\"",
+                    "value": 0.4494529366493225
+                },
+                {
+                    "token": "#-",
+                    "value": 0.432517945766449
+                },
+                {
+                    "token": "(",
+                    "value": 0.42647188901901245
+                },
+                {
+                    "token": "#Ċ",
+                    "value": 0.39209380745887756
+                },
+                {
+                    "token": "to",
+                    "value": 0.3652836084365845
+                },
+                {
+                    "token": "of",
+                    "value": 0.35980522632598877
+                },
+                {
+                    "token": "for",
+                    "value": 0.34057337045669556
+                },
+                {
+                    "token": "is",
+                    "value": 0.3371897339820862
+                },
+                {
+                    "token": "on",
+                    "value": 0.33466461300849915
+                },
+                {
+                    "token": "The",
+                    "value": 0.33107855916023254
+                },
+                {
+                    "token": "that",
+                    "value": 0.3206905126571655
+                },
+                {
+                    "token": "'",
+                    "value": 0.31549251079559326
+                },
+                {
+                    "token": "at",
+                    "value": 0.311916708946228
+                }
+            ]
+        },
+        {
+            "direction": 2,
+            "top_tokens": [
+                {
+                    "token": "#.",
+                    "value": 0.45558255910873413
+                },
+                {
+                    "token": "#;",
+                    "value": 0.43008217215538025
+                },
+                {
+                    "token": "#.\",\"",
+                    "value": 0.4030858874320984
+                },
+                {
+                    "token": "#.(",
+                    "value": 0.3935448229312897
+                },
+                {
+                    "token": "#.<",
+                    "value": 0.39296507835388184
+                },
+                {
+                    "token": "#.âĢĶ",
+                    "value": 0.37718313932418823
+                },
+                {
+                    "token": "#!,",
+                    "value": 0.37555283308029175
+                },
+                {
+                    "token": "#!.",
+                    "value": 0.3410200774669647
+                },
+                {
+                    "token": "#.[",
+                    "value": 0.3373390734195709
+                },
+                {
+                    "token": "#.]",
+                    "value": 0.3320257067680359
+                },
+                {
+                    "token": "#!",
+                    "value": 0.32955750823020935
+                },
+                {
+                    "token": "#.</",
+                    "value": 0.32759982347488403
+                },
+                {
+                    "token": "#,",
+                    "value": 0.3244840204715729
+                },
+                {
+                    "token": "#.''.",
+                    "value": 0.3105946183204651
+                },
+                {
+                    "token": "#,âĢĶ",
+                    "value": 0.2942315340042114
+                },
+                {
+                    "token": "#.''",
+                    "value": 0.28484538197517395
+                },
+                {
+                    "token": "#.ï¿½",
+                    "value": 0.278152197599411
+                },
+                {
+                    "token": "#.\"",
+                    "value": 0.27725455164909363
+                },
+                {
+                    "token": "#.)",
+                    "value": 0.27191781997680664
+                }
+            ]
+        },
+        {
+            "direction": 3,
+            "top_tokens": [
+                {
+                    "token": "mobile",
+                    "value": 0.11174121499061584
+                },
+                {
+                    "token": "portable",
+                    "value": 0.11070189625024796
+                },
+                {
+                    "token": "existing",
+                    "value": 0.09569839388132095
+                },
+                {
+                    "token": "electric",
+                    "value": 0.08457396924495697
+                },
+                {
+                    "token": "#rican",
+                    "value": 0.08365432918071747
+                },
+                {
+                    "token": "active",
+                    "value": 0.0798877626657486
+                },
+                {
+                    "token": "electro",
+                    "value": 0.07971324771642685
+                },
+                {
+                    "token": "electrical",
+                    "value": 0.06859077513217926
+                },
+                {
+                    "token": "anti",
+                    "value": 0.06569499522447586
+                },
+                {
+                    "token": "esc",
+                    "value": 0.06389562785625458
+                },
+                {
+                    "token": "experimental",
+                    "value": 0.05876363813877106
+                },
+                {
+                    "token": "outdoor",
+                    "value": 0.055219221860170364
+                },
+                {
+                    "token": "adult",
+                    "value": 0.0551464706659317
+                },
+                {
+                    "token": "multi",
+                    "value": 0.05417226627469063
+                },
+                {
+                    "token": "poly",
+                    "value": 0.05375554412603378
+                },
+                {
+                    "token": "brand",
+                    "value": 0.052496135234832764
+                },
+                {
+                    "token": "indoor",
+                    "value": 0.05223371088504791
+                },
+                {
+                    "token": "aut",
+                    "value": 0.048723138868808746
+                },
+                {
+                    "token": "unic",
+                    "value": 0.044842060655355453
+                }
+            ]
+        },
+        {
+            "direction": 4,
+            "top_tokens": [
+                {
+                    "token": "#iom",
+                    "value": 0.5722563862800598
+                },
+                {
+                    "token": "#erning",
+                    "value": 0.5532406568527222
+                },
+                {
+                    "token": "#everyone",
+                    "value": 0.5328230857849121
+                },
+                {
+                    "token": "humankind",
+                    "value": 0.5107164978981018
+                },
+                {
+                    "token": "#Americ",
+                    "value": 0.5081074833869934
+                },
+                {
+                    "token": "#itute",
+                    "value": 0.5066297054290771
+                },
+                {
+                    "token": "#humans",
+                    "value": 0.48476168513298035
+                },
+                {
+                    "token": "#oise",
+                    "value": 0.4844452738761902
+                },
+                {
+                    "token": "#omever",
+                    "value": 0.4828110933303833
+                },
+                {
+                    "token": "#Mill",
+                    "value": 0.47374340891838074
+                },
+                {
+                    "token": "mankind",
+                    "value": 0.472759485244751
+                },
+                {
+                    "token": "#Americans",
+                    "value": 0.46949031949043274
+                },
+                {
+                    "token": "America",
+                    "value": 0.46430471539497375
+                },
+                {
+                    "token": "millennials",
+                    "value": 0.46252402663230896
+                },
+                {
+                    "token": "#you",
+                    "value": 0.4623550474643707
+                },
+                {
+                    "token": "#engers",
+                    "value": 0.4607285261154175
+                },
+                {
+                    "token": "#ieth",
+                    "value": 0.459073007106781
+                },
+                {
+                    "token": "#cients",
+                    "value": 0.4574781656265259
+                },
+                {
+                    "token": "#reality",
+                    "value": 0.45744550228118896
+                }
+            ]
+        },
+        {
+            "direction": 5,
+            "top_tokens": [
+                {
+                    "token": "fewer",
+                    "value": 0.5610454678535461
+                },
+                {
+                    "token": "lack",
+                    "value": 0.5606346726417542
+                },
+                {
+                    "token": "lacks",
+                    "value": 0.5508188605308533
+                },
+                {
+                    "token": "weak",
+                    "value": 0.5159268975257874
+                },
+                {
+                    "token": "nothing",
+                    "value": 0.5136129260063171
+                },
+                {
+                    "token": "lacking",
+                    "value": 0.5042915940284729
+                },
+                {
+                    "token": "lacked",
+                    "value": 0.4963780641555786
+                },
+                {
+                    "token": "poorly",
+                    "value": 0.4953465759754181
+                },
+                {
+                    "token": "deficient",
+                    "value": 0.4925922155380249
+                },
+                {
+                    "token": "lousy",
+                    "value": 0.49094483256340027
+                },
+                {
+                    "token": "insufficient",
+                    "value": 0.4906894564628601
+                },
+                {
+                    "token": "nonexistent",
+                    "value": 0.48818039894104004
+                },
+                {
+                    "token": "#lessness",
+                    "value": 0.4845486879348755
+                },
+                {
+                    "token": "weaker",
+                    "value": 0.48433956503868103
+                },
+                {
+                    "token": "less",
+                    "value": 0.4834710657596588
+                },
+                {
+                    "token": "nowhere",
+                    "value": 0.4829704165458679
+                },
+                {
+                    "token": "lackluster",
+                    "value": 0.47958171367645264
+                },
+                {
+                    "token": "inadequate",
+                    "value": 0.47941210865974426
+                },
+                {
+                    "token": "terrible",
+                    "value": 0.47900864481925964
+                }
+            ]
+        },
+        {
+            "direction": 6,
+            "top_tokens": [
+                {
+                    "token": "#items",
+                    "value": 0.5481043457984924
+                },
+                {
+                    "token": "#ographs",
+                    "value": 0.49453267455101013
+                },
+                {
+                    "token": "#Article",
+                    "value": 0.4845495820045471
+                },
+                {
+                    "token": "#inctions",
+                    "value": 0.47719642519950867
+                },
+                {
+                    "token": "#ibles",
+                    "value": 0.4703390300273895
+                },
+                {
+                    "token": "#things",
+                    "value": 0.46483734250068665
+                },
+                {
+                    "token": "#auri",
+                    "value": 0.4602642357349396
+                },
+                {
+                    "token": "#Title",
+                    "value": 0.45585164427757263
+                },
+                {
+                    "token": "lifes",
+                    "value": 0.45355236530303955
+                },
+                {
+                    "token": "#icals",
+                    "value": 0.45190757513046265
+                },
+                {
+                    "token": "#Items",
+                    "value": 0.4510350525379181
+                },
+                {
+                    "token": "#ships",
+                    "value": 0.45011165738105774
+                },
+                {
+                    "token": "membranes",
+                    "value": 0.4453793466091156
+                },
+                {
+                    "token": "Characters",
+                    "value": 0.4379655718803406
+                },
+                {
+                    "token": "trophies",
+                    "value": 0.436806321144104
+                },
+                {
+                    "token": "#objects",
+                    "value": 0.43384629487991333
+                },
+                {
+                    "token": "#Appearance",
+                    "value": 0.4319312572479248
+                },
+                {
+                    "token": "items",
+                    "value": 0.42983463406562805
+                },
+                {
+                    "token": "decorations",
+                    "value": 0.42828065156936646
+                }
+            ]
+        },
+        {
+            "direction": 7,
+            "top_tokens": [
+                {
+                    "token": "excellent",
+                    "value": 0.6231626272201538
+                },
+                {
+                    "token": "#cellent",
+                    "value": 0.6148951649665833
+                },
+                {
+                    "token": "superb",
+                    "value": 0.5874913334846497
+                },
+                {
+                    "token": "brilliant",
+                    "value": 0.5759441256523132
+                },
+                {
+                    "token": "tremend",
+                    "value": 0.5673683881759644
+                },
+                {
+                    "token": "#Excellent",
+                    "value": 0.5650987029075623
+                },
+                {
+                    "token": "terrific",
+                    "value": 0.5603362321853638
+                },
+                {
+                    "token": "fantastic",
+                    "value": 0.5519172549247742
+                },
+                {
+                    "token": "impressive",
+                    "value": 0.5511711835861206
+                },
+                {
+                    "token": "pleasant",
+                    "value": 0.5395293235778809
+                },
+                {
+                    "token": "genuinely",
+                    "value": 0.5383214950561523
+                },
+                {
+                    "token": "phenomenal",
+                    "value": 0.5368140339851379
+                },
+                {
+                    "token": "unparalleled",
+                    "value": 0.5366397500038147
+                },
+                {
+                    "token": "robust",
+                    "value": 0.5346731543540955
+                },
+                {
+                    "token": "truly",
+                    "value": 0.5300804972648621
+                },
+                {
+                    "token": "tremendous",
+                    "value": 0.5285926461219788
+                },
+                {
+                    "token": "vibrant",
+                    "value": 0.5261765718460083
+                },
+                {
+                    "token": "immensely",
+                    "value": 0.5259166955947876
+                },
+                {
+                    "token": "vigorous",
+                    "value": 0.520650327205658
+                }
+            ]
+        },
+        {
+            "direction": 8,
+            "top_tokens": [
+                {
+                    "token": "hopeful",
+                    "value": 0.41970545053482056
+                },
+                {
+                    "token": "hoped",
+                    "value": 0.37224406003952026
+                },
+                {
+                    "token": "hope",
+                    "value": 0.3530092239379883
+                },
+                {
+                    "token": "pleased",
+                    "value": 0.35253164172172546
+                },
+                {
+                    "token": "Brendan",
+                    "value": 0.3453548550605774
+                },
+                {
+                    "token": "#ensen",
+                    "value": 0.34175053238868713
+                },
+                {
+                    "token": "#warn",
+                    "value": 0.3411902189254761
+                },
+                {
+                    "token": "clar",
+                    "value": 0.33816438913345337
+                },
+                {
+                    "token": "#byn",
+                    "value": 0.3373200297355652
+                },
+                {
+                    "token": "#request",
+                    "value": 0.33431434631347656
+                },
+                {
+                    "token": "reassuring",
+                    "value": 0.3289092183113098
+                },
+                {
+                    "token": "#ussen",
+                    "value": 0.3250381052494049
+                },
+                {
+                    "token": "#ãĥ¼ãĥ³",
+                    "value": 0.3231733739376068
+                },
+                {
+                    "token": "#Response",
+                    "value": 0.3218477964401245
+                },
+                {
+                    "token": "surprise",
+                    "value": 0.3209820091724396
+                },
+                {
+                    "token": "conclusion",
+                    "value": 0.32068729400634766
+                },
+                {
+                    "token": "Warn",
+                    "value": 0.3183445334434509
+                },
+                {
+                    "token": "someone",
+                    "value": 0.31620392203330994
+                },
+                {
+                    "token": "confirmation",
+                    "value": 0.3138246238231659
+                }
+            ]
+        },
+        {
+            "direction": 9,
+            "top_tokens": [
+                {
+                    "token": "#ãĤ¤ãĥĪ",
+                    "value": 0.5699511766433716
+                },
+                {
+                    "token": "3000",
+                    "value": 0.49982500076293945
+                },
+                {
+                    "token": "70",
+                    "value": 0.4987714886665344
+                },
+                {
+                    "token": "1900",
+                    "value": 0.47746989130973816
+                },
+                {
+                    "token": "1970",
+                    "value": 0.47206825017929077
+                },
+                {
+                    "token": "circa",
+                    "value": 0.4712349474430084
+                },
+                {
+                    "token": "1880",
+                    "value": 0.4707746207714081
+                },
+                {
+                    "token": "twent",
+                    "value": 0.4702421724796295
+                },
+                {
+                    "token": "XIV",
+                    "value": 0.46839579939842224
+                },
+                {
+                    "token": "1400",
+                    "value": 0.46753475069999695
+                },
+                {
+                    "token": "1870",
+                    "value": 0.46536877751350403
+                },
+                {
+                    "token": "seventy",
+                    "value": 0.46511003375053406
+                },
+                {
+                    "token": "twentieth",
+                    "value": 0.46383118629455566
+                },
+                {
+                    "token": "1920",
+                    "value": 0.4596109986305237
+                },
+                {
+                    "token": "9000",
+                    "value": 0.4509635865688324
+                },
+                {
+                    "token": "1910",
+                    "value": 0.44825366139411926
+                },
+                {
+                    "token": "90",
+                    "value": 0.4453100860118866
+                },
+                {
+                    "token": "midway",
+                    "value": 0.444987028837204
+                },
+                {
+                    "token": "1830",
+                    "value": 0.4448448717594147
+                }
+            ]
+        },
+        {
+            "direction": 10,
+            "top_tokens": [
+                {
+                    "token": "#Trust",
+                    "value": 0.5001964569091797
+                },
+                {
+                    "token": "\"$:/",
+                    "value": 0.49790140986442566
+                },
+                {
+                    "token": "#eg",
+                    "value": 0.49638819694519043
+                },
+                {
+                    "token": "#alcohol",
+                    "value": 0.47843924164772034
+                },
+                {
+                    "token": "#rypt",
+                    "value": 0.4776974320411682
+                },
+                {
+                    "token": "#icts",
+                    "value": 0.47461143136024475
+                },
+                {
+                    "token": "#icit",
+                    "value": 0.47020289301872253
+                },
+                {
+                    "token": "#tics",
+                    "value": 0.4673890173435211
+                },
+                {
+                    "token": "#GR",
+                    "value": 0.4673232436180115
+                },
+                {
+                    "token": "#icing",
+                    "value": 0.4564926028251648
+                },
+                {
+                    "token": "#resist",
+                    "value": 0.4520829916000366
+                },
+                {
+                    "token": "#mods",
+                    "value": 0.4514950215816498
+                },
+                {
+                    "token": "#harm",
+                    "value": 0.45109522342681885
+                },
+                {
+                    "token": "#ikes",
+                    "value": 0.4505879580974579
+                },
+                {
+                    "token": "#oat",
+                    "value": 0.45041126012802124
+                },
+                {
+                    "token": "#cohol",
+                    "value": 0.4502323567867279
+                },
+                {
+                    "token": "#verbs",
+                    "value": 0.4492419958114624
+                },
+                {
+                    "token": "#oby",
+                    "value": 0.447462797164917
+                },
+                {
+                    "token": "#cemic",
+                    "value": 0.4446539282798767
+                }
+            ]
+        },
+        {
+            "direction": 11,
+            "top_tokens": [
+                {
+                    "token": "audiences",
+                    "value": 0.6576523780822754
+                },
+                {
+                    "token": "readers",
+                    "value": 0.6331495046615601
+                },
+                {
+                    "token": "listeners",
+                    "value": 0.6250874400138855
+                },
+                {
+                    "token": "topics",
+                    "value": 0.6005994081497192
+                },
+                {
+                    "token": "peoples",
+                    "value": 0.6002355217933655
+                },
+                {
+                    "token": "avenues",
+                    "value": 0.5821329355239868
+                },
+                {
+                    "token": "communities",
+                    "value": 0.5803534984588623
+                },
+                {
+                    "token": "stories",
+                    "value": 0.5787075757980347
+                },
+                {
+                    "token": "venues",
+                    "value": 0.5781400203704834
+                },
+                {
+                    "token": "people",
+                    "value": 0.5647494792938232
+                },
+                {
+                    "token": "areas",
+                    "value": 0.5636250972747803
+                },
+                {
+                    "token": "themes",
+                    "value": 0.5577438473701477
+                },
+                {
+                    "token": "listings",
+                    "value": 0.5560868978500366
+                },
+                {
+                    "token": "sources",
+                    "value": 0.5548816323280334
+                },
+                {
+                    "token": "controversies",
+                    "value": 0.5502995848655701
+                },
+                {
+                    "token": "mysteries",
+                    "value": 0.5480343103408813
+                },
+                {
+                    "token": "trends",
+                    "value": 0.5453212261199951
+                },
+                {
+                    "token": "reviewers",
+                    "value": 0.544708788394928
+                },
+                {
+                    "token": "lists",
+                    "value": 0.5428357720375061
+                }
+            ]
+        },
+        {
+            "direction": 12,
+            "top_tokens": [
+                {
+                    "token": "#respected",
+                    "value": 0.5471745729446411
+                },
+                {
+                    "token": "#ffect",
+                    "value": 0.5433188080787659
+                },
+                {
+                    "token": "unwilling",
+                    "value": 0.5314216613769531
+                },
+                {
+                    "token": "thriving",
+                    "value": 0.5184643864631653
+                },
+                {
+                    "token": "addicted",
+                    "value": 0.5183250904083252
+                },
+                {
+                    "token": "inexperienced",
+                    "value": 0.5124980211257935
+                },
+                {
+                    "token": "favorably",
+                    "value": 0.5119603872299194
+                },
+                {
+                    "token": "loved",
+                    "value": 0.5070908069610596
+                },
+                {
+                    "token": "universally",
+                    "value": 0.5064907670021057
+                },
+                {
+                    "token": "behaving",
+                    "value": 0.500600278377533
+                },
+                {
+                    "token": "#isf",
+                    "value": 0.4977358877658844
+                },
+                {
+                    "token": "tolerant",
+                    "value": 0.4917931854724884
+                },
+                {
+                    "token": "#ruly",
+                    "value": 0.48811426758766174
+                },
+                {
+                    "token": "respected",
+                    "value": 0.48698005080223083
+                },
+                {
+                    "token": "unaffected",
+                    "value": 0.4866805076599121
+                },
+                {
+                    "token": "smoothly",
+                    "value": 0.48519960045814514
+                },
+                {
+                    "token": "unworthy",
+                    "value": 0.48291561007499695
+                },
+                {
+                    "token": "talented",
+                    "value": 0.48162510991096497
+                },
+                {
+                    "token": "incapable",
+                    "value": 0.481543630361557
+                }
+            ]
+        },
+        {
+            "direction": 13,
+            "top_tokens": [
+                {
+                    "token": "#articles",
+                    "value": 0.6376509070396423
+                },
+                {
+                    "token": "#attacks",
+                    "value": 0.6260924339294434
+                },
+                {
+                    "token": "#projects",
+                    "value": 0.6160817742347717
+                },
+                {
+                    "token": "#blems",
+                    "value": 0.5988588929176331
+                },
+                {
+                    "token": "incidents",
+                    "value": 0.5930695533752441
+                },
+                {
+                    "token": "#ulators",
+                    "value": 0.5921085476875305
+                },
+                {
+                    "token": "#agents",
+                    "value": 0.5910111665725708
+                },
+                {
+                    "token": "attacks",
+                    "value": 0.5793530941009521
+                },
+                {
+                    "token": "outbreaks",
+                    "value": 0.5715509057044983
+                },
+                {
+                    "token": "#places",
+                    "value": 0.5660048723220825
+                },
+                {
+                    "token": "#those",
+                    "value": 0.5612002015113831
+                },
+                {
+                    "token": "#saw",
+                    "value": 0.5585302710533142
+                },
+                {
+                    "token": "assaults",
+                    "value": 0.5575413703918457
+                },
+                {
+                    "token": "#actions",
+                    "value": 0.5537548661231995
+                },
+                {
+                    "token": "abuses",
+                    "value": 0.5530885457992554
+                },
+                {
+                    "token": "#ieties",
+                    "value": 0.5491020083427429
+                },
+                {
+                    "token": "distortions",
+                    "value": 0.5474079251289368
+                },
+                {
+                    "token": "#iments",
+                    "value": 0.5463793873786926
+                },
+                {
+                    "token": "#rams",
+                    "value": 0.5439504384994507
+                }
+            ]
+        },
+        {
+            "direction": 14,
+            "top_tokens": [
+                {
+                    "token": "#ãĥ¤",
+                    "value": 0.5362259745597839
+                },
+                {
+                    "token": "#PA",
+                    "value": 0.5175167322158813
+                },
+                {
+                    "token": "#mist",
+                    "value": 0.4901314675807953
+                },
+                {
+                    "token": "#west",
+                    "value": 0.48873987793922424
+                },
+                {
+                    "token": "#arre",
+                    "value": 0.48602095246315
+                },
+                {
+                    "token": "#warn",
+                    "value": 0.48004066944122314
+                },
+                {
+                    "token": "#sea",
+                    "value": 0.4767131209373474
+                },
+                {
+                    "token": "#urches",
+                    "value": 0.47623103857040405
+                },
+                {
+                    "token": "#angs",
+                    "value": 0.47448301315307617
+                },
+                {
+                    "token": "#urg",
+                    "value": 0.47344130277633667
+                },
+                {
+                    "token": "mob",
+                    "value": 0.47280967235565186
+                },
+                {
+                    "token": "hordes",
+                    "value": 0.4715324640274048
+                },
+                {
+                    "token": "#major",
+                    "value": 0.4703715443611145
+                },
+                {
+                    "token": "#minster",
+                    "value": 0.4647911787033081
+                },
+                {
+                    "token": "#rio",
+                    "value": 0.4639589190483093
+                },
+                {
+                    "token": "#loss",
+                    "value": 0.4625892639160156
+                },
+                {
+                    "token": "#POR",
+                    "value": 0.46201759576797485
+                },
+                {
+                    "token": "#mass",
+                    "value": 0.4598597288131714
+                },
+                {
+                    "token": "#pac",
+                    "value": 0.4567985534667969
+                }
+            ]
+        },
+        {
+            "direction": 15,
+            "top_tokens": [
+                {
+                    "token": "leaked",
+                    "value": 0.37967410683631897
+                },
+                {
+                    "token": "disastrous",
+                    "value": 0.3781546652317047
+                },
+                {
+                    "token": "#umph",
+                    "value": 0.3751331567764282
+                },
+                {
+                    "token": "#fired",
+                    "value": 0.3703133463859558
+                },
+                {
+                    "token": "#enburg",
+                    "value": 0.34966176748275757
+                },
+                {
+                    "token": "#result",
+                    "value": 0.34635594487190247
+                },
+                {
+                    "token": "highlighted",
+                    "value": 0.34538355469703674
+                },
+                {
+                    "token": "Suc",
+                    "value": 0.3435707092285156
+                },
+                {
+                    "token": "#enh",
+                    "value": 0.34207794070243835
+                },
+                {
+                    "token": "#impact",
+                    "value": 0.3408220112323761
+                },
+                {
+                    "token": "#outed",
+                    "value": 0.33497142791748047
+                },
+                {
+                    "token": "#added",
+                    "value": 0.3326568901538849
+                },
+                {
+                    "token": "#uple",
+                    "value": 0.3324314057826996
+                },
+                {
+                    "token": "Outbreak",
+                    "value": 0.33014023303985596
+                },
+                {
+                    "token": "#success",
+                    "value": 0.32706785202026367
+                },
+                {
+                    "token": "deleted",
+                    "value": 0.3253411054611206
+                },
+                {
+                    "token": "victory",
+                    "value": 0.3241792321205139
+                },
+                {
+                    "token": "#published",
+                    "value": 0.32304975390434265
+                },
+                {
+                    "token": "#arthed",
+                    "value": 0.322671502828598
+                }
+            ]
+        },
+        {
+            "direction": 16,
+            "top_tokens": [
+                {
+                    "token": "champion",
+                    "value": 0.382921040058136
+                },
+                {
+                    "token": "antiv",
+                    "value": 0.3679719567298889
+                },
+                {
+                    "token": "telecommunications",
+                    "value": 0.36682096123695374
+                },
+                {
+                    "token": "politician",
+                    "value": 0.3637760281562805
+                },
+                {
+                    "token": "queen",
+                    "value": 0.35777395963668823
+                },
+                {
+                    "token": "billionaire",
+                    "value": 0.35660088062286377
+                },
+                {
+                    "token": "prohibition",
+                    "value": 0.3551191985607147
+                },
+                {
+                    "token": "lawmaker",
+                    "value": 0.347270131111145
+                },
+                {
+                    "token": "commander",
+                    "value": 0.34117504954338074
+                },
+                {
+                    "token": "broadcaster",
+                    "value": 0.3369532823562622
+                },
+                {
+                    "token": "dictionary",
+                    "value": 0.3345167934894562
+                },
+                {
+                    "token": "telecom",
+                    "value": 0.33430323004722595
+                },
+                {
+                    "token": "dispensary",
+                    "value": 0.33333221077919006
+                },
+                {
+                    "token": "savior",
+                    "value": 0.3329518437385559
+                },
+                {
+                    "token": "premier",
+                    "value": 0.33099842071533203
+                },
+                {
+                    "token": "millionaire",
+                    "value": 0.32822269201278687
+                },
+                {
+                    "token": "decentralized",
+                    "value": 0.3279581367969513
+                },
+                {
+                    "token": "national",
+                    "value": 0.32775890827178955
+                },
+                {
+                    "token": "cryptocurrency",
+                    "value": 0.32250145077705383
+                }
+            ]
+        },
+        {
+            "direction": 17,
+            "top_tokens": [
+                {
+                    "token": "wearer",
+                    "value": 0.47233501076698303
+                },
+                {
+                    "token": "#Registered",
+                    "value": 0.42150360345840454
+                },
+                {
+                    "token": "eighteen",
+                    "value": 0.3960966467857361
+                },
+                {
+                    "token": "owner",
+                    "value": 0.38818079233169556
+                },
+                {
+                    "token": "#Owner",
+                    "value": 0.3811565339565277
+                },
+                {
+                    "token": "seventeen",
+                    "value": 0.3755863904953003
+                },
+                {
+                    "token": "nineteen",
+                    "value": 0.36449292302131653
+                },
+                {
+                    "token": "sixteen",
+                    "value": 0.3591969311237335
+                },
+                {
+                    "token": "earns",
+                    "value": 0.35845524072647095
+                },
+                {
+                    "token": "#geant",
+                    "value": 0.3562712073326111
+                },
+                {
+                    "token": "fifteen",
+                    "value": 0.35452619194984436
+                },
+                {
+                    "token": "fourteen",
+                    "value": 0.3529088795185089
+                },
+                {
+                    "token": "fluent",
+                    "value": 0.35204043984413147
+                },
+                {
+                    "token": "#agonist",
+                    "value": 0.3518863320350647
+                },
+                {
+                    "token": "#husband",
+                    "value": 0.34504234790802
+                },
+                {
+                    "token": "#someone",
+                    "value": 0.3437247574329376
+                },
+                {
+                    "token": "respondent",
+                    "value": 0.3422674536705017
+                },
+                {
+                    "token": "#trained",
+                    "value": 0.34007248282432556
+                },
+                {
+                    "token": "owns",
+                    "value": 0.3392259478569031
+                }
+            ]
+        },
+        {
+            "direction": 18,
+            "top_tokens": [
+                {
+                    "token": "gain",
+                    "value": 0.35197657346725464
+                },
+                {
+                    "token": "lose",
+                    "value": 0.3498862087726593
+                },
+                {
+                    "token": "regain",
+                    "value": 0.34448498487472534
+                },
+                {
+                    "token": "damages",
+                    "value": 0.3365677297115326
+                },
+                {
+                    "token": "accelerate",
+                    "value": 0.33338770270347595
+                },
+                {
+                    "token": "Suc",
+                    "value": 0.3313240706920624
+                },
+                {
+                    "token": "succeed",
+                    "value": 0.3018231987953186
+                },
+                {
+                    "token": "harm",
+                    "value": 0.2998278737068176
+                },
+                {
+                    "token": "loss",
+                    "value": 0.29710817337036133
+                },
+                {
+                    "token": "#strike",
+                    "value": 0.2969508767127991
+                },
+                {
+                    "token": "loses",
+                    "value": 0.2965215742588043
+                },
+                {
+                    "token": "incur",
+                    "value": 0.2953522205352783
+                },
+                {
+                    "token": "rise",
+                    "value": 0.2939888834953308
+                },
+                {
+                    "token": "get",
+                    "value": 0.2916107177734375
+                },
+                {
+                    "token": "gets",
+                    "value": 0.29087790846824646
+                },
+                {
+                    "token": "threaten",
+                    "value": 0.2879972457885742
+                },
+                {
+                    "token": "threatens",
+                    "value": 0.2867618799209595
+                },
+                {
+                    "token": "trouble",
+                    "value": 0.2836945056915283
+                },
+                {
+                    "token": "satur",
+                    "value": 0.2834286093711853
+                }
+            ]
+        },
+        {
+            "direction": 19,
+            "top_tokens": [
+                {
+                    "token": "#continue",
+                    "value": 0.5398542284965515
+                },
+                {
+                    "token": "disbanded",
+                    "value": 0.49387669563293457
+                },
+                {
+                    "token": "replacements",
+                    "value": 0.48917871713638306
+                },
+                {
+                    "token": "moratorium",
+                    "value": 0.48712047934532166
+                },
+                {
+                    "token": "refunds",
+                    "value": 0.48608458042144775
+                },
+                {
+                    "token": "#leaders",
+                    "value": 0.4835087060928345
+                },
+                {
+                    "token": "#few",
+                    "value": 0.4764125347137451
+                },
+                {
+                    "token": "priorit",
+                    "value": 0.4760790467262268
+                },
+                {
+                    "token": "#enaries",
+                    "value": 0.46902623772621155
+                },
+                {
+                    "token": "overhaul",
+                    "value": 0.46546676754951477
+                },
+                {
+                    "token": "admins",
+                    "value": 0.4641595482826233
+                },
+                {
+                    "token": "sponsors",
+                    "value": 0.46333011984825134
+                },
+                {
+                    "token": "continuing",
+                    "value": 0.4621202051639557
+                },
+                {
+                    "token": "departures",
+                    "value": 0.4616040885448456
+                },
+                {
+                    "token": "updating",
+                    "value": 0.4606475532054901
+                },
+                {
+                    "token": "#masters",
+                    "value": 0.45585229992866516
+                },
+                {
+                    "token": "replen",
+                    "value": 0.45567694306373596
+                },
+                {
+                    "token": "indefinitely",
+                    "value": 0.4544690251350403
+                },
+                {
+                    "token": "depart",
+                    "value": 0.45224878191947937
+                }
+            ]
+        },
+        {
+            "direction": 20,
+            "top_tokens": [
+                {
+                    "token": "phr",
+                    "value": 0.5570640563964844
+                },
+                {
+                    "token": "saying",
+                    "value": 0.5405121445655823
+                },
+                {
+                    "token": "statements",
+                    "value": 0.5117517709732056
+                },
+                {
+                    "token": "said",
+                    "value": 0.4630666971206665
+                },
+                {
+                    "token": "remarks",
+                    "value": 0.4615652859210968
+                },
+                {
+                    "token": "wording",
+                    "value": 0.4593171179294586
+                },
+                {
+                    "token": "remark",
+                    "value": 0.4541934132575989
+                },
+                {
+                    "token": "clothed",
+                    "value": 0.4535011649131775
+                },
+                {
+                    "token": "stated",
+                    "value": 0.4531945288181305
+                },
+                {
+                    "token": "quotes",
+                    "value": 0.4499432444572449
+                },
+                {
+                    "token": "Said",
+                    "value": 0.44948333501815796
+                },
+                {
+                    "token": "spoke",
+                    "value": 0.4492396116256714
+                },
+                {
+                    "token": "#said",
+                    "value": 0.4467824399471283
+                },
+                {
+                    "token": "did",
+                    "value": 0.44335320591926575
+                },
+                {
+                    "token": "wrote",
+                    "value": 0.4413949251174927
+                },
+                {
+                    "token": "words",
+                    "value": 0.4397485554218292
+                },
+                {
+                    "token": "replied",
+                    "value": 0.43913960456848145
+                },
+                {
+                    "token": "writings",
+                    "value": 0.438988596200943
+                },
+                {
+                    "token": "complied",
+                    "value": 0.43363380432128906
+                }
+            ]
+        }
+    ]
+}
