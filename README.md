@@ -18,23 +18,27 @@ By inspecting top tokens aligned with each singular direction, we can identify *
 
 ```
 MLP_SVD_Project/
-├── run_interp.py                # Analyze SVD directions of MLP weight 
-├── run_svd_probe.py             # Perform subspace-level interventions within the model
-├─ block_interp/
-│   ├─ top_tok.py         # Token processing and top-k extraction
-│   ├─ interp_mlp.py      # Core class for MLP subspace analysis (MLP_DEEF_INTERP)
-│   ├─ mlp_svd_utils.py   # SVD computation and embedding matrix reshaping utilities
-│   ├─ model_load.py      # Model loading and MLP weight extraction
+├── run_interp.py                # Analyze SVD directions of MLP weights
+├── run_circuit.py               # Perform subspace-level circuit analysis
+├── block_interp/                # Core modules for MLP SVD interpretation
+│   ├─ top_tok.py                # Token processing and top-k extraction
+│   ├─ interp_mlp.py             # Core class for MLP subspace analysis (MLP_DEEF_INTERP)
+│   ├─ mlp_svd_utils.py          # SVD computation and embedding matrix reshaping utilities
+│   ├─ model_load.py             # Model loading and MLP weight extraction
 │   └─ __init__.py
-├── svd_probe/                   # Core SVD analysis and intervention utilities
-│   ├── __init__.py
-│   ├── svd_ops.py               # SVD computation and subspace projections
-│   ├── model_interface.py       # Model loading, token generation, layer IO collection
-│   ├── subspace_intervention.py # Functions to enhance or remove subspace directions
-│   └── circuit_analysis.py      # Detector, effector, and DeEf circuit analysis
+├── circuit/                     # SVD analysis and intervention utilities
+│   ├─ svd_ops.py                # SVD computation and subspace projections
+│   ├─ collect_circuit_info.py   # Gather info for circuit analysis
+│   ├─ model_interface.py        # Model loading, token generation, and layer IO collection
+│   ├─ subspace_intervention.py  # Functions to enhance or remove subspace directions
+│   ├─ circuit_analysis.py       # Detector, effector, and DeEf circuit analysis
+│   └─ __init__.py
+├── plot_utils/                  # Visualization utilities
+│   ├─ plot_heatmap.py           # Heatmaps of subspace activated tokens
+│   ├─ plot_path.py              # Subspace contribution flow visualization
+│   └─ plot_subspace_contribute.py # Visualize subspace contributions per token
 ├── result/                      # Example outputs and top tokens per subspace
-├── requirements.txt             # Python dependencies
-
+├── requirements.txt             # todu
 ```
  
 
