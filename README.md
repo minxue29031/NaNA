@@ -18,27 +18,13 @@ By inspecting top tokens aligned with each singular direction, we can identify *
 
 ```
 MLP_SVD_Project/
-├── run_interp.py                # Analyze SVD directions of MLP weights
-├── run_circuit.py               # Perform subspace-level circuit analysis
-├── block_interp/                # Core modules for MLP SVD interpretation
-│   ├─ top_tok.py                # Token processing and top-k extraction
-│   ├─ interp_mlp.py             # Core class for MLP subspace analysis (MLP_DEEF_INTERP)
-│   ├─ mlp_svd_utils.py          # SVD computation and embedding matrix reshaping utilities
-│   ├─ model_load.py             # Model loading and MLP weight extraction
-│   └─ __init__.py
-├── circuit/                     # circuit analysis and intervention utilities
-│   ├─ svd_ops.py                # SVD subspace projections
-│   ├─ collect_circuit_info.py   # Gather info for circuit analysis
-│   ├─ model_interface.py        # Model loading, token generation, and layer IO collection
-│   ├─ subspace_intervention.py  # Functions to enhance or remove subspace directions
-│   ├─ circuit_analysis.py       # Detector, effector, and DeEf circuit analysis
-│   └─ __init__.py
+├── run_interp.py                # MLP subspace interpretation
+├── run_circuit.py               # Subspace-level circuit analysis
+├── block_interp/                # Core modules for SVD & interpretation
+├── circuit/                     # Circuit analysis and subspace interventions
 ├── plot_utils/                  # Visualization utilities
-│   ├─ plot_heatmap.py           # Heatmaps of subspace activated tokens
-│   ├─ plot_path.py              # Subspace contribution flow visualization
-│   └─ plot_subspace_contribute.py # Visualize subspace contributions per token
 ├── result/                      # Example outputs and top tokens per subspace
-├── requirements.txt             # not complete
+├── requirements.txt             # Python dependencies
 ```
  
 
@@ -54,31 +40,42 @@ pip install -r requirements.txt
 
 ## 🧩 Example Usage
 
-### 🔹 Detector & Effector Analysis
+### 🔹 MLP Subspace Interpretation
 
 ```bash
 python run_interp.py \
     --model_name gpt2-medium \
-    --layers 16 17 \
+    --layers 16 \
     --out_dir result \
     --topk_tokens 10 \
     --topk_subspaces 50 \
     --weight_type c_proj \
     --interp_type detector \
-    --with_negative \
-    --use_activation \
-    --with_values
+    --with_negative
 ```
 
 These scripts analyze **SVD directions** in the MLP layers of a transformer model.
 Each produces a ranked list of **top tokens** most associated with each singular direction, making it easier to interpret **semantic axes** within the model.
 
 
-### 🔹 Subspace Intervention
+### 🔹 Subspace Circuit Analysis
 
 ```bash
-python run_svd_probe.py
+python run_circuit.py \
+    --model_name gpt2-medium \
+    --in_seq "The cat looks very" \
+    --target_word " happy" \
+    --layers 16 \
+    --topk_subspaces 15 \
+    --topk_tokens 20 \
+    --output_dir result/circuit \
+    --circuit_mode DeEf \
+    --interp_type all \
+    --weight_type c_fc \
+    --return_heatmap
 ```
+
+### 🔹 Subspace Intervention (TODO)
 
 Performs **causal interventions** on specific MLP subspace directions — either **enhancing** or **removing** them — to study how these directions
 affect the model’s predictions and output semantics.
@@ -87,27 +84,32 @@ affect the model’s predictions and output semantics.
 
 Each script saves its results under the `result/` directory, including:
 
-* **Top tokens** associated with each SVD direction
-* **Activation strengths** for selected subspaces
-* **Modified generations** after subspace intervention
+* **Top-k token tables** for each subspace or direction (`.json`)
+* **Circuit analysis results** (`.json`) for `run_circuit.py`
+* **Heatmaps** visualizing subspace activations (`.png`)
+* **Contribution flow plots** for circuit analysis (`.png`)
  
 ### ⚙️ Configuration Parameters
 
 Both scripts share similar configurable options:
 
-| Parameter          | Type     | Default         | Description                                                              |
-| ------------------ | -------- | --------------- | ------------------------------------------------------------------------ |
-| `--model_name`     | str      | `"gpt2-medium"` | Hugging Face model name. Options: `"gpt2"`, `"gpt2-medium"`, `"gpt2-xl"` |
-| `--layers`         | int list | `[16]`          | Layer indices to analyze (space-separated)                               |
-| `--out_dir`        | str      | `"result"`      | Directory to save results                                                |
-| `--topk_tokens`    | int      | `10`            | Top-K tokens per direction                                               |
-| `--topk_subspaces` | int      | `50`            | Number of top singular directions to analyze                             |
-| `--weight_type`    | str      | `"c_proj"`      | MLP weight type: `c_proj`, `c_fc`, or `ov(TODO)`                               |
-| `--interp_type`    | str      | `"detector"`    | Interpretation type: `detector` or `effector`                            |
-| `--with_negative`  | bool     | `False`         | Save negative directions as well                                         |
-| `--use_activation` | bool     | `False`         | Apply activation function in projection                                  |
-| `--with_values`    | bool     | `False`         | Include token scores in output                                           |
-
+| Argument            | Default                | Description                               |
+| ------------------- | ---------------------- | ----------------------------------------- |
+| `--model_name`      | `"gpt2-medium"`        | Hugging Face model name                   |
+| `--in_seq`          | `"The cat looks very"` | Input text sequence                       |
+| `--target_word`     | `" happy"`             | Target word for analysis                  |
+| `--layers`          | `"16"`                 | MLP layer(s) to analyze (`"all"` or list) |
+| `--topk_subspaces`  | `15`                   | Top subspaces per layer                   |
+| `--topk_tokens`     | `20`                   | Top tokens for effect analysis            |
+| `--output_dir`      | `"result/circuit"`     | Directory to save results                 |
+| `--circuit_mode`    | `"DeEf"`               | Circuit mode (`DeEf`, `De`, `Ef`)         |
+| `--interp_type`     | `"all"`                | Interpretation type                       |
+| `--weight_type`     | `"c_fc"`               | Weight type for SVD (`c_fc` or `c_proj`)  |
+| `--return_heatmap`  | `False`                | Generate heatmap for each subspace        |
+| `--with_negative`   | `False`                | Save negative directions as well          |
+| `--size_scale`      | `200.0`                | Node size in circuit plot                 |
+| `--color_threshold` | `2.0`                  | Color threshold for circuit plot          |
+| `--box_width`       | `0.7`                  | Box width in circuit plot                 |
 
  ## 🔍 Quick Semantic/Syntactic Analysis with ChatGPT
 
