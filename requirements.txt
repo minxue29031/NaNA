@@ -4,3 +4,4 @@ datasets
 seaborn
 matplotlib
 tabulate
+numpy
