@@ -114,23 +114,24 @@ python run_interven.py \
 
 Both scripts share similar configurable options:
 
-| Argument            | Default                | Description                               |
-| ------------------- | ---------------------- | ----------------------------------------- |
-| `--model_name`      | `"gpt2-medium"`        | Hugging Face model name                   |
-| `--in_seq`          | `"The cat looks very"` | Input text sequence                       |
-| `--target_word`     | `" happy"`             | Target word for analysis                  |
-| `--layers`          | `"16"`                 | MLP layer(s) to analyze (`"all"` or list) |
-| `--topk_subspaces`  | `15`                   | Top subspaces per layer                   |
-| `--topk_tokens`     | `20`                   | Top tokens for effect analysis            |
-| `--output_dir`      | `"result/circuit"`     | Directory to save results                 |
-| `--circuit_mode`    | `"DeEf"`               | Circuit mode (`DeEf`, `De`, `Ef`)         |
-| `--interp_type`     | `"all"`                | Interpretation type                       |
-| `--weight_type`     | `"c_fc"`               | Weight type for SVD (`c_fc` or `c_proj`)  |
-| `--return_heatmap`  | `False`                | Generate heatmap for each subspace        |
-| `--with_negative`   | `False`                | Save negative directions as well          |
-| `--size_scale`      | `200.0`                | Node size in circuit plot                 |
-| `--color_threshold` | `2.0`                  | Color threshold for circuit plot          |
-| `--box_width`       | `0.7`                  | Box width in circuit plot                 |
+| `--model_name`     | str      | `"gpt2-medium"` | Model name. Options: `"gpt2"`, `"gpt2-medium"`, `"gpt2-xl"` |
+| `--layers`         | int list | `[16]`          | Layer indices to analyze (space-separated)                               |
+| `--out_dir`        | str      | `"result"`      | Directory to save results                                                |
+| `--topk_tokens`    | int      | `10`            | Top-K tokens per direction                                               |
+| `--topk_subspaces` | int      | `50`            | Number of top singular directions to analyze                             |
+| `--weight_type`    | str      | `"c_proj"`      | MLP weight type: `c_proj`, `c_fc`, or `ov(TODO)`                               |
+| `--interp_type`    | str      | `"detector"`    | Interpretation type: `detector` or `effector`                            |
+| `--with_negative`  | bool     | `False`         | Save negative directions as well                                         |
+| `--use_activation` | bool     | `False`         | Apply activation function in projection                                  |
+| `--with_values`    | bool     | `False`         | Include token scores in output                                           |
+| `--mode`              | `"general"`            | Intervention mode: `"general"` or `"ablation"`                          |
+| `--use_positive_only` | `False`                | Only include subspaces with positive contributions                      |
+| `--json_file`         | Required               | Path to JSON file containing top subspace extraction results                |
+| `--mode`              | `"general"`            | Intervention mode: `"general"` or `"ablation"`                          |
+| `--interv_mode`        | `"enhance"`            | Intervention type: `"enhance"` or `"ablate"`      |
+| `--interv_scale`       | `0.8`                  | Scaling factor for intervention effect            |
+| `--interv_dir_indices` | `[6]`                  | Subspace directions to intervene                  |
+| `--return_toptoks`     | `20`                   | Number of top tokens to return after intervention |
 
  ## 🔍 Quick Semantic/Syntactic Analysis with ChatGPT
 
