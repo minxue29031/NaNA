@@ -17,14 +17,16 @@ By inspecting top tokens aligned with each singular direction, we can identify *
 ## 📂 Repository Structure
 
 ```
-MLP_SVD_Project/
-├── run_interp.py                # MLP subspace interpretation
-├── run_circuit.py               # Subspace-level circuit analysis
-├── block_interp/                # Core modules for SVD & interpretation
-├── circuit/                     # Circuit analysis and subspace interventions
-├── plot_utils/                  # Visualization utilities
-├── result/                      # Example outputs and top tokens per subspace
-├── requirements.txt             # Python dependencies
+detector_effector/
+├── run_interp.py              # Interpret MLP subspaces (SVD + projection)
+├── run_circuit_extract.py     # Extract subspace-level circuits (like old run_circuit.py)
+├── run_interven.py            # Apply interventions on selected subspaces
+├── block_interp/              # Core SVD & MLP processing modules
+├── circuit/                   # Circuit analysis 
+│   └── circuit_interv/        # Specific intervention implementations
+├── plot_utils/                # Visualization utilities
+├── result/                    
+├── requirements.txt        
 ```
  
 
