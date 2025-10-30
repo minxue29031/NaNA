@@ -57,7 +57,6 @@ python run_interp.py \
 ```
 
 * **Returns:**
-
   * Top tokens per subspace
   * heatmaps and datastore
 
@@ -78,6 +77,9 @@ python run_circuit.py \
     --weight_type c_fc \
     --return_heatmap
 ```
+  * Circuit & Contribution scores
+  * Top tokens per subspace
+  * heatmaps and datastore
 
 ### 🔹 3. Subspace Circuit Extraction
 
@@ -109,15 +111,6 @@ python run_interven.py \
     --input_text "The cat looks very"
 ```
 
-### 📊 Output
-
-Each script saves its results under the `result/` directory, including:
-
-* **Top-k token tables** for each subspace or direction (`.json`)
-* **Circuit analysis results** (`.json`) for `run_circuit.py`
-* **Heatmaps** visualizing subspace activations (`.png`)
-* **Contribution flow plots** for circuit analysis (`.png`)
- 
 ### ⚙️ Configuration Parameters
 
 Both scripts share similar configurable options:
