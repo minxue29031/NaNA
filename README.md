@@ -97,8 +97,7 @@ python run_circuit_extract.py \
     --input_text "The cat looks very"
 ```
 
----
-
+ 
 ### 🔹 4. Subspace Intervention
 
 Apply interventions to enhance or remove selected subspaces.
