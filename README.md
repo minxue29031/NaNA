@@ -117,7 +117,7 @@ Both scripts share similar configurable options:
 | Argument               | Type     | Default         | Description                                                  |
 | ---------------------- | -------- | --------------- | ------------------------------------------------------------ |
 | `--model_name`         | str      | `"gpt2-medium"` | Model name. Options: `"gpt2"`, `"gpt2-medium"`, `"gpt2-xl"`  |
-| `--layers`             | int list | `[16]`          | Layer indices to analyze (space-separated)                   |
+| `--layers`             | int list | `[16]`          | Layer indices to analyze                                     |
 | `--out_dir`            | str      | `"result"`      | Directory to save results                                    |
 | `--topk_tokens`        | int      | `10`            | Top-K tokens per singular direction                          |
 | `--topk_subspaces`     | int      | `50`            | Number of top singular directions to analyze                 |
