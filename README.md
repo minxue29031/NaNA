@@ -83,7 +83,7 @@ python run_circuit.py \
 
 ### 🔹 3. Subspace Circuit Extraction
 
-> **Note:** Run `run_circuit.py` first to generate `circuit_points_scores_{weight_type}_gpt2-medium.json`.
+> **Note:** Run `run_circuit.py` first to generate `circuit_points_scores_{weight_type}_gpt2-medium.json` for analysis.
 
 ```bash
 python run_circuit_extract.py \
@@ -102,7 +102,7 @@ python run_circuit_extract.py \
 
 Apply interventions to enhance or remove selected subspaces.
 
-> **Note:** Requires JSON output from `run_circuit_extract.py`.
+> **Note:** Run `run_circuit.py` first to generate `circuit_points_scores_{weight_type}_gpt2-medium.json` for analysis.
 
 ```bash
 python run_interven.py \
