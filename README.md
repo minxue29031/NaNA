@@ -56,8 +56,10 @@ python run_interp.py \
     --with_negative
 ```
 
-These scripts analyze **SVD directions** in the MLP layers of a transformer model.
-Each produces a ranked list of **top tokens** most associated with each singular direction, making it easier to interpret **semantic axes** within the model.
+* **Returns:**
+
+  * Top tokens per subspace
+  * heatmaps and datastore
 
 
 ### 🔹 Subspace Circuit Analysis
@@ -77,10 +79,35 @@ python run_circuit.py \
     --return_heatmap
 ```
 
-### 🔹 Subspace Intervention (TODO)
+### 🔹 3. Subspace Circuit Extraction
 
-Performs **causal interventions** on specific MLP subspace directions — either **enhancing** or **removing** them — to study how these directions
-affect the model’s predictions and output semantics.
+> **Note:** Run `run_circuit.py` first to generate `circuit_points_scores_{weight_type}_gpt2-medium.json`.
+
+```bash
+python run_circuit_extract.py \
+    --model_name gpt2-medium \
+    --mode general \
+    --weight_type c_fc \
+    --top_subspaces 10 \
+    --use_positive_only \
+    --json_file path/to/subspace_results.json \
+    --layers 17 18 19 20 \
+    --input_text "The cat looks very"
+```
+
+---
+
+### 🔹 4. Subspace Intervention
+
+Apply interventions to enhance or remove selected subspaces.
+
+> **Note:** Requires JSON output from `run_circuit_extract.py`.
+
+```bash
+python run_interven.py \
+    --json_file path/to/subspace_results.json \
+    --input_text "The cat looks very"
+```
 
 ### 📊 Output
 
