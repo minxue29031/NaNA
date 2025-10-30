@@ -114,24 +114,25 @@ python run_interven.py \
 
 Both scripts share similar configurable options:
 
-| `--model_name`     | str      | `"gpt2-medium"` | Model name. Options: `"gpt2"`, `"gpt2-medium"`, `"gpt2-xl"` |
-| `--layers`         | int list | `[16]`          | Layer indices to analyze (space-separated)                               |
-| `--out_dir`        | str      | `"result"`      | Directory to save results                                                |
-| `--topk_tokens`    | int      | `10`            | Top-K tokens per direction                                               |
-| `--topk_subspaces` | int      | `50`            | Number of top singular directions to analyze                             |
-| `--weight_type`    | str      | `"c_proj"`      | MLP weight type: `c_proj`, `c_fc`, or `ov(TODO)`                               |
-| `--interp_type`    | str      | `"detector"`    | Interpretation type: `detector` or `effector`                            |
-| `--with_negative`  | bool     | `False`         | Save negative directions as well                                         |
-| `--use_activation` | bool     | `False`         | Apply activation function in projection                                  |
-| `--with_values`    | bool     | `False`         | Include token scores in output                                           |
-| `--mode`              | `"general"`            | Intervention mode: `"general"` or `"ablation"`                          |
-| `--use_positive_only` | `False`                | Only include subspaces with positive contributions                      |
-| `--json_file`         | Required               | Path to JSON file containing top subspace extraction results                |
-| `--mode`              | `"general"`            | Intervention mode: `"general"` or `"ablation"`                          |
-| `--interv_mode`        | `"enhance"`            | Intervention type: `"enhance"` or `"ablate"`      |
-| `--interv_scale`       | `0.8`                  | Scaling factor for intervention effect            |
-| `--interv_dir_indices` | `[6]`                  | Subspace directions to intervene                  |
-| `--return_toptoks`     | `20`                   | Number of top tokens to return after intervention |
+| Argument               | Type     | Default         | Description                                                  |
+| ---------------------- | -------- | --------------- | ------------------------------------------------------------ |
+| `--model_name`         | str      | `"gpt2-medium"` | Model name. Options: `"gpt2"`, `"gpt2-medium"`, `"gpt2-xl"`  |
+| `--layers`             | int list | `[16]`          | Layer indices to analyze (space-separated)                   |
+| `--out_dir`            | str      | `"result"`      | Directory to save results                                    |
+| `--topk_tokens`        | int      | `10`            | Top-K tokens per singular direction                          |
+| `--topk_subspaces`     | int      | `50`            | Number of top singular directions to analyze                 |
+| `--weight_type`        | str      | `"c_proj"`      | MLP weight type: `c_proj`, `c_fc` (or future options `ov`)   |
+| `--interp_type`        | str      | `"detector"`    | Interpretation type: `detector`, `effector` or `all`         |
+| `--with_negative`      | bool     | `False`         | Save negative directions as well                             |
+| `--use_activation`     | bool     | `False`         | Apply activation function in projection                      |
+| `--with_values`        | bool     | `False`         | Include token scores in output                               |
+| `--mode`               | str      | `"general"`     | Intervention mode: `"general"` or `"ablation"`               |
+| `--use_positive_only`  | bool     | `False`         | Only include subspaces with positive contributions           |
+| `--json_file`          | str      | Required        | Path to JSON file containing top subspace extraction results |
+| `--interv_mode`        | str      | `"enhance"`     | Intervention type: `"enhance"` or `"ablate"`                 |
+| `--interv_scale`       | float    | `0.8`           | Scaling factor for intervention effect                       |
+| `--interv_dir_indices` | list     | `[6]`           | Subspace directions to intervene                             |
+| `--return_toptoks`     | int      | `20`            | Number of top tokens to return after intervention            |
 
  ## 🔍 Quick Semantic/Syntactic Analysis with ChatGPT
 
