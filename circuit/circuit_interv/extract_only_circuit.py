@@ -4,7 +4,7 @@ from transformers import GPT2Tokenizer, GPT2LMHeadModel
 from block_interp.interp_mlp import load_model_and_embeddings 
 
 # Load subspace indices from JSON
-def load_subspace_indices(json_file, mode="general", top_subspaces=100, use_positive_only=True):
+def load_subspace_indices(json_file, top_subspaces=100, use_positive_only=True):
     with open(json_file, "r") as f:
         data = json.load(f)
 
@@ -21,14 +21,7 @@ def load_subspace_indices(json_file, mode="general", top_subspaces=100, use_posi
         else:
             pos_indices = [s["subspace_index"] - 1 for s in layer_info["subspace_results"] if s["contribution"]]
 
-        neg_indices = [i for i in all_indices if i not in pos_indices]
-
-        if mode == "general":
-            selected = pos_indices[:top_subspaces]
-        elif mode == "ablation":
-            selected = neg_indices[:top_subspaces]
-        else:
-            raise ValueError("mode must be 'general' or 'ablation'")
+        selected = pos_indices[:top_subspaces]
 
         if selected:
             layer_subspaces[layer_idx] = selected
@@ -51,15 +44,24 @@ def reconstruct_subspace(W, indices):
 
 
 # Create a forward hook for MLP layer replacement
-def make_mlp_hook(model, layer_idx, weight_type, layer_subspaces, device):
+def make_mlp_hook(model, layer_idx, mode, weight_type, layer_subspaces, device):
     linear_module = getattr(model.transformer.h[layer_idx].mlp, weight_type)
     W_orig = linear_module.weight.data
 
     if layer_idx not in layer_subspaces:
         return None
 
-    W_new = reconstruct_subspace(W_orig, layer_subspaces[layer_idx]).to(device)
-    print(f"\nLayer {layer_idx}: replaced {weight_type} with {len(layer_subspaces[layer_idx])} subspaces")
+    W_sub  = reconstruct_subspace(W_orig, layer_subspaces[layer_idx]).to(device)
+
+    if mode == "general":
+        W_new = W_sub
+    elif mode == "ablation":
+        W_new = W_orig.to(device) - W_sub
+    else:
+        raise ValueError("mode must be 'general' or 'ablation'")
+    
+    print(f"\nLayer {layer_idx}: replaced {weight_type} with {len(layer_subspaces[layer_idx])} subspaces (mode={mode})")
+
 
     def hook(module, input, output):
         x = input[0]
@@ -71,15 +73,15 @@ def make_mlp_hook(model, layer_idx, weight_type, layer_subspaces, device):
 
 
 # Register hooks for selected layers
-def register_hooks(model, selected_layers, weight_type, layer_subspaces, device):
+def register_hooks(model, mode, selected_layers, weight_type, layer_subspaces, device):
     hooks = []
     for lidx in selected_layers:
-        hook_fn = make_mlp_hook(model, lidx, weight_type, layer_subspaces, device)
+        hook_fn = make_mlp_hook(model, lidx, mode, weight_type, layer_subspaces, device)
         if hook_fn:
             target_module = getattr(model.transformer.h[lidx].mlp, weight_type)
             h = target_module.register_forward_hook(hook_fn)
             hooks.append(h)
-            print(f"✅ Registered hook: layer {lidx} ({weight_type})")
+            print(f">> Registered hook: layer {lidx} ({weight_type})")
     return hooks
 
 
@@ -116,10 +118,10 @@ def extract_circuit(
     
     print(f"Running mode={mode}, weight_type={weight_type}, use_positive_only={use_positive_only}")
 
-    layer_subspaces = load_subspace_indices(json_file, mode, top_subspaces, use_positive_only)
+    layer_subspaces = load_subspace_indices(json_file, top_subspaces, use_positive_only)
 
     model, tokenizer, W_E = load_model_and_embeddings(model_name, device)
-    hooks = register_hooks(model, selected_layers, weight_type, layer_subspaces, device)
+    hooks = register_hooks(model, mode, selected_layers, weight_type, layer_subspaces, device)
     
     print("\n--- Subspace-Modified Model ---")
     run_inference(model, tokenizer, input_text, device)
