@@ -80,23 +80,6 @@ python run_circuit.py \
   * Circuit & Contribution scores
   * Top tokens per subspace
   * heatmaps and datastore
-
-### 🔹 3. Subspace Circuit Extraction
-
-> **Note:** Run `run_circuit.py` first to generate `circuit_points_scores_{weight_type}_gpt2-medium.json` for analysis.
-
-```bash
-python run_circuit_extract.py \
-    --model_name gpt2-medium \
-    --mode general \
-    --weight_type c_fc \
-    --top_subspaces 10 \
-    --use_positive_only \
-    --json_file path/to/subspace_results.json \
-    --layers 17 18 19 20 \
-    --input_text "The cat looks very"
-```
-
  
 ### 🔹 4. Subspace Intervention
 
@@ -105,9 +88,23 @@ Apply interventions to enhance or remove selected subspaces.
 > **Note:** Run `run_circuit.py` first to generate `circuit_points_scores_{weight_type}_gpt2-medium.json` for analysis.
 
 ```bash
-python run_interven.py \
+```bash
+python run_modify.py \
+    --gene_or_abla general \
+    --weight_type c_fc \
+    --top_subspaces 10 \
+    --use_positive_only \
     --json_file path/to/subspace_results.json \
-    --input_text "The cat looks very"
+    --model_name gpt2-medium \
+    --layers 17 18 19 20 \
+    --use_bias \
+    --input_text "The cat looks very" \
+    --output_dir result/interven_result \
+    --modify_type rebuild \
+    --interv_factor 0.1 \
+    --use_full_residual \
+    --token_num 20
+```
 ```
 
 ### ⚙️ Configuration Parameters
@@ -133,6 +130,12 @@ Both scripts share similar configurable options:
 | `--interv_scale`       | float    | `0.8`           | Scaling factor for intervention effect                       |
 | `--interv_dir_indices` | list     | `[6]`           | Subspace directions to intervene                             |
 | `--return_toptoks`     | int      | `20`            | Number of top tokens to return after intervention            |
+| `--use_bias`          | flag     | False                      | Modify MLP using bias                                                                 |
+| `--input_text`        | str      | `"The cat looks very"`     | Input text prompt for inference                                                       |
+| `--modify_type`       | str      | `"rebuild"`                | Type of modification: `"rebuild"` or `"interv"`                                       |
+| `--interv_factor`     | float    | 0.1                        | Scaling factor for intervention                                                       |
+| `--use_full_residual` | flag     | False                      | Whether to use full residual during modification                                      |
+| `--token_num`         | int      | 20                         | Number of top tokens to display during inference                                      |
 
  ## 🔍 Quick Semantic/Syntactic Analysis with ChatGPT
 
