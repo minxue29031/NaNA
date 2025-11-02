@@ -127,3 +127,4 @@ if __name__ == "__main__":
         color_threshold=args.color_threshold,
         box_width=args.box_width
     )
+ 
