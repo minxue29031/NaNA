@@ -18,9 +18,9 @@ By inspecting top tokens aligned with each singular direction, we can identify *
 
 ```
 detector_effector/
-├── run_interp.py              # Interpret MLP subspaces (SVD + projection)
-├── run_circuit_extract.py     # Extract subspace-level circuits (like old run_circuit.py)
-├── run_interven.py            # Apply interventions on selected subspaces
+├── run_interp.py              # Interpret MLP subspaces 
+├── run_circuit.py             # Circuit extraction & analysis
+├── run_modify.py              # Apply interventions 
 ├── block_interp/              # Core SVD & MLP processing modules
 ├── circuit/                   # Circuit analysis 
 │   └── circuit_interv/        # Specific intervention implementations
