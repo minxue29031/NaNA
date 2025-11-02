@@ -87,7 +87,7 @@ Apply interventions to enhance or remove selected subspaces.
 
 > **Note:** Run `run_circuit.py` first to generate `circuit_points_scores_{weight_type}_gpt2-medium.json` for analysis.
 
-```bash
+ 
 ```bash
 python run_modify.py \
     --gene_or_abla general \
@@ -105,7 +105,7 @@ python run_modify.py \
     --use_full_residual \
     --token_num 20
 ```
-```
+ 
 
 ### ⚙️ Configuration Parameters
 
@@ -124,7 +124,7 @@ Both scripts share similar configurable options:
 | `--with_negative`      | bool     | `False`         | Save negative directions as well                             |
 | `--use_activation`     | bool     | `False`         | Apply activation function in projection                      |
 | `--with_values`        | bool     | `False`         | Include token scores in output                               |
-| `--mode`               | str      | `"general"`     | Intervention mode: `"general"` or `"ablation"`               |
+| `--gene_or_abla`       | str      | `"general"`     | Intervention mode: `"general"` or `"ablation"`               |
 | `--use_positive_only`  | bool     | `False`         | Only include subspaces with positive contributions           |
 | `--json_file`          | str      | Required        | Path to JSON file containing top subspace extraction results |
 | `--interv_mode`        | str      | `"enhance"`     | Intervention type: `"enhance"` or `"ablate"`                 |
