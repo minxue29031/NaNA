@@ -148,6 +148,7 @@ def create_subspace_hook(
 
         def hook(module, input, output):
             x_last = ln2_inputs_last_token[layer_idx]
+            
             if x_last is None:
                 return output
             _, y_after = show_intervention(

@@ -28,17 +28,18 @@ def run_inference(model, tokenizer, text, device, topk=10):
 
 
 
+
 def show_infer(model, tokenizer, input_text, hooks, device, topk=10, save_dir=None):
     results = {}
 
-    print("\n<< Subspace-Modified Model >>")
     results["modified"] = run_inference(model, tokenizer, input_text, device, topk)
+    print("\n<< The subspace modification operation is complete. >>")
 
     for h in hooks:
         h.remove()
 
-    print("\n<< Original Model >>")
     results["original"] = run_inference(model, tokenizer, input_text, device, topk)
+    print("\n<< Original model operation is complete. >>")
 
     if save_dir is not None:
         os.makedirs(save_dir, exist_ok=True)
@@ -48,7 +49,7 @@ def show_infer(model, tokenizer, input_text, hooks, device, topk=10, save_dir=No
 
     return results
 
-    
+
     
  
 def print_top_tokens(tokenizer, y, weight_type, W_E=None, reshape_W_E=None, topk=10):

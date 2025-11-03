@@ -3,38 +3,31 @@ import torch
 import argparse
 from typing import List
 from block_interp.interp_mlp import MLP_DEEF_INTERP
+from block_interp.model_load import parse_layers_arg
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(
-        description="Professional MLP Subspace Interpretation Tool"
-    )
-    parser.add_argument("--model_name", type=str, default="gpt2-medium",
-                        help="Hugging Face model name (e.g., 'gpt2-medium')")
-    parser.add_argument("--layers", type=str, default="16", help="MLP layer index, list or 'all'")
-    parser.add_argument("--out_dir", type=str, default="result",
-                        help="Directory to save results")
-    parser.add_argument("--topk_tokens", type=int, default=10,
-                        help="Number of top tokens per direction")
-    parser.add_argument("--topk_subspaces", type=int, default=50,
-                        help="Number of top singular directions to analyze")
-    parser.add_argument("--weight_type", type=str, choices=["c_proj", "c_fc", "ov"],
-                        default="c_proj", help="Weight matrix type")
-    parser.add_argument("--interp_type", type=str, choices=["detector", "effector", "all"],
-                        default="detector", help="Interpretation type")
-    parser.add_argument("--with_negative", action="store_true",
-                        help="Save negative directions as well")
-    parser.add_argument("--device", type=str, default=None,
-                        help="Torch device (cuda/cpu); auto-detect if None")
+    parser = argparse.ArgumentParser(description="Professional MLP Subspace Interpretation Tool")
+    
+    parser.add_argument("--model_name", type=str, default="gpt2-medium", help="Hugging Face model name (e.g., 'gpt2-medium')")
+    parser.add_argument("--layers", nargs='+', default=["all"], help="Specify layers (e.g. --layers 4 5 6) or 'all'")
+    parser.add_argument("--out_dir", type=str, default="result", help="Directory to save results")
+    parser.add_argument("--topk_tokens", type=int, default=10, help="Number of top tokens per direction")
+    parser.add_argument("--topk_subspaces", type=int, default=50, help="Number of top singular directions to analyze")
+    parser.add_argument("--weight_type", type=str, choices=["c_proj", "c_fc", "ov"], default="c_proj", help="Weight matrix type")
+    parser.add_argument("--interp_type", type=str, choices=["detector", "effector", "all"], default="detector", help="Interpretation type")
+    parser.add_argument("--with_negative", action="store_true", help="Save negative directions as well")
+    parser.add_argument("--device", type=str, default=None, help="Torch device (cuda/cpu); auto-detect if None")
+    
     return parser.parse_args()
 
 
 
 def run_mlp_analysis(
     model_name: str,
-    layers_to_use: List[int],
+    layers: List[int],
     out_dir: str = "result",
     topk_tokens: int = 10,
     topk_subspaces: int = 50,
@@ -47,23 +40,11 @@ def run_mlp_analysis(
 ):
   
     os.makedirs(out_dir, exist_ok=True)
-     
-    # Initialize the interpretation interface
-    interp_io = MLP_DEEF_INTERP(
-        model_name=model_name,
-        output_dir=out_dir,
-        device=device
-    )
-    
-    if args.layers.lower() == "all":
-        total_layers = len([m for m in model.transformer.h if hasattr(m.mlp, "c_fc")])
-        layers_to_use = list(range(total_layers))
-    else:
-        layers_to_use = [int(x) for x in args.layers.replace(",", " ").split()]
-
+    layers_to_use = parse_layers_arg(layers, model_name)
     print(f">> Layers to process: {layers_to_use}")
     
-    
+    interp_io = MLP_DEEF_INTERP(model_name=model_name, output_dir=out_dir, device=device)
+ 
     # Run analysis for each layer
     with torch.no_grad():
         for layer_idx in layers_to_use:
@@ -89,7 +70,7 @@ if __name__ == "__main__":
     
     run_mlp_analysis(
         model_name=args.model_name,
-        layers_to_use=args.layers,
+        layers=args.layers,
         out_dir=args.out_dir,
         topk_tokens=args.topk_tokens,
         topk_subspaces=args.topk_subspaces,

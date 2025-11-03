@@ -5,7 +5,6 @@ def compute_svd(weight_type: str, c_fc=None, c_proj=None, ln_2=None):
     """
     Compute the Singular Value Decomposition (SVD) of an MLP weight matrix.
     """
-        
     if weight_type == "c_proj":
         w = c_proj.weight
 
@@ -13,21 +12,14 @@ def compute_svd(weight_type: str, c_fc=None, c_proj=None, ln_2=None):
         w = c_fc.weight.T.detach()  
         ln_2_weight = ln_2.weight.detach() 
         w = w * ln_2_weight 
-        print("------w = w * ln_2_weight -----",w )
+        
     else:
         raise ValueError(f"Unknown weight_type: {weight_type}")
     
     device=w.device
-    
     U, S, V = torch.linalg.svd(w.cpu(), full_matrices=False)
     U, S, V = U.to(device), S.to(device), V.to(device)
     
-    """
-    r = 8
-    for i in range(r):
-        W_reconst =  S[i] * torch.outer(U[:, i], V[i, :]) 
-        print(f">>>>>>>>>>>>>>>>> {weight_type} - {i}", W_reconst.shape,W_reconst)
-    """
     return U, S, V
  
 

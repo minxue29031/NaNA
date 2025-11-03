@@ -4,6 +4,7 @@ import argparse
 from block_interp.interp_mlp import load_model_and_embeddings
 from circuit.circuit_analysis import analyze_mlp_subspaces
 from circuit.collect_circuit_info import save_circuit_info, layer_info
+from block_interp.model_load import parse_layers_arg
 
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -15,7 +16,7 @@ def parse_args():
     parser.add_argument("--model_name", type=str, default="gpt2-medium", help="Model name")
     parser.add_argument("--in_seq", type=str, default="The cat looks very", help="Input text")
     parser.add_argument("--target_word", type=str, default=" happy", help="Target word for analysis")
-    parser.add_argument("--layers", type=str, default="16", help="MLP layer index, list or 'all'")
+    parser.add_argument("--layers", nargs='+', default=["all"], help="Specify layers (e.g. --layers 4 5 6) or 'all'")
     parser.add_argument("--topk_subspaces", type=int, default=15, help="Top-K subspaces to analyze")
     parser.add_argument("--topk_tokens", type=int, default=20, help="Top-K tokens for effect analysis")
     parser.add_argument("--output_dir", type=str, default="result/circuit", help="Output directory")
@@ -48,15 +49,10 @@ def extract_circuit(
 ):
 
     os.makedirs(output_dir, exist_ok=True)
-
-
     model, tokenizer, W_E = load_model_and_embeddings(model_name, device)
 
-    if isinstance(layers, str) and layers.lower() == "all":
-        total_layers = len([m for m in model.transformer.h if hasattr(m.mlp, "c_fc")])
-        layers_to_use = list(range(total_layers))
-    else:
-        layers_to_use = [int(x) for x in str(layers).replace(",", " ").split()]
+    layers_to_use = parse_layers_arg(layers, model_name)
+    print(f">> Layers to process: {layers_to_use}")
 
     all_layers_circuits = {}
     all_cirpoints_scores = {}
@@ -110,7 +106,7 @@ def extract_circuit(
 
 if __name__ == "__main__":
     args = parse_args()
-
+    
     extract_circuit(
         model_name=args.model_name,
         in_seq=args.in_seq,

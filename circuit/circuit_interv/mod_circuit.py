@@ -60,7 +60,6 @@ def reubuld_interv(
 
     layer_subspaces = load_subspace_indices(json_file, top_subspaces, use_positive_only)
     model, tokenizer, W_E = load_model_and_embeddings(model_name, device)
- 
     
     hooks = register_hooks(
         model, 
@@ -79,7 +78,7 @@ def reubuld_interv(
         input_text=input_text,
         token_num=token_num
     )
-    
+     
 
     final_prediction = show_infer(
         model, 
@@ -90,4 +89,5 @@ def reubuld_interv(
         topk=token_num, 
         save_dir=output_dir
     )
+
  

@@ -74,3 +74,26 @@ def parse_topk_subspaces(topk_subspaces, total_subspaces):
         raise TypeError("topk_subspaces must be int, list[int], or 'all'.")
 
     return indices, label
+
+
+def parse_layers_arg(args_layers, model_name: str):
+    """
+    Parse the --layers argument.
+    Supports:
+      --layers all
+      --layers 4 5 6
+    """
+    if isinstance(args_layers, list) and len(args_layers) == 1 and args_layers[0].lower() == "all":
+        args_layers = "all"
+
+    if isinstance(args_layers, list):
+        return [int(x) for x in args_layers]
+
+    elif isinstance(args_layers, str) and args_layers.lower() == "all":
+        model = AutoModelForCausalLM.from_pretrained(model_name)
+        total_layers = len([m for m in model.transformer.h if hasattr(m.mlp, "c_fc")])
+        del model
+        return list(range(total_layers))
+
+    else:
+        raise ValueError(f"Invalid --layers argument: {args_layers}")
