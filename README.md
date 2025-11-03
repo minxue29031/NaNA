@@ -81,7 +81,7 @@ python run_circuit.py \
   * Top tokens per subspace
   * heatmaps and datastore
  
-### 🔹 4. Subspace Intervention
+### 🔹 Subspace Intervention
 
 Apply interventions to enhance or remove selected subspaces.
 
