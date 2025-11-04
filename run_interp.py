@@ -19,6 +19,8 @@ def parse_args():
     parser.add_argument("--weight_type", type=str, choices=["c_proj", "c_fc", "ov"], default="c_proj", help="Weight matrix type")
     parser.add_argument("--interp_type", type=str, choices=["detector", "effector", "all"], default="detector", help="Interpretation type")
     parser.add_argument("--with_negative", action="store_true", help="Save negative directions as well")
+    parser.add_argument("--save_file", action="store_true", help="Save the computed subspace results to a file.")
+    parser.add_argument("--return_heatmap", action="store_true", help="Return the subspace heatmap.")
     parser.add_argument("--device", type=str, default=None, help="Torch device (cuda/cpu); auto-detect if None")
     
     return parser.parse_args()
@@ -58,7 +60,7 @@ def run_mlp_analysis(
                 interp_type=interp_type,
                 with_negative=with_negative,
                 save_file=save_file,
-                return_heatmap=save_file
+                return_heatmap=return_heatmap
             )
 
     print("\nAll specified layers have been processed.")
@@ -77,6 +79,8 @@ if __name__ == "__main__":
         weight_type=args.weight_type,
         interp_type=args.interp_type,
         with_negative=args.with_negative,
+        save_file=args.save_file,
+        return_heatmap=args.return_heatmap,
         device=args.device
     )
  
