@@ -111,30 +111,31 @@ python run_modify.py \
 
 Both scripts share similar configurable options:
 
-| Argument                 | Type     | Default         | Description                                                                               |
-| ------------------------ | -------- | --------------- | ----------------------------------------------------------------------------------------- |
-| `--model_name`           | str      | `"gpt2-medium"` | Model name. Options: `"gpt2"`, `"gpt2-medium"`, `"gpt2-xl"`                               |
-| `--layers`               | int list | `[16]`          | Indices of the layers to analyze                                                          |
-| `--out_dir`              | str      | `"result"`      | Directory to save the output results                                                      |
-| `--topk_tokens`          | int      | `10`            | Number of top tokens to select per singular direction                                     |
-| `--topk_subspaces`       | int      | `50`            | Number of top singular directions to analyze                                              |
-| `--weight_type`          | str      | `"c_proj"`      | MLP weight type: `"c_proj"` or `"c_fc"`                                                   |
-| `--interp_type`          | str      | `"detector"`    | Interpretation type: `"detector"`, `"effector"`, or `"all"`                               |
-| `--with_negative`        | bool     | `False`         | Include negative subspace directions in the output                                        |
-| `--use_activation`       | bool     | `False`         | Apply activation function when projecting subspaces                                       |
-| `--with_values`          | bool     | `False`         | Include token scores in the output                                                        |
-| `--gene_or_abla`         | str      | `"general"`     | Intervention mode: `"general"` or `"ablation"`                                            |
-| `--use_positive_only`    | bool     | `False`         | Include only subspaces with positive contributions                                        |
-| `--auto_subspace_file`   | str      | Required        | Path to a JSON file containing automatically extracted, enhanced, or suppressed subspaces |
-| `--manual_subspace_file` | str      | Required        | Path to a JSON file containing manually enhanced or suppressed subspaces                  |
-| `--interv_scale`         | float    | `0.8`           | Scaling factor applied during intervention                                                |
-| `--interv_dir_indices`   | list     | `[6]`           | Indices of subspace directions to intervene                                               |
-| `--return_toptoks`       | int      | `20`            | Number of top tokens to return after intervention                                         |
-| `--use_bias`             | flag     | `False`         | Modify MLP using bias terms                                                               |
-| `--modify_type`          | str      | `"rebuild"`     | Type of subspace modification: `"rebuild"`, `"auto_interv"`, or `"manual_interv"`         |
-| `--interv_factor`        | float    | `0.1`           | Factor to scale the intervention effect                                                   |
-| `--use_full_residual`    | flag     | `False`         | Whether to use the full residual during modification                                      |
-| `--token_num`            | int      | `20`            | Number of top tokens to display during inference                                          |
+| Argument               | Type     | Default         | Description                                                  |
+| ------------------------------- | -------- | --------------- | ------------------------------------------------------------- |
+| `--model_name`         | str      | `"gpt2-medium"` | Model name. Options: `"gpt2"`, `"gpt2-medium"`, `"gpt2-xl"`  |
+| `--layers`             | int list | `[16]`          | Layer indices to analyze                                     |
+| `--out_dir`            | str      | `"result"`      | Directory to save results                                    |
+| `--topk_tokens`        | int      | `10`            | Top-K tokens per singular direction                          |
+| `--topk_subspaces`     | int      | `50`            | Number of top singular directions to analyze                 |
+| `--weight_type`        | str      | `"c_proj"`      | MLP weight type: `c_proj`, `c_fc`                            |
+| `--interp_type`        | str      | `"detector"`    | Interpretation type: `detector`, `effector`, or `all`        |
+| `--with_negative`      | bool     | `False`         | Save negative directions as well                             |
+| `--use_activation`     | bool     | `False`         | Apply activation function in projection                      |
+| `--with_values`        | bool     | `False`         | Include token scores in output                               |
+| `--gene_or_abla`          | str      | `"general"`     | Intervention mode: `"general"` or `"ablation"`               |
+| `--use_positive_only`     | bool     | `False`         | Only include subspaces with positive contributions           |
+| `--auto_subspace_file`     | str      | Required        | Automatically extracted, enhanced, or suppressed subspaces |
+| `--manual_subspace_file`   | str      | Required      | Manually enhanced or suppressed subspaces               |
+| `--interv_scale`       | float    | `0.8`           | Scaling factor for intervention effect                       |
+| `--interv_dir_indices` | list     | `[6]`           | Subspace directions to intervene                             |
+| `--return_toptoks`     | int      | `20`            | Number of top tokens to return after intervention            |
+| `--use_bias`           | flag     | False           | Modify MLP using bias                                        |
+| `--modify_type`        | str      | `"rebuild"`     | Type of subspace modification to apply: `"rebuild"`, `"auto_interv"`, or `"manual_interv"` |
+| `--interv_factor`      | float    | 0.1             | Scaling factor for intervention                              |
+| `--use_full_residual`  | flag     | False           | Whether to use full residual during modification             |
+| `--token_num`          | int      | 20              | Number of top tokens to display during inference             |
+
 
 
 
