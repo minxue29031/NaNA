@@ -45,20 +45,28 @@ def reubuld_interv(
     weight_type,
     top_subspaces,
     use_positive_only,
-    json_file,
+    manual_subspace_file,
+    auto_subspace_file,
     selected_layers,
     input_text, 
     use_bias,
     device,
-    modify_type ="rebuild", #interv
+    modify_type ="rebuild",  # options: "rebuild", "auto_interv", "manual_interv"
     interv_factor=0.1,
     use_full_residual=True,
     token_num=20,
     output_dir=None):
     
-    print(f"Running mode={gene_or_abla}, weight_type={weight_type}, use_positive_only={use_positive_only}")
-
-    layer_subspaces = load_subspace_indices(json_file, top_subspaces, use_positive_only)
+    print(f"Running modify type: {modify_type}, mode={gene_or_abla}, weight_type={weight_type}, use_positive_only={use_positive_only}")
+ 
+    if modify_type == "manual_interv":
+        print("Manual intervention mode: using user-provided JSON for subspace indices.")
+        with open(manual_subspace_file, "r") as f:
+            raw_data = json.load(f)
+        layer_subspaces = {int(k): [idx - 1 for idx in v] for k, v in raw_data.items()}
+    else:
+        layer_subspaces = load_subspace_indices(auto_subspace_file, top_subspaces, use_positive_only)
+    
     model, tokenizer, W_E = load_model_and_embeddings(model_name, device)
     
     hooks = register_hooks(

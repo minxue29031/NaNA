@@ -92,7 +92,7 @@ def get_modified_weights(
     if modify_type == "rebuild":
         W_reconst, W_orig, c_fc, c_proj, ln_2, act = manipulator.rebuild_subspace(subspace_indices)
         W_new = W_reconst if gene_or_abla == "general" else (W_orig - W_reconst)
-    elif modify_type == "interv":
+    elif modify_type in ["manual_interv", "auto_interv"]:
         W_reconst, W_orig, c_fc, c_proj, ln_2, act = manipulator.interv_subspace(subspace_indices, interv_factor)
         W_new = W_reconst
     else:
@@ -220,6 +220,7 @@ def register_hooks(
     """
     Register forward hooks for last token capture and subspace interventions.
     """
+    
     handles = []
     num_layers = len(model.transformer.h)
     
