@@ -15,13 +15,14 @@ def parse_args():
     parser.add_argument("--weight_type", type=str, default="c_fc", choices=["c_fc", "c_proj"], help="Type of MLP linear weight to modify")
     parser.add_argument("--top_subspaces", type=int, default=10, help="Number of top subspaces to select per layer")
     parser.add_argument("--use_positive_only", action="store_true", help="Only include subspaces with positive contributions")
-    parser.add_argument("--json_file", type=str, required=True, help="Path to JSON file containing subspace results")
+    parser.add_argument("--manual_subspace_file", type=str, required=False, help="Path to JSON file containing subspace results for manual intervention")
+    parser.add_argument("--auto_subspace_file", type=str, required=True, help="Path to JSON file containing subspace results")
     parser.add_argument("--model_name", type=str, default="gpt2-medium", help="HuggingFace gene_or_abla l name (e.g., gpt2, gpt2-medium)")
     parser.add_argument("--layers", nargs='+', default=["all"], help="Specify layers (e.g. --layers 4 5 6) or 'all'")
     parser.add_argument("--use_bias", action="store_true", help="Modified MLP using bias")
     parser.add_argument("--input_text", type=str, default="The cat looks very", help="Input text prompt for inference")
     parser.add_argument("--output_dir", type=str, default="result/interven_result", help="Output directory")
-    parser.add_argument("--modify_type", type=str, default="rebuild", choices=["rebuild", "interv"], help="Type of modification to apply: 'rebuild' or 'interv'")
+    parser.add_argument("--modify_type", type=str, default="rebuild", choices=["rebuild", "auto_interv", "manual_interv"], help="Type of modification to apply: 'rebuild' or 'interv'")
     parser.add_argument("--interv_factor", type=float, default=0.1, help="Scaling factor for intervention")
     parser.add_argument("--use_full_residual", action="store_true", help="Whether to use full residual during modification")
     parser.add_argument("--token_num", type=int, default=20, help="Number of top tokens to display during inference")
@@ -43,7 +44,8 @@ if __name__ == "__main__":
             weight_type=args.weight_type,
             top_subspaces=args.top_subspaces,
             use_positive_only=args.use_positive_only,
-            json_file=args.json_file,
+            manual_subspace_file=args.manual_subspace_file,
+            auto_subspace_file=args.auto_subspace_file,
             selected_layers=layers_to_modify,
             input_text=args.input_text,
             use_bias=args.use_bias,
