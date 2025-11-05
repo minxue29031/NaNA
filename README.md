@@ -126,8 +126,8 @@ Both scripts share similar configurable options:
 | `--with_values`        | bool     | `False`         | Include token scores in output                               |
 | `--gene_or_abla`       | str      | `"general"`     | Intervention mode: `"general"` or `"ablation"`               |
 | `--use_positive_only`  | bool     | `False`         | Only include subspaces with positive contributions           |
-| `--auto_subspace_file` | str      | Required        | Path to a JSON file containing top subspaces that were automatically extracted, enhanced, or suppressed |
-| `--manual_subspace_file` | str      | Required      | Path to a JSON file containing top subspaces that were manually enhanced, or suppressed |
+| `--auto_subspace_file` | str      | Required        | Automatically extracted, enhanced, or suppressed subspaces |
+| `--manual_subspace_file` | str      | Required      | Manually enhanced or suppressed subspaces               |
 | `--interv_scale`       | float    | `0.8`           | Scaling factor for intervention effect                       |
 | `--interv_dir_indices` | list     | `[6]`           | Subspace directions to intervene                             |
 | `--return_toptoks`     | int      | `20`            | Number of top tokens to return after intervention            |
