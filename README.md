@@ -113,7 +113,7 @@ Both scripts share similar configurable options:
 
 
 | Argument               | Type     | Default         | Description                                                  |
-| ---------------------- | -------- | --------------- | ------------------------------------------------------------ |
+| -------------------------- | -------- | --------------- | -------------------------------------------------------- |
 | `--model_name`         | str      | `"gpt2-medium"` | Model name. Options: `"gpt2"`, `"gpt2-medium"`, `"gpt2-xl"`  |
 | `--layers`             | int list | `[16]`          | Layer indices to analyze                                     |
 | `--out_dir`            | str      | `"result"`      | Directory to save results                                    |
