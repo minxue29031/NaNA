@@ -124,15 +124,15 @@ Both scripts share similar configurable options:
 | `--with_negative`      | bool     | `False`         | Save negative directions as well                             |
 | `--use_activation`     | bool     | `False`         | Apply activation function in projection                      |
 | `--with_values`        | bool     | `False`         | Include token scores in output                               |
-| `--gene_or_abla`       | str      | `"general"`     | Intervention mode: `"general"` or `"ablation"`               |
-| `--use_positive_only`  | bool     | `False`         | Only include subspaces with positive contributions           |
-| `--json_file`          | str      | Required        | Path to JSON file containing top subspace extraction results |
-| `--interv_mode`        | str      | `"enhance"`     | Intervention type: `"enhance"` or `"ablate"`                 |
+| `--gene_or_abla`          | str      | `"general"`     | Intervention mode: `"general"` or `"ablation"`               |
+| `--use_positive_only`     | bool     | `False`         | Only include subspaces with positive contributions           |
+| `--auto_subspace_file`     | str      | Required        | Automatically extracted, enhanced, or suppressed subspaces |
+| `--manual_subspace_file`   | str      | Required      | Manually enhanced or suppressed subspaces               |
+| `--modify_type`        | str      | `"rebuild"`     | Type of subspace modification to apply: `"rebuild"`, `"auto_interv"`, or `"manual_interv"` |
 | `--interv_scale`       | float    | `0.8`           | Scaling factor for intervention effect                       |
 | `--interv_dir_indices` | list     | `[6]`           | Subspace directions to intervene                             |
 | `--return_toptoks`     | int      | `20`            | Number of top tokens to return after intervention            |
 | `--use_bias`           | flag     | False           | Modify MLP using bias                                        |
-| `--modify_type`        | str      | `"rebuild"`     | Type of modification: `"rebuild"` or `"interv"`              |
 | `--interv_factor`      | float    | 0.1             | Scaling factor for intervention                              |
 | `--use_full_residual`  | flag     | False           | Whether to use full residual during modification             |
 | `--token_num`          | int      | 20              | Number of top tokens to display during inference             |
