@@ -94,7 +94,7 @@ python run_modify.py \
     --weight_type c_fc \
     --top_subspaces 10 \
     --use_positive_only \
-    --json_file path/to/subspace_results.json \
+    --auto_subspace_file  path/to/subspace_results.json \
     --model_name gpt2-medium \
     --layers 17 18 19 20 \
     --use_bias \
