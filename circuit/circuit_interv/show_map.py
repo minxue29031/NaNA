@@ -29,12 +29,14 @@ def run_inference(model, tokenizer, text, device, topk=10):
         for i, (tok, score) in enumerate(zip(tokens, scores), 1):
             print(f"{i:2d}. {tok!r} (logit={score:.4f})")
 
+     
     result = {
         "input_text": text,
         "next_token": next_token,
         "next_token_id": next_token_id.item(),
         "predictions": token_score_list,
     }
+
 
     return result
 
@@ -90,4 +92,3 @@ def print_top_tokens(tokenizer, y, weight_type, W_E=None, reshape_W_E=None, topk
             print(f"{rank:2d}. '{token_str}' (logit={score:.4f})")
 
         return [(tokenizer.decode([int(idx)]), float(score)) for idx, score in zip(top_idx_list, top_vals_list)]
-
