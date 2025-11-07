@@ -38,6 +38,8 @@ def reshape_emb_matrix(W_emb: torch.Tensor, c_fc, ln_2, act, use_activation: boo
         if use_activation:
             reshape_matrix = act(reshape_matrix)
 
+    reshape_matrix = reshape_matrix.to("cpu")
+
     return reshape_matrix
 
 def parse_topk_subspaces(topk_subspaces, total_subspaces):
