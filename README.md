@@ -53,7 +53,9 @@ python run_interp.py \
     --topk_subspaces 50 \
     --weight_type c_proj \
     --interp_type detector \
-    --with_negative
+    --with_negative \
+    --save_file \
+    --return_heatmap
 ```
 
 * **Returns:**
@@ -74,8 +76,7 @@ python run_circuit.py \
     --output_dir result/circuit \
     --circuit_mode DeEf \
     --interp_type all \
-    --weight_type c_fc \
-    --return_heatmap
+    --weight_type c_fc
 ```
   * Circuit & Contribution scores
   * Top tokens per subspace
@@ -90,19 +91,17 @@ Apply interventions to enhance or remove selected subspaces.
  
 ```bash
 python run_modify.py \
+    --model_name gpt2-medium \
     --gene_or_abla general \
     --weight_type c_fc \
     --top_subspaces 10 \
     --use_positive_only \
-    --auto_subspace_file  path/to/subspace_results.json \
-    --model_name gpt2-medium \
+    --auto_subspace_file  path/to/circuit_points_scores_{weight_type}_gpt2-medium.json \
     --layers 17 18 19 20 \
-    --use_bias \
     --input_text "The cat looks very" \
     --output_dir result/interven_result \
     --modify_type rebuild \
     --interv_factor 0.1 \
-    --use_full_residual \
     --token_num 20
 ```
  
