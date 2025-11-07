@@ -86,7 +86,7 @@ python run_circuit.py \
 
 Apply interventions to enhance or remove selected subspaces.
 
-> **Note:** Run `run_circuit.py` first to generate `circuit_points_scores_{weight_type}_gpt2-medium.json` for analysis.
+> **Note:** Run `run_circuit.py` first to generate `circuit_points_scores_{weight_type}_{model_name}.json` for analysis.
 
  
 ```bash
@@ -96,7 +96,7 @@ python run_modify.py \
     --weight_type c_fc \
     --top_subspaces 10 \
     --use_positive_only \
-    --auto_subspace_file  path/to/circuit_points_scores_{weight_type}_gpt2-medium.json \
+    --auto_subspace_file  path/circuit_points_scores_c_fc_gpt2-medium.json \
     --layers 17 18 19 20 \
     --input_text "The cat looks very" \
     --output_dir result/interven_result \
