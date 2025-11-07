@@ -4,7 +4,6 @@ import os
 from circuit.circuit_interv.mod_circuit import reubuld_interv
 from block_interp.model_load import parse_layers_arg
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2"
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
