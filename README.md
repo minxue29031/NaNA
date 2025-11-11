@@ -26,7 +26,24 @@ detector_effector/
 │   └── circuit_interv/        # Specific intervention implementations
 ├── plot_utils/                # Visualization utilities
 ├── result/                    
+├── requirements.txt
+
+
+
+detector_effector/
+├── scripts/
+│   ├── run_interp.py          # Interpret MLP subspaces 
+│   ├── run_circuit.py         # Circuit extraction & analysis
+│   ├── run_modify.py          # Apply interventions 
+│   └── run_edit.py            # Apply knowledge editing 
+├── block_interp/              # Core SVD & MLP processing modules
+├── ke/                        # Knowledge editing 
+├── circuit/                   # Circuit analysis 
+│   └── circuit_interv/        # Specific intervention implementations
+├── plot_utils/                # Visualization utilities
+├── result/                    
 ├── requirements.txt        
+
 ```
  
 
@@ -45,7 +62,7 @@ pip install -r requirements.txt
 ### 🔹 MLP Subspace Interpretation
 
 ```bash
-python run_interp.py \
+python scripts/run_interp.py \
     --model_name gpt2-medium \
     --layers 16 \
     --out_dir result \
@@ -66,7 +83,7 @@ python run_interp.py \
 ### 🔹 Subspace Circuit Analysis
 
 ```bash
-python run_circuit.py \
+python scripts/run_circuit.py \
     --model_name gpt2-medium \
     --in_seq "The cat looks very" \
     --target_word " happy" \
@@ -90,7 +107,7 @@ Apply interventions to enhance or remove selected subspaces.
 
  
 ```bash
-python run_modify.py \
+python scripts/run_modify.py \
     --model_name gpt2-medium \
     --gene_or_abla general \
     --weight_type c_fc \
@@ -104,7 +121,12 @@ python run_modify.py \
     --interv_factor 0.1 \
     --token_num 20
 ```
- 
+
+### 🔹 MLP Subspace Knowledge Editing (Rough version)
+
+```bash
+python scripts/run_edit.py
+```
 
 ### ⚙️ Configuration Parameters
 
