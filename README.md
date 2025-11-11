@@ -18,19 +18,6 @@ By inspecting top tokens aligned with each singular direction, we can identify *
 
 ```
 detector_effector/
-├── run_interp.py              # Interpret MLP subspaces 
-├── run_circuit.py             # Circuit extraction & analysis
-├── run_modify.py              # Apply interventions 
-├── block_interp/              # Core SVD & MLP processing modules
-├── circuit/                   # Circuit analysis 
-│   └── circuit_interv/        # Specific intervention implementations
-├── plot_utils/                # Visualization utilities
-├── result/                    
-├── requirements.txt
-
-
-
-detector_effector/
 ├── scripts/
 │   ├── run_interp.py          # Interpret MLP subspaces 
 │   ├── run_circuit.py         # Circuit extraction & analysis
