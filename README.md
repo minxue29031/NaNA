@@ -112,7 +112,19 @@ python scripts/run_modify.py \
 ### 🔹 MLP Subspace Knowledge Editing (Rough version)
 
 ```bash
-python scripts/run_edit.py
+python scripts/run_edit.py  \
+    --model_name gpt2-medium \
+    --input_text "The cat looks very" \
+    --original_target " happy" \
+    --new_target " cute" \
+    --layers 16 17 18 19 20 \
+    --weight_type c_proj \
+    --delta_boost 0.8 \
+    --delta_suppress 0.8 \
+    --interp_type all \
+    --circuit_mode DeEf \
+    --topk_subspaces 15 \
+    --out_dir result/ke
 ```
 
 ### ⚙️ Configuration Parameters
