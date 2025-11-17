@@ -1,139 +1,91 @@
 import os
 import sys
-import torch
 sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 
-from ke.edit import edit_mlp_layers
-from block_interp.model_load import load_model_and_embeddings
-
+import torch
+import argparse
+from typing import List
+from ke.edit_compare import MLPEditor
+from block_interp.model_load import parse_layers_arg
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-model_name = "gpt2-medium"
-model, tokenizer, W_E = load_model_and_embeddings(model_name, device)
+ 
+
+# Parse Arguments
+def parse_args():
+    parser = argparse.ArgumentParser(description="MLP Knowledge Editing Pipeline (KE)")
+
+    parser.add_argument("--model_name", type=str, default="gpt2-medium", help="Hugging Face model name")
+    parser.add_argument("--input_text", type=str, default="The cat looks very", help="Input context used for triggering the edited behavior")
+    parser.add_argument("--original_target", type=str, default=" happy", help="Original next-token to suppress")
+    parser.add_argument("--new_target", type=str, default=" cute", help="New next-token to boost after editing")
+    parser.add_argument("--layers", nargs='+', default=["all"], help="Specify layers (e.g. --layers 4 5 6) or 'all'")
+    parser.add_argument("--weight_type", type=str, default="c_proj", choices=["c_proj", "c_fc"], help="Which MLP matrix to modify")
+    parser.add_argument("--delta_boost", type=float, default=0.8, help="Boost strength for new target")
+    parser.add_argument("--delta_suppress", type=float, default=0.8, help="Suppression strength for original target")
+    parser.add_argument("--interp_type", type=str, default="all", choices=["all", "pos", "neg"], help="Interpretation subspace type")
+    parser.add_argument("--circuit_mode", type=str, default="DeEf", help="Circuit mode (DeEf / Ef / De)")
+    parser.add_argument("--topk_subspaces", type=int, default=15, help="How many top singular directions to apply editing to")
+    parser.add_argument("--out_dir", type=str, default="result/ke", help="Directory to save KE logs / weights")
+
+    return parser.parse_args()
 
 
-# Parameters for editing
-layers_to_edit = [16, 17, 18, 19, 20, 21, 22]
-input_text = "The cat looks very"
-original_target = " happy"
-new_target = " cute"
-weight_type = "c_proj"
+#   RUN MLP EDITING
+def run_editing_pipeline(
+    model_name: str,
+    input_text: str,
+    layers: str,
+    original_target: str,
+    new_target: str,
+    weight_type: str,
+    delta_boost: float,
+    delta_suppress: float,
+    interp_type: str,
+    circuit_mode: str,
+    topk_subspaces: int,
+    out_dir: str,
+):
 
+    os.makedirs(out_dir, exist_ok=True)
+    layers_to_use = parse_layers_arg(layers, model_name)
+    print(f">> Layers to edit: {layers_to_use}")
 
-
-# Next-token predictions
-def get_next_token_predictions(model, tokenizer, text, device, top_k=10):
-    """Return top-k next-token predictions and their probabilities."""
-    inputs = tokenizer(text, return_tensors="pt").to(device)
-    with torch.no_grad():
-        outputs = model(**inputs)
-        logits = outputs.logits[:, -1, :]
-        probs = torch.softmax(logits, dim=-1)
-        top_vals, top_idx = torch.topk(probs, top_k, dim=-1)
-        tokens = [tokenizer.decode([i.item()]) for i in top_idx[0]]
-        scores = top_vals[0].tolist()
-    return list(zip(tokens, scores))
-
-
-# Full text generation
-def generate_full_text(model, tokenizer, text, device, max_new_tokens=30):
-    """Generate a sequence of text from a prompt deterministically (top_k=1)."""
-    inputs = tokenizer(text, return_tensors="pt").to(device)
-    generated = model.generate(
-        **inputs,
-        max_new_tokens=max_new_tokens,
-        do_sample=False,
-        top_k=1
+    # Load editor
+    editor = MLPEditor(model_name=model_name)
+    editor.run_full_pipeline(
+        input_text=input_text,
+        layers_to_edit=layers_to_use,
+        original_target=original_target,
+        new_target=new_target,
+        weight_type=weight_type,
+        delta_boost=delta_boost,
+        delta_suppress=delta_suppress,
+        interp_type=interp_type,
+        circuit_mode=circuit_mode,
+        topk_subspaces=topk_subspaces,
+        output_dir=out_dir,
     )
-    return tokenizer.decode(generated[0], skip_special_tokens=True)
+
+    print("\n[Done] Knowledge Editing pipeline completed.")
+    print(f"Results saved at: {out_dir}")
 
 
-# Display next-token predictions
-def display_predictions(preds, title="Next-token prediction"):
-    print(f" [{title}]")
-    print("-" * 45)
-    for token, score in preds:
-        print(f"{token:<10}  {score:.4f}")
-    print("-" * 45)
+ 
+if __name__ == "__main__":
+    args = parse_args()
 
-
-
-# Compare before vs after predictions
-def compare_predictions(before, after, top_k=10):
-    print("Top-10 next-token probability difference:")
-    print("-" * 45)
-    before_dict = {t: s for t, s in before}
-    after_dict = {t: s for t, s in after}
-    all_tokens = set(before_dict.keys()) | set(after_dict.keys())
-
-    for t in all_tokens:
-        before_s = before_dict.get(t, 0.0)
-        after_s = after_dict.get(t, 0.0)
-        diff = after_s - before_s
-        mark = "⬆️" if diff > 0 else ("⬇️" if diff < 0 else "→")
-        print(f"{t:<10}  {before_s:>6.4f} → {after_s:>6.4f}   ({diff:+.4f}) {mark}")
-    print("-" * 45)
-
-
-
-# Baseline inference before editing
-print(" Running baseline inference...\n")
-baseline_topk = get_next_token_predictions(model, tokenizer, input_text, device)
-display_predictions(baseline_topk, f"Before: \"{input_text}\"")
-
-baseline_text = generate_full_text(model, tokenizer, input_text, device)
-print("\n [Before] Full generation:")
-print(baseline_text)
-print("\n" + "="*60 + "\n")
-
-
-
-# Run MLP editing
-edited_weights = edit_mlp_layers(
-    W=model,
-    model_name=model_name,
-    in_seq=input_text,
-    ori_target=original_target,
-    new_target=new_target,
-    layers=layers_to_edit,
-    weight_type=weight_type,
-    delta_boost=10,
-    delta_suppress=2,
-    device="cuda",
-    interp_type="all",
-    circuit_mode="DeEf",
-    topk_subspaces=15,
-    output_dir="result/ke"
-)
-
-# Apply edited weights to model
-for layer_idx, W_edited in edited_weights.items():
-    mlp = model.transformer.h[layer_idx].mlp
-    if weight_type == "c_proj":
-        mlp.c_proj.weight.data.copy_(W_edited)
-        print(f" Edited layer {layer_idx} (c_proj)")
-    elif weight_type == "c_fc":
-        mlp.c_fc.weight.data.copy_(W_edited)
-        print(f" Edited layer {layer_idx} (c_fc)")
-    else:
-        print(f" Unsupported weight type: {weight_type}")
-
-print("\n MLP layers edited successfully.\n")
-
-
-# Inference after editing
-print("Running inference after editing...\n")
-edited_topk = get_next_token_predictions(model, tokenizer, input_text, device)
-display_predictions(edited_topk, f"After: \"{input_text}\"")
-
-edited_text = generate_full_text(model, tokenizer, input_text, device)
-print("\n[After] Full generation:")
-print(edited_text)
-print("\n" + "="*60 + "\n")
-
-
-
-# Compare before vs after
-compare_predictions(baseline_topk, edited_topk)
-
-print("\n Done! You can now visually compare before vs after.")
+    run_editing_pipeline(
+        model_name=args.model_name,
+        input_text=args.input_text,
+        layers=args.layers,
+        original_target=args.original_target,
+        new_target=args.new_target,
+        weight_type=args.weight_type,
+        delta_boost=args.delta_boost,
+        delta_suppress=args.delta_suppress,
+        interp_type=args.interp_type,
+        circuit_mode=args.circuit_mode,
+        topk_subspaces=args.topk_subspaces,
+        out_dir=args.out_dir,
+    )
