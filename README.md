@@ -109,7 +109,7 @@ python scripts/run_modify.py \
     --token_num 20
 ```
 
-### 🔹 MLP Subspace Knowledge Editing (Rough version)
+### 🔹 MLP Subspace Knowledge Editing  
 
 ```bash
 python scripts/run_edit.py  \
