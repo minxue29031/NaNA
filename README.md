@@ -123,7 +123,7 @@ python scripts/run_edit.py  \
     --delta_suppress 0.8 \
     --interp_type all \
     --circuit_mode DeEf \
-    --topk_subspaces 15 \
+    --edit_subspaces 15 \
     --out_dir result/ke
 ```
 
@@ -156,6 +156,9 @@ Both scripts share similar configurable options:
 | `--interv_factor`      | float    | 0.1             | Scaling factor for intervention                              |
 | `--use_full_residual`  | flag     | False           | Whether to use full residual during modification             |
 | `--token_num`          | int      | 20              | Number of top tokens to display during inference             |
+| `--delta_boost`     | float | `0.8`                  | Boost strength for the new target                      |
+| `--delta_suppress`  | float | `0.8`                  | Suppression strength for the original target           |
+| `--edit_subspaces`  | int   | `15`                   | Number of top singular directions to apply editing to  |
 
 
  ## 🔍 Quick Semantic/Syntactic Analysis with ChatGPT
