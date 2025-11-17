@@ -63,9 +63,9 @@ class MLPEditor:
             before_s = before_dict.get(t, 0.0)
             after_s = after_dict.get(t, 0.0)
             diff = after_s - before_s
-            mark = "⬆️" if diff > 0 else ("⬇️" if diff < 0 else "→")
+            mark = "\u2191" if diff > 0 else ("\u2193" if diff < 0 else "\u2192")
 
-            print(f"{t:<10}  {before_s:>6.4f} → {after_s:>6.4f}   ({diff:+.4f}) {mark}")
+            print(f"{t:<10}  {before_s:>6.4f} \u2192 {after_s:>6.4f}   ({diff:+.4f}) {mark}")
 
         print("-" * 45)
 
