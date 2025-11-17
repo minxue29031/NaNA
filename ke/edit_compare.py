@@ -52,22 +52,29 @@ class MLPEditor:
         print("-" * 45)
 
     def compare_predictions(self, before, after):
-        print("\nTop-10 next-token probability differences:")
-        print("-" * 45)
+        print("\nTop-10 next-token probability differences (sorted by absolute change):")
+        print("-" * 60)
 
         before_dict = {t: s for t, s in before}
         after_dict = {t: s for t, s in after}
         all_tokens = set(before_dict.keys()) | set(after_dict.keys())
 
+        diffs = []
         for t in all_tokens:
             before_s = before_dict.get(t, 0.0)
             after_s = after_dict.get(t, 0.0)
             diff = after_s - before_s
+            diffs.append((t, before_s, after_s, diff, abs(diff)))
+
+        # Sort by absolute value
+        diffs.sort(key=lambda x: x[4], reverse=True)
+
+        for t, before_s, after_s, diff, _ in diffs:
             mark = "\u2191" if diff > 0 else ("\u2193" if diff < 0 else "\u2192")
+            print(f"{t:<10}  {before_s:>6.4f} → {after_s:>6.4f}   ({diff:+.4f}) {mark}")
 
-            print(f"{t:<10}  {before_s:>6.4f} \u2192 {after_s:>6.4f}   ({diff:+.4f}) {mark}")
+        print("-" * 60)
 
-        print("-" * 45)
 
     def run_inference(self, text, title="Inference"):
         topk_preds = self.get_next_token_predictions(text)
