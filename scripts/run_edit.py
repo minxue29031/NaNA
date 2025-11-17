@@ -25,7 +25,7 @@ def parse_args():
     parser.add_argument("--delta_suppress", type=float, default=0.8, help="Suppression strength for original target")
     parser.add_argument("--interp_type", type=str, default="all", choices=["all", "pos", "neg"], help="Interpretation subspace type")
     parser.add_argument("--circuit_mode", type=str, default="DeEf", help="Circuit mode (DeEf / Ef / De)")
-    parser.add_argument("--topk_subspaces", type=int, default=15, help="How many top singular directions to apply editing to")
+    parser.add_argument("--edit_subspaces", type=int, default=15, help="How many top singular directions to apply editing to")
     parser.add_argument("--out_dir", type=str, default="result/ke", help="Directory to save KE logs / weights")
 
     return parser.parse_args()
@@ -86,6 +86,6 @@ if __name__ == "__main__":
         delta_suppress=args.delta_suppress,
         interp_type=args.interp_type,
         circuit_mode=args.circuit_mode,
-        topk_subspaces=args.topk_subspaces,
+        topk_subspaces=args.edit_subspaces,
         out_dir=args.out_dir,
     )
