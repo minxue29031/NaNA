@@ -45,12 +45,15 @@ def edit_single_mlp_layer(
     inter_channels = set_old & set_new
     new_only_channels = sorted(list(set_new - inter_channels))
     old_only_channels = sorted(list(set_old - inter_channels))
-
-    print(f"\n=== set_old {set_old} ===")
-    print(f"\n=== set_new {set_new} ===")
-    print(f"\n=== inter_channels {inter_channels} ===")
-    print(f"\n=== new_only_channels {new_only_channels} ===")
-    print(f"\n=== old_only_channels {old_only_channels} ===")
+ 
+    print(
+        f"[INFO] Current channel sets:\n"
+        f"  set_old: {set_old}\n"
+        f"  set_new: {set_new}\n"
+        f"  inter_channels: {inter_channels}\n"
+        f"  new_only_channels: {new_only_channels}\n"
+        f"  old_only_channels: {old_only_channels}"
+    )
 
     # Adjust new-only channels
     for ch in new_only_channels:
@@ -63,7 +66,8 @@ def edit_single_mlp_layer(
             action = "SUPPRESS"
         else:
             continue
-        print(f"  >> [NEW] Channel {ch:4d} | contrib={contrib:+.4f} | action={action} | Δ={s_value:+.4f}")
+            
+        print(f" [EDIT] Channel {ch:4d} | contrib={contrib:+.4f} | action={action} | Δ={s_value:+.4f}")
         if weight_type == "c_proj":
             W_edited += s_value * torch.outer(U[:, ch], Vh[ch, :])
         else:
@@ -77,14 +81,13 @@ def edit_single_mlp_layer(
             action = "SUPPRESS"
         else:
             continue
-        print(f"  >> [NEW] Channel {ch:4d} | contrib={contrib:+.4f} | action={action} | Δ={s_value:+.4f}")
+            
+        print(f" [EDIT] Channel {ch:4d} | contrib={contrib:+.4f} | action={action} | Δ={s_value:+.4f}")
         if weight_type == "c_proj":
             W_edited += s_value * torch.outer(U[:, ch], Vh[ch, :])
         else:
             W_edited += (s_value * torch.outer(U[:, ch], Vh[ch, :])).T
 
-
-    print(f"===== Finished editing layer {layer_idx} =====")
     return W_edited
 
 

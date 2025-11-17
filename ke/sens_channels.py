@@ -28,7 +28,7 @@ def select_sensitive_channels(
     model, tokenizer, W_E = load_model_and_embeddings(model_name, device)
 
     # Original target circuit 
-    print(f"\n=== [1] Run for original target: '{ori_target}' ===")
+    print(f"\n Run for original target: '{ori_target}' ")
     _, cirpoint_ori = extract_circuit(
         model,
         tokenizer,
@@ -47,7 +47,7 @@ def select_sensitive_channels(
     )
 
     # New target circuit
-    print(f"\n=== [2] Run for new target: '{new_target}' ===")
+    print(f"\n Run for new target: '{new_target}' ")
     _, cirpoint_new = extract_circuit(
         model,
         tokenizer,
@@ -66,7 +66,7 @@ def select_sensitive_channels(
     )
 
     layer_key = f"layer_{layer}"
-    print(f"\n=== [3] Processing {layer_key} ===")
+    print(f"\n=== Processing {layer_key} ===")
 
     # Original contributions and channels
     votes_old_original = [item["contribution"] for item in cirpoint_ori[layer_key]["subspace_results"]]
