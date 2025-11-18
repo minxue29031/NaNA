@@ -119,8 +119,9 @@ python scripts/run_edit.py  \
     --new_target " cute" \
     --layers 16 17 18 19 20 \
     --weight_type c_proj \
-    --delta_boost 0.8 \
-    --delta_suppress 0.8 \
+    --delta_new_boost 0.8 \
+    --delta_new_suppress 0.8 \
+    --delta_ori_suppress 0.8 \
     --interp_type all \
     --circuit_mode DeEf \
     --edit_subspaces 15 \
@@ -156,8 +157,9 @@ Both scripts share similar configurable options:
 | `--interv_factor`      | float    | 0.1             | Scaling factor for intervention                              |
 | `--use_full_residual`  | flag     | False           | Whether to use full residual during modification             |
 | `--token_num`          | int      | 20              | Number of top tokens to display during inference             |
-| `--delta_boost`     | float | `0.8`                  | Boost strength for the new target                      |
-| `--delta_suppress`  | float | `0.8`                  | Suppression strength for the original target           |
+| `--delta_new_boost`    | float | `0.8`   | Strength to **boost the positive contribution subspace** for the new target         |
+| `--delta_new_suppress` | float | `0.8`   | Strength to **suppress the negative contribution subspace** for the new target      |
+| `--delta_ori_suppress` | float | `0.8`   | Strength to **suppress the positive contribution subspace** for the original target |
 | `--edit_subspaces`  | int   | `15`                   | Number of top singular directions to apply editing to  |
 
 
