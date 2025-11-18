@@ -29,6 +29,7 @@ def parse_args():
     parser.add_argument("--circuit_mode", type=str, default="DeEf", help="Circuit mode (DeEf / Ef / De)")
     parser.add_argument("--edit_subspaces", type=int, default=15, help="How many top singular directions to apply editing to")
     parser.add_argument("--out_dir", type=str, default="result/ke", help="Directory to save KE logs / weights")
+    parser.add_argument("--test_gene", action="store_true", help="Whether to run generalization evaluation")  
 
     return parser.parse_args()
 
@@ -48,6 +49,7 @@ def run_editing_pipeline(
     circuit_mode: str,
     topk_subspaces: int,
     out_dir: str,
+    test_gene: bool = False,
 ):
 
     os.makedirs(out_dir, exist_ok=True)
@@ -74,8 +76,16 @@ def run_editing_pipeline(
     print("\n[Done] Knowledge Editing pipeline completed.")
     print(f"Results saved at: {out_dir}")
 
- #   evaluate_generalization(original_model, edited_model, editor.tokenizer, csv_path=os.path.join(out_dir, "generalization_eval.csv"))
 
+    # Optional: run generalization evaluation
+    if test_gene:
+        evaluate_generalization(
+            original_model, 
+            edited_model, 
+            editor.tokenizer, 
+            csv_path=os.path.join(out_dir, "gene_eval.csv")
+        )
+        print(f"Generalization evaluation saved at: {os.path.join(out_dir, 'generalization_eval.csv')}")
 
  
 if __name__ == "__main__":
@@ -95,4 +105,5 @@ if __name__ == "__main__":
         circuit_mode=args.circuit_mode,
         topk_subspaces=args.edit_subspaces,
         out_dir=args.out_dir,
+        test_gene=args.test_gene
     )
