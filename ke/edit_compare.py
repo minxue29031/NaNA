@@ -1,5 +1,6 @@
 import os
 import sys
+import copy
 import torch
 
 sys.path.append(os.path.dirname(os.path.dirname(__file__)))
@@ -17,7 +18,8 @@ class MLPEditor:
         self.model, self.tokenizer, self.W_E = load_model_and_embeddings(
             model_name, self.device
         )
-
+        
+        self.orig_model = copy.deepcopy(self.model)
         self.baseline_topk = None
         self.baseline_text = None
         self.edited_topk = None
@@ -88,28 +90,31 @@ class MLPEditor:
     # MLP Editing
     def edit_mlp(
         self,
+        model_to_edit,
         input_text,
         original_target,
         new_target,
         layers,
         weight_type="c_proj",
-        delta_boost=0.8,
-        delta_suppress=0.8,
+        delta_new_boost=0.8,
+        delta_new_suppress=0.8,
+        delta_ori_suppress=0.8,
         interp_type="all",
         circuit_mode="DeEf",
         topk_subspaces=15,
         output_dir="result/ke",
     ):
         edited_weights = edit_mlp_layers(
-            W=self.model,
+            W=model_to_edit,
             model_name=self.model_name,
             in_seq=input_text,
             ori_target=original_target,
             new_target=new_target,
             layers=layers,
             weight_type=weight_type,
-            delta_boost=delta_boost,
-            delta_suppress=delta_suppress,
+            delta_new_boost=delta_new_boost,
+            delta_new_suppress=delta_new_suppress,
+            delta_ori_suppress=delta_ori_suppress,
             device=self.device,
             interp_type=interp_type,
             circuit_mode=circuit_mode,
@@ -118,7 +123,7 @@ class MLPEditor:
         )
 
         for layer_idx, W_edited in edited_weights.items():
-            mlp = self.model.transformer.h[layer_idx].mlp
+            mlp = model_to_edit.transformer.h[layer_idx].mlp
             if weight_type == "c_proj":
                 mlp.c_proj.weight.data.copy_(W_edited)
             elif weight_type == "c_fc":
@@ -126,7 +131,10 @@ class MLPEditor:
             print(f"Edited layer {layer_idx} ({weight_type})")
 
         print("\nMLP layers edited successfully.\n")
-
+        
+        return model_to_edit
+    
+    
     # Full pipeline
     def run_full_pipeline(
         self,
@@ -135,8 +143,9 @@ class MLPEditor:
         original_target,
         new_target,
         weight_type,
-        delta_boost,
-        delta_suppress,
+        delta_new_boost,
+        delta_new_suppress,
+        delta_ori_suppress,
         interp_type,
         circuit_mode,
         topk_subspaces,
@@ -148,14 +157,19 @@ class MLPEditor:
         )
         print("=" * 60)
 
-        self.edit_mlp(
+        model_clone = copy.deepcopy(self.orig_model)
+        model_clone.to(self.device)
+        
+        edited_model = self.edit_mlp(
+            model_to_edit=model_clone,
             input_text=input_text,
             original_target=original_target,
             new_target=new_target,
             layers=layers_to_edit,
             weight_type=weight_type,
-            delta_boost=delta_boost,
-            delta_suppress=delta_suppress,
+            delta_new_boost=delta_new_boost,
+            delta_new_suppress=delta_new_suppress,
+            delta_ori_suppress=delta_ori_suppress,
             interp_type=interp_type,
             circuit_mode=circuit_mode,
             topk_subspaces=topk_subspaces,
@@ -163,6 +177,7 @@ class MLPEditor:
         )
 
         print("Running inference after editing...")
+        self.model = edited_model
         self.edited_topk, self.edited_text = self.run_inference(
             input_text, "After"
         )
@@ -171,4 +186,5 @@ class MLPEditor:
         self.compare_predictions(self.baseline_topk, self.edited_topk)
         print("\nDone! You can now visually compare before vs after.")
 
+        return edited_model, self.orig_model
  

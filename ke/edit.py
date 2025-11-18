@@ -15,8 +15,9 @@ def edit_single_mlp_layer(
     votes_old,
     votes_new,
     weight_type,
-    delta_boost=1.2,
-    delta_suppress=0.8,
+    delta_new_boost=1.2,
+    delta_new_suppress=0.8,
+    delta_ori_suppress=0.8
 ):
     """
     Edit a single MLP layer based on differences between new/old unique subspace contributions:
@@ -59,10 +60,10 @@ def edit_single_mlp_layer(
     for ch in new_only_channels:
         contrib = votes_new_dict[ch].item()  
         if contrib > 0:
-            s_value = S[ch] * delta_boost 
+            s_value = S[ch] * delta_new_boost 
             action = "BOOST"
         elif contrib < 0:
-            s_value = -S[ch] * delta_suppress
+            s_value = -S[ch] * delta_new_suppress
             action = "SUPPRESS"
         else:
             continue
@@ -77,7 +78,7 @@ def edit_single_mlp_layer(
     for ch in old_only_channels:
         contrib = votes_old_dict[ch].item()  
         if contrib > 0:
-            s_value = -S[ch] * delta_suppress
+            s_value = -S[ch] * delta_ori_suppress
             action = "SUPPRESS"
         else:
             continue
@@ -100,8 +101,9 @@ def edit_mlp_layers(
     new_target,
     layers,
     weight_type="c_fc",
-    delta_boost=1.2,
-    delta_suppress=0.8,
+    delta_new_boost=1.2,
+    delta_new_suppress=0.8,
+    delta_ori_suppress=0.8,
     device="cuda",
     interp_type="all",
     circuit_mode="DeEf",
@@ -149,8 +151,9 @@ def edit_mlp_layers(
             votes_old,
             votes_new,
             weight_type,
-            delta_boost=delta_boost,
-            delta_suppress=delta_suppress,
+            delta_new_boost=delta_new_boost,
+            delta_new_suppress=delta_new_suppress,
+            delta_ori_suppress=delta_ori_suppress
         )
 
         edited_weights[layer_idx] = W_edited

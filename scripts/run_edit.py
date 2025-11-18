@@ -7,9 +7,10 @@ import argparse
 from typing import List
 from ke.edit_compare import MLPEditor
 from block_interp.model_load import parse_layers_arg
+from ke.eval_gene import evaluate_generalization
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
- 
+
 
 # Parse Arguments
 def parse_args():
@@ -21,8 +22,9 @@ def parse_args():
     parser.add_argument("--new_target", type=str, default=" cute", help="New next-token to boost after editing")
     parser.add_argument("--layers", nargs='+', default=["all"], help="Specify layers (e.g. --layers 4 5 6) or 'all'")
     parser.add_argument("--weight_type", type=str, default="c_proj", choices=["c_proj", "c_fc"], help="Which MLP matrix to modify")
-    parser.add_argument("--delta_boost", type=float, default=0.8, help="Boost strength for new target")
-    parser.add_argument("--delta_suppress", type=float, default=0.8, help="Suppression strength for original target")
+    parser.add_argument("--delta_new_boost", type=float, default=0.8, help="Boost strength for new target")
+    parser.add_argument("--delta_new_suppress", type=float, default=0.8, help="Suppression strength for new target")
+    parser.add_argument("--delta_ori_suppress", type=float, default=0.8, help="Suppression strength for original target")
     parser.add_argument("--interp_type", type=str, default="all", choices=["all", "pos", "neg"], help="Interpretation subspace type")
     parser.add_argument("--circuit_mode", type=str, default="DeEf", help="Circuit mode (DeEf / Ef / De)")
     parser.add_argument("--edit_subspaces", type=int, default=15, help="How many top singular directions to apply editing to")
@@ -39,8 +41,9 @@ def run_editing_pipeline(
     original_target: str,
     new_target: str,
     weight_type: str,
-    delta_boost: float,
-    delta_suppress: float,
+    delta_new_boost: float,
+    delta_new_suppress: float,
+    delta_ori_suppress: float,
     interp_type: str,
     circuit_mode: str,
     topk_subspaces: int,
@@ -53,14 +56,15 @@ def run_editing_pipeline(
 
     # Load editor
     editor = MLPEditor(model_name=model_name)
-    editor.run_full_pipeline(
+    edited_model, original_model = editor.run_full_pipeline(
         input_text=input_text,
         layers_to_edit=layers_to_use,
         original_target=original_target,
         new_target=new_target,
         weight_type=weight_type,
-        delta_boost=delta_boost,
-        delta_suppress=delta_suppress,
+        delta_new_boost=delta_new_boost,
+        delta_new_suppress=delta_new_suppress,
+        delta_ori_suppress=delta_ori_suppress,
         interp_type=interp_type,
         circuit_mode=circuit_mode,
         topk_subspaces=topk_subspaces,
@@ -69,6 +73,8 @@ def run_editing_pipeline(
 
     print("\n[Done] Knowledge Editing pipeline completed.")
     print(f"Results saved at: {out_dir}")
+
+ #   evaluate_generalization(original_model, edited_model, editor.tokenizer, csv_path=os.path.join(out_dir, "generalization_eval.csv"))
 
 
  
@@ -82,8 +88,9 @@ if __name__ == "__main__":
         original_target=args.original_target,
         new_target=args.new_target,
         weight_type=args.weight_type,
-        delta_boost=args.delta_boost,
-        delta_suppress=args.delta_suppress,
+        delta_new_boost=args.delta_new_boost,
+        delta_new_suppress=args.delta_new_suppress,
+        delta_ori_suppress=args.delta_ori_suppress,
         interp_type=args.interp_type,
         circuit_mode=args.circuit_mode,
         topk_subspaces=args.edit_subspaces,
