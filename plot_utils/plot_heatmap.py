@@ -10,7 +10,7 @@ def safe_label(s):
 
 def plot_subspace_heatmap(
     results, model_name, layer_idx, weight_type, interp_type, sign,
-    out_dir, cell_width=1.0, cell_height=0.5, fontsize=8
+    out_dir, cell_width=1.0, cell_height=0.2, fontsize=9
     ):
 
     save_dir = os.path.join(
@@ -75,7 +75,7 @@ def plot_subspace_heatmap(
     im.cmap.set_bad(color='white')  
 
     # Colorbar showing positive or negative normalized values
-    cbar = plt.colorbar(im)
+    cbar = plt.colorbar(im, pad=0.01)
     cbar.set_label("Normalized token score")
     if sign == "negative":
         cbar.set_ticks([-1.0, -0.75, -0.5, -0.25, 0.0])
@@ -98,8 +98,8 @@ def plot_subspace_heatmap(
                     fontsize=fontsize, color=color)
 
     plt.title(f"Layer {layer_idx} {interp_type} ({sign})")
-    plt.xlabel("Subspace directions")
-    plt.ylabel("Top tokens")
+    plt.xlabel("Subspace Index")
+    plt.ylabel("Top Token")
     plt.xticks(
         ticks=np.arange(directions), 
         labels=[str(r["direction"]) for r in results]
