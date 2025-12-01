@@ -99,6 +99,7 @@ def plot_subspace_heatmap(
     im.set_array(masked_heatmap)
     im.cmap.set_bad(color='white')  
 
+    #cbar = plt.colorbar(im, pad=0.01, aspect=80)
     cbar = plt.colorbar(im, pad=0.01)
     cbar.set_label("Normalized token score")
     if sign == "negative":
