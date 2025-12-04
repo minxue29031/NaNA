@@ -27,6 +27,7 @@ def parse_args():
     parser.add_argument("--weight_type", type=str, default="c_fc", choices=["c_fc", "c_proj"],  help="Weight type for SVD")
     parser.add_argument("--return_heatmap", action="store_true", help="Return heatmap of each direction")
     parser.add_argument("--do_interp", action="store_true", help="Return interpretation of each direction")
+    parser.add_argument("--use_abs_contribute", action="store_true", help="Compute top-k subspaces using the absolute contribution scores")
     parser.add_argument("--size_scale", type=float, default=200.0, help="Size scale for circuit plot")
     parser.add_argument("--color_threshold", type=float, default=2.0, help="Color threshold for circuit plot")
     parser.add_argument("--box_width", type=float, default=0.7, help="Box width for circuit plot")
@@ -52,7 +53,8 @@ def extract_circuit(
     size_scale=200.0,
     color_threshold=2.0,
     box_width=0.7,
-    do_interp=False
+    do_interp=False,
+    use_abs_contribute=False
 ):
 
     layers_to_use = parse_layers_arg(layers, model_name)
@@ -87,7 +89,8 @@ def extract_circuit(
             device,
             topk_tokens,
             return_heatmap,
-            do_interp
+            do_interp,
+            use_abs_contribute
         )
 
         all_layers_circuits[f"layer_{layer_idx}"] = layer_circuit
@@ -135,6 +138,7 @@ if __name__ == "__main__":
         size_scale=args.size_scale,
         color_threshold=args.color_threshold,
         box_width=args.box_width,
-        do_interp=args.do_interp
+        do_interp=args.do_interp,
+        use_abs_contribute=args.use_abs_contribute
     )
  
