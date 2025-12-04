@@ -40,7 +40,6 @@ def compute_effector_alignments(target_id, W_E, reshape_W_E, U, Vh, S, weight_ty
         
     return alignments
 
- 
 
 def analyze_mlp_subspaces(
     model_name,
@@ -62,6 +61,7 @@ def analyze_mlp_subspaces(
     topk_tokens=20,
     return_heatmap=True, 
     do_interp=True,
+    use_abs_contribute=False,
 ):
     """
     General function to analyze MLP subspaces.
@@ -84,6 +84,7 @@ def analyze_mlp_subspaces(
         "weight_type": weight_type,
         "target_word": target_word,
         "topk_subspaces": topk_subspaces,
+        "use_abs_contribute": use_abs_contribute,
         "subspace_results": []
     }
 
@@ -106,9 +107,13 @@ def analyze_mlp_subspaces(
 
     # Select Top-K Subspaces
     subspaces_for_interp = []
+    
+    def use_abs(x):
+        return x.abs() if use_abs_contribute else x
+
     if mode == "DeEf":
         directional_contrib = detector_alignments.to(effector_alignments.device) * effector_alignments
-        top_vals, top_idx = torch.topk( directional_contrib.abs(), topk_subspaces)
+        top_vals, top_idx = torch.topk(use_abs(directional_contrib), topk_subspaces)
         
         print(f"\nTop-{topk_subspaces} subspaces most aligned with '{target_word}':")
         for idx in top_idx:
@@ -129,7 +134,7 @@ def analyze_mlp_subspaces(
         subspaces_for_interp = top_idx.tolist()
 
     elif mode == "De":
-        top_vals, top_idx = torch.topk( detector_alignments.abs(), topk_subspaces)
+        top_vals, top_idx = torch.topk(use_abs(detector_alignments), topk_subspaces)
         
         print(f"\nTop-{topk_subspaces} detector subspaces:")
         for idx in top_idx:
@@ -143,7 +148,7 @@ def analyze_mlp_subspaces(
         subspaces_for_interp = top_idx.tolist()
 
     elif mode == "Ef":
-        top_vals, top_idx = torch.topk(effector_alignments.abs(), topk_subspaces)
+        top_vals, top_idx = torch.topk(use_abs(effector_alignments), topk_subspaces)
         
         print(f"\nTop-{topk_subspaces} effector subspaces:")
         for idx in top_idx:
