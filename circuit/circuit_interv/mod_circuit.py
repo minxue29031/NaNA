@@ -91,6 +91,9 @@ def reubuld_interv(
     final_prediction = show_infer(
         model, 
         tokenizer, 
+        model_name,
+        gene_or_abla,
+        top_subspaces,        
         input_text, 
         hooks, 
         device, 

@@ -3,7 +3,13 @@ import torch
 import json
 
 
-def run_inference(model, tokenizer, text, device, topk=10):
+def run_inference(
+    model, 
+    tokenizer, 
+    text, 
+    device, 
+    topk=10
+):
     """
     Run inference and print top-k predictions
     """
@@ -43,7 +49,19 @@ def run_inference(model, tokenizer, text, device, topk=10):
 
 
 
-def show_infer(model, tokenizer, input_text, hooks, device, topk=10, save_dir=None):
+def show_infer(
+    model,
+    tokenizer,
+    model_name,
+    gene_or_abla,
+    top_subspaces,
+    input_text,
+    hooks,
+    device,
+    topk=10,
+    save_dir=None
+):
+
     results = {}
 
     results["modified"] = run_inference(model, tokenizer, input_text, device, topk)
@@ -57,7 +75,7 @@ def show_infer(model, tokenizer, input_text, hooks, device, topk=10, save_dir=No
 
     if save_dir is not None:
         os.makedirs(save_dir, exist_ok=True)
-        save_path = os.path.join(save_dir, "final_predictions.json")
+        save_path = os.path.join(save_dir, f"final_predictions_{model_name}_subspaces{top_subspaces}_{gene_or_abla}.json")
         with open(save_path, "w", encoding="utf-8") as f:
             json.dump(results, f, ensure_ascii=False, indent=2)
 
@@ -66,7 +84,15 @@ def show_infer(model, tokenizer, input_text, hooks, device, topk=10, save_dir=No
 
     
  
-def print_top_tokens(tokenizer, y, weight_type, W_E=None, reshape_W_E=None, topk=10):
+def print_top_tokens(
+    tokenizer, 
+    y, 
+    weight_type, 
+    W_E=None, 
+    reshape_W_E=None, 
+    topk=10
+):
+
     with torch.no_grad():
         if weight_type == "c_fc":
             if reshape_W_E is None:
