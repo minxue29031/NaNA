@@ -118,8 +118,7 @@ def extract_circuit(
 
 if __name__ == "__main__":
     args = parse_args()
-    
-    
+ 
     os.environ["CUDA_VISIBLE_DEVICES"] = str(args.gpu)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f">> Using GPU {args.gpu}, PyTorch device: {device}")
