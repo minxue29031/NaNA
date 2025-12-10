@@ -17,25 +17,34 @@ def run_inference(
     with torch.no_grad():
         outputs = model(**inputs)
         logits_last = outputs.logits[:, -1, :]
-        
+
+        # probabilities
+        probs = torch.softmax(logits_last, dim=-1)
+
+        # top-k logits
         top_vals, top_idx = torch.topk(logits_last, topk, dim=-1)
         tokens = [tokenizer.decode([i.item()]) for i in top_idx[0]]
-        scores = top_vals[0].tolist()
-        
-        token_score_list = [{"token": tok, "score": float(score)} for tok, score in zip(tokens, scores)]
+        scores = top_vals[0].tolist()  
+        probs_topk = probs[0, top_idx[0]].tolist()
+    
+        token_score_list = [
+            {
+                "token": tok,
+                "score": float(score),  
+                "prob": float(prob)    
+            }
+            for tok, score, prob in zip(tokens, scores, probs_topk)
+        ]
 
-        # Generate next token (argmax)
-        probs = torch.softmax(logits_last, dim=-1)
+        # Argmax prediction
         next_token_id = torch.argmax(probs, dim=-1)
         next_token = tokenizer.decode(next_token_id)
 
-
         print(f"\nInput: {text} -> Next token: {next_token} (ID: {next_token_id.item()})")
         print(f"Top-{topk} predictions:")
-        for i, (tok, score) in enumerate(zip(tokens, scores), 1):
-            print(f"{i:2d}. {tok!r} (logit={score:.4f})")
+        for i, (tok, logit, prob) in enumerate(zip(tokens, scores, probs_topk), 1):
+            print(f"{i:2d}. {tok!r} (logit={logit:.4f}, prob={prob:.4f})")
 
-     
     result = {
         "input_text": text,
         "next_token": next_token,
@@ -43,8 +52,8 @@ def run_inference(
         "predictions": token_score_list,
     }
 
-
     return result
+
 
 
 
