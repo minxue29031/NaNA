@@ -6,9 +6,7 @@ import argparse
 import torch
 from circuit.circuit_interv.mod_circuit import reubuld_interv
 from block_interp.model_load import parse_layers_arg
-
-os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2"
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+ 
 
 
 def parse_args():
@@ -29,14 +27,19 @@ def parse_args():
     parser.add_argument("--interv_factor", type=float, default=0.1, help="Scaling factor for intervention")
     parser.add_argument("--use_full_residual", action="store_true", help="Whether to use full residual during modification")
     parser.add_argument("--token_num", type=int, default=20, help="Number of top tokens to display during inference")
-    
+    parser.add_argument("--gpu", type=int, default=0, help="GPU ID to use")   
+
     return parser.parse_args()
 
 
  
 if __name__ == "__main__":
     args = parse_args()
-
+    
+    os.environ["CUDA_VISIBLE_DEVICES"] = str(args.gpu)
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    print(f">> Using GPU {args.gpu}, PyTorch device: {device}")
+    
     layers_to_modify = parse_layers_arg(args.layers, args.model_name)
     print(f">> Layers to process: {layers_to_modify}")
  
