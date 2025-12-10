@@ -9,7 +9,7 @@ from block_interp.interp_mlp import MLP_DEEF_INTERP
 from block_interp.model_load import parse_layers_arg
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-print("------device------", device)
+ 
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Professional MLP Subspace Interpretation Tool")
