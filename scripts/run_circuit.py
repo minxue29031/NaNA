@@ -9,8 +9,7 @@ from circuit.circuit_analysis import analyze_mlp_subspaces
 from circuit.collect_circuit_info import save_circuit_info, layer_info
 from block_interp.model_load import parse_layers_arg
 
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-
+ 
 
 def parse_args():
     parser = argparse.ArgumentParser(description="MLP Subspace Circuit Analysis")
@@ -31,6 +30,8 @@ def parse_args():
     parser.add_argument("--size_scale", type=float, default=200.0, help="Size scale for circuit plot")
     parser.add_argument("--color_threshold", type=float, default=2.0, help="Color threshold for circuit plot")
     parser.add_argument("--box_width", type=float, default=0.7, help="Box width for circuit plot")
+    parser.add_argument("--gpu", type=int, default=0, help="GPU ID to use")  
+
 
     return parser.parse_args()
 
@@ -54,7 +55,8 @@ def extract_circuit(
     color_threshold=2.0,
     box_width=0.7,
     do_interp=False,
-    use_abs_contribute=False
+    use_abs_contribute=False,
+    device=None
 ):
 
     layers_to_use = parse_layers_arg(layers, model_name)
@@ -117,6 +119,11 @@ def extract_circuit(
 if __name__ == "__main__":
     args = parse_args()
     
+    
+    os.environ["CUDA_VISIBLE_DEVICES"] = str(args.gpu)
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    print(f">> Using GPU {args.gpu}, PyTorch device: {device}")
+    
     os.makedirs(args.output_dir, exist_ok=True)
     model, tokenizer, W_E = load_model_and_embeddings(args.model_name, device)
     
@@ -139,6 +146,7 @@ if __name__ == "__main__":
         color_threshold=args.color_threshold,
         box_width=args.box_width,
         do_interp=args.do_interp,
-        use_abs_contribute=args.use_abs_contribute
+        use_abs_contribute=args.use_abs_contribute,
+        device=device
     )
  
