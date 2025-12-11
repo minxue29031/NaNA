@@ -178,7 +178,7 @@ class MLP_DEEF_INTERP:
                         score = V[i, :].float() @ self.W_emb.T
                     elif weight_type == "c_fc":
                         reshape_matrix = reshape_emb_matrix(
-                            self.W_emb, c_fc, ln_2, act, use_activation=True
+                            self.W_emb, c_fc, ln_2, act, use_activation=False
                         )
                         score = U[:, i] @ reshape_matrix.T
                     else:
@@ -188,7 +188,7 @@ class MLP_DEEF_INTERP:
                         score = V[i, :].float() @ self.W_emb.T
                     elif weight_type == "c_proj":
                         reshape_matrix = reshape_emb_matrix(
-                            self.W_emb, c_fc, ln_2, act, use_activation=False
+                            self.W_emb, c_fc, ln_2, act, use_activation=True
                         )
                         score = U[:, i] @ reshape_matrix.T
                     else:
