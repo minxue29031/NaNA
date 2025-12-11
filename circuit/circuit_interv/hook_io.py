@@ -139,7 +139,7 @@ def create_subspace_hook(
     )
 
     # reshape embedding matrix
-    reshape_W_E = reshape_emb_matrix(W_E, c_fc, ln_2, act, use_activation=True, to_cpu=True)
+    reshape_W_E = reshape_emb_matrix(W_E, c_fc, ln_2, act, use_activation=False, to_cpu=True)
 
     # c_fc hook
     if weight_type == "c_fc":
