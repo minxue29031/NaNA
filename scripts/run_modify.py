@@ -26,6 +26,7 @@ def parse_args():
     parser.add_argument("--modify_type", type=str, default="rebuild", choices=["rebuild", "auto_interv", "manual_interv"], help="Type of modification to apply: 'rebuild' or 'interv'")
     parser.add_argument("--interv_factor", type=float, default=0.1, help="Scaling factor for intervention")
     parser.add_argument("--use_full_residual", action="store_true", help="Whether to use full residual during modification")
+    parser.add_argument("--use_random_index", action="store_true", help="Select random subspaces")
     parser.add_argument("--token_num", type=int, default=20, help="Number of top tokens to display during inference")
     parser.add_argument("--gpu", type=int, default=0, help="GPU ID to use")   
 
@@ -60,7 +61,8 @@ if __name__ == "__main__":
             interv_factor=args.interv_factor,
             use_full_residual=args.use_full_residual,
             token_num=args.token_num,
-            output_dir=args.output_dir
+            output_dir=args.output_dir,
+            use_random_index=args.use_random_index
         )
 
     print("\n=== All Executions Completed Successfully ===")
