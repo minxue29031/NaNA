@@ -1,5 +1,6 @@
 import json
 import torch
+import random
 from transformers import GPT2Tokenizer, GPT2LMHeadModel
 from block_interp.model_load import get_mlp_matrices
 from circuit.circuit_interv.hook_io import register_hooks
@@ -7,7 +8,7 @@ from circuit.circuit_interv.show_map import show_infer
 from block_interp.model_load import load_model_and_embeddings
 
 # Load subspace indices from JSON
-def load_subspace_indices(json_file, top_subspaces=100, use_positive_only=True):
+def load_subspace_indices(json_file, top_subspaces=100, use_positive_only=True, use_random_index=False):
     with open(json_file, "r") as f:
         data = json.load(f)
 
@@ -22,13 +23,17 @@ def load_subspace_indices(json_file, top_subspaces=100, use_positive_only=True):
         # Select only positive-contributing subspaces if requested
         if use_positive_only:
             pos_indices = [s["subspace_index"] - 1 for s in layer_info["subspace_results"] if s["contribution"] > 0]
+            print(f"[Layer {layer_idx}] Positive subspaces: {len(pos_indices)}")
+
         else:
             pos_indices = [s["subspace_index"] - 1 for s in layer_info["subspace_results"] if s["contribution"]]
 
-        selected = pos_indices[:top_subspaces]
+        if use_random_index:
+            selected = random.sample(pos_indices, k=min(top_subspaces, len(pos_indices)))
+        else:
+            selected = pos_indices[:top_subspaces]
 
-        if selected:
-            layer_subspaces[layer_idx] = selected
+        layer_subspaces[layer_idx] = selected
 
     print("Loaded subspace indices (preview up to 10 layers):")
     for k, v in list(layer_subspaces.items()):
@@ -55,7 +60,8 @@ def reubuld_interv(
     interv_factor=0.1,
     use_full_residual=True,
     token_num=20,
-    output_dir=None):
+    output_dir=None,
+    use_random_index=False):
     
     print(f"Running modify type: {modify_type}, mode={gene_or_abla}, weight_type={weight_type}, use_positive_only={use_positive_only}")
  
@@ -65,7 +71,7 @@ def reubuld_interv(
             raw_data = json.load(f)
         layer_subspaces = {int(k): [idx - 1 for idx in v] for k, v in raw_data.items()}
     else:
-        layer_subspaces = load_subspace_indices(auto_subspace_file, top_subspaces, use_positive_only)
+        layer_subspaces = load_subspace_indices(auto_subspace_file, top_subspaces, use_positive_only, use_random_index)
     
     model, tokenizer, W_E = load_model_and_embeddings(model_name, device)
     
