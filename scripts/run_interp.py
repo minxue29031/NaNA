@@ -8,7 +8,6 @@ from typing import List
 from block_interp.interp_mlp import MLP_DEEF_INTERP
 from block_interp.model_load import parse_layers_arg
 
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
  
 
 def parse_args():
@@ -24,7 +23,7 @@ def parse_args():
     parser.add_argument("--with_negative", action="store_true", help="Save negative directions as well")
     parser.add_argument("--save_file", action="store_true", help="Save the computed subspace results to a file.")
     parser.add_argument("--return_heatmap", action="store_true", help="Return the subspace heatmap.")
-    parser.add_argument("--device", type=str, default=None, help="Torch device (cuda/cpu); auto-detect if None")
+    parser.add_argument("--gpu", type=int, default=0, help="GPU ID to use")   
     
     return parser.parse_args()
 
@@ -72,6 +71,9 @@ def run_mlp_analysis(
 
 if __name__ == "__main__":
     args = parse_args()
+    os.environ["CUDA_VISIBLE_DEVICES"] = str(args.gpu)
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    print(f">> Using GPU {args.gpu}, PyTorch device: {device}")
     
     run_mlp_analysis(
         model_name=args.model_name,
@@ -84,6 +86,6 @@ if __name__ == "__main__":
         with_negative=args.with_negative,
         save_file=args.save_file,
         return_heatmap=args.return_heatmap,
-        device=args.device
+        device=device
     )
  
