@@ -1,0 +1,402 @@
+{
+    "1": {
+        "prompt": "The cat looks very",
+        "target": " happy"
+    },
+    "2": {
+        "prompt": "The dog seems very",
+        "target": " happy"
+    },
+    "3": {
+        "prompt": "The child appears very",
+        "target": " happy"
+    },
+    "4": {
+        "prompt": "The teacher feels very",
+        "target": " happy"
+    },
+    "5": {
+        "prompt": "The baby is extremely",
+        "target": " happy"
+    },
+    "6": {
+        "prompt": "The kitten seems quite",
+        "target": " happy"
+    },
+    "7": {
+        "prompt": "The puppy looks incredibly",
+        "target": " happy"
+    },
+    "8": {
+        "prompt": "The girl appears genuinely",
+        "target": " happy"
+    },
+    "9": {
+        "prompt": "The boy seems remarkably",
+        "target": " happy"
+    },
+    "10": {
+        "prompt": "The team looks very",
+        "target": " happy"
+    },
+    "11": {
+        "prompt": "The student feels very",
+        "target": " happy"
+    },
+    "12": {
+        "prompt": "The employee appears very",
+        "target": " happy"
+    },
+    "13": {
+        "prompt": "The friend seems truly",
+        "target": " happy"
+    },
+    "14": {
+        "prompt": "The mother looks extremely",
+        "target": " happy"
+    },
+    "15": {
+        "prompt": "The father appears very",
+        "target": " happy"
+    },
+    "16": {
+        "prompt": "The baby looks unusually",
+        "target": " happy"
+    },
+    "17": {
+        "prompt": "The animal seems very",
+        "target": " happy"
+    },
+    "18": {
+        "prompt": "The singer looks very",
+        "target": " happy"
+    },
+    "19": {
+        "prompt": "The dancer appears very",
+        "target": " happy"
+    },
+    "20": {
+        "prompt": "The athlete seems very",
+        "target": " happy"
+    },
+    "21": {
+        "prompt": "The actor looks very",
+        "target": " happy"
+    },
+    "22": {
+        "prompt": "The actress appears very",
+        "target": " happy"
+    },
+    "23": {
+        "prompt": "The child seems very",
+        "target": " happy"
+    },
+    "24": {
+        "prompt": "The pet looks very",
+        "target": " happy"
+    },
+    "25": {
+        "prompt": "The friend appears extremely",
+        "target": " happy"
+    },
+    "26": {
+        "prompt": "The neighbor looks very",
+        "target": " happy"
+    },
+    "27": {
+        "prompt": "The dog seems really",
+        "target": " happy"
+    },
+    "28": {
+        "prompt": "The cat appears genuinely",
+        "target": " happy"
+    },
+    "29": {
+        "prompt": "The baby seems truly",
+        "target": " happy"
+    },
+    "30": {
+        "prompt": "The child looks very",
+        "target": " happy"
+    },
+    "31": {
+        "prompt": "The student appears genuinely",
+        "target": " happy"
+    },
+    "32": {
+        "prompt": "The teacher seems extremely",
+        "target": " happy"
+    },
+    "33": {
+        "prompt": "The artist looks very",
+        "target": " happy"
+    },
+    "34": {
+        "prompt": "The musician appears very",
+        "target": " happy"
+    },
+    "35": {
+        "prompt": "The chef looks very",
+        "target": " happy"
+    },
+    "36": {
+        "prompt": "The player seems very",
+        "target": " happy"
+    },
+    "37": {
+        "prompt": "The singer seems truly",
+        "target": " happy"
+    },
+    "38": {
+        "prompt": "The friend seems extremely",
+        "target": " happy"
+    },
+    "39": {
+        "prompt": "The baby appears very",
+        "target": " happy"
+    },
+    "40": {
+        "prompt": "The dog looks incredibly",
+        "target": " happy"
+    },
+    "41": {
+        "prompt": "The cat seems remarkably",
+        "target": " happy"
+    },
+    "42": {
+        "prompt": "The teacher looks genuinely",
+        "target": " happy"
+    },
+    "43": {
+        "prompt": "The child appears remarkably",
+        "target": " happy"
+    },
+    "44": {
+        "prompt": "The athlete looks very",
+        "target": " happy"
+    },
+    "45": {
+        "prompt": "The neighbor seems genuinely",
+        "target": " happy"
+    },
+    "46": {
+        "prompt": "The baby looks extremely",
+        "target": " happy"
+    },
+    "47": {
+        "prompt": "The toddler appears very",
+        "target": " happy"
+    },
+    "48": {
+        "prompt": "The dog looks very",
+        "target": " happy"
+    },
+    "49": {
+        "prompt": "The cat appears very",
+        "target": " happy"
+    },
+    "50": {
+        "prompt": "The puppy seems extremely",
+        "target": " happy"
+    },
+    "51": {
+        "prompt": "The kitten looks very",
+        "target": " happy"
+    },
+    "52": {
+        "prompt": "The student seems remarkably",
+        "target": " happy"
+    },
+    "53": {
+        "prompt": "The child appears extremely",
+        "target": " happy"
+    },
+    "54": {
+        "prompt": "The baby looks incredibly",
+        "target": " happy"
+    },
+    "55": {
+        "prompt": "The toddler seems very",
+        "target": " happy"
+    },
+    "56": {
+        "prompt": "The friend appears very",
+        "target": " happy"
+    },
+    "57": {
+        "prompt": "The teacher looks truly",
+        "target": " happy"
+    },
+    "58": {
+        "prompt": "The dog appears extremely",
+        "target": " happy"
+    },
+    "59": {
+        "prompt": "The cat seems incredibly",
+        "target": " happy"
+    },
+    "60": {
+        "prompt": "The baby appears genuinely",
+        "target": " happy"
+    },
+    "61": {
+        "prompt": "The child looks extremely",
+        "target": " happy"
+    },
+    "62": {
+        "prompt": "The student looks very",
+        "target": " happy"
+    },
+    "63": {
+        "prompt": "The neighbor appears very",
+        "target": " happy"
+    },
+    "64": {
+        "prompt": "The dog looks genuinely",
+        "target": " happy"
+    },
+    "65": {
+        "prompt": "The cat looks truly",
+        "target": " happy"
+    },
+    "66": {
+        "prompt": "The baby looks remarkably",
+        "target": " happy"
+    },
+    "67": {
+        "prompt": "The child seems really",
+        "target": " happy"
+    },
+    "68": {
+        "prompt": "The teacher seems very",
+        "target": " happy"
+    },
+    "69": {
+        "prompt": "The student appears extremely",
+        "target": " happy"
+    },
+    "70": {
+        "prompt": "The friend looks very",
+        "target": " happy"
+    },
+    "71": {
+        "prompt": "The kitten seems very",
+        "target": " happy"
+    },
+    "72": {
+        "prompt": "The baby seems remarkably",
+        "target": " happy"
+    },
+    "73": {
+        "prompt": "The child looks truly",
+        "target": " happy"
+    },
+    "74": {
+        "prompt": "The cat looks extremely",
+        "target": " happy"
+    },
+    "75": {
+        "prompt": "The student looks truly",
+        "target": " happy"
+    },
+    "76": {
+        "prompt": "The friend appears remarkably",
+        "target": " happy"
+    },
+    "77": {
+        "prompt": "The baby looks very",
+        "target": " happy"
+    },
+    "78": {
+        "prompt": "The toddler appears genuinely",
+        "target": " happy"
+    },
+    "79": {
+        "prompt": "The dog looks extremely",
+        "target": " happy"
+    },
+    "80": {
+        "prompt": "The cat seems very",
+        "target": " happy"
+    },
+    "81": {
+        "prompt": "The teacher looks extremely",
+        "target": " happy"
+    },
+    "82": {
+        "prompt": "The student seems very",
+        "target": " happy"
+    },
+    "83": {
+        "prompt": "The friend looks truly",
+        "target": " happy"
+    },
+    "84": {
+        "prompt": "The baby seems very",
+        "target": " happy"
+    },
+    "85": {
+        "prompt": "The dog appears very",
+        "target": " happy"
+    },
+    "86": {
+        "prompt": "The student looks extremely",
+        "target": " happy"
+    },
+    "87": {
+        "prompt": "The baby looks really",
+        "target": " happy"
+    },
+    "88": {
+        "prompt": "The toddler seems remarkably",
+        "target": " happy"
+    },
+    "89": {
+        "prompt": "The cat seems extremely",
+        "target": " happy"
+    },
+    "90": {
+        "prompt": "The puppy seems very",
+        "target": " happy"
+    },
+    "91": {
+        "prompt": "The kitten looks extremely",
+        "target": " happy"
+    },
+    "92": {
+        "prompt": "The baby appears quite",
+        "target": " happy"
+    },
+    "93": {
+        "prompt": "The child feels really",
+        "target": " happy"
+    },
+    "94": {
+        "prompt": "The dog looks unusually",
+        "target": " happy"
+    },
+    "95": {
+        "prompt": "The girl seems genuinely",
+        "target": " happy"
+    },
+    "96": {
+        "prompt": "The boy appears truly",
+        "target": " happy"
+    },
+    "97": {
+        "prompt": "The athlete appears very",
+        "target": " happy"
+    },
+    "98": {
+        "prompt": "The dancer seems very",
+        "target": " happy"
+    },
+    "99": {
+        "prompt": "The actor appears truly",
+        "target": " happy"
+    },
+    "100": {
+        "prompt": "The student looks really",
+        "target": " happy"
+    }
+}
