@@ -9,6 +9,7 @@ from block_interp.model_load import load_model_and_embeddings
 
 # Load subspace indices from JSON
 def load_subspace_indices(json_file, top_subspaces=100, use_positive_only=True, use_random_index=False):
+    random.seed(42)
     with open(json_file, "r") as f:
         data = json.load(f)
 
