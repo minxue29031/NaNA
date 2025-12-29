@@ -24,8 +24,6 @@ def plot_results(
     plt.figure(figsize=(config.FIG_WIDTH, config.FIG_HEIGHT))
     sns.set_theme(style="white")
     ax = plt.gca()
-    ax.spines['top'].set_visible(False)
-    ax.spines['right'].set_visible(False)
     ax.grid(False)
     
     # Plot External Baselines
