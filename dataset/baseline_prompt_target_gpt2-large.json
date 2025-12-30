@@ -1,0 +1,802 @@
+{
+  "1": {
+    "model": "gpt2-large",
+    "prompt": "The feeling of taking off my shoes is truly",
+    "target_token": " amazing",
+    "logit": 9.553787231445312,
+    "prob": 0.10368762910366058,
+    "rank": 1
+  },
+  "2": {
+    "model": "gpt2-large",
+    "prompt": "The mentorship I received was truly",
+    "target_token": " amazing",
+    "logit": 10.742706298828125,
+    "prob": 0.19292142987251282,
+    "rank": 1
+  },
+  "3": {
+    "model": "gpt2-large",
+    "prompt": "The growth I have experienced is truly",
+    "target_token": " amazing",
+    "logit": 11.165611267089844,
+    "prob": 0.23072466254234314,
+    "rank": 1
+  },
+  "4": {
+    "model": "gpt2-large",
+    "prompt": "The innovation in this product is truly",
+    "target_token": " amazing",
+    "logit": 10.37316608428955,
+    "prob": 0.18103204667568207,
+    "rank": 1
+  },
+  "5": {
+    "model": "gpt2-large",
+    "prompt": "Everything about this place is so",
+    "target_token": " beautiful",
+    "logit": 8.272740364074707,
+    "prob": 0.04091424122452736,
+    "rank": 1
+  },
+  "6": {
+    "model": "gpt2-large",
+    "prompt": "The way she dances is so",
+    "target_token": " beautiful",
+    "logit": 9.643001556396484,
+    "prob": 0.12879037857055664,
+    "rank": 1
+  },
+  "7": {
+    "model": "gpt2-large",
+    "prompt": "The view from my bedroom window is so",
+    "target_token": " beautiful",
+    "logit": 9.710617065429688,
+    "prob": 0.10593055188655853,
+    "rank": 1
+  },
+  "8": {
+    "model": "gpt2-large",
+    "prompt": "The trail through the forest looks so",
+    "target_token": " beautiful",
+    "logit": 10.106002807617188,
+    "prob": 0.10397375375032425,
+    "rank": 1
+  },
+  "9": {
+    "model": "gpt2-large",
+    "prompt": "The sunrise over the hill was truly",
+    "target_token": " beautiful",
+    "logit": 11.047733306884766,
+    "prob": 0.1660633087158203,
+    "rank": 1
+  },
+  "10": {
+    "model": "gpt2-large",
+    "prompt": "The view from the summit is breathtakingly",
+    "target_token": " beautiful",
+    "logit": 12.097673416137695,
+    "prob": 0.4924030601978302,
+    "rank": 1
+  },
+  "11": {
+    "model": "gpt2-large",
+    "prompt": "The rainbow after the storm was incredibly",
+    "target_token": " beautiful",
+    "logit": 11.159096717834473,
+    "prob": 0.22705766558647156,
+    "rank": 1
+  },
+  "12": {
+    "model": "gpt2-large",
+    "prompt": "The butterfly landing on the flower is so",
+    "target_token": " beautiful",
+    "logit": 8.844644546508789,
+    "prob": 0.06090687960386276,
+    "rank": 1
+  },
+  "13": {
+    "model": "gpt2-large",
+    "prompt": "The bamboo forest looks so",
+    "target_token": " beautiful",
+    "logit": 10.14072036743164,
+    "prob": 0.12688997387886047,
+    "rank": 1
+  },
+  "14": {
+    "model": "gpt2-large",
+    "prompt": "The colors of the sunset are so",
+    "target_token": " beautiful",
+    "logit": 10.284618377685547,
+    "prob": 0.14716240763664246,
+    "rank": 1
+  },
+  "15": {
+    "model": "gpt2-large",
+    "prompt": "The light in the golden hour looks incredibly",
+    "target_token": " bright",
+    "logit": 11.817681312561035,
+    "prob": 0.32509028911590576,
+    "rank": 1
+  },
+  "16": {
+    "model": "gpt2-large",
+    "prompt": "The future looks so",
+    "target_token": " bright",
+    "logit": 12.77623176574707,
+    "prob": 0.584916889667511,
+    "rank": 1
+  },
+  "17": {
+    "model": "gpt2-large",
+    "prompt": "The light from the screen is very",
+    "target_token": " bright",
+    "logit": 11.666422843933105,
+    "prob": 0.276375412940979,
+    "rank": 1
+  },
+  "18": {
+    "model": "gpt2-large",
+    "prompt": "The horizon looks very",
+    "target_token": " bright",
+    "logit": 9.865499496459961,
+    "prob": 0.07793406397104263,
+    "rank": 1
+  },
+  "19": {
+    "model": "gpt2-large",
+    "prompt": "The lighting in the office is very",
+    "target_token": " bright",
+    "logit": 11.226943969726562,
+    "prob": 0.25811585783958435,
+    "rank": 1
+  },
+  "20": {
+    "model": "gpt2-large",
+    "prompt": "The snug fit of the blanket feels very",
+    "target_token": " comfortable",
+    "logit": 12.37202262878418,
+    "prob": 0.3619120717048645,
+    "rank": 1
+  },
+  "21": {
+    "model": "gpt2-large",
+    "prompt": "The new mattress feels very",
+    "target_token": " comfortable",
+    "logit": 11.605109214782715,
+    "prob": 0.1822347193956375,
+    "rank": 1
+  },
+  "22": {
+    "model": "gpt2-large",
+    "prompt": "The hotel bed feels very",
+    "target_token": " comfortable",
+    "logit": 11.061737060546875,
+    "prob": 0.2576523721218109,
+    "rank": 1
+  },
+  "23": {
+    "model": "gpt2-large",
+    "prompt": "The coziness of the armchair is incredibly",
+    "target_token": " comforting",
+    "logit": 10.408364295959473,
+    "prob": 0.15316520631313324,
+    "rank": 1
+  },
+  "24": {
+    "model": "gpt2-large",
+    "prompt": "The collaboration on this project is very",
+    "target_token": " exciting",
+    "logit": 11.310539245605469,
+    "prob": 0.156765416264534,
+    "rank": 1
+  },
+  "25": {
+    "model": "gpt2-large",
+    "prompt": "The new opportunity sounds incredibly",
+    "target_token": " exciting",
+    "logit": 11.87550163269043,
+    "prob": 0.253912091255188,
+    "rank": 1
+  },
+  "26": {
+    "model": "gpt2-large",
+    "prompt": "The breakthrough in research was incredibly",
+    "target_token": " exciting",
+    "logit": 11.326114654541016,
+    "prob": 0.19851194322109222,
+    "rank": 1
+  },
+  "27": {
+    "model": "gpt2-large",
+    "prompt": "The greeting from the neighbor was very",
+    "target_token": " friendly",
+    "logit": 10.921299934387207,
+    "prob": 0.14729638397693634,
+    "rank": 1
+  },
+  "28": {
+    "model": "gpt2-large",
+    "prompt": "The joke he told was so",
+    "target_token": " funny",
+    "logit": 9.70077133178711,
+    "prob": 0.10052003711462021,
+    "rank": 1
+  },
+  "29": {
+    "model": "gpt2-large",
+    "prompt": "The brightness of the screen is quite",
+    "target_token": " good",
+    "logit": 12.160449981689453,
+    "prob": 0.3174916207790375,
+    "rank": 1
+  },
+  "30": {
+    "model": "gpt2-large",
+    "prompt": "The aroma from the bakery smells incredibly",
+    "target_token": " good",
+    "logit": 10.867223739624023,
+    "prob": 0.16511377692222595,
+    "rank": 1
+  },
+  "31": {
+    "model": "gpt2-large",
+    "prompt": "The stretching after waking up feels so",
+    "target_token": " good",
+    "logit": 11.80245590209961,
+    "prob": 0.4535016119480133,
+    "rank": 1
+  },
+  "32": {
+    "model": "gpt2-large",
+    "prompt": "The afternoon nap was really",
+    "target_token": " good",
+    "logit": 9.575908660888672,
+    "prob": 0.12963071465492249,
+    "rank": 1
+  },
+  "33": {
+    "model": "gpt2-large",
+    "prompt": "The hug from my mother felt very",
+    "target_token": " good",
+    "logit": 11.440851211547852,
+    "prob": 0.22423110902309418,
+    "rank": 1
+  },
+  "34": {
+    "model": "gpt2-large",
+    "prompt": "Receiving a compliment feels really",
+    "target_token": " good",
+    "logit": 13.573591232299805,
+    "prob": 0.719899594783783,
+    "rank": 1
+  },
+  "35": {
+    "model": "gpt2-large",
+    "prompt": "Holding hands feels very",
+    "target_token": " good",
+    "logit": 10.658943176269531,
+    "prob": 0.18267597258090973,
+    "rank": 1
+  },
+  "36": {
+    "model": "gpt2-large",
+    "prompt": "Making someone else smile feels very",
+    "target_token": " good",
+    "logit": 11.166389465332031,
+    "prob": 0.24273836612701416,
+    "rank": 1
+  },
+  "37": {
+    "model": "gpt2-large",
+    "prompt": "The acoustics of the hall sound incredibly",
+    "target_token": " good",
+    "logit": 11.545151710510254,
+    "prob": 0.3099200129508972,
+    "rank": 1
+  },
+  "38": {
+    "model": "gpt2-large",
+    "prompt": "The support from colleagues feels so",
+    "target_token": " good",
+    "logit": 11.496699333190918,
+    "prob": 0.21573103964328766,
+    "rank": 1
+  },
+  "39": {
+    "model": "gpt2-large",
+    "prompt": "The quality of the print is so",
+    "target_token": " good",
+    "logit": 11.424018859863281,
+    "prob": 0.37497466802597046,
+    "rank": 1
+  },
+  "40": {
+    "model": "gpt2-large",
+    "prompt": "The chocolate melting in my mouth feels so",
+    "target_token": " good",
+    "logit": 12.532685279846191,
+    "prob": 0.6295756101608276,
+    "rank": 1
+  },
+  "41": {
+    "model": "gpt2-large",
+    "prompt": "The hospitality of the host was very",
+    "target_token": " good",
+    "logit": 10.542360305786133,
+    "prob": 0.11587125808000565,
+    "rank": 1
+  },
+  "42": {
+    "model": "gpt2-large",
+    "prompt": "The taste of the wine is so",
+    "target_token": " good",
+    "logit": 9.812982559204102,
+    "prob": 0.13121095299720764,
+    "rank": 1
+  },
+  "43": {
+    "model": "gpt2-large",
+    "prompt": "The yoga session felt so",
+    "target_token": " good",
+    "logit": 11.465941429138184,
+    "prob": 0.35096806287765503,
+    "rank": 1
+  },
+  "44": {
+    "model": "gpt2-large",
+    "prompt": "The feeling of the massage was so",
+    "target_token": " good",
+    "logit": 10.26506233215332,
+    "prob": 0.11514315009117126,
+    "rank": 1
+  },
+  "45": {
+    "model": "gpt2-large",
+    "prompt": "The overall experience was so",
+    "target_token": " good",
+    "logit": 10.924829483032227,
+    "prob": 0.2909441590309143,
+    "rank": 1
+  },
+  "46": {
+    "model": "gpt2-large",
+    "prompt": "The harmony in the music is so",
+    "target_token": " good",
+    "logit": 9.385294914245605,
+    "prob": 0.06782466918230057,
+    "rank": 1
+  },
+  "47": {
+    "model": "gpt2-large",
+    "prompt": "Being listened to feels truly",
+    "target_token": " good",
+    "logit": 9.335476875305176,
+    "prob": 0.08131143450737,
+    "rank": 1
+  },
+  "48": {
+    "model": "gpt2-large",
+    "prompt": "The summary of the book is very",
+    "target_token": " good",
+    "logit": 9.867466926574707,
+    "prob": 0.08572854101657867,
+    "rank": 1
+  },
+  "49": {
+    "model": "gpt2-large",
+    "prompt": "The service at the restaurant was very",
+    "target_token": " good",
+    "logit": 10.469439506530762,
+    "prob": 0.1382109820842743,
+    "rank": 1
+  },
+  "50": {
+    "model": "gpt2-large",
+    "prompt": "The improvement in my health is so",
+    "target_token": " great",
+    "logit": 11.180440902709961,
+    "prob": 0.18929648399353027,
+    "rank": 1
+  },
+  "51": {
+    "model": "gpt2-large",
+    "prompt": "The serendipity of the meeting was so",
+    "target_token": " great",
+    "logit": 10.914153099060059,
+    "prob": 0.2993745505809784,
+    "rank": 1
+  },
+  "52": {
+    "model": "gpt2-large",
+    "prompt": "The anticipation of the trip is so",
+    "target_token": " great",
+    "logit": 12.76906681060791,
+    "prob": 0.4280611276626587,
+    "rank": 1
+  },
+  "53": {
+    "model": "gpt2-large",
+    "prompt": "The excitement for the new role is so",
+    "target_token": " great",
+    "logit": 13.612604141235352,
+    "prob": 0.5225966572761536,
+    "rank": 1
+  },
+  "54": {
+    "model": "gpt2-large",
+    "prompt": "The sense of accomplishment is so",
+    "target_token": " great",
+    "logit": 11.637969017028809,
+    "prob": 0.2512742578983307,
+    "rank": 1
+  },
+  "55": {
+    "model": "gpt2-large",
+    "prompt": "The anticipation for the event is so",
+    "target_token": " great",
+    "logit": 12.885808944702148,
+    "prob": 0.31988325715065,
+    "rank": 1
+  },
+  "56": {
+    "model": "gpt2-large",
+    "prompt": "Seeing her smile makes me feel so",
+    "target_token": " happy",
+    "logit": 12.267313003540039,
+    "prob": 0.47731947898864746,
+    "rank": 1
+  },
+  "57": {
+    "model": "gpt2-large",
+    "prompt": "My heart feels full and very",
+    "target_token": " happy",
+    "logit": 10.774126052856445,
+    "prob": 0.18734219670295715,
+    "rank": 1
+  },
+  "58": {
+    "model": "gpt2-large",
+    "prompt": "The feeling of safety here is very",
+    "target_token": " important",
+    "logit": 10.74626350402832,
+    "prob": 0.13624469935894012,
+    "rank": 1
+  },
+  "59": {
+    "model": "gpt2-large",
+    "prompt": "The freshness of the salad is so",
+    "target_token": " important",
+    "logit": 10.240486145019531,
+    "prob": 0.2236514836549759,
+    "rank": 1
+  },
+  "60": {
+    "model": "gpt2-large",
+    "prompt": "The encouragement from my teacher was so",
+    "target_token": " important",
+    "logit": 10.436071395874023,
+    "prob": 0.09707602113485336,
+    "rank": 1
+  },
+  "61": {
+    "model": "gpt2-large",
+    "prompt": "The support from my team is incredibly",
+    "target_token": " important",
+    "logit": 13.24563980102539,
+    "prob": 0.5283958911895752,
+    "rank": 1
+  },
+  "62": {
+    "model": "gpt2-large",
+    "prompt": "Feeling understood is incredibly",
+    "target_token": " important",
+    "logit": 13.483003616333008,
+    "prob": 0.6400298476219177,
+    "rank": 1
+  },
+  "63": {
+    "model": "gpt2-large",
+    "prompt": "The promotion at work is very",
+    "target_token": " important",
+    "logit": 9.036724090576172,
+    "prob": 0.06562831252813339,
+    "rank": 1
+  },
+  "64": {
+    "model": "gpt2-large",
+    "prompt": "The timing of the event was very",
+    "target_token": " important",
+    "logit": 10.876543998718262,
+    "prob": 0.1413220763206482,
+    "rank": 1
+  },
+  "65": {
+    "model": "gpt2-large",
+    "prompt": "The stability of the structure is very",
+    "target_token": " important",
+    "logit": 13.630658149719238,
+    "prob": 0.6639048457145691,
+    "rank": 1
+  },
+  "66": {
+    "model": "gpt2-large",
+    "prompt": "The clarity of the mirror is incredibly",
+    "target_token": " important",
+    "logit": 11.829400062561035,
+    "prob": 0.30378642678260803,
+    "rank": 1
+  },
+  "67": {
+    "model": "gpt2-large",
+    "prompt": "The feeling of gratitude is very",
+    "target_token": " important",
+    "logit": 11.304325103759766,
+    "prob": 0.1908571869134903,
+    "rank": 1
+  },
+  "68": {
+    "model": "gpt2-large",
+    "prompt": "The conversation we had was really",
+    "target_token": " interesting",
+    "logit": 9.846210479736328,
+    "prob": 0.17757673561573029,
+    "rank": 1
+  },
+  "69": {
+    "model": "gpt2-large",
+    "prompt": "The conversation at the bar was very",
+    "target_token": " interesting",
+    "logit": 9.22819709777832,
+    "prob": 0.05968986824154854,
+    "rank": 1
+  },
+  "70": {
+    "model": "gpt2-large",
+    "prompt": "The chat with the taxi driver was very",
+    "target_token": " interesting",
+    "logit": 10.096927642822266,
+    "prob": 0.09529566764831543,
+    "rank": 1
+  },
+  "71": {
+    "model": "gpt2-large",
+    "prompt": "The variety of colors in the palette is very",
+    "target_token": " nice",
+    "logit": 10.593072891235352,
+    "prob": 0.10528295487165451,
+    "rank": 1
+  },
+  "72": {
+    "model": "gpt2-large",
+    "prompt": "The thank-you note was really",
+    "target_token": " nice",
+    "logit": 10.923070907592773,
+    "prob": 0.26130515336990356,
+    "rank": 1
+  },
+  "73": {
+    "model": "gpt2-large",
+    "prompt": "The newly polished wood looks very",
+    "target_token": " nice",
+    "logit": 11.204828262329102,
+    "prob": 0.2648630440235138,
+    "rank": 1
+  },
+  "74": {
+    "model": "gpt2-large",
+    "prompt": "The steam from the soup looks very",
+    "target_token": " nice",
+    "logit": 9.735893249511719,
+    "prob": 0.0883883535861969,
+    "rank": 1
+  },
+  "75": {
+    "model": "gpt2-large",
+    "prompt": "The souvenir I bought is very",
+    "target_token": " nice",
+    "logit": 9.868940353393555,
+    "prob": 0.12191878259181976,
+    "rank": 1
+  },
+  "76": {
+    "model": "gpt2-large",
+    "prompt": "The smell of freshly brewed coffee is very",
+    "target_token": " pleasant",
+    "logit": 10.852041244506836,
+    "prob": 0.13345032930374146,
+    "rank": 1
+  },
+  "77": {
+    "model": "gpt2-large",
+    "prompt": "The feeling of sand between my toes is very",
+    "target_token": " pleasant",
+    "logit": 9.838878631591797,
+    "prob": 0.08136292546987534,
+    "rank": 1
+  },
+  "78": {
+    "model": "gpt2-large",
+    "prompt": "The feeling of wool against skin is surprisingly",
+    "target_token": " pleasant",
+    "logit": 10.081926345825195,
+    "prob": 0.07185117155313492,
+    "rank": 1
+  },
+  "79": {
+    "model": "gpt2-large",
+    "prompt": "The smell of the ocean breeze is very",
+    "target_token": " pleasant",
+    "logit": 11.067201614379883,
+    "prob": 0.1651732623577118,
+    "rank": 1
+  },
+  "80": {
+    "model": "gpt2-large",
+    "prompt": "The feedback I received was extremely",
+    "target_token": " positive",
+    "logit": 13.656038284301758,
+    "prob": 0.6540974378585815,
+    "rank": 1
+  },
+  "81": {
+    "model": "gpt2-large",
+    "prompt": "The response to my presentation was very",
+    "target_token": " positive",
+    "logit": 12.854534149169922,
+    "prob": 0.4913118779659271,
+    "rank": 1
+  },
+  "82": {
+    "model": "gpt2-large",
+    "prompt": "The response from the client was very",
+    "target_token": " positive",
+    "logit": 11.115863800048828,
+    "prob": 0.21883367002010345,
+    "rank": 1
+  },
+  "83": {
+    "model": "gpt2-large",
+    "prompt": "The feedback on my design was extremely",
+    "target_token": " positive",
+    "logit": 14.532029151916504,
+    "prob": 0.8132687211036682,
+    "rank": 1
+  },
+  "84": {
+    "model": "gpt2-large",
+    "prompt": "The feeling of solving the equation is so",
+    "target_token": " powerful",
+    "logit": 10.247922897338867,
+    "prob": 0.10615307837724686,
+    "rank": 1
+  },
+  "85": {
+    "model": "gpt2-large",
+    "prompt": "Watching the clouds float by is very",
+    "target_token": " relaxing",
+    "logit": 10.88054370880127,
+    "prob": 0.17493590712547302,
+    "rank": 1
+  },
+  "86": {
+    "model": "gpt2-large",
+    "prompt": "Watching the puppy play is very",
+    "target_token": " relaxing",
+    "logit": 10.406637191772461,
+    "prob": 0.07928527146577835,
+    "rank": 1
+  },
+  "87": {
+    "model": "gpt2-large",
+    "prompt": "Crossing the finish line felt incredibly",
+    "target_token": " satisfying",
+    "logit": 10.648146629333496,
+    "prob": 0.11444982141256332,
+    "rank": 1
+  },
+  "88": {
+    "model": "gpt2-large",
+    "prompt": "The smell of the BBQ is really",
+    "target_token": " strong",
+    "logit": 9.75173282623291,
+    "prob": 0.1164887472987175,
+    "rank": 1
+  },
+  "89": {
+    "model": "gpt2-large",
+    "prompt": "The bond between us is incredibly",
+    "target_token": " strong",
+    "logit": 13.68058967590332,
+    "prob": 0.6661590337753296,
+    "rank": 1
+  },
+  "90": {
+    "model": "gpt2-large",
+    "prompt": "The momentum of the team is really",
+    "target_token": " strong",
+    "logit": 9.346874237060547,
+    "prob": 0.08287818729877472,
+    "rank": 1
+  },
+  "91": {
+    "model": "gpt2-large",
+    "prompt": "The spirit of the holiday is so",
+    "target_token": " strong",
+    "logit": 9.959478378295898,
+    "prob": 0.12440642714500427,
+    "rank": 1
+  },
+  "92": {
+    "model": "gpt2-large",
+    "prompt": "The smell of rain on the pavement is so",
+    "target_token": " strong",
+    "logit": 9.190143585205078,
+    "prob": 0.08229110389947891,
+    "rank": 1
+  },
+  "93": {
+    "model": "gpt2-large",
+    "prompt": "The scent of the soap is really",
+    "target_token": " strong",
+    "logit": 10.137022018432617,
+    "prob": 0.13815832138061523,
+    "rank": 1
+  },
+  "94": {
+    "model": "gpt2-large",
+    "prompt": "The smell of toast is very",
+    "target_token": " strong",
+    "logit": 10.324230194091797,
+    "prob": 0.1668621003627777,
+    "rank": 1
+  },
+  "95": {
+    "model": "gpt2-large",
+    "prompt": "The smell of the pine trees is so",
+    "target_token": " strong",
+    "logit": 10.803747177124023,
+    "prob": 0.22806593775749207,
+    "rank": 1
+  },
+  "96": {
+    "model": "gpt2-large",
+    "prompt": "The smell of damp earth is so",
+    "target_token": " strong",
+    "logit": 10.525178909301758,
+    "prob": 0.20933379232883453,
+    "rank": 1
+  },
+  "97": {
+    "model": "gpt2-large",
+    "prompt": "The energy of the storm was incredibly",
+    "target_token": " strong",
+    "logit": 12.75181770324707,
+    "prob": 0.295054167509079,
+    "rank": 1
+  },
+  "98": {
+    "model": "gpt2-large",
+    "prompt": "The collaboration with the team was very",
+    "target_token": " successful",
+    "logit": 10.401569366455078,
+    "prob": 0.08395536988973618,
+    "rank": 1
+  },
+  "99": {
+    "model": "gpt2-large",
+    "prompt": "The launch of the website was very",
+    "target_token": " successful",
+    "logit": 10.681859970092773,
+    "prob": 0.14026780426502228,
+    "rank": 1
+  },
+  "100": {
+    "model": "gpt2-large",
+    "prompt": "The welcome I received was incredibly",
+    "target_token": " warm",
+    "logit": 12.282733917236328,
+    "prob": 0.45054441690444946,
+    "rank": 1
+  }
+}
