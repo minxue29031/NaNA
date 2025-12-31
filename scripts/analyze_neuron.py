@@ -35,7 +35,7 @@ def get_interpretation(tokens, direction_id, polarity):
     
  
     prompt = f"""
-    I am analyzing neuron directions in Layer 10 of a GPT-2 model.
+    I am analyzing neuron directions in MLP Layer of a GPT-2 model.
     
     Direction ID: {direction_id} ({polarity})
     Top 20 Tokens: [{token_str}]
