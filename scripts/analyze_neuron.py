@@ -4,14 +4,14 @@ import re
 import argparse
 from openai import OpenAI
 
-# Client Configuration
+# --- Client Configuration ---
 client = OpenAI(
     base_url="https://4zapi.com/v1",
     api_key="sk-Yy9D8y228GCXrWgTaFLRNdnVt6mb1Naonu7G7EoElYMC5BM2",
     timeout=120
 )
 
-# Constants
+# --- Constants ---
 MODULE_ROLE_MAP = {"c_proj": "effector", "c_fc": "detector"}
 MODEL_MID_DIM_MAP = {"gpt2": 768, "gpt2-medium": 1024, "gpt2-large": 1280, "gpt2-xl": 1600}
 
@@ -26,7 +26,7 @@ def is_garbage_token(token):
         return False
     return False
 
-def get_interpretation(tokens, direction_id, polarity):
+def get_interpretation(tokens, direction_id):
     """
     Calls gpt-4o-mini to analyze semantic consistency with STRICT semantic criteria.
     """
@@ -37,7 +37,7 @@ def get_interpretation(tokens, direction_id, polarity):
     prompt = f"""
     I am analyzing neuron directions in the MLP layer of a GPT-2 model.
     
-    Direction ID: {direction_id} ({polarity})
+    Direction ID: {direction_id} 
     Top 20 Tokens: [{token_str}]
     
     My goal is to find neurons that represent a specific semantic meanings or grammatical functions (concepts, topics, or distinct grammatical roles).
@@ -50,7 +50,7 @@ def get_interpretation(tokens, direction_id, polarity):
     
     2. **Consistency Score** (Assign strictly based on MEANING, not spelling):
        - **High**: tokens clearly share a specific concept.
-       - **Medium**: tokens are thematically related but broad, or contain 1-3 noise tokens.
+       - **Medium**: tokens are thematically related but broad.
        - **Low**: 
          - Tokens have totally unrelated meanings.
          - **CRITICAL**: If tokens share a structure (e.g., all start with "#") but have unrelated meanings (e.g., "#elect" vs "#ash"), this is **LOW** consistency.
@@ -173,7 +173,7 @@ def main():
             if garbage_count > 4:
                 analysis = None
             else:
-                analysis = get_interpretation(tokens, sub_id, "positive")
+                analysis = get_interpretation(tokens, sub_id)
             
             print_polarity_result("positive", tokens, analysis, is_first=True)
         else:
@@ -187,7 +187,7 @@ def main():
             if garbage_count > 4:
                 analysis = None
             else:
-                analysis = get_interpretation(tokens, sub_id, "negative")
+                analysis = get_interpretation(tokens, sub_id)
             
             # Note: is_first=False triggers the separator printing
             print_polarity_result("negative", tokens, analysis, is_first=False)
@@ -198,4 +198,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-
+    
