@@ -4,14 +4,14 @@ import re
 import argparse
 from openai import OpenAI
 
-# --- Client Configuration ---
+# Client Configuration  
 client = OpenAI(
     base_url="https://4zapi.com/v1",
     api_key="sk-Yy9D8y228GCXrWgTaFLRNdnVt6mb1Naonu7G7EoElYMC5BM2",
     timeout=120
 )
 
-# --- Constants ---
+# Constants  
 MODULE_ROLE_MAP = {"c_proj": "effector", "c_fc": "detector"}
 MODEL_MID_DIM_MAP = {"gpt2": 768, "gpt2-medium": 1024, "gpt2-large": 1280, "gpt2-xl": 1600}
 
@@ -101,6 +101,7 @@ def load_tokens_for_subspace(file_path, target_subspaces):
             found_data[d_id] = [t['token'] for t in item['top_tokens']]
             
     return found_data
+
 
 def print_header(model, layer, module, subspace):
     """Prints the main header for the subspace."""
