@@ -4,14 +4,14 @@ import re
 import argparse
 from openai import OpenAI
 
-# --- Client Configuration ---
+# Client Configuration
 client = OpenAI(
     base_url="https://4zapi.com/v1",
     api_key="sk-Yy9D8y228GCXrWgTaFLRNdnVt6mb1Naonu7G7EoElYMC5BM2",
     timeout=120
 )
 
-# --- Constants ---
+# Constants
 MODULE_ROLE_MAP = {"c_proj": "effector", "c_fc": "detector"}
 MODEL_MID_DIM_MAP = {"gpt2": 768, "gpt2-medium": 1024, "gpt2-large": 1280, "gpt2-xl": 1600}
 
@@ -35,7 +35,7 @@ def get_interpretation(tokens, direction_id, polarity):
     
  
     prompt = f"""
-    I am analyzing neuron directions in MLP Layer of a GPT-2 model.
+    I am analyzing neuron directions in the MLP layer of a GPT-2 model.
     
     Direction ID: {direction_id} ({polarity})
     Top 20 Tokens: [{token_str}]
@@ -198,3 +198,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
