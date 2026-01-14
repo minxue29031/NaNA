@@ -1,7 +1,7 @@
 import sys
 import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
+import matplotlib.ticker as ticker
 import matplotlib.pyplot as plt
 import seaborn as sns
 from baselines import config
@@ -22,9 +22,10 @@ def plot_results(
     topk_x, topk_vals = topk_data
     
     plt.figure(figsize=(config.FIG_WIDTH, config.FIG_HEIGHT))
-    sns.set_theme(style="white")
+    sns.set_theme(style="ticks")
     ax = plt.gca()
     ax.grid(False)
+  #   ax.yaxis.set_major_locator(ticker.MultipleLocator(0.01))
     
     # Plot External Baselines
     if len(rand_x) > 0:
@@ -42,11 +43,11 @@ def plot_results(
     plt.axhline(y=full_tc, color='tab:blue', linestyle='--', linewidth=config.LINE_WIDTH, label='Full TC')
 
     plt.ylabel(f'Average Target {metric_name}', fontsize=config.LABEL_SIZE)
-    plt.xlabel('Number of features/neurons used', fontsize=config.LABEL_SIZE)
+    plt.xlabel('Number of Subspaces/Features ($k$)', fontsize=config.LABEL_SIZE)
     plt.title(f'Layer {config.LAYER_IDX} - {metric_name} Recovery', fontsize=config.TITLE_SIZE)
     plt.xticks(fontsize=config.TICK_SIZE)
     plt.yticks(fontsize=config.TICK_SIZE)
-    plt.legend(loc='upper right', frameon=False, fontsize=config.LEGEND_SIZE, labelspacing=0.1)
+    plt.legend(loc='upper right', frameon=False, fontsize=config.LEGEND_SIZE, labelspacing=0.05)
 
     plt.tight_layout()
     save_path = os.path.join(config.SAVE_DIR, f'target_{metric_name.lower()}_layer_{config.LAYER_IDX}.png')
