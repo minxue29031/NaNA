@@ -1,13 +1,17 @@
 import torch
 from transformer_lens import HookedTransformer
 from sae_training.sparse_autoencoder import SparseAutoencoder
+from  dictionary_learning.dictionary  import JumpReluAutoEncoder 
+from dictionary_learning.trainers.top_k import AutoEncoderTopK
+from dictionary_learning.trainers.batch_top_k import BatchTopKSAE
+
 from transformers import GPT2Tokenizer
 from safetensors.torch import load_file
 from baselines import config
 
-# Define device
+ 
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
-config.DEVICE = DEVICE # Inject into config for other modules
+config.DEVICE = DEVICE  
 
 class LocalSAE(torch.nn.Module):
     """Custom SAE implementation loading weights from safetensors."""
@@ -20,12 +24,17 @@ class LocalSAE(torch.nn.Module):
         self.b_dec = torch.nn.Parameter(weights['b_dec']) 
         self.scaling_factor = torch.nn.Parameter(weights['scaling_factor']) 
         
-    def forward(self, x):
+    def forward(self, x, output_features=False):
         pre_acts = x @ self.W_enc + self.b_enc
         acts = torch.relu(pre_acts)
         acts = acts * self.scaling_factor
         recon = acts @ self.W_dec + self.b_dec
-        return recon, acts
+        
+        if output_features:
+            return recon, acts
+        else:
+            return recon
+
 
 def load_resources():
     """Loads the Model, Tokenizer, Transcoder, and LocalSAE."""
@@ -37,12 +46,15 @@ def load_resources():
     model.tokenizer.pad_token = model.tokenizer.eos_token
 
     # Load Transcoder
-    transcoder_path = f"{config.TRANSCODER_TEMPLATE.format(config.LAYER_IDX)}.pt"
-    print(f"Loading Transcoder from {transcoder_path}...")
-    transcoder = SparseAutoencoder.load_from_pretrained(transcoder_path).eval()
+    print(f"Loading Transcoder from {config.TRANSCODER_PATH}...")
+    transcoder = SparseAutoencoder.load_from_pretrained(config.TRANSCODER_PATH).eval()
 
     # Load LocalSAE
-    print(f"Loading SAE from {config.SAE_PATH}...")
-    sae = LocalSAE(config.SAE_PATH).to(DEVICE).eval()
+    print(f"Loading SAE from {config.SAE_VANILLA_PATH}...")
+    sae_vanilla = LocalSAE(config.SAE_VANILLA_PATH).to(DEVICE).eval()
+    sae_jumprelu = JumpReluAutoEncoder.from_pretrained(path=config.SAE_JUMPRELU_PATH).to(DEVICE).eval()
+    sae_topk = AutoEncoderTopK.from_pretrained(path=config.SAE_TOPK_PATH, k=32).to(DEVICE).eval()
+    sae_batchtopk = BatchTopKSAE.from_pretrained(path=config.SAE_BATCHTOPK_PATH, k=32).to(DEVICE).eval()
 
-    return model, tokenizer, transcoder, sae
+
+    return model, tokenizer, transcoder, sae_vanilla, sae_jumprelu, sae_topk, sae_batchtopk

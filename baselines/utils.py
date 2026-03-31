@@ -21,6 +21,7 @@ def load_dataset(data_path, model):
     target_ids = torch.tensor([model.to_single_token(t) for t in target_tokens]).to(config.DEVICE)
     return prompts, target_ids
 
+
 def load_baseline_json(prob_path, rank_path):
     """Loads external baseline results from JSON files."""
     if not os.path.exists(prob_path) or not os.path.exists(rank_path):
@@ -36,6 +37,7 @@ def load_baseline_json(prob_path, rank_path):
     probs = [prob_data[str(k)] for k in keys]
     ranks = [rank_data[str(k)] for k in keys]
     return keys, probs, ranks
+
 
 def get_metrics(logits, targets):
     """Calculates average probability and rank of target tokens."""

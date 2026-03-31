@@ -4,12 +4,15 @@ from transformer_lens import utils as tl_utils
 from baselines import config
 from baselines.utils import get_metrics
 
-def cache_activations(model, transcoder, sae, prompts):
+def cache_activations(model, transcoder, sae_vanilla, sae_jumprelu, sae_topk, sae_batchtopk, prompts):
     """Runs the model to cache activations for MLP, SAE, and Transcoder."""
     print("Caching Activations...")
     transcoder_acts_list = []
     mlp_acts_list = []
-    sae_acts_list = [] 
+    sae_vanilla_acts_list = [] 
+    sae_jumprelu_acts_list = [] 
+    sae_topk_acts_list = [] 
+    sae_batchtopk_acts_list = [] 
 
     act_name_ln2 = tl_utils.get_act_name('normalized', config.LAYER_IDX, 'ln2')
     act_name_mlp = tl_utils.get_act_name('post', config.LAYER_IDX, 'mlp')
@@ -27,11 +30,20 @@ def cache_activations(model, transcoder, sae, prompts):
             
             # Cache SAE Activations
             mlp_block_out = model.blocks[config.LAYER_IDX].mlp(cache[act_name_ln2][:, -1])
-            sae_acts_list.append(sae(mlp_block_out)[1])
+            
+            sae_vanilla_acts_list.append(sae_vanilla(mlp_block_out, output_features=True)[1])
+            
+            sae_jumprelu_acts_list.append(sae_jumprelu(mlp_block_out, output_features=True)[1])
+            sae_topk_acts_list.append(sae_topk(mlp_block_out, output_features=True)[1])
+            sae_batchtopk_acts_list.append(sae_batchtopk(mlp_block_out, output_features=True)[1])
 
     return (torch.stack(transcoder_acts_list)[:, 0, :],
             torch.stack(mlp_acts_list)[:, 0, :],
-            torch.stack(sae_acts_list)[:, 0, :])
+            torch.stack(sae_vanilla_acts_list)[:, 0, :],
+            torch.stack(sae_jumprelu_acts_list)[:, 0, :],
+            torch.stack(sae_topk_acts_list)[:, 0, :],
+            torch.stack(sae_batchtopk_acts_list)[:, 0, :] )
+            
 
 class Evaluator:
     """Class to encapsulate model state for ablation hooks."""
@@ -102,17 +114,24 @@ class Evaluator:
                 mlp_out_ctx = mlp_out[:, :-1, :]
                 mlp_out_last = mlp_out[:, -1:, :]
                 
-                if mlp_out_ctx.shape[1] > 0:
-                    ctx_recon = sae(mlp_out_ctx)[0]
-                else:
-                    ctx_recon = torch.empty(x.shape[0], 0, x.shape[2], device=x.device)
-                    
-                _, feature_acts = sae(mlp_out_last) 
+
+                ctx_recon = sae(mlp_out_ctx, output_features=True)[0]
+                _, feature_acts = sae(mlp_out_last, output_features=True) 
                 
                 # Filter features
+                if hasattr(sae, "W_dec"):
+                    weights = sae.W_dec
+                    bias = sae.b_dec
+                elif hasattr(sae, "decoder"):
+                    weights = sae.decoder.weight.T 
+                    bias = sae.b_dec
+                else:
+                    raise AttributeError("Could not find decoder weights (W_dec or decoder.weight)")
+                
                 feature_acts_subset = feature_acts[:, :, features_to_use]
-                W_dec_subset = sae.W_dec[features_to_use, :]
-                last_recon = torch.einsum('btf, fd -> btd', feature_acts_subset, W_dec_subset) + sae.b_dec
+                W_dec_subset = weights[features_to_use, :]
+                
+                last_recon = torch.einsum('btf, fd -> btd', feature_acts_subset, W_dec_subset) + bias
                 
                 return torch.cat([ctx_recon, last_recon], dim=1)
         
@@ -123,10 +142,12 @@ class Evaluator:
             self.model.blocks[self.layer_idx].mlp = original_mlp
         return get_metrics(logits, self.target_ids)
 
+
     @torch.no_grad()
     def eval_full_original(self):
         logits = self.model(self.prompts, return_type="logits", prepend_bos=False)
         return get_metrics(logits, self.target_ids)
+
 
     @torch.no_grad()
     def eval_full_transcoder(self):
@@ -140,6 +161,8 @@ class Evaluator:
         finally:
             self.model.blocks[self.layer_idx].mlp = original_mlp
         return get_metrics(logits, self.target_ids)
+
+
 
 def run_loop(eval_func, variance_tensor, steps, desc):
     """Runs the ablation loop over Top-K features."""
