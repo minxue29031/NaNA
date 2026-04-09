@@ -39,7 +39,8 @@ def show_intervention(
     """
     y_before = torch.nn.functional.linear(x_ori, W_orig.T, bias)
     y_after = torch.nn.functional.linear(x_last, W_new.T, bias)
-
+    
+    
     print(f"\n>>> {weight_type} BEFORE intervention for layer {layer_idx}:")
     top_before = print_top_tokens(tokenizer, y_before, weight_type, W_E=W_E, reshape_W_E=reshape_W_E, topk=token_num)
     
@@ -93,6 +94,7 @@ def get_modified_weights(
     if modify_type == "rebuild":
         W_reconst, W_orig, c_fc, c_proj, ln_2, act = manipulator.rebuild_subspace(subspace_indices)
         W_new = W_reconst if gene_or_abla == "general" else (W_orig - W_reconst)
+        
     elif modify_type in ["manual_interv", "auto_interv"]:
         W_reconst, W_orig, c_fc, c_proj, ln_2, act = manipulator.interv_subspace(subspace_indices, interv_factor)
         W_new = W_reconst
@@ -124,6 +126,8 @@ def create_subspace_hook(
         token_num
     ):
     
+    print(">> use_full_residual:", use_full_residual)
+    print(">> use_bias:", use_bias)
     
     if layer_idx not in layer_subspaces:
         return None
@@ -205,8 +209,9 @@ def create_subspace_hook(
         raise ValueError(f"Unsupported weight_type: {weight_type}")
 
     return hook
+    
 
-
+ 
 
 
 def register_hooks(
@@ -241,12 +246,15 @@ def register_hooks(
 
     # Register hooks to capture original last token inputs
     for i, block in enumerate(model.transformer.h):
-        block.ln_2.register_forward_hook(
+        h1 = block.ln_2.register_forward_hook(
             create_last_token_hook(ln2_inputs_last_token, i)
         )
-        block.mlp.c_proj.register_forward_hook(
+        h2 = block.mlp.c_proj.register_forward_hook(
             create_last_token_hook(mlp_activations_last_token, i)
         )
+        handles.append(h1)
+        handles.append(h2)
+ 
     
     # Register subspace intervention hooks
     print(f"Registering hooks for {len(selected_layers)} layers...")
@@ -280,7 +288,7 @@ def register_hooks(
     
 
 
-def capture_clean_inputs(model, tokenizer, inputs, device, attention_mask=None):
+def capture_clean_inputs(model, tokenizer, inputs, device):
     """
     Run a forward pass through the model to capture clean (unintervened) inputs 
     for each layer's ln_2 and mlp.c_proj last token.
