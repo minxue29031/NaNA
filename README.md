@@ -1,24 +1,16 @@
 # NaNA: SVD-Based MLP Interpretability for Transformers
 
-NaNA is a mechanistic interpretability framework for transformer language models. It decomposes MLP weight matrices via SVD into orthogonal **subspaces**, interprets each subspace as a (detector, effector) pair, and traces which subspaces across layers causally drive a specific next-token prediction.
-
- 
+NaNA is a mechanistic interpretability framework for transformer language models. 
+This repository provides tools for analyzing the semantic subspaces of MLP layers in transformer-based language models (e.g., "gpt2-medium"). By decomposing transformer blocks (e.g., MLPs) into sums of rank-1 subspaces: $W = \sum_{i=1}^{\text{rank}(W)} \sigma_i \  u_i \  v_i^T$, we can extract **detector** vectors ($v_i$) and **effector** vectors ($u_i$). These vectors reveal interpretable directions in the embedding space that correspond to meaningful linguistic or conceptual patterns. Building on this structure, we introduce Subspace Contribution Analysis (SCA), a diagnostic method that quantifies the direct causal contribution of individual native subspaces to model predictions.  
 
 ## 🔍 Core Idea
 
-Every MLP layer contains a weight matrix that can be decomposed as:
+In Transformer MLP blocks,the **SVD decomposition** of these weight matrices reveals interpretable "directions" in hidden space:
 
-```
-W  =  U · diag(S) · Vᵀ
-```
-
-Each rank-1 component `(u_k, σ_k, v_k)` defines a **subspace**:
-
-- **Detector** (`v_k`): how strongly does the current hidden state activate this direction?  
-  Score = alignment of layer input with `v_k` (for `c_proj`) or with the LN-weighted `c_fc` direction.
-- **Effector** (`u_k`): which vocabulary tokens does this direction push toward?  
-  Score = cosine similarity of `u_k` with the token embedding matrix.
-- **Directional contribution** = detector × effector — ranks subspaces by their causal relevance to a target token.
+* **Detector directions:** The input directions of the subspace. Computes similarity with the embedding matrix to return the most highly correlated tokens.
+* **Effector directions:** The output directions of the subspace. Computes similarity with the embedding matrix to return the most highly correlated tokens.
+  
+By inspecting top tokens aligned with each singular direction, we can identify **semantic features** (e.g., sentiment, number, tense, named entities, etc.) captured by each MLP layer. 
 
 The framework has three modes of analysis:
 
@@ -27,6 +19,7 @@ The framework has three modes of analysis:
 | **Interpretation** | `run_interp.py` | What semantic concept does each subspace encode? |
 | **Circuit discovery** | `run_circuit.py` | Which subspaces across all layers predict token T from input X? |
 | **Intervention** | `run_modify.py` | What happens to the prediction if we ablate or amplify a subspace? |
+ 
  
 ## 📂 Repository Structure
 
