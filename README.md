@@ -228,4 +228,7 @@ cffffcc, respawn, CVE, voic, catentry, natureconservancy, reminis, dehuman, emot
 * **Direction 5:** medium – proper nouns / domain-specific terms
 * **Direction 6:** medium – technical / gaming / organizational nouns
 * **Direction 7:** high – positive adjectives / adverbs
- 
+
+## 📌 Acknowledgements
+
+The subspace interpretability implementation is largely based on the work by [Beren and Sid Black](https://www.lesswrong.com/posts/mkbGjzxD8d8XqKHzA) on the SVD of transformer weight matrices.
