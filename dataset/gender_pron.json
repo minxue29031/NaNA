@@ -1,0 +1,502 @@
+{
+  "1": {
+    "model": "gpt2",
+    "prompt": "So Brooks is a very organized person, isn't",
+    "target_token": " he"
+  },
+  "2": {
+    "model": "gpt2",
+    "prompt": "So Anna is always encouraging, isn't",
+    "target_token": " she"
+  },
+  "3": {
+    "model": "gpt2",
+    "prompt": "So Richard always remembers birthdays, doesn't",
+    "target_token": " he"
+  },
+  "4": {
+    "model": "gpt2",
+    "prompt": "So Angel makes the best homemade cookies, doesn't",
+    "target_token": " she"
+  },
+  "5": {
+    "model": "gpt2",
+    "prompt": "So Audrey is great at puzzles, isn't",
+    "target_token": " she"
+  },
+  "6": {
+    "model": "gpt2",
+    "prompt": "So Wren is always well-read, isn't",
+    "target_token": " she"
+  },
+  "7": {
+    "model": "gpt2",
+    "prompt": "So Sofia has a knack for technology, doesn't",
+    "target_token": " she"
+  },
+  "8": {
+    "model": "gpt2",
+    "prompt": "So Corinne maintains a perfect work-life balance, doesn't",
+    "target_token": " she"
+  },
+  "9": {
+    "model": "gpt2",
+    "prompt": "So Samuel brightens up any room, doesn't",
+    "target_token": " he"
+  },
+  "10": {
+    "model": "gpt2",
+    "prompt": "So Arthur is very perceptive, isn't",
+    "target_token": " he"
+  },
+  "11": {
+    "model": "gpt2",
+    "prompt": "So Angel is passionate about their hobbies, isn't",
+    "target_token": " he"
+  },
+  "12": {
+    "model": "gpt2",
+    "prompt": "So Emily is never too busy to help out, is",
+    "target_token": " she"
+  },
+  "13": {
+    "model": "gpt2",
+    "prompt": "So Anika is always organized, isn't",
+    "target_token": " she"
+  },
+  "14": {
+    "model": "gpt2",
+    "prompt": "So William keeps secrets well, doesn't",
+    "target_token": " he"
+  },
+  "15": {
+    "model": "gpt2",
+    "prompt": "So Dallas takes care of their health, doesn't",
+    "target_token": " she"
+  },
+  "16": {
+    "model": "gpt2",
+    "prompt": "So Riley is a very compelling speaker, isn't",
+    "target_token": " she"
+  },
+  "17": {
+    "model": "gpt2",
+    "prompt": "So Roman is a great listener, isn't",
+    "target_token": " he"
+  },
+  "18": {
+    "model": "gpt2",
+    "prompt": "So Maria always knows how to make you laugh, doesn't",
+    "target_token": " she"
+  },
+  "19": {
+    "model": "gpt2",
+    "prompt": "So Rachel is the person everyone trusts, isn't",
+    "target_token": " she"
+  },
+  "20": {
+    "model": "gpt2",
+    "prompt": "So Kyle makes the best homemade cookies, doesn't",
+    "target_token": " he"
+  },
+  "21": {
+    "model": "gpt2",
+    "prompt": "So Felix has impeccable taste, doesn't",
+    "target_token": " he"
+  },
+  "22": {
+    "model": "gpt2",
+    "prompt": "So Robert stands up for their friends, doesn't",
+    "target_token": " he"
+  },
+  "23": {
+    "model": "gpt2",
+    "prompt": "So Michelle always knows how to make you laugh, doesn't",
+    "target_token": " she"
+  },
+  "24": {
+    "model": "gpt2",
+    "prompt": "So Michael makes the best homemade cookies, doesn't",
+    "target_token": " he"
+  },
+  "25": {
+    "model": "gpt2",
+    "prompt": "So Silas always tells the truth, doesn't",
+    "target_token": " he"
+  },
+  "26": {
+    "model": "gpt2",
+    "prompt": "So Patricia has a very calming presence, doesn't",
+    "target_token": " she"
+  },
+  "27": {
+    "model": "gpt2",
+    "prompt": "So Remy is always willing to help, isn't",
+    "target_token": " she"
+  },
+  "28": {
+    "model": "gpt2",
+    "prompt": "So Hunter brings coffee when you're working late, doesn't",
+    "target_token": " he"
+  },
+  "29": {
+    "model": "gpt2",
+    "prompt": "So Naomi has a knack for fixing things, doesn't",
+    "target_token": " she"
+  },
+  "30": {
+    "model": "gpt2",
+    "prompt": "So Evangeline knows how to cheer everyone up, doesn't",
+    "target_token": " she"
+  },
+  "31": {
+    "model": "gpt2",
+    "prompt": "So Jordan keeps secrets well, doesn't",
+    "target_token": " he"
+  },
+  "32": {
+    "model": "gpt2",
+    "prompt": "So Andrew knows how to listen without judging, doesn't",
+    "target_token": " he"
+  },
+  "33": {
+    "model": "gpt2",
+    "prompt": "So America takes care of their health, doesn't",
+    "target_token": " she"
+  },
+  "34": {
+    "model": "gpt2",
+    "prompt": "So Rhys is a wonderful musician, isn't",
+    "target_token": " he"
+  },
+  "35": {
+    "model": "gpt2",
+    "prompt": "So Orson is a very resourceful problem-solver, isn't",
+    "target_token": " he"
+  },
+  "36": {
+    "model": "gpt2",
+    "prompt": "So Cole is great at giving advice, isn't",
+    "target_token": " he"
+  },
+  "37": {
+    "model": "gpt2",
+    "prompt": "So Susan is the first to congratulate you, isn't",
+    "target_token": " she"
+  },
+  "38": {
+    "model": "gpt2",
+    "prompt": "So Abigail tells the most interesting stories, doesn't",
+    "target_token": " she"
+  },
+  "39": {
+    "model": "gpt2",
+    "prompt": "So Peter keeps secrets well, doesn't",
+    "target_token": " he"
+  },
+  "40": {
+    "model": "gpt2",
+    "prompt": "So Margot is a talented musician, isn't",
+    "target_token": " she"
+  },
+  "41": {
+    "model": "gpt2",
+    "prompt": "So Grant knows how to listen without judging, doesn't",
+    "target_token": " he"
+  },
+  "42": {
+    "model": "gpt2",
+    "prompt": "So Elsa gives the best book recommendations, doesn't",
+    "target_token": " she"
+  },
+  "43": {
+    "model": "gpt2",
+    "prompt": "So Ian makes the best homemade cookies, doesn't",
+    "target_token": " he"
+  },
+  "44": {
+    "model": "gpt2",
+    "prompt": "So William brings coffee when you're working late, doesn't",
+    "target_token": " he"
+  },
+  "45": {
+    "model": "gpt2",
+    "prompt": "So William has a great memory, doesn't",
+    "target_token": " he"
+  },
+  "46": {
+    "model": "gpt2",
+    "prompt": "So Luca is always organized, isn't",
+    "target_token": " he"
+  },
+  "47": {
+    "model": "gpt2",
+    "prompt": "So Dominic is a skilled debater, isn't",
+    "target_token": " he"
+  },
+  "48": {
+    "model": "gpt2",
+    "prompt": "So Thea is very thoughtful, isn't",
+    "target_token": " she"
+  },
+  "49": {
+    "model": "gpt2",
+    "prompt": "So Cameron has a great memory, doesn't",
+    "target_token": " he"
+  },
+  "50": {
+    "model": "gpt2",
+    "prompt": "So Lisa often volunteers for charity work, doesn't",
+    "target_token": " she"
+  },
+  "51": {
+    "model": "gpt2",
+    "prompt": "So Oscar has a talent for gardening, doesn't",
+    "target_token": " he"
+  },
+  "52": {
+    "model": "gpt2",
+    "prompt": "So Quinn is always kind to strangers, isn't",
+    "target_token": " she"
+  },
+  "53": {
+    "model": "gpt2",
+    "prompt": "So Grayson is very articulate, isn't",
+    "target_token": " he"
+  },
+  "54": {
+    "model": "gpt2",
+    "prompt": "So Elsa always remembers birthdays, doesn't",
+    "target_token": " she"
+  },
+  "55": {
+    "model": "gpt2",
+    "prompt": "So Georgia knows how to listen without judging, doesn't",
+    "target_token": " she"
+  },
+  "56": {
+    "model": "gpt2",
+    "prompt": "So George has a wonderful singing voice, doesn't",
+    "target_token": " he"
+  },
+  "57": {
+    "model": "gpt2",
+    "prompt": "So Justin is always up for an adventure, isn't",
+    "target_token": " he"
+  },
+  "58": {
+    "model": "gpt2",
+    "prompt": "So Roman has a green thumb, doesn't",
+    "target_token": " he"
+  },
+  "59": {
+    "model": "gpt2",
+    "prompt": "So Henry is always respectful to everyone, isn't",
+    "target_token": " he"
+  },
+  "60": {
+    "model": "gpt2",
+    "prompt": "So Blake is always encouraging, isn't",
+    "target_token": " he"
+  },
+  "61": {
+    "model": "gpt2",
+    "prompt": "So Zoey is a great listener, isn't",
+    "target_token": " she"
+  },
+  "62": {
+    "model": "gpt2",
+    "prompt": "So Hailey is a gifted musician, isn't",
+    "target_token": " she"
+  },
+  "63": {
+    "model": "gpt2",
+    "prompt": "So Corbin is great at defusing tense situations, isn't",
+    "target_token": " he"
+  },
+  "64": {
+    "model": "gpt2",
+    "prompt": "So Celeste has a great sense of direction, doesn't",
+    "target_token": " she"
+  },
+  "65": {
+    "model": "gpt2",
+    "prompt": "So Jessica makes the best homemade cookies, doesn't",
+    "target_token": " she"
+  },
+  "66": {
+    "model": "gpt2",
+    "prompt": "So Maya is a fantastic dancer, isn't",
+    "target_token": " she"
+  },
+  "67": {
+    "model": "gpt2",
+    "prompt": "So Felicity is great at giving compliments, isn't",
+    "target_token": " she"
+  },
+  "68": {
+    "model": "gpt2",
+    "prompt": "So Zion is a joy to be around, isn't",
+    "target_token": " he"
+  },
+  "69": {
+    "model": "gpt2",
+    "prompt": "So Nadia is a fantastic host, isn't",
+    "target_token": " she"
+  },
+  "70": {
+    "model": "gpt2",
+    "prompt": "So Valentina is always up for a challenge, isn't",
+    "target_token": " she"
+  },
+  "71": {
+    "model": "gpt2",
+    "prompt": "So Genevieve is a very loyal friend, isn't",
+    "target_token": " she"
+  },
+  "72": {
+    "model": "gpt2",
+    "prompt": "So Arlo is a fantastic travel companion, isn't",
+    "target_token": " he"
+  },
+  "73": {
+    "model": "gpt2",
+    "prompt": "So Mia has a great sense of style, doesn't",
+    "target_token": " she"
+  },
+  "74": {
+    "model": "gpt2",
+    "prompt": "So Jasper is a fantastic mentor, isn't",
+    "target_token": " he"
+  },
+  "75": {
+    "model": "gpt2",
+    "prompt": "So Ivy is a brilliant problem-solver, isn't",
+    "target_token": " she"
+  },
+  "76": {
+    "model": "gpt2",
+    "prompt": "So Georgia can always be counted on in a crisis, can't",
+    "target_token": " she"
+  },
+  "77": {
+    "model": "gpt2",
+    "prompt": "So Ali is passionate about their hobbies, isn't",
+    "target_token": " she"
+  },
+  "78": {
+    "model": "gpt2",
+    "prompt": "So Marcus can always be counted on in a crisis, can't",
+    "target_token": " he"
+  },
+  "79": {
+    "model": "gpt2",
+    "prompt": "So Ann stays calm under pressure, doesn't",
+    "target_token": " she"
+  },
+  "80": {
+    "model": "gpt2",
+    "prompt": "So Hunter is the first to congratulate you, isn't",
+    "target_token": " he"
+  },
+  "81": {
+    "model": "gpt2",
+    "prompt": "So Willow has a green thumb, doesn't",
+    "target_token": " she"
+  },
+  "82": {
+    "model": "gpt2",
+    "prompt": "So Uriah is an incredibly talented painter, isn't",
+    "target_token": " he"
+  },
+  "83": {
+    "model": "gpt2",
+    "prompt": "So Vaughn can fix almost any broken gadget, can't",
+    "target_token": " he"
+  },
+  "84": {
+    "model": "gpt2",
+    "prompt": "So Ava is great at navigating, isn't",
+    "target_token": " she"
+  },
+  "85": {
+    "model": "gpt2",
+    "prompt": "So Adam is always there to lend an ear, isn't",
+    "target_token": " he"
+  },
+  "86": {
+    "model": "gpt2",
+    "prompt": "So Carter is always respectful to everyone, isn't",
+    "target_token": " he"
+  },
+  "87": {
+    "model": "gpt2",
+    "prompt": "So Austin is always thoughtful, isn't",
+    "target_token": " he"
+  },
+  "88": {
+    "model": "gpt2",
+    "prompt": "So Ruby is always respectful to everyone, isn't",
+    "target_token": " she"
+  },
+  "89": {
+    "model": "gpt2",
+    "prompt": "So Hazel is an inspiring leader, isn't",
+    "target_token": " she"
+  },
+  "90": {
+    "model": "gpt2",
+    "prompt": "So Alistair always knows the right thing to say, doesn't",
+    "target_token": " he"
+  },
+  "91": {
+    "model": "gpt2",
+    "prompt": "So Paloma is a wonderful musician, isn't",
+    "target_token": " she"
+  },
+  "92": {
+    "model": "gpt2",
+    "prompt": "So Scott tells the funniest jokes, doesn't",
+    "target_token": " he"
+  },
+  "93": {
+    "model": "gpt2",
+    "prompt": "So Tyler is always up for an adventure, isn't",
+    "target_token": " she"
+  },
+  "94": {
+    "model": "gpt2",
+    "prompt": "So Dean is always punctual, isn't",
+    "target_token": " he"
+  },
+  "95": {
+    "model": "gpt2",
+    "prompt": "So Michael often volunteers for charity work, doesn't",
+    "target_token": " he"
+  },
+  "96": {
+    "model": "gpt2",
+    "prompt": "So Kendra is always up for an adventure, isn't",
+    "target_token": " she"
+  },
+  "97": {
+    "model": "gpt2",
+    "prompt": "So Amelia gives excellent advice, doesn't",
+    "target_token": " she"
+  },
+  "98": {
+    "model": "gpt2",
+    "prompt": "So Caroline is a fantastic dancer, isn't",
+    "target_token": " she"
+  },
+  "99": {
+    "model": "gpt2",
+    "prompt": "So Connor is a fantastic photographer, isn't",
+    "target_token": " he"
+  },
+  "100": {
+    "model": "gpt2",
+    "prompt": "So Talia is a very compelling speaker, isn't",
+    "target_token": " she"
+  }
+}

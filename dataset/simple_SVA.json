@@ -1,0 +1,502 @@
+{
+  "1": {
+    "model": "gpt2",
+    "prompt": "The friends",
+    "target_token": " have"
+  },
+  "2": {
+    "model": "gpt2",
+    "prompt": "The carpenter",
+    "target_token": " does"
+  },
+  "3": {
+    "model": "gpt2",
+    "prompt": "The aunts",
+    "target_token": " are"
+  },
+  "4": {
+    "model": "gpt2",
+    "prompt": "The friends",
+    "target_token": " go"
+  },
+  "5": {
+    "model": "gpt2",
+    "prompt": "The men",
+    "target_token": " go"
+  },
+  "6": {
+    "model": "gpt2",
+    "prompt": "The friends",
+    "target_token": " do"
+  },
+  "7": {
+    "model": "gpt2",
+    "prompt": "The man",
+    "target_token": " does"
+  },
+  "8": {
+    "model": "gpt2",
+    "prompt": "The men",
+    "target_token": " do"
+  },
+  "9": {
+    "model": "gpt2",
+    "prompt": "The doctor",
+    "target_token": " has"
+  },
+  "10": {
+    "model": "gpt2",
+    "prompt": "The mother",
+    "target_token": " is"
+  },
+  "11": {
+    "model": "gpt2",
+    "prompt": "The victim",
+    "target_token": " goes"
+  },
+  "12": {
+    "model": "gpt2",
+    "prompt": "The lawyers",
+    "target_token": " do"
+  },
+  "13": {
+    "model": "gpt2",
+    "prompt": "The doctor",
+    "target_token": " is"
+  },
+  "14": {
+    "model": "gpt2",
+    "prompt": "The singers",
+    "target_token": " go"
+  },
+  "15": {
+    "model": "gpt2",
+    "prompt": "The poets",
+    "target_token": " have"
+  },
+  "16": {
+    "model": "gpt2",
+    "prompt": "The lawyer",
+    "target_token": " has"
+  },
+  "17": {
+    "model": "gpt2",
+    "prompt": "The kid",
+    "target_token": " does"
+  },
+  "18": {
+    "model": "gpt2",
+    "prompt": "The teacher",
+    "target_token": " is"
+  },
+  "19": {
+    "model": "gpt2",
+    "prompt": "The poet",
+    "target_token": " does"
+  },
+  "20": {
+    "model": "gpt2",
+    "prompt": "The farmers",
+    "target_token": " do"
+  },
+  "21": {
+    "model": "gpt2",
+    "prompt": "The athlete",
+    "target_token": " is"
+  },
+  "22": {
+    "model": "gpt2",
+    "prompt": "The mother",
+    "target_token": " goes"
+  },
+  "23": {
+    "model": "gpt2",
+    "prompt": "The fathers",
+    "target_token": " do"
+  },
+  "24": {
+    "model": "gpt2",
+    "prompt": "The friend",
+    "target_token": " is"
+  },
+  "25": {
+    "model": "gpt2",
+    "prompt": "The doctors",
+    "target_token": " do"
+  },
+  "26": {
+    "model": "gpt2",
+    "prompt": "The farmer",
+    "target_token": " does"
+  },
+  "27": {
+    "model": "gpt2",
+    "prompt": "The lawyers",
+    "target_token": " are"
+  },
+  "28": {
+    "model": "gpt2",
+    "prompt": "The woman",
+    "target_token": " is"
+  },
+  "29": {
+    "model": "gpt2",
+    "prompt": "The doctor",
+    "target_token": " does"
+  },
+  "30": {
+    "model": "gpt2",
+    "prompt": "The women",
+    "target_token": " go"
+  },
+  "31": {
+    "model": "gpt2",
+    "prompt": "The lawyer",
+    "target_token": " does"
+  },
+  "32": {
+    "model": "gpt2",
+    "prompt": "The doctors",
+    "target_token": " have"
+  },
+  "33": {
+    "model": "gpt2",
+    "prompt": "The guys",
+    "target_token": " go"
+  },
+  "34": {
+    "model": "gpt2",
+    "prompt": "The lawyers",
+    "target_token": " have"
+  },
+  "35": {
+    "model": "gpt2",
+    "prompt": "The carpenters",
+    "target_token": " have"
+  },
+  "36": {
+    "model": "gpt2",
+    "prompt": "The teacher",
+    "target_token": " goes"
+  },
+  "37": {
+    "model": "gpt2",
+    "prompt": "The girls",
+    "target_token": " go"
+  },
+  "38": {
+    "model": "gpt2",
+    "prompt": "The singers",
+    "target_token": " are"
+  },
+  "39": {
+    "model": "gpt2",
+    "prompt": "The kid",
+    "target_token": " has"
+  },
+  "40": {
+    "model": "gpt2",
+    "prompt": "The farmers",
+    "target_token": " go"
+  },
+  "41": {
+    "model": "gpt2",
+    "prompt": "The athletes",
+    "target_token": " have"
+  },
+  "42": {
+    "model": "gpt2",
+    "prompt": "The teachers",
+    "target_token": " do"
+  },
+  "43": {
+    "model": "gpt2",
+    "prompt": "The aunts",
+    "target_token": " have"
+  },
+  "44": {
+    "model": "gpt2",
+    "prompt": "The men",
+    "target_token": " have"
+  },
+  "45": {
+    "model": "gpt2",
+    "prompt": "The farmers",
+    "target_token": " are"
+  },
+  "46": {
+    "model": "gpt2",
+    "prompt": "The girl",
+    "target_token": " is"
+  },
+  "47": {
+    "model": "gpt2",
+    "prompt": "The boy",
+    "target_token": " has"
+  },
+  "48": {
+    "model": "gpt2",
+    "prompt": "The men",
+    "target_token": " are"
+  },
+  "49": {
+    "model": "gpt2",
+    "prompt": "The father",
+    "target_token": " is"
+  },
+  "50": {
+    "model": "gpt2",
+    "prompt": "The women",
+    "target_token": " have"
+  },
+  "51": {
+    "model": "gpt2",
+    "prompt": "The athlete",
+    "target_token": " goes"
+  },
+  "52": {
+    "model": "gpt2",
+    "prompt": "The fathers",
+    "target_token": " go"
+  },
+  "53": {
+    "model": "gpt2",
+    "prompt": "The aunt",
+    "target_token": " has"
+  },
+  "54": {
+    "model": "gpt2",
+    "prompt": "The fathers",
+    "target_token": " have"
+  },
+  "55": {
+    "model": "gpt2",
+    "prompt": "The girls",
+    "target_token": " do"
+  },
+  "56": {
+    "model": "gpt2",
+    "prompt": "The mothers",
+    "target_token": " go"
+  },
+  "57": {
+    "model": "gpt2",
+    "prompt": "The aunts",
+    "target_token": " do"
+  },
+  "58": {
+    "model": "gpt2",
+    "prompt": "The uncle",
+    "target_token": " does"
+  },
+  "59": {
+    "model": "gpt2",
+    "prompt": "The kids",
+    "target_token": " are"
+  },
+  "60": {
+    "model": "gpt2",
+    "prompt": "The doctors",
+    "target_token": " go"
+  },
+  "61": {
+    "model": "gpt2",
+    "prompt": "The victim",
+    "target_token": " is"
+  },
+  "62": {
+    "model": "gpt2",
+    "prompt": "The man",
+    "target_token": " is"
+  },
+  "63": {
+    "model": "gpt2",
+    "prompt": "The friend",
+    "target_token": " goes"
+  },
+  "64": {
+    "model": "gpt2",
+    "prompt": "The teachers",
+    "target_token": " have"
+  },
+  "65": {
+    "model": "gpt2",
+    "prompt": "The lawyers",
+    "target_token": " go"
+  },
+  "66": {
+    "model": "gpt2",
+    "prompt": "The victim",
+    "target_token": " does"
+  },
+  "67": {
+    "model": "gpt2",
+    "prompt": "The women",
+    "target_token": " do"
+  },
+  "68": {
+    "model": "gpt2",
+    "prompt": "The carpenter",
+    "target_token": " has"
+  },
+  "69": {
+    "model": "gpt2",
+    "prompt": "The victims",
+    "target_token": " are"
+  },
+  "70": {
+    "model": "gpt2",
+    "prompt": "The guys",
+    "target_token": " are"
+  },
+  "71": {
+    "model": "gpt2",
+    "prompt": "The man",
+    "target_token": " has"
+  },
+  "72": {
+    "model": "gpt2",
+    "prompt": "The woman",
+    "target_token": " has"
+  },
+  "73": {
+    "model": "gpt2",
+    "prompt": "The girl",
+    "target_token": " has"
+  },
+  "74": {
+    "model": "gpt2",
+    "prompt": "The uncles",
+    "target_token": " go"
+  },
+  "75": {
+    "model": "gpt2",
+    "prompt": "The boys",
+    "target_token": " are"
+  },
+  "76": {
+    "model": "gpt2",
+    "prompt": "The victims",
+    "target_token": " have"
+  },
+  "77": {
+    "model": "gpt2",
+    "prompt": "The friend",
+    "target_token": " does"
+  },
+  "78": {
+    "model": "gpt2",
+    "prompt": "The mothers",
+    "target_token": " do"
+  },
+  "79": {
+    "model": "gpt2",
+    "prompt": "The teachers",
+    "target_token": " are"
+  },
+  "80": {
+    "model": "gpt2",
+    "prompt": "The friend",
+    "target_token": " has"
+  },
+  "81": {
+    "model": "gpt2",
+    "prompt": "The poets",
+    "target_token": " do"
+  },
+  "82": {
+    "model": "gpt2",
+    "prompt": "The farmer",
+    "target_token": " goes"
+  },
+  "83": {
+    "model": "gpt2",
+    "prompt": "The farmer",
+    "target_token": " has"
+  },
+  "84": {
+    "model": "gpt2",
+    "prompt": "The poet",
+    "target_token": " goes"
+  },
+  "85": {
+    "model": "gpt2",
+    "prompt": "The boys",
+    "target_token": " go"
+  },
+  "86": {
+    "model": "gpt2",
+    "prompt": "The lawyer",
+    "target_token": " goes"
+  },
+  "87": {
+    "model": "gpt2",
+    "prompt": "The singer",
+    "target_token": " is"
+  },
+  "88": {
+    "model": "gpt2",
+    "prompt": "The uncles",
+    "target_token": " have"
+  },
+  "89": {
+    "model": "gpt2",
+    "prompt": "The boy",
+    "target_token": " is"
+  },
+  "90": {
+    "model": "gpt2",
+    "prompt": "The woman",
+    "target_token": " goes"
+  },
+  "91": {
+    "model": "gpt2",
+    "prompt": "The mother",
+    "target_token": " has"
+  },
+  "92": {
+    "model": "gpt2",
+    "prompt": "The fathers",
+    "target_token": " are"
+  },
+  "93": {
+    "model": "gpt2",
+    "prompt": "The women",
+    "target_token": " are"
+  },
+  "94": {
+    "model": "gpt2",
+    "prompt": "The carpenters",
+    "target_token": " go"
+  },
+  "95": {
+    "model": "gpt2",
+    "prompt": "The aunt",
+    "target_token": " goes"
+  },
+  "96": {
+    "model": "gpt2",
+    "prompt": "The kids",
+    "target_token": " have"
+  },
+  "97": {
+    "model": "gpt2",
+    "prompt": "The teacher",
+    "target_token": " has"
+  },
+  "98": {
+    "model": "gpt2",
+    "prompt": "The boy",
+    "target_token": " goes"
+  },
+  "99": {
+    "model": "gpt2",
+    "prompt": "The farmer",
+    "target_token": " is"
+  },
+  "100": {
+    "model": "gpt2",
+    "prompt": "The friends",
+    "target_token": " are"
+  }
+}

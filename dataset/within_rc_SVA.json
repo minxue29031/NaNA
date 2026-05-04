@@ -1,0 +1,502 @@
+{
+  "1": {
+    "model": "gpt2",
+    "prompt": "The athlete that the chefs",
+    "target_token": " have"
+  },
+  "2": {
+    "model": "gpt2",
+    "prompt": "The carpenters that the skaters",
+    "target_token": " do"
+  },
+  "3": {
+    "model": "gpt2",
+    "prompt": "The boys that the assistants",
+    "target_token": " go"
+  },
+  "4": {
+    "model": "gpt2",
+    "prompt": "The father that the parents",
+    "target_token": " are"
+  },
+  "5": {
+    "model": "gpt2",
+    "prompt": "The boy that the chef",
+    "target_token": " does"
+  },
+  "6": {
+    "model": "gpt2",
+    "prompt": "The uncles that the architects",
+    "target_token": " go"
+  },
+  "7": {
+    "model": "gpt2",
+    "prompt": "The poets that the drivers",
+    "target_token": " do"
+  },
+  "8": {
+    "model": "gpt2",
+    "prompt": "The carpenters that the dancer",
+    "target_token": " goes"
+  },
+  "9": {
+    "model": "gpt2",
+    "prompt": "The girls that the driver",
+    "target_token": " has"
+  },
+  "10": {
+    "model": "gpt2",
+    "prompt": "The lawyers that the assistants",
+    "target_token": " go"
+  },
+  "11": {
+    "model": "gpt2",
+    "prompt": "The farmers that the parent",
+    "target_token": " does"
+  },
+  "12": {
+    "model": "gpt2",
+    "prompt": "The uncle that the skaters",
+    "target_token": " do"
+  },
+  "13": {
+    "model": "gpt2",
+    "prompt": "The victims that the parent",
+    "target_token": " goes"
+  },
+  "14": {
+    "model": "gpt2",
+    "prompt": "The uncle that the parent",
+    "target_token": " has"
+  },
+  "15": {
+    "model": "gpt2",
+    "prompt": "The fathers that the guards",
+    "target_token": " do"
+  },
+  "16": {
+    "model": "gpt2",
+    "prompt": "The athlete that the dancer",
+    "target_token": " has"
+  },
+  "17": {
+    "model": "gpt2",
+    "prompt": "The teachers that the architects",
+    "target_token": " have"
+  },
+  "18": {
+    "model": "gpt2",
+    "prompt": "The lawyer that the minister",
+    "target_token": " goes"
+  },
+  "19": {
+    "model": "gpt2",
+    "prompt": "The mothers that the parent",
+    "target_token": " goes"
+  },
+  "20": {
+    "model": "gpt2",
+    "prompt": "The fathers that the architects",
+    "target_token": " are"
+  },
+  "21": {
+    "model": "gpt2",
+    "prompt": "The athletes that the guards",
+    "target_token": " do"
+  },
+  "22": {
+    "model": "gpt2",
+    "prompt": "The father that the architect",
+    "target_token": " goes"
+  },
+  "23": {
+    "model": "gpt2",
+    "prompt": "The uncles that the architects",
+    "target_token": " have"
+  },
+  "24": {
+    "model": "gpt2",
+    "prompt": "The boys that the minister",
+    "target_token": " does"
+  },
+  "25": {
+    "model": "gpt2",
+    "prompt": "The teachers that the drivers",
+    "target_token": " go"
+  },
+  "26": {
+    "model": "gpt2",
+    "prompt": "The athlete that the architects",
+    "target_token": " do"
+  },
+  "27": {
+    "model": "gpt2",
+    "prompt": "The farmer that the dancer",
+    "target_token": " goes"
+  },
+  "28": {
+    "model": "gpt2",
+    "prompt": "The singers that the parent",
+    "target_token": " has"
+  },
+  "29": {
+    "model": "gpt2",
+    "prompt": "The boys that the skater",
+    "target_token": " is"
+  },
+  "30": {
+    "model": "gpt2",
+    "prompt": "The mothers that the guards",
+    "target_token": " are"
+  },
+  "31": {
+    "model": "gpt2",
+    "prompt": "The victim that the skater",
+    "target_token": " is"
+  },
+  "32": {
+    "model": "gpt2",
+    "prompt": "The aunt that the chefs",
+    "target_token": " are"
+  },
+  "33": {
+    "model": "gpt2",
+    "prompt": "The aunts that the guard",
+    "target_token": " is"
+  },
+  "34": {
+    "model": "gpt2",
+    "prompt": "The men that the minister",
+    "target_token": " goes"
+  },
+  "35": {
+    "model": "gpt2",
+    "prompt": "The lawyers that the assistants",
+    "target_token": " have"
+  },
+  "36": {
+    "model": "gpt2",
+    "prompt": "The kid that the assistant",
+    "target_token": " is"
+  },
+  "37": {
+    "model": "gpt2",
+    "prompt": "The aunt that the chef",
+    "target_token": " is"
+  },
+  "38": {
+    "model": "gpt2",
+    "prompt": "The aunts that the guard",
+    "target_token": " has"
+  },
+  "39": {
+    "model": "gpt2",
+    "prompt": "The doctor that the architects",
+    "target_token": " have"
+  },
+  "40": {
+    "model": "gpt2",
+    "prompt": "The girls that the assistants",
+    "target_token": " are"
+  },
+  "41": {
+    "model": "gpt2",
+    "prompt": "The boy that the drivers",
+    "target_token": " are"
+  },
+  "42": {
+    "model": "gpt2",
+    "prompt": "The athlete that the assistants",
+    "target_token": " go"
+  },
+  "43": {
+    "model": "gpt2",
+    "prompt": "The girl that the assistant",
+    "target_token": " has"
+  },
+  "44": {
+    "model": "gpt2",
+    "prompt": "The carpenters that the drivers",
+    "target_token": " have"
+  },
+  "45": {
+    "model": "gpt2",
+    "prompt": "The mothers that the drivers",
+    "target_token": " go"
+  },
+  "46": {
+    "model": "gpt2",
+    "prompt": "The singer that the architect",
+    "target_token": " has"
+  },
+  "47": {
+    "model": "gpt2",
+    "prompt": "The singer that the executive",
+    "target_token": " has"
+  },
+  "48": {
+    "model": "gpt2",
+    "prompt": "The farmer that the parents",
+    "target_token": " are"
+  },
+  "49": {
+    "model": "gpt2",
+    "prompt": "The singer that the dancers",
+    "target_token": " do"
+  },
+  "50": {
+    "model": "gpt2",
+    "prompt": "The lawyers that the chef",
+    "target_token": " does"
+  },
+  "51": {
+    "model": "gpt2",
+    "prompt": "The lawyers that the minister",
+    "target_token": " goes"
+  },
+  "52": {
+    "model": "gpt2",
+    "prompt": "The man that the skater",
+    "target_token": " goes"
+  },
+  "53": {
+    "model": "gpt2",
+    "prompt": "The victims that the executive",
+    "target_token": " is"
+  },
+  "54": {
+    "model": "gpt2",
+    "prompt": "The mothers that the dancer",
+    "target_token": " goes"
+  },
+  "55": {
+    "model": "gpt2",
+    "prompt": "The guy that the parents",
+    "target_token": " go"
+  },
+  "56": {
+    "model": "gpt2",
+    "prompt": "The uncle that the executives",
+    "target_token": " go"
+  },
+  "57": {
+    "model": "gpt2",
+    "prompt": "The poets that the parents",
+    "target_token": " are"
+  },
+  "58": {
+    "model": "gpt2",
+    "prompt": "The friend that the parents",
+    "target_token": " go"
+  },
+  "59": {
+    "model": "gpt2",
+    "prompt": "The doctor that the parents",
+    "target_token": " have"
+  },
+  "60": {
+    "model": "gpt2",
+    "prompt": "The farmer that the executive",
+    "target_token": " does"
+  },
+  "61": {
+    "model": "gpt2",
+    "prompt": "The uncles that the dancer",
+    "target_token": " goes"
+  },
+  "62": {
+    "model": "gpt2",
+    "prompt": "The girls that the drivers",
+    "target_token": " go"
+  },
+  "63": {
+    "model": "gpt2",
+    "prompt": "The lawyers that the dancers",
+    "target_token": " have"
+  },
+  "64": {
+    "model": "gpt2",
+    "prompt": "The farmers that the chefs",
+    "target_token": " do"
+  },
+  "65": {
+    "model": "gpt2",
+    "prompt": "The singers that the chefs",
+    "target_token": " go"
+  },
+  "66": {
+    "model": "gpt2",
+    "prompt": "The victim that the guard",
+    "target_token": " goes"
+  },
+  "67": {
+    "model": "gpt2",
+    "prompt": "The singer that the dancer",
+    "target_token": " goes"
+  },
+  "68": {
+    "model": "gpt2",
+    "prompt": "The women that the dancers",
+    "target_token": " do"
+  },
+  "69": {
+    "model": "gpt2",
+    "prompt": "The mother that the skaters",
+    "target_token": " have"
+  },
+  "70": {
+    "model": "gpt2",
+    "prompt": "The guy that the dancer",
+    "target_token": " goes"
+  },
+  "71": {
+    "model": "gpt2",
+    "prompt": "The carpenter that the executive",
+    "target_token": " goes"
+  },
+  "72": {
+    "model": "gpt2",
+    "prompt": "The carpenter that the executive",
+    "target_token": " is"
+  },
+  "73": {
+    "model": "gpt2",
+    "prompt": "The farmer that the dancers",
+    "target_token": " have"
+  },
+  "74": {
+    "model": "gpt2",
+    "prompt": "The farmers that the parent",
+    "target_token": " is"
+  },
+  "75": {
+    "model": "gpt2",
+    "prompt": "The guys that the chefs",
+    "target_token": " have"
+  },
+  "76": {
+    "model": "gpt2",
+    "prompt": "The boys that the dancer",
+    "target_token": " has"
+  },
+  "77": {
+    "model": "gpt2",
+    "prompt": "The poets that the minister",
+    "target_token": " does"
+  },
+  "78": {
+    "model": "gpt2",
+    "prompt": "The fathers that the dancer",
+    "target_token": " goes"
+  },
+  "79": {
+    "model": "gpt2",
+    "prompt": "The mothers that the minister",
+    "target_token": " does"
+  },
+  "80": {
+    "model": "gpt2",
+    "prompt": "The women that the minister",
+    "target_token": " has"
+  },
+  "81": {
+    "model": "gpt2",
+    "prompt": "The athlete that the dancer",
+    "target_token": " is"
+  },
+  "82": {
+    "model": "gpt2",
+    "prompt": "The woman that the parent",
+    "target_token": " goes"
+  },
+  "83": {
+    "model": "gpt2",
+    "prompt": "The victim that the ministers",
+    "target_token": " are"
+  },
+  "84": {
+    "model": "gpt2",
+    "prompt": "The girls that the skater",
+    "target_token": " goes"
+  },
+  "85": {
+    "model": "gpt2",
+    "prompt": "The guys that the architects",
+    "target_token": " are"
+  },
+  "86": {
+    "model": "gpt2",
+    "prompt": "The poet that the assistant",
+    "target_token": " goes"
+  },
+  "87": {
+    "model": "gpt2",
+    "prompt": "The lawyers that the chef",
+    "target_token": " is"
+  },
+  "88": {
+    "model": "gpt2",
+    "prompt": "The lawyer that the guards",
+    "target_token": " do"
+  },
+  "89": {
+    "model": "gpt2",
+    "prompt": "The carpenter that the assistant",
+    "target_token": " does"
+  },
+  "90": {
+    "model": "gpt2",
+    "prompt": "The poet that the parent",
+    "target_token": " does"
+  },
+  "91": {
+    "model": "gpt2",
+    "prompt": "The girl that the dancer",
+    "target_token": " does"
+  },
+  "92": {
+    "model": "gpt2",
+    "prompt": "The farmers that the architects",
+    "target_token": " go"
+  },
+  "93": {
+    "model": "gpt2",
+    "prompt": "The guy that the assistants",
+    "target_token": " go"
+  },
+  "94": {
+    "model": "gpt2",
+    "prompt": "The aunts that the dancer",
+    "target_token": " is"
+  },
+  "95": {
+    "model": "gpt2",
+    "prompt": "The athletes that the drivers",
+    "target_token": " are"
+  },
+  "96": {
+    "model": "gpt2",
+    "prompt": "The boy that the parent",
+    "target_token": " has"
+  },
+  "97": {
+    "model": "gpt2",
+    "prompt": "The poet that the dancers",
+    "target_token": " are"
+  },
+  "98": {
+    "model": "gpt2",
+    "prompt": "The guy that the architect",
+    "target_token": " does"
+  },
+  "99": {
+    "model": "gpt2",
+    "prompt": "The guys that the executive",
+    "target_token": " is"
+  },
+  "100": {
+    "model": "gpt2",
+    "prompt": "The boys that the assistant",
+    "target_token": " is"
+  }
+}
