@@ -64,64 +64,64 @@
   ],
   "modified": [
     {
-      "token": "-",
-      "score": 15.601470947265625
+      "token": "lack",
+      "score": 36.438804626464844
     },
     {
-      "token": ",",
-      "score": 15.293111801147461
+      "token": "weak",
+      "score": 35.38029098510742
     },
     {
-      "token": "n",
-      "score": 12.45494556427002
+      "token": "lacking",
+      "score": 29.67995262145996
     },
     {
-      "token": "or",
-      "score": 12.22372817993164
+      "token": "nothing",
+      "score": 28.802120208740234
     },
     {
-      "token": "o",
-      "score": 11.653339385986328
+      "token": "poorly",
+      "score": 28.22750473022461
     },
     {
-      "token": "file",
-      "score": 11.614201545715332
+      "token": "no",
+      "score": 28.160734176635742
     },
     {
-      "token": "the",
-      "score": 11.61346435546875
+      "token": "poor",
+      "score": 27.789775848388672
     },
     {
-      "token": "resident",
-      "score": 11.346845626831055
+      "token": "bad",
+      "score": 27.739051818847656
     },
     {
-      "token": "local",
-      "score": 10.79440975189209
+      "token": "less",
+      "score": 27.593135833740234
     },
     {
-      "token": "and",
-      "score": 10.777787208557129
+      "token": "only",
+      "score": 27.37137222290039
     },
     {
-      "token": "d",
-      "score": 10.663671493530273
+      "token": "lacks",
+      "score": 27.122526168823242
     },
     {
-      "token": "check",
-      "score": 10.646565437316895
+      "token": "low",
+      "score": 26.62374496459961
     },
     {
-      "token": "in",
-      "score": 10.33615493774414
+      "token": "deficient",
+      "score": 26.400733947753906
     },
     {
-      "token": "\"",
-      "score": 9.95809555053711
+      "token": "terrible",
+      "score": 25.905006408691406
     },
     {
-      "token": "O",
-      "score": 9.734518051147461
+      "token": "sluggish",
+      "score": 25.50994110107422
     }
   ]
 }

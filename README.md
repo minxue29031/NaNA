@@ -158,7 +158,7 @@ python scripts/run_modify.py \
   --gene_or_abla general \
   --output_dir results \
   --use_full_residual \
-  --interv_factor -7
+  --interv_factor -8
 ```
 ### ⚙️ Configuration Parameters
 
