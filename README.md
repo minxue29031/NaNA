@@ -72,20 +72,6 @@ For down-projection matrix
 ```bash
 python scripts/run_interp.py  --model_name "gpt2-medium" --layers 16    --topk_tokens 20  --topk_subspaces 12   --weight_type c_proj    --interp_type effector --with_negative      --save_file    --out_dir results --return_heatmap
 ```
-| Argument | Default | Description |
-|---|---|---|
-| `--model_name` | `gpt2-medium` | HuggingFace model name |
-| `--layers` | `all` | Layer indices to analyse, or `all` |
-| `--weight_type` | `c_proj` | `c_proj` (output projection) or `c_fc` (input projection + LN) |
-| `--interp_type` | `all` | `detector`, `effector`, or `all` |
-| `--topk_tokens` | `10` | Top tokens to report per subspace |
-| `--topk_subspaces` | `50` | Number of subspaces to report per layer |
-| `--with_negative` | — | Also report negatively aligned tokens |
-| `--return_heatmap` | — | Save direction × token heatmaps as PNG |
-| `--save_file` | — | Write JSON results to disk |
-
- 
-
 
 ### 🔹 Circuit Discovery
 
@@ -94,15 +80,6 @@ Given an input sequence and a target token, rank every subspace in every layer b
 ```bash
 python scripts/run_circuit.py  --model_name "gpt2-medium"  --gpu 0  --topk_subspaces 50   --weight_type "c_proj"   --circuit_mode "DeEf" --interp_type "effector"   --output_dir "results/$model"   --layers "all" --in_seq "The cat looks very" --target_word " happy" 
 ```
-| Argument | Default | Description |
-|---|---|---|
-| `--in_seq` | required | Input text |
-| `--target_word` | required | Token whose prediction circuit is traced |
-| `--circuit_mode` | `DeEf` | `DeEf` (both), `De` (detector only), `Ef` (effector only) |
-| `--topk_subspaces` | `15` | Top subspaces to include in the circuit |
-| `--do_interp` | — | Also run token-level interpretation on selected subspaces |
-| `--use_abs_contribute` | — | Rank by absolute contribution value |
- 
  
  
 ### 🔹 Causal Intervention
@@ -123,9 +100,26 @@ Single-layer Subspace Intervention: Manually specified subspace intervention
 ```bash
 python scripts/run_modify.py --model "gpt2-medium"   --weight_type c_proj  --manual_subspace_file "manual_interv_info/info_c_poj_gpt2-medium_L16SP7.json"     --input_text "The cat looks very"    --modify_type manual_interv --token_num 15  --layers 16 --gene_or_abla general --output_dir results --use_full_residual --interv_factor -7
 ```
+### ⚙️ Configuration Parameters
 
+The following are commonly used configuration options:
 | Argument | Default | Description |
 |---|---|---|
+| `--model_name` | `gpt2-medium` | HuggingFace model name |
+| `--layers` | `all` | Layer indices to analyse, or `all` |
+| `--weight_type` | `c_proj` | `c_proj` (output projection) or `c_fc` (input projection + LN) |
+| `--interp_type` | `all` | `detector`, `effector`, or `all` |
+| `--topk_tokens` | `10` | Top tokens to report per subspace |
+| `--topk_subspaces` | `50` | Number of subspaces to report per layer |
+| `--with_negative` | — | Also report negatively aligned tokens |
+| `--return_heatmap` | — | Save direction × token heatmaps as PNG |
+| `--save_file` | — | Write JSON results to disk |
+| `--in_seq` | required | Input text |
+| `--target_word` | required | Token whose prediction circuit is traced |
+| `--circuit_mode` | `DeEf` | `DeEf` (both), `De` (detector only), `Ef` (effector only) |
+| `--topk_subspaces` | `15` | Top subspaces to include in the circuit |
+| `--do_interp` | — | Also run token-level interpretation on selected subspaces |
+| `--use_abs_contribute` | — | Rank by absolute contribution value |
 | `--modify_type` | required | `rebuild`, `auto_interv`, or `manual_interv` |
 | `--top_subspaces` | `10` | Subspaces to keep/scale (for `rebuild` and `auto_interv`) |
 | `--interv_factor` | `1.0` | Scale factor applied to selected subspaces |
@@ -133,10 +127,7 @@ python scripts/run_modify.py --model "gpt2-medium"   --weight_type c_proj  --man
 | `--use_positive_only` | — | Restrict to positively contributing subspaces |
 | `--token_num` | `20` | Number of generated tokens to compare |
 
- 
- 
-
- ## ⚙️ Quick Semantic/Syntactic Analysis with ChatGPT
+ ## 🔍 Quick Semantic/Syntactic Analysis with ChatGPT
 
 You can leverage **ChatGPT/DeepSeek** to quickly analyze MLP SVD directions and understand their semantic or syntactic patterns. Here’s how:
 
