@@ -4,7 +4,7 @@ NaNA is a mechanistic interpretability framework for transformer language models
 
  
 
-## Core Idea
+## 🔍 Core Idea
 
 Every MLP layer contains a weight matrix that can be decomposed as:
 
@@ -28,7 +28,7 @@ The framework has three modes of analysis:
 | **Circuit discovery** | `run_circuit.py` | Which subspaces across all layers predict token T from input X? |
 | **Intervention** | `run_modify.py` | What happens to the prediction if we ablate or amplify a subspace? |
  
-## Project Structure
+## 📂 Repository Structure
 
 ```
 ├── scripts/
@@ -49,7 +49,7 @@ The framework has three modes of analysis:
 
  
 
-## Installation
+## 📦 Installation
 
 ```bash
 pip install -r requirements.txt
@@ -58,9 +58,9 @@ pip install -r requirements.txt
 
  
 
-## Example Usage
+## 🧩 Example Usage
 
-### 1. Subspace Interpretation
+### 🔹 Subspace Interpretation
 
 Identify which tokens each singular direction is most aligned with.
 
@@ -84,19 +84,10 @@ python scripts/run_interp.py  --model_name "gpt2-medium" --layers 16    --topk_t
 | `--return_heatmap` | — | Save direction × token heatmaps as PNG |
 | `--save_file` | — | Write JSON results to disk |
 
-**Outputs** (under `{model_name}_interp_dir/`):
-
-```
-data/MLP_c_proj_layer{i}/
-    detector_subspaces_top10tokens_positive.json
-    effector_subspaces_top10tokens_positive.json
-heatmap/MLP_c_proj_layer{i}/
-    detector_positive_heatmap.png
-    effector_negative_heatmap.png
-```
+ 
 
 
-### 2. Circuit Discovery
+### 🔹 Circuit Discovery
 
 Given an input sequence and a target token, rank every subspace in every layer by its directional contribution to that prediction.
 
@@ -113,18 +104,8 @@ python scripts/run_circuit.py  --model_name "gpt2-medium"  --gpu 0  --topk_subsp
 | `--use_abs_contribute` | — | Rank by absolute contribution value |
  
  
-**Outputs** (under `{output_dir}/{model_name}_circuit/MLP_{weight_type}/{circuit_mode}/`):
-
-```
-circuit_c_proj_{model}.json              # Full circuit definition
-circuit_points_scores_c_proj_{model}.json  # Per-subspace (detector, effector, contribution)
-circuit.png                              # Layer-by-layer flow diagram
-subspace_contribution.png                # Contribution scatter plot
-```
-
-### 3. Causal Intervention
-
-Rebuild or scale specific subspaces and measure the effect on next-token predictions.
+ 
+### 🔹 Causal Intervention
 
 > **Note:** Run `run_circuit.py` first to generate `circuit_points_scores_{weight_type}_{model_name}.json` for analysis.
 
@@ -152,14 +133,10 @@ python scripts/run_modify.py --model "gpt2-medium"   --weight_type c_proj  --man
 | `--use_positive_only` | — | Restrict to positively contributing subspaces |
 | `--token_num` | `20` | Number of generated tokens to compare |
 
-**Outputs** (under `{output_dir}/all_layers/`):
+ 
+ 
 
-```
-layer{i}_{weight_type}.json    # Before/after logits and top-token probabilities per layer
-final_predictions_{model}_subspaces{K}_{mode}.json   # Aggregated prediction comparison
-```
-
- ## Quick Semantic/Syntactic Analysis with ChatGPT
+ ## ⚙️ Quick Semantic/Syntactic Analysis with ChatGPT
 
 You can leverage **ChatGPT/DeepSeek** to quickly analyze MLP SVD directions and understand their semantic or syntactic patterns. Here’s how:
 
