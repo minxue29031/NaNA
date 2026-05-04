@@ -1,24 +1,19 @@
 # NaNA: SVD-Based MLP Interpretability for Transformers
 
-NaNA is a mechanistic interpretability framework for transformer language models. 
-This repository provides tools for analyzing the semantic subspaces of MLP layers in transformer-based language models (e.g., "gpt2-medium"). By decomposing transformer blocks (e.g., MLPs) into sums of rank-1 subspaces: $W = \sum_{i=1}^{\text{rank}(W)} \sigma_i \  u_i \  v_i^T$, we can extract **detector** vectors ($v_i$) and **effector** vectors ($u_i$). These vectors reveal interpretable directions in the embedding space that correspond to meaningful linguistic or conceptual patterns. Building on this structure, we introduce Subspace Contribution Analysis (SCA), a diagnostic method that quantifies the direct causal contribution of individual native subspaces to model predictions.  
+NaNA is a mechanistic interpretability framework for transformer language models that decomposes MLP weight matrices via SVD into rank-1 **subspaces**. Each subspace defines a pair of interpretable directions:
 
-## 🔍 Core Idea
+* **Detector (vᵢ):** input-aligned direction measuring how strongly a hidden state activates the subspace  
+* **Effector (uᵢ):** output-aligned direction determining which tokens are promoted  
 
-In Transformer MLP blocks,the **SVD decomposition** of these weight matrices reveals interpretable "directions" in hidden space:
+Projecting these directions into embedding space reveals the semantic patterns encoded by each subspace and enables quantification of their contributions to model predictions.
 
-* **Detector directions:** The input directions of the subspace. Computes similarity with the embedding matrix to return the most highly correlated tokens.
-* **Effector directions:** The output directions of the subspace. Computes similarity with the embedding matrix to return the most highly correlated tokens.
-  
-By inspecting top tokens aligned with each singular direction, we can identify **semantic features** (e.g., sentiment, number, tense, named entities, etc.) captured by each MLP layer. 
+This tool includes three analysis modes:
 
-The framework has three modes of analysis:
-
-| Mode | Script | Question answered |
-|---|---|---|
-| **Interpretation** | `run_interp.py` | What semantic concept does each subspace encode? |
-| **Circuit discovery** | `run_circuit.py` | Which subspaces across all layers predict token T from input X? |
-| **Intervention** | `run_modify.py` | What happens to the prediction if we ablate or amplify a subspace? |
+| Mode | Script | Purpose |
+|------|--------|--------|
+| **Interpretation** | `run_interp.py` | What does each subspace represent? |
+| **Pathway Discovery** | `run_circuit.py` | Which subspaces drive a prediction? |
+| **Intervention** | `run_modify.py` | How do subspace modifications affect predictions? |
  
  
 ## 📂 Repository Structure
