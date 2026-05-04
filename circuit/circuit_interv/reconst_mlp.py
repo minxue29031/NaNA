@@ -39,7 +39,7 @@ class MLPSubspaceManipulator:
         for i in subspace_indices:
             if i >= len(self.S):
                 continue
-            s_value = self.S[i] * (interv_factor - 1)
+            s_value = self.S[i] * interv_factor
             if self.weight_type == "c_proj":
                 W_interv += s_value * torch.outer(self.U[:, i], self.Vh[i, :])
             else:
