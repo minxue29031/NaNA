@@ -17,7 +17,7 @@ def parse_args():
     parser.add_argument("--top_subspaces", type=int, default=10, help="Number of top subspaces to select per layer")
     parser.add_argument("--use_positive_only", action="store_true", help="Only include subspaces with positive contributions")
     parser.add_argument("--manual_subspace_file", type=str, required=False, help="Path to JSON file containing subspace results for manual intervention")
-    parser.add_argument("--auto_subspace_file", type=str, required=True, help="Path to JSON file containing subspace results")
+    parser.add_argument("--auto_subspace_file", type=str, required=False, help="Path to JSON file containing subspace results")
     parser.add_argument("--model_name", type=str, default="gpt2-medium", help="HuggingFace gene_or_abla l name (e.g., gpt2, gpt2-medium)")
     parser.add_argument("--layers", nargs='+', default=["all"], help="Specify layers (e.g. --layers 4 5 6) or 'all'")
     parser.add_argument("--use_bias", action="store_true", help="Modified MLP using bias")

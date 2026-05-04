@@ -1,0 +1,127 @@
+{
+  "input_text": "The cat looks very",
+  "original": [
+    {
+      "token": "promising",
+      "score": 9.6367769241333
+    },
+    {
+      "token": "logically",
+      "score": 8.552183151245117
+    },
+    {
+      "token": "safe",
+      "score": 7.768702983856201
+    },
+    {
+      "token": "odd",
+      "score": 7.739484786987305
+    },
+    {
+      "token": "dangerous",
+      "score": 7.632087230682373
+    },
+    {
+      "token": "highly",
+      "score": 7.53135871887207
+    },
+    {
+      "token": "much",
+      "score": 7.438918590545654
+    },
+    {
+      "token": "young",
+      "score": 7.352378845214844
+    },
+    {
+      "token": "assured",
+      "score": 7.215569019317627
+    },
+    {
+      "token": "very",
+      "score": 7.204912185668945
+    },
+    {
+      "token": "talented",
+      "score": 7.181593894958496
+    },
+    {
+      "token": "Jama",
+      "score": 7.169769287109375
+    },
+    {
+      "token": "tempting",
+      "score": 7.078495502471924
+    },
+    {
+      "token": "rare",
+      "score": 7.056765556335449
+    },
+    {
+      "token": "busy",
+      "score": 7.05067777633667
+    }
+  ],
+  "modified": [
+    {
+      "token": "safe",
+      "score": 7.899939060211182
+    },
+    {
+      "token": "promising",
+      "score": 6.987044334411621
+    },
+    {
+      "token": "highly",
+      "score": 6.699081897735596
+    },
+    {
+      "token": "Guarant",
+      "score": 6.569610118865967
+    },
+    {
+      "token": "Jama",
+      "score": 6.568549156188965
+    },
+    {
+      "token": "wil",
+      "score": 6.555530548095703
+    },
+    {
+      "token": "volatile",
+      "score": 6.444401741027832
+    },
+    {
+      "token": "heavily",
+      "score": 6.394239902496338
+    },
+    {
+      "token": "erv",
+      "score": 6.269718170166016
+    },
+    {
+      "token": "logically",
+      "score": 6.227907180786133
+    },
+    {
+      "token": "Logic",
+      "score": 6.140445232391357
+    },
+    {
+      "token": "insecure",
+      "score": 6.039916515350342
+    },
+    {
+      "token": "686",
+      "score": 6.0081257820129395
+    },
+    {
+      "token": "Syl",
+      "score": 5.848963737487793
+    },
+    {
+      "token": "safe",
+      "score": 5.805644989013672
+    }
+  ]
+}

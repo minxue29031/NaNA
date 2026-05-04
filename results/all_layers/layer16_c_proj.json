@@ -1,0 +1,127 @@
+{
+  "input_text": "The cat looks very",
+  "original": [
+    {
+      "token": "\"",
+      "score": 13.434760093688965
+    },
+    {
+      "token": "-",
+      "score": 13.354653358459473
+    },
+    {
+      "token": ",",
+      "score": 13.065803527832031
+    },
+    {
+      "token": "'",
+      "score": 11.459243774414062
+    },
+    {
+      "token": "the",
+      "score": 11.301695823669434
+    },
+    {
+      "token": "or",
+      "score": 10.06900691986084
+    },
+    {
+      "token": "new",
+      "score": 9.798925399780273
+    },
+    {
+      "token": "happy",
+      "score": 9.6334810256958
+    },
+    {
+      "token": "fast",
+      "score": 9.459153175354004
+    },
+    {
+      "token": "high",
+      "score": 9.415905952453613
+    },
+    {
+      "token": "n",
+      "score": 9.138758659362793
+    },
+    {
+      "token": "a",
+      "score": 9.099360466003418
+    },
+    {
+      "token": "and",
+      "score": 9.096841812133789
+    },
+    {
+      "token": "specific",
+      "score": 8.824772834777832
+    },
+    {
+      "token": "o",
+      "score": 8.650245666503906
+    }
+  ],
+  "modified": [
+    {
+      "token": "happy",
+      "score": 20.95097541809082
+    },
+    {
+      "token": "strong",
+      "score": 20.653362274169922
+    },
+    {
+      "token": "good",
+      "score": 20.164531707763672
+    },
+    {
+      "token": "healthy",
+      "score": 18.343915939331055
+    },
+    {
+      "token": "aggressive",
+      "score": 17.976642608642578
+    },
+    {
+      "token": "eager",
+      "score": 17.82713508605957
+    },
+    {
+      "token": "much",
+      "score": 17.664047241210938
+    },
+    {
+      "token": "impressive",
+      "score": 17.330162048339844
+    },
+    {
+      "token": "well",
+      "score": 17.256683349609375
+    },
+    {
+      "token": "intelligent",
+      "score": 17.093246459960938
+    },
+    {
+      "token": "very",
+      "score": 17.044279098510742
+    },
+    {
+      "token": "\"",
+      "score": 16.91142463684082
+    },
+    {
+      "token": "keen",
+      "score": 16.689599990844727
+    },
+    {
+      "token": "high",
+      "score": 16.63349723815918
+    },
+    {
+      "token": "highly",
+      "score": 16.560945510864258
+    }
+  ]
+}

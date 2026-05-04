@@ -1,0 +1,127 @@
+{
+  "input_text": "The cat looks very",
+  "original": [
+    {
+      "token": "dated",
+      "score": 9.715252876281738
+    },
+    {
+      "token": "lobbied",
+      "score": 9.334136009216309
+    },
+    {
+      "token": "leveled",
+      "score": 9.226032257080078
+    },
+    {
+      "token": "die",
+      "score": 9.124345779418945
+    },
+    {
+      "token": "iesel",
+      "score": 9.082907676696777
+    },
+    {
+      "token": "Edited",
+      "score": 8.888890266418457
+    },
+    {
+      "token": "til",
+      "score": 8.877202033996582
+    },
+    {
+      "token": "Else",
+      "score": 8.583340644836426
+    },
+    {
+      "token": "donated",
+      "score": 8.477328300476074
+    },
+    {
+      "token": "sche",
+      "score": 8.365423202514648
+    },
+    {
+      "token": "Registered",
+      "score": 8.33712387084961
+    },
+    {
+      "token": "cheated",
+      "score": 8.137417793273926
+    },
+    {
+      "token": "Doe",
+      "score": 8.133552551269531
+    },
+    {
+      "token": "ullah",
+      "score": 8.117226600646973
+    },
+    {
+      "token": "neau",
+      "score": 8.005622863769531
+    }
+  ],
+  "modified": [
+    {
+      "token": "dated",
+      "score": 8.983763694763184
+    },
+    {
+      "token": "Edited",
+      "score": 8.488414764404297
+    },
+    {
+      "token": "sche",
+      "score": 8.099205017089844
+    },
+    {
+      "token": "EVA",
+      "score": 7.969343185424805
+    },
+    {
+      "token": "die",
+      "score": 7.934698581695557
+    },
+    {
+      "token": "Alias",
+      "score": 7.391884803771973
+    },
+    {
+      "token": "aul",
+      "score": 7.259891510009766
+    },
+    {
+      "token": "abeth",
+      "score": 7.25930643081665
+    },
+    {
+      "token": "iesel",
+      "score": 7.230273723602295
+    },
+    {
+      "token": "ullah",
+      "score": 7.143535137176514
+    },
+    {
+      "token": "Amelia",
+      "score": 7.142102241516113
+    },
+    {
+      "token": "Andreas",
+      "score": 7.117874622344971
+    },
+    {
+      "token": "Bett",
+      "score": 7.083392143249512
+    },
+    {
+      "token": "Kathleen",
+      "score": 6.943732261657715
+    },
+    {
+      "token": "Roy",
+      "score": 6.766256332397461
+    }
+  ]
+}

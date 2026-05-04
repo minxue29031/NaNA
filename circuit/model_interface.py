@@ -104,7 +104,7 @@ def project_mlp_acv_to_vocab(
         tokens = [tokenizer.decode([idx.item()]) for idx in top_idx[batch_idx]]
         scores = top_vals[batch_idx].tolist()
         top_tokens_list.append(list(zip(tokens, scores)))
-
+    
     print(f"\n >> Ori top-{topk} tokens by projecting MLP output ({weight_type}):")
     for token, score in top_tokens_list[0]:
         print(f"  {token}: {score:.6f}")

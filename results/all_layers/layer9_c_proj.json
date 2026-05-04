@@ -1,0 +1,127 @@
+{
+  "input_text": "The cat looks very",
+  "original": [
+    {
+      "token": "agg",
+      "score": 7.108084201812744
+    },
+    {
+      "token": "diff",
+      "score": 7.000446319580078
+    },
+    {
+      "token": "Lone",
+      "score": 6.9639716148376465
+    },
+    {
+      "token": "metric",
+      "score": 6.77614164352417
+    },
+    {
+      "token": "fine",
+      "score": 6.761553764343262
+    },
+    {
+      "token": "cog",
+      "score": 6.727819442749023
+    },
+    {
+      "token": "gross",
+      "score": 6.705868244171143
+    },
+    {
+      "token": "Byr",
+      "score": 6.628498077392578
+    },
+    {
+      "token": "ethanol",
+      "score": 6.575141906738281
+    },
+    {
+      "token": "redited",
+      "score": 6.499237060546875
+    },
+    {
+      "token": "CO",
+      "score": 6.279040336608887
+    },
+    {
+      "token": "Ter",
+      "score": 6.190162181854248
+    },
+    {
+      "token": "sourced",
+      "score": 6.169295787811279
+    },
+    {
+      "token": "ago",
+      "score": 6.1331329345703125
+    },
+    {
+      "token": "round",
+      "score": 6.097567081451416
+    }
+  ],
+  "modified": [
+    {
+      "token": "fine",
+      "score": 6.383206844329834
+    },
+    {
+      "token": "diff",
+      "score": 6.313359260559082
+    },
+    {
+      "token": "credit",
+      "score": 5.968776702880859
+    },
+    {
+      "token": "inc",
+      "score": 5.777761936187744
+    },
+    {
+      "token": "round",
+      "score": 5.65330171585083
+    },
+    {
+      "token": "establishment",
+      "score": 5.6238884925842285
+    },
+    {
+      "token": "ago",
+      "score": 5.604856491088867
+    },
+    {
+      "token": "metric",
+      "score": 5.478957653045654
+    },
+    {
+      "token": "Lone",
+      "score": 5.419264793395996
+    },
+    {
+      "token": "Ter",
+      "score": 5.236726760864258
+    },
+    {
+      "token": "ext",
+      "score": 5.180278301239014
+    },
+    {
+      "token": "CO",
+      "score": 5.1057000160217285
+    },
+    {
+      "token": "different",
+      "score": 5.09784460067749
+    },
+    {
+      "token": "Standard",
+      "score": 5.0695390701293945
+    },
+    {
+      "token": "gross",
+      "score": 5.035813331604004
+    }
+  ]
+}

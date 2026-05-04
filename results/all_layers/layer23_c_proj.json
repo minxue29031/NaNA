@@ -1,0 +1,127 @@
+{
+  "input_text": "The cat looks very",
+  "original": [
+    {
+      "token": "abilia",
+      "score": 13.639726638793945
+    },
+    {
+      "token": "maxwell",
+      "score": 11.526778221130371
+    },
+    {
+      "token": "Constructed",
+      "score": 9.204975128173828
+    },
+    {
+      "token": "iants",
+      "score": 8.456832885742188
+    },
+    {
+      "token": "ModLoader",
+      "score": 8.446019172668457
+    },
+    {
+      "token": "ENDED",
+      "score": 8.386202812194824
+    },
+    {
+      "token": "acio",
+      "score": 8.370834350585938
+    },
+    {
+      "token": "Downloadha",
+      "score": 7.499048233032227
+    },
+    {
+      "token": "ukong",
+      "score": 7.433780670166016
+    },
+    {
+      "token": "redo",
+      "score": 7.206655502319336
+    },
+    {
+      "token": "Orderable",
+      "score": 7.148514747619629
+    },
+    {
+      "token": "quickShipAvailable",
+      "score": 7.000090599060059
+    },
+    {
+      "token": "dinand",
+      "score": 6.872934341430664
+    },
+    {
+      "token": "Oracle",
+      "score": 6.780320167541504
+    },
+    {
+      "token": "achelor",
+      "score": 6.761660575866699
+    }
+  ],
+  "modified": [
+    {
+      "token": "accredited",
+      "score": -17.840301513671875
+    },
+    {
+      "token": "honest",
+      "score": -18.305709838867188
+    },
+    {
+      "token": "televised",
+      "score": -18.736797332763672
+    },
+    {
+      "token": "abilia",
+      "score": -18.75658416748047
+    },
+    {
+      "token": "pract",
+      "score": -19.831064224243164
+    },
+    {
+      "token": "outraged",
+      "score": -19.88146209716797
+    },
+    {
+      "token": "ukong",
+      "score": -20.155826568603516
+    },
+    {
+      "token": "credited",
+      "score": -20.19558334350586
+    },
+    {
+      "token": "refined",
+      "score": -20.65738296508789
+    },
+    {
+      "token": "atical",
+      "score": -20.700332641601562
+    },
+    {
+      "token": "dazzling",
+      "score": -20.80101203918457
+    },
+    {
+      "token": "solo",
+      "score": -21.305137634277344
+    },
+    {
+      "token": "real",
+      "score": -21.30954360961914
+    },
+    {
+      "token": "arde",
+      "score": -21.434955596923828
+    },
+    {
+      "token": "satirical",
+      "score": -21.481225967407227
+    }
+  ]
+}

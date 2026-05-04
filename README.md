@@ -200,5 +200,4 @@ cffffcc, respawn, CVE, voic, catentry, natureconservancy, reminis, dehuman, emot
 * **Direction 5:** medium – proper nouns / domain-specific terms
 * **Direction 6:** medium – technical / gaming / organizational nouns
 * **Direction 7:** high – positive adjectives / adverbs
-
-# NaNA
+ 

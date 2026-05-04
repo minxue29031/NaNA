@@ -1,0 +1,127 @@
+{
+  "input_text": "The cat looks very",
+  "original": [
+    {
+      "token": "small",
+      "score": 12.144457817077637
+    },
+    {
+      "token": ",",
+      "score": 11.999855995178223
+    },
+    {
+      "token": "white",
+      "score": 11.353477478027344
+    },
+    {
+      "token": "and",
+      "score": 10.89016056060791
+    },
+    {
+      "token": "green",
+      "score": 10.88676929473877
+    },
+    {
+      "token": "blue",
+      "score": 10.16121768951416
+    },
+    {
+      "token": "good",
+      "score": 10.051824569702148
+    },
+    {
+      "token": "free",
+      "score": 9.501748085021973
+    },
+    {
+      "token": "\"",
+      "score": 9.344755172729492
+    },
+    {
+      "token": "in",
+      "score": 8.970039367675781
+    },
+    {
+      "token": ".",
+      "score": 8.884376525878906
+    },
+    {
+      "token": "'",
+      "score": 8.855159759521484
+    },
+    {
+      "token": "elderly",
+      "score": 8.64622688293457
+    },
+    {
+      "token": "distressed",
+      "score": 8.57707691192627
+    },
+    {
+      "token": "low",
+      "score": 8.563156127929688
+    }
+  ],
+  "modified": [
+    {
+      "token": "small",
+      "score": 9.223980903625488
+    },
+    {
+      "token": "white",
+      "score": 8.849343299865723
+    },
+    {
+      "token": "\"",
+      "score": 8.21937084197998
+    },
+    {
+      "token": "'",
+      "score": 7.638080596923828
+    },
+    {
+      "token": "private",
+      "score": 7.412981986999512
+    },
+    {
+      "token": "goods",
+      "score": 7.410268783569336
+    },
+    {
+      "token": ",",
+      "score": 7.350856781005859
+    },
+    {
+      "token": "alike",
+      "score": 7.324687480926514
+    },
+    {
+      "token": "impressive",
+      "score": 7.211236476898193
+    },
+    {
+      "token": "notes",
+      "score": 7.041696548461914
+    },
+    {
+      "token": "elderly",
+      "score": 6.973444938659668
+    },
+    {
+      "token": "similar",
+      "score": 6.864794731140137
+    },
+    {
+      "token": "and",
+      "score": 6.845846176147461
+    },
+    {
+      "token": "large",
+      "score": 6.828158855438232
+    },
+    {
+      "token": "the",
+      "score": 6.754994869232178
+    }
+  ]
+}

@@ -71,9 +71,11 @@ def reubuld_interv(
         with open(manual_subspace_file, "r") as f:
             raw_data = json.load(f)
         layer_subspaces = {int(k): [idx - 1 for idx in v] for k, v in raw_data.items()}
+        
     else:
         layer_subspaces = load_subspace_indices(auto_subspace_file, top_subspaces, use_positive_only, use_random_index)
     
+    print(f"[LayerSubspaces] selected indices: {layer_subspaces}")
     model, tokenizer, W_E = load_model_and_embeddings(model_name, device)
     
     hooks = register_hooks(

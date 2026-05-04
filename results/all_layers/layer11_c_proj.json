@@ -1,0 +1,127 @@
+{
+  "input_text": "The cat looks very",
+  "original": [
+    {
+      "token": "hunger",
+      "score": 11.14615249633789
+    },
+    {
+      "token": "Prep",
+      "score": 8.112645149230957
+    },
+    {
+      "token": "Prepar",
+      "score": 8.01578426361084
+    },
+    {
+      "token": "Progress",
+      "score": 7.941406726837158
+    },
+    {
+      "token": "abstract",
+      "score": 7.81160306930542
+    },
+    {
+      "token": "execution",
+      "score": 7.782037734985352
+    },
+    {
+      "token": "preparing",
+      "score": 7.695003032684326
+    },
+    {
+      "token": "fine",
+      "score": 7.648514747619629
+    },
+    {
+      "token": "orderly",
+      "score": 7.64582633972168
+    },
+    {
+      "token": "preparation",
+      "score": 7.628612518310547
+    },
+    {
+      "token": "fam",
+      "score": 7.626667022705078
+    },
+    {
+      "token": "inter",
+      "score": 7.5986833572387695
+    },
+    {
+      "token": "vulner",
+      "score": 7.57674503326416
+    },
+    {
+      "token": "mun",
+      "score": 7.564201354980469
+    },
+    {
+      "token": "artif",
+      "score": 7.55076265335083
+    }
+  ],
+  "modified": [
+    {
+      "token": "GC",
+      "score": 8.474858283996582
+    },
+    {
+      "token": "hunger",
+      "score": 7.645137786865234
+    },
+    {
+      "token": "someone",
+      "score": 6.336368560791016
+    },
+    {
+      "token": "Execution",
+      "score": 6.227967739105225
+    },
+    {
+      "token": "execution",
+      "score": 6.185781478881836
+    },
+    {
+      "token": "progress",
+      "score": 5.901601791381836
+    },
+    {
+      "token": "Progress",
+      "score": 5.896875381469727
+    },
+    {
+      "token": "inter",
+      "score": 5.739537715911865
+    },
+    {
+      "token": "­",
+      "score": 5.613001823425293
+    },
+    {
+      "token": "ed",
+      "score": 5.4796342849731445
+    },
+    {
+      "token": "fine",
+      "score": 5.387266159057617
+    },
+    {
+      "token": "struggle",
+      "score": 5.336045265197754
+    },
+    {
+      "token": "bus",
+      "score": 5.313190460205078
+    },
+    {
+      "token": "fragment",
+      "score": 5.29036808013916
+    },
+    {
+      "token": "sum",
+      "score": 5.286104202270508
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "input_text": "The cat looks very",
+  "original": [
+    {
+      "token": "incorpor",
+      "score": 10.315356254577637
+    },
+    {
+      "token": "promising",
+      "score": 8.965676307678223
+    },
+    {
+      "token": "DRAG",
+      "score": 8.479561805725098
+    },
+    {
+      "token": "agric",
+      "score": 8.333333015441895
+    },
+    {
+      "token": "ev",
+      "score": 8.070961952209473
+    },
+    {
+      "token": "Vale",
+      "score": 8.049352645874023
+    },
+    {
+      "token": "vind",
+      "score": 7.878025531768799
+    },
+    {
+      "token": "iu",
+      "score": 7.867948055267334
+    },
+    {
+      "token": "innoc",
+      "score": 7.819674015045166
+    },
+    {
+      "token": "hov",
+      "score": 7.644498825073242
+    },
+    {
+      "token": "semb",
+      "score": 7.566134452819824
+    },
+    {
+      "token": "etta",
+      "score": 7.553773403167725
+    },
+    {
+      "token": "nano",
+      "score": 7.549344539642334
+    },
+    {
+      "token": "cheerful",
+      "score": 7.513863563537598
+    },
+    {
+      "token": "ordinary",
+      "score": 7.468466758728027
+    }
+  ],
+  "modified": [
+    {
+      "token": "DRAG",
+      "score": 7.420631408691406
+    },
+    {
+      "token": "ev",
+      "score": 7.34310245513916
+    },
+    {
+      "token": "hov",
+      "score": 7.317576885223389
+    },
+    {
+      "token": "agric",
+      "score": 7.289919376373291
+    },
+    {
+      "token": "itu",
+      "score": 7.188867568969727
+    },
+    {
+      "token": "incorpor",
+      "score": 7.0998125076293945
+    },
+    {
+      "token": "iu",
+      "score": 6.939974784851074
+    },
+    {
+      "token": "eu",
+      "score": 6.912314414978027
+    },
+    {
+      "token": "refere",
+      "score": 6.646994113922119
+    },
+    {
+      "token": "CAS",
+      "score": 6.626777648925781
+    },
+    {
+      "token": "place",
+      "score": 6.6153035163879395
+    },
+    {
+      "token": "vind",
+      "score": 6.591537952423096
+    },
+    {
+      "token": "Vale",
+      "score": 6.572995185852051
+    },
+    {
+      "token": "du",
+      "score": 6.554182529449463
+    },
+    {
+      "token": "semb",
+      "score": 6.547262668609619
+    }
+  ]
+}

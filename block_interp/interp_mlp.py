@@ -177,22 +177,29 @@ class MLP_DEEF_INTERP:
                     if weight_type == "c_proj":
                         score = V[i, :].float() @ self.W_emb.T
                     elif weight_type == "c_fc":
+                        self._print_nana_warning()
+
                         reshape_matrix = reshape_emb_matrix(
                             self.W_emb, c_fc, ln_2, act, use_activation=False
                         )
                         score = U[:, i] @ reshape_matrix.T
                     else:
                         raise ValueError(f"Unknown weight_type: {weight_type}")
+                    
                 elif current_interp_type == "detector":
                     if weight_type == "c_fc":
                         score = V[i, :].float() @ self.W_emb.T
+
                     elif weight_type == "c_proj":
+                        self._print_nana_warning()
+
                         reshape_matrix = reshape_emb_matrix(
                             self.W_emb, c_fc, ln_2, act, use_activation=False
                         )
                         score = U[:, i] @ reshape_matrix.T
                     else:
                         raise ValueError(f"Unknown weight_type: {weight_type}")
+                    
                 else:
                     raise ValueError(f"Unknown interp_type: {current_interp_type}")
 
@@ -265,3 +272,24 @@ class MLP_DEEF_INTERP:
 
         return all_results
  
+    def _print_nana_warning(self):
+        if hasattr(self, "_c_fc_warned"):
+            return
+
+        message = (
+            "NaNA framework only strictly supports down-projection matrices (effector) "
+            "and up-projection matrices (detector). The current handling of c_fc or "
+            "c_proj projections is used as an exploratory attempt."
+        )
+
+        import textwrap
+        lines = textwrap.wrap(message, width=80)
+        max_len = max(len(line) for line in lines)
+
+        border = "#" * (max_len + 4)
+        print(border)
+        for line in lines:
+            print("# " + line.ljust(max_len) + " #")
+        print(border)
+
+        self._c_fc_warned = True
