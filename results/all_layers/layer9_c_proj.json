@@ -65,63 +65,63 @@
   "modified": [
     {
       "token": "fine",
-      "score": 6.383206844329834
-    },
-    {
-      "token": "diff",
-      "score": 6.313359260559082
-    },
-    {
-      "token": "credit",
-      "score": 5.968776702880859
+      "score": 8.029848098754883
     },
     {
       "token": "inc",
-      "score": 5.777761936187744
-    },
-    {
-      "token": "round",
-      "score": 5.65330171585083
-    },
-    {
-      "token": "establishment",
-      "score": 5.6238884925842285
-    },
-    {
-      "token": "ago",
-      "score": 5.604856491088867
-    },
-    {
-      "token": "metric",
-      "score": 5.478957653045654
+      "score": 7.498303413391113
     },
     {
       "token": "Lone",
-      "score": 5.419264793395996
+      "score": 7.323428153991699
     },
     {
-      "token": "Ter",
-      "score": 5.236726760864258
-    },
-    {
-      "token": "ext",
-      "score": 5.180278301239014
-    },
-    {
-      "token": "CO",
-      "score": 5.1057000160217285
+      "token": "ago",
+      "score": 7.285458564758301
     },
     {
       "token": "different",
-      "score": 5.09784460067749
+      "score": 7.199594497680664
     },
     {
-      "token": "Standard",
-      "score": 5.0695390701293945
+      "token": "metric",
+      "score": 7.043145179748535
     },
     {
-      "token": "gross",
-      "score": 5.035813331604004
+      "token": "Ter",
+      "score": 7.031449317932129
+    },
+    {
+      "token": "establishment",
+      "score": 6.980642795562744
+    },
+    {
+      "token": "CO",
+      "score": 6.910431385040283
+    },
+    {
+      "token": "Ent",
+      "score": 6.80983829498291
+    },
+    {
+      "token": "round",
+      "score": 6.655797004699707
+    },
+    {
+      "token": "relevant",
+      "score": 6.571030616760254
+    },
+    {
+      "token": "specific",
+      "score": 6.503140926361084
+    },
+    {
+      "token": "+",
+      "score": 6.332335472106934
+    },
+    {
+      "token": "agg",
+      "score": 6.27357292175293
     }
   ]
 }

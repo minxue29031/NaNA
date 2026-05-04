@@ -64,64 +64,64 @@
   ],
   "modified": [
     {
-      "token": "GC",
-      "score": 8.474858283996582
-    },
-    {
       "token": "hunger",
-      "score": 7.645137786865234
+      "score": 11.365461349487305
     },
     {
-      "token": "someone",
-      "score": 6.336368560791016
-    },
-    {
-      "token": "Execution",
-      "score": 6.227967739105225
-    },
-    {
-      "token": "execution",
-      "score": 6.185781478881836
-    },
-    {
-      "token": "progress",
-      "score": 5.901601791381836
-    },
-    {
-      "token": "Progress",
-      "score": 5.896875381469727
+      "token": "GC",
+      "score": 9.353856086730957
     },
     {
       "token": "inter",
-      "score": 5.739537715911865
+      "score": 8.02016830444336
     },
     {
-      "token": "­",
-      "score": 5.613001823425293
+      "token": "dev",
+      "score": 7.552186965942383
     },
     {
-      "token": "ed",
-      "score": 5.4796342849731445
+      "token": "someone",
+      "score": 7.494201183319092
     },
     {
-      "token": "fine",
-      "score": 5.387266159057617
+      "token": "Progress",
+      "score": 7.3230695724487305
+    },
+    {
+      "token": "Â",
+      "score": 7.124903202056885
     },
     {
       "token": "struggle",
-      "score": 5.336045265197754
+      "score": 7.113873481750488
     },
     {
-      "token": "bus",
-      "score": 5.313190460205078
+      "token": "­",
+      "score": 7.063096523284912
     },
     {
-      "token": "fragment",
-      "score": 5.29036808013916
+      "token": "education",
+      "score": 7.021524429321289
     },
     {
-      "token": "sum",
-      "score": 5.286104202270508
+      "token": "execution",
+      "score": 6.80598258972168
+    },
+    {
+      "token": "fam",
+      "score": 6.787896156311035
+    },
+    {
+      "token": "progress",
+      "score": 6.7831339836120605
+    },
+    {
+      "token": "school",
+      "score": 6.774174213409424
+    },
+    {
+      "token": "d",
+      "score": 6.7685441970825195
     }
   ]
 }

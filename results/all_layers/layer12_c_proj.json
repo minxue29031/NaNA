@@ -65,63 +65,63 @@
   "modified": [
     {
       "token": "safe",
-      "score": 7.899939060211182
+      "score": 8.363182067871094
     },
     {
       "token": "promising",
-      "score": 6.987044334411621
-    },
-    {
-      "token": "highly",
-      "score": 6.699081897735596
-    },
-    {
-      "token": "Guarant",
-      "score": 6.569610118865967
+      "score": 8.338604927062988
     },
     {
       "token": "Jama",
-      "score": 6.568549156188965
+      "score": 7.060774326324463
     },
     {
-      "token": "wil",
-      "score": 6.555530548095703
+      "token": "Guarant",
+      "score": 6.607269287109375
     },
     {
-      "token": "volatile",
-      "score": 6.444401741027832
-    },
-    {
-      "token": "heavily",
-      "score": 6.394239902496338
-    },
-    {
-      "token": "erv",
-      "score": 6.269718170166016
+      "token": "precious",
+      "score": 6.491013526916504
     },
     {
       "token": "logically",
-      "score": 6.227907180786133
+      "score": 6.216124534606934
+    },
+    {
+      "token": "assured",
+      "score": 6.1549224853515625
+    },
+    {
+      "token": "dangerous",
+      "score": 6.100693225860596
+    },
+    {
+      "token": "talented",
+      "score": 5.849138259887695
     },
     {
       "token": "Logic",
-      "score": 6.140445232391357
+      "score": 5.8239898681640625
     },
     {
-      "token": "insecure",
-      "score": 6.039916515350342
+      "token": "volatile",
+      "score": 5.819764614105225
     },
     {
-      "token": "686",
-      "score": 6.0081257820129395
+      "token": "optimistic",
+      "score": 5.7794647216796875
     },
     {
-      "token": "Syl",
-      "score": 5.848963737487793
+      "token": "highly",
+      "score": 5.6771721839904785
     },
     {
-      "token": "safe",
-      "score": 5.805644989013672
+      "token": "wil",
+      "score": 5.521510601043701
+    },
+    {
+      "token": "fasc",
+      "score": 5.506568908691406
     }
   ]
 }

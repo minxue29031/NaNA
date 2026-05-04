@@ -64,64 +64,64 @@
   ],
   "modified": [
     {
-      "token": "dated",
-      "score": 8.983763694763184
-    },
-    {
-      "token": "Edited",
-      "score": 8.488414764404297
-    },
-    {
       "token": "sche",
-      "score": 8.099205017089844
+      "score": 8.947468757629395
     },
     {
-      "token": "EVA",
-      "score": 7.969343185424805
+      "token": "dated",
+      "score": 8.85142993927002
     },
     {
       "token": "die",
-      "score": 7.934698581695557
+      "score": 8.543694496154785
     },
     {
-      "token": "Alias",
-      "score": 7.391884803771973
+      "token": "Edited",
+      "score": 8.243856430053711
     },
     {
-      "token": "aul",
-      "score": 7.259891510009766
+      "token": "EVA",
+      "score": 8.037680625915527
     },
     {
-      "token": "abeth",
-      "score": 7.25930643081665
+      "token": "Else",
+      "score": 7.932384967803955
+    },
+    {
+      "token": "complained",
+      "score": 7.789094924926758
+    },
+    {
+      "token": "donated",
+      "score": 7.778594017028809
+    },
+    {
+      "token": "leveled",
+      "score": 7.65867280960083
+    },
+    {
+      "token": "lobbied",
+      "score": 7.621205806732178
     },
     {
       "token": "iesel",
-      "score": 7.230273723602295
-    },
-    {
-      "token": "ullah",
-      "score": 7.143535137176514
-    },
-    {
-      "token": "Amelia",
-      "score": 7.142102241516113
-    },
-    {
-      "token": "Andreas",
-      "score": 7.117874622344971
-    },
-    {
-      "token": "Bett",
-      "score": 7.083392143249512
+      "score": 7.570774078369141
     },
     {
       "token": "Kathleen",
-      "score": 6.943732261657715
+      "score": 7.541572570800781
     },
     {
-      "token": "Roy",
-      "score": 6.766256332397461
+      "token": "Alias",
+      "score": 7.503439903259277
+    },
+    {
+      "token": "Amelia",
+      "score": 7.491616249084473
+    },
+    {
+      "token": "Doe",
+      "score": 7.480757713317871
     }
   ]
 }

@@ -64,64 +64,64 @@
   ],
   "modified": [
     {
-      "token": "happy",
-      "score": 20.95097541809082
+      "token": "-",
+      "score": 15.601470947265625
     },
     {
-      "token": "strong",
-      "score": 20.653362274169922
+      "token": ",",
+      "score": 15.293111801147461
     },
     {
-      "token": "good",
-      "score": 20.164531707763672
+      "token": "n",
+      "score": 12.45494556427002
     },
     {
-      "token": "healthy",
-      "score": 18.343915939331055
+      "token": "or",
+      "score": 12.22372817993164
     },
     {
-      "token": "aggressive",
-      "score": 17.976642608642578
+      "token": "o",
+      "score": 11.653339385986328
     },
     {
-      "token": "eager",
-      "score": 17.82713508605957
+      "token": "file",
+      "score": 11.614201545715332
     },
     {
-      "token": "much",
-      "score": 17.664047241210938
+      "token": "the",
+      "score": 11.61346435546875
     },
     {
-      "token": "impressive",
-      "score": 17.330162048339844
+      "token": "resident",
+      "score": 11.346845626831055
     },
     {
-      "token": "well",
-      "score": 17.256683349609375
+      "token": "local",
+      "score": 10.79440975189209
     },
     {
-      "token": "intelligent",
-      "score": 17.093246459960938
+      "token": "and",
+      "score": 10.777787208557129
     },
     {
-      "token": "very",
-      "score": 17.044279098510742
+      "token": "d",
+      "score": 10.663671493530273
+    },
+    {
+      "token": "check",
+      "score": 10.646565437316895
+    },
+    {
+      "token": "in",
+      "score": 10.33615493774414
     },
     {
       "token": "\"",
-      "score": 16.91142463684082
+      "score": 9.95809555053711
     },
     {
-      "token": "keen",
-      "score": 16.689599990844727
-    },
-    {
-      "token": "high",
-      "score": 16.63349723815918
-    },
-    {
-      "token": "highly",
-      "score": 16.560945510864258
+      "token": "O",
+      "score": 9.734518051147461
     }
   ]
 }

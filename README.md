@@ -54,10 +54,7 @@ The framework has three modes of analysis:
 ```bash
 pip install -r requirements.txt
 ```
- 
-
- 
-
+  
 ## 🧩 Example Usage
 
 ### 🔹 Subspace Interpretation
@@ -66,11 +63,31 @@ Identify which tokens each singular direction is most aligned with.
 
 For up-projection matrix
 ```bash
-python scripts/run_interp.py  --model_name "gpt2" --layers 7    --topk_tokens 20  --topk_subspaces 12   --weight_type c_fc    --interp_type detector  --with_negative      --save_file    --out_dir results --return_heatmap
+python scripts/run_interp.py  \
+    --model_name "gpt2" \
+    --layers 7  \
+    --topk_tokens 20  \
+    --topk_subspaces 12 \
+    --weight_type c_fc \
+    --interp_type detector \
+    --with_negative \
+    --save_file \
+    --out_dir results \
+    --return_heatmap
 ```
 For down-projection matrix
 ```bash
-python scripts/run_interp.py  --model_name "gpt2-medium" --layers 16    --topk_tokens 20  --topk_subspaces 12   --weight_type c_proj    --interp_type effector --with_negative      --save_file    --out_dir results --return_heatmap
+python scripts/run_interp.py \
+  --model_name "gpt2-medium" \
+  --layers 16 \
+  --topk_tokens 20 \
+  --topk_subspaces 12 \
+  --weight_type c_proj \
+  --interp_type effector \
+  --with_negative \
+  --save_file \
+  --out_dir results \
+  --return_heatmap
 ```
 
 ### 🔹 Circuit Discovery
@@ -78,7 +95,17 @@ python scripts/run_interp.py  --model_name "gpt2-medium" --layers 16    --topk_t
 Given an input sequence and a target token, rank every subspace in every layer by its directional contribution to that prediction.
 
 ```bash
-python scripts/run_circuit.py  --model_name "gpt2-medium"  --gpu 0  --topk_subspaces 50   --weight_type "c_proj"   --circuit_mode "DeEf" --interp_type "effector"   --output_dir "results/$model"   --layers "all" --in_seq "The cat looks very" --target_word " happy" 
+python scripts/run_circuit.py \
+  --model_name "gpt2-medium" \
+  --gpu 0 \
+  --topk_subspaces 50 \
+  --weight_type "c_proj" \
+  --circuit_mode "DeEf" \
+  --interp_type "effector" \
+  --output_dir "results" \
+  --layers "all" \
+  --in_seq "The cat looks very" \
+  --target_word " happy"
 ```
  
  
@@ -88,17 +115,50 @@ python scripts/run_circuit.py  --model_name "gpt2-medium"  --gpu 0  --topk_subsp
 
 Pathway Standard Experiment: Rebuild using only top-K subspaces
 ```bash
-python scripts/run_modify.py --model "gpt2-medium"   --weight_type c_proj  --auto_subspace_file "results/gpt2-medium_circuit/MLP_c_proj/DeEf/circuit_points_scores_c_proj_gpt2-medium.json"     --input_text "The cat looks very"    --modify_type rebuild  --token_num 15  --layers 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 --gene_or_abla general --top_subspaces 5 --output_dir results --use_full_residual
+python scripts/run_modify.py \
+  --model "gpt2-medium" \
+  --weight_type c_proj \
+  --auto_subspace_file "results/gpt2-medium_circuit/MLP_c_proj/DeEf/circuit_points_scores_c_proj_gpt2-medium.json" \
+  --input_text "The cat looks very" \
+  --modify_type rebuild \
+  --token_num 15 \
+  --layers 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 \
+  --gene_or_abla general \
+  --top_subspaces 5 \
+  --output_dir results \
+  --use_full_residual
 ```
 
 Pathway Ablation Experiment: Remove top-K subspaces
 ```bash
-python scripts/run_modify.py --model "gpt2-medium"   --weight_type c_proj  --auto_subspace_file "results/gpt2-medium_circuit/MLP_c_proj/DeEf/circuit_points_scores_c_proj_gpt2-medium.json"     --input_text "The cat looks very"    --modify_type rebuild  --token_num 15  --layers 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 --gene_or_abla ablation --top_subspaces 5 --output_dir results --use_full_residual
+python scripts/run_modify.py \
+  --model "gpt2-medium" \
+  --weight_type c_proj \
+  --auto_subspace_file "results/gpt2-medium_circuit/MLP_c_proj/DeEf/circuit_points_scores_c_proj_gpt2-medium.json" \
+  --input_text "The cat looks very" \
+  --modify_type rebuild \
+  --token_num 15 \
+  --layers 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 \
+  --gene_or_abla ablation \
+  --top_subspaces 5 \
+  --output_dir results \
+  --use_full_residual 
 ```
 
 Single-layer Subspace Intervention: Manually specified subspace intervention
 ```bash
-python scripts/run_modify.py --model "gpt2-medium"   --weight_type c_proj  --manual_subspace_file "manual_interv_info/info_c_poj_gpt2-medium_L16SP7.json"     --input_text "The cat looks very"    --modify_type manual_interv --token_num 15  --layers 16 --gene_or_abla general --output_dir results --use_full_residual --interv_factor -7
+python scripts/run_modify.py \
+  --model "gpt2-medium" \
+  --weight_type c_proj \
+  --manual_subspace_file "manual_interv_info/info_c_proj_gpt2-medium_L16SP7.json" \
+  --input_text "The cat looks very" \
+  --modify_type manual_interv \
+  --token_num 15 \
+  --layers 16 \
+  --gene_or_abla general \
+  --output_dir results \
+  --use_full_residual \
+  --interv_factor -7
 ```
 ### ⚙️ Configuration Parameters
 

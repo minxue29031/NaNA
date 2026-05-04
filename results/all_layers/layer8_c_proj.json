@@ -64,64 +64,64 @@
   ],
   "modified": [
     {
-      "token": "Frog",
-      "score": 7.293862342834473
-    },
-    {
-      "token": "frog",
-      "score": 6.722596168518066
-    },
-    {
       "token": "buff",
-      "score": 6.612962245941162
+      "score": 7.971214294433594
     },
     {
-      "token": "retreat",
-      "score": 6.5964765548706055
-    },
-    {
-      "token": "frogs",
-      "score": 6.462892532348633
-    },
-    {
-      "token": "half",
-      "score": 6.381565093994141
-    },
-    {
-      "token": "Harmon",
-      "score": 6.196369647979736
-    },
-    {
-      "token": "ceed",
-      "score": 6.130064010620117
+      "token": "Frog",
+      "score": 7.67381477355957
     },
     {
       "token": "blob",
-      "score": 6.029009819030762
+      "score": 7.612138271331787
     },
     {
-      "token": "CHECK",
-      "score": 5.975719928741455
+      "token": "half",
+      "score": 7.473238468170166
     },
     {
-      "token": "blockers",
-      "score": 5.950061321258545
+      "token": "Harmon",
+      "score": 7.106850624084473
     },
     {
-      "token": "mor",
-      "score": 5.836630821228027
-    },
-    {
-      "token": "pupp",
-      "score": 5.712576866149902
-    },
-    {
-      "token": "vis",
-      "score": 5.59636116027832
+      "token": "frog",
+      "score": 7.105538845062256
     },
     {
       "token": "Wolfe",
-      "score": 5.538446426391602
+      "score": 7.021859169006348
+    },
+    {
+      "token": "pupp",
+      "score": 6.9015889167785645
+    },
+    {
+      "token": "ceed",
+      "score": 6.857178211212158
+    },
+    {
+      "token": "vis",
+      "score": 6.7887983322143555
+    },
+    {
+      "token": "thumbnails",
+      "score": 6.786014556884766
+    },
+    {
+      "token": "retreat",
+      "score": 6.668651580810547
+    },
+    {
+      "token": "frogs",
+      "score": 6.615911483764648
+    },
+    {
+      "token": "CHECK",
+      "score": 6.609311580657959
+    },
+    {
+      "token": "Freak",
+      "score": 6.41420841217041
     }
   ]
 }

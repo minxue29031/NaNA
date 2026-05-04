@@ -64,64 +64,64 @@
   ],
   "modified": [
     {
-      "token": "accredited",
-      "score": -17.840301513671875
-    },
-    {
       "token": "honest",
-      "score": -18.305709838867188
-    },
-    {
-      "token": "televised",
-      "score": -18.736797332763672
+      "score": -18.217449188232422
     },
     {
       "token": "abilia",
-      "score": -18.75658416748047
-    },
-    {
-      "token": "pract",
-      "score": -19.831064224243164
-    },
-    {
-      "token": "outraged",
-      "score": -19.88146209716797
-    },
-    {
-      "token": "ukong",
-      "score": -20.155826568603516
-    },
-    {
-      "token": "credited",
-      "score": -20.19558334350586
-    },
-    {
-      "token": "refined",
-      "score": -20.65738296508789
-    },
-    {
-      "token": "atical",
-      "score": -20.700332641601562
-    },
-    {
-      "token": "dazzling",
-      "score": -20.80101203918457
-    },
-    {
-      "token": "solo",
-      "score": -21.305137634277344
+      "score": -18.458675384521484
     },
     {
       "token": "real",
-      "score": -21.30954360961914
+      "score": -19.378173828125
     },
     {
-      "token": "arde",
-      "score": -21.434955596923828
+      "token": "dazzling",
+      "score": -19.59866714477539
     },
     {
-      "token": "satirical",
-      "score": -21.481225967407227
+      "token": "oso",
+      "score": -19.698902130126953
+    },
+    {
+      "token": "televised",
+      "score": -20.161645889282227
+    },
+    {
+      "token": "personal",
+      "score": -20.28775405883789
+    },
+    {
+      "token": "refined",
+      "score": -20.414878845214844
+    },
+    {
+      "token": "unsc",
+      "score": -20.457294464111328
+    },
+    {
+      "token": "pract",
+      "score": -20.929004669189453
+    },
+    {
+      "token": "acio",
+      "score": -21.144807815551758
+    },
+    {
+      "token": "atically",
+      "score": -21.198101043701172
+    },
+    {
+      "token": "min",
+      "score": -21.952089309692383
+    },
+    {
+      "token": "dem",
+      "score": -22.092010498046875
+    },
+    {
+      "token": "lumin",
+      "score": -22.19477081298828
     }
   ]
 }

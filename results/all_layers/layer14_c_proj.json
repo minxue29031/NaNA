@@ -64,64 +64,64 @@
   ],
   "modified": [
     {
-      "token": "tension",
-      "score": 6.573988914489746
-    },
-    {
       "token": "like",
-      "score": 6.4074625968933105
+      "score": 7.339913368225098
     },
     {
-      "token": "rush",
-      "score": 5.457799911499023
-    },
-    {
-      "token": "gl",
-      "score": 5.306372165679932
-    },
-    {
-      "token": ":",
-      "score": 4.934849262237549
-    },
-    {
-      "token": "rough",
-      "score": 4.801959037780762
-    },
-    {
-      "token": "thick",
-      "score": 4.666794300079346
-    },
-    {
-      "token": ",",
-      "score": 4.601162910461426
-    },
-    {
-      "token": "urgency",
-      "score": 4.476901054382324
-    },
-    {
-      "token": "real",
-      "score": 4.43982458114624
-    },
-    {
-      "token": "impatient",
-      "score": 4.384024620056152
+      "token": "tension",
+      "score": 7.159831523895264
     },
     {
       "token": "bad",
-      "score": 4.383391380310059
+      "score": 5.88062047958374
+    },
+    {
+      "token": "rush",
+      "score": 5.620763778686523
+    },
+    {
+      "token": "gl",
+      "score": 5.546050548553467
+    },
+    {
+      "token": "impatient",
+      "score": 5.433584213256836
+    },
+    {
+      "token": "real",
+      "score": 5.368775367736816
+    },
+    {
+      "token": "rough",
+      "score": 5.293625831604004
+    },
+    {
+      "token": "frustration",
+      "score": 5.176836967468262
+    },
+    {
+      "token": "nervous",
+      "score": 4.9516730308532715
+    },
+    {
+      "token": "restless",
+      "score": 4.861619472503662
+    },
+    {
+      "token": "fragile",
+      "score": 4.8516845703125
+    },
+    {
+      "token": "urgency",
+      "score": 4.620174407958984
     },
     {
       "token": "bored",
-      "score": 4.369752883911133
+      "score": 4.577889442443848
     },
     {
-      "token": "gut",
-      "score": 4.30122184753418
-    },
-    {
-      "token": "weight",
-      "score": 4.249730110168457
+      "token": "commercial",
+      "score": 4.557928562164307
     }
   ]
 }
