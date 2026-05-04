@@ -1,169 +1,165 @@
+# NaNA: SVD-Based MLP Interpretability for Transformers
+
+NaNA is a mechanistic interpretability framework for transformer language models. It decomposes MLP weight matrices via SVD into orthogonal **subspaces**, interprets each subspace as a (detector, effector) pair, and traces which subspaces across layers causally drive a specific next-token prediction.
+
  
-# 🧠 Transformers SVD Analysis — Detector & Effector
 
-This repository provides tools for analyzing the semantic subspaces of MLP layers in transformer-based language models (e.g., "gpt2-medium"). By decomposing transformer blocks (e.g., MLPs) into sums of rank-1 subspaces: $W = \sum_{i=1}^{\text{rank}(W)} \sigma_i \  u_i \  v_i^T$, we can extract **detector** vectors ($u_i$) and **effector** vectors ($v_i^T$). These vectors reveal interpretable directions in the embedding space that correspond to meaningful linguistic or conceptual patterns.
+## Core Idea
 
-## 🔍 Concept Overview
-
-In Transformer MLP blocks,the **SVD decomposition** of these weight matrices reveals interpretable "directions" in hidden space:
-
-* **Detector directions:** The input directions of the W_out subspace. Computes similarity with the embedding matrix to return the most highly correlated tokens.
-* **Effector directions:** The output directions of the W_out subspace. Computes similarity with the embedding matrix to return the most highly correlated tokens.
-  
-By inspecting top tokens aligned with each singular direction, we can identify **semantic features** (e.g., sentiment, number, tense, named entities, etc.) captured by each MLP layer.
-
-
-
-## 📂 Repository Structure
+Every MLP layer contains a weight matrix that can be decomposed as:
 
 ```
-detector_effector/
+W  =  U · diag(S) · Vᵀ
+```
+
+Each rank-1 component `(u_k, σ_k, v_k)` defines a **subspace**:
+
+- **Detector** (`v_k`): how strongly does the current hidden state activate this direction?  
+  Score = alignment of layer input with `v_k` (for `c_proj`) or with the LN-weighted `c_fc` direction.
+- **Effector** (`u_k`): which vocabulary tokens does this direction push toward?  
+  Score = cosine similarity of `u_k` with the token embedding matrix.
+- **Directional contribution** = detector × effector — ranks subspaces by their causal relevance to a target token.
+
+The framework has three modes of analysis:
+
+| Mode | Script | Question answered |
+|---|---|---|
+| **Interpretation** | `run_interp.py` | What semantic concept does each subspace encode? |
+| **Circuit discovery** | `run_circuit.py` | Which subspaces across all layers predict token T from input X? |
+| **Intervention** | `run_modify.py` | What happens to the prediction if we ablate or amplify a subspace? |
+ 
+## Project Structure
+
+```
 ├── scripts/
-│   ├── run_interp.py          # Interpret MLP subspaces 
-│   ├── run_circuit.py         # Circuit extraction & analysis
-│   ├── run_modify.py          # Apply interventions 
-│   └── run_edit.py            # Apply knowledge editing 
-├── block_interp/              # Core SVD & MLP processing modules
-├── ke/                        # Knowledge editing 
-├── circuit/                   # Circuit analysis 
-│   └── circuit_interv/        # Specific intervention implementations
-├── plot_utils/                # Visualization utilities
-├── result/                    
-├── requirements.txt        
-
+│   ├── run_interp.py        # Subspace interpretation
+│   ├── run_circuit.py       # Circuit discovery
+│   └── run_modify.py        # Causal intervention
+├── block_interp/            # Core analysis library
+│   ├── interp.py            # SVD decomposition and token alignment
+│   ├── circuit.py           # Detector/effector scoring and circuit extraction
+│   └── modify.py            # Forward-hook-based weight intervention
+├── dataset/                 # Dataset utilities
+├── sae_training/            
+├── plot_utils/               
+├── vocab/                    
+├── manual_interv_info/      # Hand-specified subspace intervention configs            
+└── requirements.txt
 ```
+
  
 
-
-## 📦 Requirements
-
-All dependencies are listed in `requirements.txt`.
-To install:
+## Installation
 
 ```bash
 pip install -r requirements.txt
 ```
-
-## 🧩 Example Usage
-
-### 🔹 MLP Subspace Interpretation
-
-```bash
-python scripts/run_interp.py \
-    --model_name gpt2-medium \
-    --layers 16 \
-    --out_dir result \
-    --topk_tokens 10 \
-    --topk_subspaces 50 \
-    --weight_type c_proj \
-    --interp_type detector \
-    --with_negative \
-    --save_file \
-    --return_heatmap
-```
-
-* **Returns:**
-  * Top tokens per subspace
-  * heatmaps and datastore
-
-
-### 🔹 Subspace Circuit Analysis
-
-```bash
-python scripts/run_circuit.py \
-    --model_name gpt2-medium \
-    --in_seq "The cat looks very" \
-    --target_word " happy" \
-    --layers 16 \
-    --topk_subspaces 15 \
-    --topk_tokens 20 \
-    --output_dir result/circuit \
-    --circuit_mode DeEf \
-    --interp_type all \
-    --weight_type c_fc
-```
-  * Circuit & Contribution scores
-  * Top tokens per subspace
-  * heatmaps and datastore
  
-### 🔹 Subspace Intervention
 
-Apply interventions to enhance or remove selected subspaces.
+ 
+
+## Example Usage
+
+### 1. Subspace Interpretation
+
+Identify which tokens each singular direction is most aligned with.
+
+For up-projection matrix
+```bash
+python scripts/run_interp.py  --model_name "gpt2" --layers 7    --topk_tokens 20  --topk_subspaces 12   --weight_type c_fc    --interp_type detector  --with_negative      --save_file    --out_dir results --return_heatmap
+```
+For down-projection matrix
+```bash
+python scripts/run_interp.py  --model_name "gpt2-medium" --layers 16    --topk_tokens 20  --topk_subspaces 12   --weight_type c_proj    --interp_type effector --with_negative      --save_file    --out_dir results --return_heatmap
+```
+| Argument | Default | Description |
+|---|---|---|
+| `--model_name` | `gpt2-medium` | HuggingFace model name |
+| `--layers` | `all` | Layer indices to analyse, or `all` |
+| `--weight_type` | `c_proj` | `c_proj` (output projection) or `c_fc` (input projection + LN) |
+| `--interp_type` | `all` | `detector`, `effector`, or `all` |
+| `--topk_tokens` | `10` | Top tokens to report per subspace |
+| `--topk_subspaces` | `50` | Number of subspaces to report per layer |
+| `--with_negative` | — | Also report negatively aligned tokens |
+| `--return_heatmap` | — | Save direction × token heatmaps as PNG |
+| `--save_file` | — | Write JSON results to disk |
+
+**Outputs** (under `{model_name}_interp_dir/`):
+
+```
+data/MLP_c_proj_layer{i}/
+    detector_subspaces_top10tokens_positive.json
+    effector_subspaces_top10tokens_positive.json
+heatmap/MLP_c_proj_layer{i}/
+    detector_positive_heatmap.png
+    effector_negative_heatmap.png
+```
+
+
+### 2. Circuit Discovery
+
+Given an input sequence and a target token, rank every subspace in every layer by its directional contribution to that prediction.
+
+```bash
+python scripts/run_circuit.py  --model_name "gpt2-medium"  --gpu 0  --topk_subspaces 50   --weight_type "c_proj"   --circuit_mode "DeEf" --interp_type "effector"   --output_dir "results/$model"   --layers "all" --in_seq "The cat looks very" --target_word " happy" 
+```
+| Argument | Default | Description |
+|---|---|---|
+| `--in_seq` | required | Input text |
+| `--target_word` | required | Token whose prediction circuit is traced |
+| `--circuit_mode` | `DeEf` | `DeEf` (both), `De` (detector only), `Ef` (effector only) |
+| `--topk_subspaces` | `15` | Top subspaces to include in the circuit |
+| `--do_interp` | — | Also run token-level interpretation on selected subspaces |
+| `--use_abs_contribute` | — | Rank by absolute contribution value |
+ 
+ 
+**Outputs** (under `{output_dir}/{model_name}_circuit/MLP_{weight_type}/{circuit_mode}/`):
+
+```
+circuit_c_proj_{model}.json              # Full circuit definition
+circuit_points_scores_c_proj_{model}.json  # Per-subspace (detector, effector, contribution)
+circuit.png                              # Layer-by-layer flow diagram
+subspace_contribution.png                # Contribution scatter plot
+```
+
+### 3. Causal Intervention
+
+Rebuild or scale specific subspaces and measure the effect on next-token predictions.
 
 > **Note:** Run `run_circuit.py` first to generate `circuit_points_scores_{weight_type}_{model_name}.json` for analysis.
 
- 
+Pathway Standard Experiment: Rebuild using only top-K subspaces
 ```bash
-python scripts/run_modify.py \
-    --model_name gpt2-medium \
-    --gene_or_abla general \
-    --weight_type c_fc \
-    --top_subspaces 10 \
-    --use_positive_only \
-    --auto_subspace_file  path/circuit_points_scores_c_fc_gpt2-medium.json \
-    --layers 17 18 19 20 \
-    --input_text "The cat looks very" \
-    --output_dir result/interven_result \
-    --modify_type rebuild \
-    --interv_factor 0.1 \
-    --token_num 20
+python scripts/run_modify.py --model "gpt2-medium"   --weight_type c_proj  --auto_subspace_file "results/gpt2-medium_circuit/MLP_c_proj/DeEf/circuit_points_scores_c_proj_gpt2-medium.json"     --input_text "The cat looks very"    --modify_type rebuild  --token_num 15  --layers 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 --gene_or_abla general --top_subspaces 5 --output_dir results --use_full_residual
 ```
 
-### 🔹 MLP Subspace Knowledge Editing  
-
+Pathway Ablation Experiment: Remove top-K subspaces
 ```bash
-python scripts/run_edit.py  \
-    --model_name gpt2-medium \
-    --input_text "The cat looks very" \
-    --original_target " happy" \
-    --new_target " cute" \
-    --layers 16 17 18 19 20 \
-    --weight_type c_proj \
-    --delta_new_boost 0.8 \
-    --delta_new_suppress 0.8 \
-    --delta_ori_suppress 0.8 \
-    --interp_type all \
-    --circuit_mode DeEf \
-    --edit_subspaces 15 \
-    --out_dir result/ke
+python scripts/run_modify.py --model "gpt2-medium"   --weight_type c_proj  --auto_subspace_file "results/gpt2-medium_circuit/MLP_c_proj/DeEf/circuit_points_scores_c_proj_gpt2-medium.json"     --input_text "The cat looks very"    --modify_type rebuild  --token_num 15  --layers 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 --gene_or_abla ablation --top_subspaces 5 --output_dir results --use_full_residual
 ```
 
-### ⚙️ Configuration Parameters
+Single-layer Subspace Intervention: Manually specified subspace intervention
+```bash
+python scripts/run_modify.py --model "gpt2-medium"   --weight_type c_proj  --manual_subspace_file "manual_interv_info/info_c_poj_gpt2-medium_L16SP7.json"     --input_text "The cat looks very"    --modify_type manual_interv --token_num 15  --layers 16 --gene_or_abla general --output_dir results --use_full_residual --interv_factor -7
+```
 
-Both scripts share similar configurable options:
+| Argument | Default | Description |
+|---|---|---|
+| `--modify_type` | required | `rebuild`, `auto_interv`, or `manual_interv` |
+| `--top_subspaces` | `10` | Subspaces to keep/scale (for `rebuild` and `auto_interv`) |
+| `--interv_factor` | `1.0` | Scale factor applied to selected subspaces |
+| `--gene_or_abla` | `general` | `general` (amplify) or `ablation` (suppress) |
+| `--use_positive_only` | — | Restrict to positively contributing subspaces |
+| `--token_num` | `20` | Number of generated tokens to compare |
 
+**Outputs** (under `{output_dir}/all_layers/`):
 
-| Argument               | Type     | Default         | Description                                                  |
-| ---------------------- | -------- | --------------- | ------------------------------------------------------------ |
-| `--model_name`         | str      | `"gpt2-medium"` | Model name. Options: `"gpt2"`, `"gpt2-medium"`, `"gpt2-large"`, `"gpt2-xl"`  |
-| `--layers`             | int list | `[16]`          | Layer indices to analyze                                     |
-| `--out_dir`            | str      | `"result"`      | Directory to save results                                    |
-| `--topk_tokens`        | int      | `10`            | Top-K tokens per singular direction                          |
-| `--topk_subspaces`     | int      | `50`            | Number of top singular directions to analyze                 |
-| `--weight_type`        | str      | `"c_proj"`      | MLP weight type: `c_proj`, `c_fc`                            |
-| `--interp_type`        | str      | `"detector"`    | Interpretation type: `detector`, `effector`, or `all`        |
-| `--with_negative`      | bool     | `False`         | Save negative directions as well                             |
-| `--use_activation`     | bool     | `False`         | Apply activation function in projection                      |
-| `--with_values`        | bool     | `False`         | Include token scores in output                               |
-| `--gene_or_abla`          | str      | `"general"`     | Intervention mode: `"general"` or `"ablation"`               |
-| `--use_positive_only`     | bool     | `False`         | Only include subspaces with positive contributions           |
-| `--auto_subspace_file`     | str      | Required        | Automatically extracted, enhanced, or suppressed subspaces |
-| `--manual_subspace_file`   | str      | Required      | Manually enhanced or suppressed subspaces               |
-| `--modify_type`        | str      | `"rebuild"`     | Type of subspace modification to apply: `"rebuild"`, `"auto_interv"`, or `"manual_interv"` |
-| `--interv_scale`       | float    | `0.8`           | Scaling factor for intervention effect                       |
-| `--interv_dir_indices` | list     | `[6]`           | Subspace directions to intervene                             |
-| `--return_toptoks`     | int      | `20`            | Number of top tokens to return after intervention            |
-| `--use_bias`           | flag     | False           | Modify MLP using bias                                        |
-| `--interv_factor`      | float    | 0.1             | Scaling factor for intervention                              |
-| `--use_full_residual`  | flag     | False           | Whether to use full residual during modification             |
-| `--token_num`          | int      | 20              | Number of top tokens to display during inference             |
-| `--delta_new_boost`    | float | `0.8`   | Strength to **boost the positive contribution subspace** for the new target         |
-| `--delta_new_suppress` | float | `0.8`   | Strength to **suppress the negative contribution subspace** for the new target      |
-| `--delta_ori_suppress` | float | `0.8`   | Strength to **suppress the positive contribution subspace** for the original target |
-| `--edit_subspaces`  | int   | `15`                   | Number of top singular directions to apply editing to  |
+```
+layer{i}_{weight_type}.json    # Before/after logits and top-token probabilities per layer
+final_predictions_{model}_subspaces{K}_{mode}.json   # Aggregated prediction comparison
+```
 
-
- ## 🔍 Quick Semantic/Syntactic Analysis with ChatGPT
+ ## Quick Semantic/Syntactic Analysis with ChatGPT
 
 You can leverage **ChatGPT/DeepSeek** to quickly analyze MLP SVD directions and understand their semantic or syntactic patterns. Here’s how:
 
@@ -205,3 +201,4 @@ cffffcc, respawn, CVE, voic, catentry, natureconservancy, reminis, dehuman, emot
 * **Direction 6:** medium – technical / gaming / organizational nouns
 * **Direction 7:** high – positive adjectives / adverbs
 
+# NaNA
