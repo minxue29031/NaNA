@@ -3,7 +3,7 @@ import torch
 import json
 from plot_utils.plot_subspace_contribute import plot_subspace
 from plot_utils.plot_path import plot_subspace_flow
-from block_interp.interp_mlp import get_mlp_matrices
+from block_interp.model_load import get_mlp_matrices
 from block_interp.mlp_svd_utils import reshape_emb_matrix
 from block_interp.mlp_svd_utils import reshape_emb_matrix, compute_svd
 from circuit.model_interface import generate_next_token, collect_layer_input_output
@@ -19,6 +19,7 @@ def layer_info(
 ):
     # Retrieve MLP layer matrices & Reshape the embedding matrix
     c_fc, c_proj, ln_2, act = get_mlp_matrices(model, layer_idx)
+
     reshape_W_E = reshape_emb_matrix(
         W_E, 
         c_fc, 
