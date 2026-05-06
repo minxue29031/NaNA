@@ -234,6 +234,7 @@ class MLP_DEEF_INTERP:
 
 
             # negative direction
+            neg_results = None
             if with_negative:
                 neg_results = self.align_top_token_subspace(
                     "negative",
